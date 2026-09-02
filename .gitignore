@@ -1,0 +1,3 @@
+config.php
+/assets/images/products/*
+!/assets/images/products/.gitkeep

@@ -1,0 +1,3032 @@
+[
+  {
+    "code": "Ph-1",
+    "category": "elettronica",
+    "brand": "Ninja Labs",
+    "name": "Pouch Phone Case",
+    "variants": [
+      "10 colors for iphone"
+    ],
+    "image_path": "/assets/images/catalog/ninja-labs/ph-1.jpg",
+    "description": "Codice catalogo: Ph-1"
+  },
+  {
+    "code": "Rh-1",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Pimple Patches",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-1.jpg",
+    "description": "Codice catalogo: Rh-1"
+  },
+  {
+    "code": "Rh-2",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Caffeine Reset Mask",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-2.jpg",
+    "description": "Codice catalogo: Rh-2"
+  },
+  {
+    "code": "Rh-3",
+    "category": "elettronica",
+    "brand": "Rhode",
+    "name": "Phone Case Set",
+    "variants": [
+      "iphone 11-",
+      "17promax"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-3.jpg",
+    "description": "Codice catalogo: Rh-3"
+  },
+  {
+    "code": "Rh-4",
+    "category": "elettronica",
+    "brand": "Rhode",
+    "name": "New Phone Case Set",
+    "variants": [
+      "iphpne 17 -",
+      "17promax"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-4.jpg",
+    "description": "Codice catalogo: Rh-4"
+  },
+  {
+    "code": "Rh-5",
+    "category": "elettronica",
+    "brand": "Rhode",
+    "name": "Magnetic Phone Case with Gloss",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-5.jpg",
+    "description": "Codice catalogo: Rh-5"
+  },
+  {
+    "code": "Rh-6",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Rhode Lip Boost",
+    "variants": [
+      "sugarmint",
+      "unscented"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-6.jpg",
+    "description": "Codice catalogo: Rh-6"
+  },
+  {
+    "code": "Rh-7",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Rhode Gloss 10ml",
+    "variants": [
+      "25 colors"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-7.jpg",
+    "description": "Codice catalogo: Rh-7"
+  },
+  {
+    "code": "Rh-8",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Birthday Limited Gloss",
+    "variants": [
+      "raspberry",
+      "espresso",
+      "toast",
+      "ribbon"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-8.jpg",
+    "description": "Codice catalogo: Rh-8"
+  },
+  {
+    "code": "Rh-9",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Rhode Blush",
+    "variants": [
+      "date cake freckle",
+      "juice box piggy",
+      "sleepy girl plum",
+      "spicy marg",
+      "sprinkle",
+      "tan line sun",
+      "soak",
+      "toasted teddy"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-9.jpg",
+    "description": "Codice catalogo: Rh-9"
+  },
+  {
+    "code": "Rh-10",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Rhode highlight",
+    "variants": [
+      "01-bronzo",
+      "02-sunlight",
+      "03-pearl",
+      "04-rose"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-10.jpg",
+    "description": "Codice catalogo: Rh-10"
+  },
+  {
+    "code": "Rh-11",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "New Rhode blush",
+    "variants": [
+      "candy apple",
+      "teacup"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-11.jpg",
+    "description": "Codice catalogo: Rh-11"
+  },
+  {
+    "code": "Rh-12",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Rhode liner",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-12.jpg",
+    "description": "Codice catalogo: Rh-12"
+  },
+  {
+    "code": "Rh-13",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Gloss Set (4 pieces)",
+    "variants": [
+      "espresso+",
+      "raspberry",
+      "+toast+ribbon"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-13.jpg",
+    "description": "Codice catalogo: Rh-13"
+  },
+  {
+    "code": "Rh-14",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Peptide Glazing Fluid 50ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-14.jpg",
+    "description": "Codice catalogo: Rh-14"
+  },
+  {
+    "code": "Rh-15",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Barrier Cream",
+    "variants": [
+      "50ml"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-15.jpg",
+    "description": "Codice catalogo: Rh-15"
+  },
+  {
+    "code": "Rh-16",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Caffeine Reset Mask 50ml",
+    "variants": [
+      "50ml"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-16.jpg",
+    "description": "Codice catalogo: Rh-16"
+  },
+  {
+    "code": "Rh-17",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Pineapple Face Wash 150ml",
+    "variants": [
+      "150ml"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-17.jpg",
+    "description": "Codice catalogo: Rh-17"
+  },
+  {
+    "code": "Rh-18",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Glazing Milk 140ml",
+    "variants": [
+      "140ml"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-18.jpg",
+    "description": "Codice catalogo: Rh-18"
+  },
+  {
+    "code": "Rh-19",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Glazing Mist 80ml",
+    "variants": [
+      "80ml"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-19.jpg",
+    "description": "Codice catalogo: Rh-19"
+  },
+  {
+    "code": "Rh-20",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "Eye Patches Set (6 pieces)",
+    "variants": [
+      "1-rhode logo",
+      "2-L logo",
+      "3-banana"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-20.jpg",
+    "description": "Codice catalogo: Rh-20"
+  },
+  {
+    "code": "Rh-21",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "paper bag",
+    "variants": [
+      "1-grey",
+      "2-espresso",
+      "3-raspberry",
+      "4-saltytan",
+      "5-shortcake"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-21.jpg",
+    "description": "Codice catalogo: Rh-21"
+  },
+  {
+    "code": "Rh-22",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "makeup bag",
+    "variants": [
+      "gray (big / samll)",
+      "yellow (big / samll)"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-22.jpg",
+    "description": "Codice catalogo: Rh-22"
+  },
+  {
+    "code": "Rh-23",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "big makeup bag",
+    "variants": [
+      "1-black",
+      "2-blue"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-23.jpg",
+    "description": "Codice catalogo: Rh-23"
+  },
+  {
+    "code": "Rh-24",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "silicone makeup bag",
+    "variants": [
+      "rasperberry jelly",
+      "shortcake",
+      "saltytan",
+      "toast ribbion",
+      "unscented",
+      "lemontini",
+      "espresso black"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-24.jpg",
+    "description": "Codice catalogo: Rh-24"
+  },
+  {
+    "code": "Rh-25",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "mirror",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-25.jpg",
+    "description": "Codice catalogo: Rh-25"
+  },
+  {
+    "code": "Rh-26",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "hairband",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-26.jpg",
+    "description": "Codice catalogo: Rh-26"
+  },
+  {
+    "code": "Rh-27",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "sticker",
+    "variants": [
+      "strawberry",
+      "milk"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-27.jpg",
+    "description": "Codice catalogo: Rh-27"
+  },
+  {
+    "code": "Rh-28",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "sticker set",
+    "variants": [
+      "green",
+      "brown"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-28.jpg",
+    "description": "Codice catalogo: Rh-28"
+  },
+  {
+    "code": "Rh-29",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "paper box (old)",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-29.jpg",
+    "description": "Codice catalogo: Rh-29"
+  },
+  {
+    "code": "Rh-30",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "paper box (new)",
+    "variants": [
+      "gray",
+      "espresso"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-30.jpg",
+    "description": "Codice catalogo: Rh-30"
+  },
+  {
+    "code": "Rh-31",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "paper (with logo)",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-31.jpg",
+    "description": "Codice catalogo: Rh-31"
+  },
+  {
+    "code": "Rh-32",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "paper",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-32.jpg",
+    "description": "Codice catalogo: Rh-32"
+  },
+  {
+    "code": "Rh-33",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "card",
+    "variants": [
+      "1",
+      "2",
+      "3"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-33.jpg",
+    "description": "Codice catalogo: Rh-33"
+  },
+  {
+    "code": "Rh-34",
+    "category": "cosmetici",
+    "brand": "Rhode",
+    "name": "gloss set",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-34.jpg",
+    "description": "Codice catalogo: Rh-34"
+  },
+  {
+    "code": "Rh-35",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "bath towel",
+    "variants": [],
+    "image_path": "/assets/images/catalog/rhode/rh-35.jpg",
+    "description": "Codice catalogo: Rh-35"
+  },
+  {
+    "code": "Rh-36",
+    "category": "abbigliamento",
+    "brand": "Rhode",
+    "name": "heart makeup bag",
+    "variants": [
+      "rasperberry jelly",
+      "shortcake",
+      "saltytan",
+      "toast ribbion",
+      "unscented",
+      "lemontini",
+      "espresso black"
+    ],
+    "image_path": "/assets/images/catalog/rhode/rh-36.jpg",
+    "description": "Codice catalogo: Rh-36"
+  },
+  {
+    "code": "To-1",
+    "category": "cosmetici",
+    "brand": "Tower 28",
+    "name": "Lip Set",
+    "variants": [],
+    "image_path": "/assets/images/catalog/tower-28/to-1.jpg",
+    "description": "Codice catalogo: To-1"
+  },
+  {
+    "code": "Su-1",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "gloss",
+    "variants": [
+      "poppy cberry",
+      "pinksugar vanillabeige",
+      "sweetmint brownsugar",
+      "vanilla icedcoffee",
+      "birthdaycake hotcocoa",
+      "pink-Guava strawberry",
+      "Toasted Marshmallow"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-1.jpg",
+    "description": "Codice catalogo: Su-1"
+  },
+  {
+    "code": "Su-2",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "Lip Oil",
+    "variants": [
+      "Softmauve",
+      "RosewoodNights",
+      "PinkCloud",
+      "BlushDreams",
+      "BareSand",
+      "RoseBud",
+      "MidnightBerry",
+      "WarmBeige"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-2.jpg",
+    "description": "Codice catalogo: Su-2"
+  },
+  {
+    "code": "Su-3",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "Lip set (2 in one)",
+    "variants": [
+      "birthday cake",
+      "+ strawberry"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-3.jpg",
+    "description": "Codice catalogo: Su-3"
+  },
+  {
+    "code": "Su-4",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "gloss set (3 in one)",
+    "variants": [
+      "vanilla beige+sweet",
+      "mint+",
+      "poppy",
+      "cherry+sweet mint+",
+      "birthday cake"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-4.jpg",
+    "description": "Codice catalogo: Su-4"
+  },
+  {
+    "code": "Su-5",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "mini gloss set (4 in one)",
+    "variants": [
+      "vanilla + vanilla beige+",
+      "iced",
+      "coffee+brownsugar"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-5.jpg",
+    "description": "Codice catalogo: Su-5"
+  },
+  {
+    "code": "Su-6",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "mini gloss set (4 in one)",
+    "variants": [
+      "vanilla + vanilla beige+",
+      "poppy+brownsugar"
+    ],
+    "image_path": "/assets/images/catalog/summer-fridays/su-6.jpg",
+    "description": "Codice catalogo: Su-6"
+  },
+  {
+    "code": "Su-7",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "Jet Lag Mask 15g",
+    "variants": [],
+    "image_path": "/assets/images/catalog/summer-fridays/su-7.jpg",
+    "description": "Codice catalogo: Su-7"
+  },
+  {
+    "code": "Su-8",
+    "category": "cosmetici",
+    "brand": "Summer Fridays",
+    "name": "Jet Lag Mask 64g",
+    "variants": [],
+    "image_path": "/assets/images/catalog/summer-fridays/su-8.jpg",
+    "description": "Codice catalogo: Su-8"
+  },
+  {
+    "code": "La-1",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "Lip Balm 12g – Glaze Collection",
+    "variants": [
+      "suagr glaze",
+      "peacg galze",
+      "maple glaze",
+      "raspberry jam",
+      "blueberry jelly",
+      "strawberry",
+      "chocolate",
+      "cinnamon"
+    ],
+    "image_path": "/assets/images/catalog/laneige/la-1.jpg",
+    "description": "Codice catalogo: La-1"
+  },
+  {
+    "code": "La-2",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "Lip Balm 12g – Classic Collection",
+    "variants": [
+      "gummy bear",
+      "vnilla",
+      "mango",
+      "berry",
+      "blur berry",
+      "sweet candy",
+      "matcha",
+      "taro"
+    ],
+    "image_path": "/assets/images/catalog/laneige/la-2.jpg",
+    "description": "Codice catalogo: La-2"
+  },
+  {
+    "code": "La-3",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "lip sleeping mask",
+    "variants": [
+      "BERRY"
+    ],
+    "image_path": "/assets/images/catalog/laneige/la-3.jpg",
+    "description": "Codice catalogo: La-3"
+  },
+  {
+    "code": "La-4",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "Lip glow balm set3",
+    "variants": [
+      "VANILLA",
+      "BERRY",
+      "GUMMY BEAR"
+    ],
+    "image_path": "/assets/images/catalog/laneige/la-4.jpg",
+    "description": "Codice catalogo: La-4"
+  },
+  {
+    "code": "La-5",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "Dreamy lip kit x4pcs",
+    "variants": [],
+    "image_path": "/assets/images/catalog/laneige/la-5.jpg",
+    "description": "Codice catalogo: La-5"
+  },
+  {
+    "code": "La-6",
+    "category": "cosmetici",
+    "brand": "Laneige",
+    "name": "lip sleeping mask x5pcs",
+    "variants": [],
+    "image_path": "/assets/images/catalog/laneige/la-6.jpg",
+    "description": "Codice catalogo: La-6"
+  },
+  {
+    "code": "Ki-1",
+    "category": "cosmetici",
+    "brand": "Kiko Milano",
+    "name": "KIKO UNLIMITED DOUBLE TOUCH",
+    "variants": [],
+    "image_path": "/assets/images/catalog/kiko-milano/ki-1.jpg",
+    "description": "Codice catalogo: Ki-1"
+  },
+  {
+    "code": "Ki-2",
+    "category": "cosmetici",
+    "brand": "Kiko Milano",
+    "name": "Kiko Milano 3D Hydra Lip Gloss 3D",
+    "variants": [
+      "01 Clear",
+      "02 Lip Volume",
+      "05 Soft Pink",
+      "12 Red Shine",
+      "15 Cherry Red",
+      "17 Rose Shine",
+      "18 Golden Bronze",
+      "20 Nude Beige",
+      "21 Warm Nude",
+      "22 Berry Shine",
+      "32 Mauve Pink",
+      "33 Ruby Red",
+      "35 Cinnamon Pink",
+      "45 Honey Bronze"
+    ],
+    "image_path": "/assets/images/catalog/kiko-milano/ki-2.jpg",
+    "description": "Codice catalogo: Ki-2"
+  },
+  {
+    "code": "Ki-3",
+    "category": "cosmetici",
+    "brand": "Kiko Milano",
+    "name": "Kiko Milano 3D Hydra Lip Gloss 3D",
+    "variants": [
+      "45 Honey Bronze",
+      "NEW 01",
+      "NEW 02",
+      "NEW 03",
+      "NEW 04",
+      "NEW 05",
+      "NEW 06"
+    ],
+    "image_path": "/assets/images/catalog/kiko-milano/ki-3.jpg",
+    "description": "Codice catalogo: Ki-3"
+  },
+  {
+    "code": "Ra-1",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Soft Pinch Liquid Blush 13 colors",
+    "variants": [
+      "01 Lucky",
+      "02 Happy",
+      "03 Joy",
+      "04 Hope",
+      "05 Love",
+      "06 Believe",
+      "07 Grateful",
+      "08 Virtue",
+      "09 Encourage",
+      "10 Bliss",
+      "11 Worth",
+      "12 Faith",
+      "13 Grace"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-1.jpg",
+    "description": "Codice catalogo: Ra-1"
+  },
+  {
+    "code": "Ra-2",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Stay Vulnerable Melting Cream Blush",
+    "variants": [
+      "01 Apricot",
+      "02 Berry",
+      "03 Mauve",
+      "04 Neutra",
+      "05 Rose"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-2.jpg",
+    "description": "Codice catalogo: Ra-2"
+  },
+  {
+    "code": "Ra-3",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Stay Vulnerable Glossy Lip Balm 3.3ml",
+    "variants": [
+      "01 Dazzle",
+      "02 Beam",
+      "03 Flicker",
+      "04 Glimmer",
+      "05 Spark",
+      "06 Blaze"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-3.jpg",
+    "description": "Codice catalogo: Ra-3"
+  },
+  {
+    "code": "Ra-4",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Positive Light Liquid Luminizer 15ml",
+    "variants": [
+      "01 Outshine",
+      "02 Transcend",
+      "03 Reflect",
+      "04 Enchant",
+      "05 Flaunt",
+      "06 Reveal"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-4.jpg",
+    "description": "Codice catalogo: Ra-4"
+  },
+  {
+    "code": "Ra-5",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Soft Pinch Matte Bouncy Blush",
+    "variants": [
+      "01 Happy",
+      "02Hope",
+      "03Thriving",
+      "04 Alive",
+      "05 Grateful",
+      "06 Worth",
+      "07 Truth"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-5.jpg",
+    "description": "Codice catalogo: Ra-5"
+  },
+  {
+    "code": "Ra-6",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Stay Vulnerable Glossy Lip Balm",
+    "variants": [
+      "01 Apricot",
+      "02 Rose",
+      "03 Mauve",
+      "04 Neutral",
+      "05 Berry"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-6.jpg",
+    "description": "Codice catalogo: Ra-6"
+  },
+  {
+    "code": "Ra-7",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Soft Pinch Tinted Lip Oil",
+    "variants": [
+      "01 happy",
+      "02 wonder",
+      "03 honesty",
+      "04 hope",
+      "05 serenity"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-7.jpg",
+    "description": "Codice catalogo: Ra-7"
+  },
+  {
+    "code": "Ra-8",
+    "category": "cosmetici",
+    "brand": "Rare Beauty",
+    "name": "Soft Pinch Contouring Liquide",
+    "variants": [
+      "Serene",
+      "Solace",
+      "Gentle",
+      "Mellow"
+    ],
+    "image_path": "/assets/images/catalog/rare-beauty/ra-8.jpg",
+    "description": "Codice catalogo: Ra-8"
+  },
+  {
+    "code": "El-1",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "E.L.F. Makeup Setting Spray",
+    "variants": [
+      "NEW BOTTLE",
+      "BLUE LIGHT",
+      "MICRO-FINE",
+      "CLEAR"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-1.jpg",
+    "description": "Codice catalogo: El-1"
+  },
+  {
+    "code": "El-2",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. Halo Glow Beauty Wand Blush 10ML",
+    "variants": [
+      "1 PINK ME UP",
+      "2 YOU GO COCOA",
+      "3 CANDLELIT",
+      "4 ROSE YOU SLAY",
+      "5 MAGIC HOUR",
+      "6 BERRY RADIANT"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-2.jpg",
+    "description": "Codice catalogo: El-2"
+  },
+  {
+    "code": "El-3",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. Putty Blush 10g",
+    "variants": [
+      "FIJI—01",
+      "BORA BORA—02",
+      "BAHAMAS—03",
+      "TURKS AND CAICOS—04",
+      "CARIBBEAN—05",
+      "BALI—06",
+      "MALDIVES—07",
+      "TAHITI—08"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-3.jpg",
+    "description": "Codice catalogo: El-3"
+  },
+  {
+    "code": "El-4",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. Sheer For It Blush Tint/e.l.f. 6.8 mL",
+    "variants": [
+      "1 Pink Positive",
+      "2 Cherry Cola",
+      "3 Orange Crush",
+      "4 Left on Red",
+      "5 Plums Up"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-4.jpg",
+    "description": "Codice catalogo: El-4"
+  },
+  {
+    "code": "El-5",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "ELF lip gloss",
+    "variants": [
+      "01—VANILLA TOFFEE",
+      "02—JAVA CHIP",
+      "03—BLACKBERRY SORBET",
+      "04—YUMMY GUMMY",
+      "05—WILD CHERRY",
+      "06—STRAWBERRY SHOTCAKE"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-5.jpg",
+    "description": "Codice catalogo: El-5"
+  },
+  {
+    "code": "El-6",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "ELF lip oil shine",
+    "variants": [
+      "CRYSTAL BALLER - 01",
+      "CANDY CODED - 02",
+      "PRINCESS CUT - 03",
+      "CITRINE GLEAM - 04",
+      "SUPER-NEUTRAL - 05",
+      "CHOCOLUXE - 06",
+      "OPAL-OGY TOUR - 07",
+      "DIVINE WINE - 08"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-6.jpg",
+    "description": "Codice catalogo: El-6"
+  },
+  {
+    "code": "El-7",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "ELF lip oil",
+    "variants": [
+      "Coral Fixation - 01",
+      "It’s giving guava - 02",
+      "Pink Quartz - 03",
+      "Rose Envy - 04",
+      "Red Delicious - 05",
+      "Honey Talks - 06",
+      "Hot as fudge - 07",
+      "Money Mauve - 08",
+      "Jam Session - 09"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-7.jpg",
+    "description": "Codice catalogo: El-7"
+  },
+  {
+    "code": "El-8",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f.lip gloss 6 g",
+    "variants": [
+      "Crystal Clear - 10",
+      "Peach",
+      "Vanilla frosting",
+      "Strawberry",
+      "Honeydew",
+      "Blueberry",
+      "Grape"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-8.jpg",
+    "description": "Codice catalogo: El-8"
+  },
+  {
+    "code": "El-9",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "Monochromatic Multi-Stick",
+    "variants": [
+      "(elf) DAZZLING PEONY",
+      "(elf) GLOWING MANGO",
+      "(elf) SPARKLING ROSE",
+      "(elf) GLISTENING PEACH",
+      "(elf) BRONZED CHERRY",
+      "(elf) GLIMMERING GUAVA"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-9.jpg",
+    "description": "Codice catalogo: El-9"
+  },
+  {
+    "code": "El-10",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "liquid blush white head",
+    "variants": [
+      "(elf) GLIMMERING GUAVA",
+      "CORAL CRUSH",
+      "DUSTY ROSE",
+      "PEACH PERFECT",
+      "COPPER ETIQUETTE",
+      "CHEEKY LYCHEE",
+      "PINKY PROMISE",
+      "SUAVE MAUVE",
+      "GORG ORANGE"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-10.jpg",
+    "description": "Codice catalogo: El-10"
+  },
+  {
+    "code": "El-11",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. ELF X Jen Atkin (3 in 1)",
+    "variants": [
+      "set"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-11.jpg",
+    "description": "Codice catalogo: El-11"
+  },
+  {
+    "code": "El-12",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "elf MATTE FUSION 15g",
+    "variants": [
+      "01#",
+      "02#",
+      "03#"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-12.jpg",
+    "description": "Codice catalogo: El-12"
+  },
+  {
+    "code": "El-13",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f.HALO GLOW SETTING POWDER",
+    "variants": [
+      "01#",
+      "02#",
+      "03#"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-13.jpg",
+    "description": "Codice catalogo: El-13"
+  },
+  {
+    "code": "El-14",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. primer (75 ml)",
+    "variants": [
+      "01 Green Tube"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-14.jpg",
+    "description": "Codice catalogo: El-14"
+  },
+  {
+    "code": "El-15",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. primer ml)",
+    "variants": [
+      "01 Green Tube",
+      "02 Pink Tube"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-15.jpg",
+    "description": "Codice catalogo: El-15"
+  },
+  {
+    "code": "El-17",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. Luminous Putty Primer",
+    "variants": [],
+    "image_path": "/assets/images/catalog/e-l-f/el-17.jpg",
+    "description": "Codice catalogo: El-17"
+  },
+  {
+    "code": "El-18",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "e.l.f. primer Matte",
+    "variants": [
+      "black"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-18.jpg",
+    "description": "Codice catalogo: El-18"
+  },
+  {
+    "code": "El-19",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "elf SKIN 10ML",
+    "variants": [
+      "blue"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-19.jpg",
+    "description": "Codice catalogo: El-19"
+  },
+  {
+    "code": "El-22",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "elf foundation set 3 IN 1",
+    "variants": [
+      "set"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-22.jpg",
+    "description": "Codice catalogo: El-22"
+  },
+  {
+    "code": "El-23",
+    "category": "cosmetici",
+    "brand": "E.L.F.",
+    "name": "Foundation / Flawless Satin Foundation",
+    "variants": [
+      "0",
+      "0.5",
+      "1",
+      "2",
+      "200",
+      "210",
+      "220"
+    ],
+    "image_path": "/assets/images/catalog/e-l-f/el-23.jpg",
+    "description": "Codice catalogo: El-23"
+  },
+  {
+    "code": "Fe-1",
+    "category": "cosmetici",
+    "brand": "Fenty Beauty",
+    "name": "Fenty beauty lip gloss",
+    "variants": [
+      "fenty glow 01",
+      "sweet mouth 04",
+      "fussy 02",
+      "fuchsia flex 12",
+      "riri",
+      "hot chacolit",
+      "fruit snackz 05",
+      "fenty glow 02",
+      "honey waffles 03",
+      "hot cherry 01",
+      "fussy heat 02",
+      "hot chocolit heat 04",
+      "fenty glow heat 03"
+    ],
+    "image_path": "/assets/images/catalog/fenty-beauty/fe-1.jpg",
+    "description": "Codice catalogo: Fe-1"
+  },
+  {
+    "code": "Fe-2",
+    "category": "cosmetici",
+    "brand": "Fenty Beauty",
+    "name": "contour stick",
+    "variants": [
+      "03 MOCHA",
+      "04 TRUFFLE",
+      "08 SOFT AMBER",
+      "09 AMBER SUEDE"
+    ],
+    "image_path": "/assets/images/catalog/fenty-beauty/fe-2.jpg",
+    "description": "Codice catalogo: Fe-2"
+  },
+  {
+    "code": "Fe-3",
+    "category": "cosmetici",
+    "brand": "Fenty Beauty",
+    "name": "Fenty beauty ice",
+    "variants": [
+      "01 MELON CHILLZ",
+      "02 CUCUM BRRR",
+      "03 BERRY JELLY",
+      "04 ICE'D PINE APPLE",
+      "05 COLD HEART'D"
+    ],
+    "image_path": "/assets/images/catalog/fenty-beauty/fe-3.jpg",
+    "description": "Codice catalogo: Fe-3"
+  },
+  {
+    "code": "Fe-4",
+    "category": "cosmetici",
+    "brand": "Fenty Beauty",
+    "name": "fenty gloss set",
+    "variants": [],
+    "image_path": "/assets/images/catalog/fenty-beauty/fe-4.jpg",
+    "description": "Codice catalogo: Fe-4"
+  },
+  {
+    "code": "Gi-1",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Gisou gloss",
+    "variants": [
+      "PEACH Strawberry",
+      "GLAZED PLUM",
+      "MILKY MOCHA",
+      "RASPBERRY SWIRL",
+      "STICKY TOFFEE",
+      "VANILLA GLAZE",
+      "HONEY CHERRY",
+      "Watermelon",
+      "Coconut Mango"
+    ],
+    "image_path": "/assets/images/catalog/gisou/gi-1.jpg",
+    "description": "Codice catalogo: Gi-1"
+  },
+  {
+    "code": "Gi-2",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Honey Infused Hair Oil",
+    "variants": [],
+    "image_path": "/assets/images/catalog/gisou/gi-2.jpg",
+    "description": "Codice catalogo: Gi-2"
+  },
+  {
+    "code": "Gi-3",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Honey Infused Set 4",
+    "variants": [
+      "Hair Mask",
+      "Hair Perfume",
+      "Lip Oil",
+      "Hair Oil"
+    ],
+    "image_path": "/assets/images/catalog/gisou/gi-3.jpg",
+    "description": "Codice catalogo: Gi-3"
+  },
+  {
+    "code": "Gi-4",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Lip Oil Set 3",
+    "variants": [
+      "VANILLA GLAZE",
+      "STICKY TOFFEE",
+      "MILKY MOCHA"
+    ],
+    "image_path": "/assets/images/catalog/gisou/gi-4.jpg",
+    "description": "Codice catalogo: Gi-4"
+  },
+  {
+    "code": "Gi-5",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Honey Infused Hair Perfume",
+    "variants": [
+      "01 Rose",
+      "02 Lavender berry"
+    ],
+    "image_path": "/assets/images/catalog/gisou/gi-5.jpg",
+    "description": "Codice catalogo: Gi-5"
+  },
+  {
+    "code": "Gi-6",
+    "category": "cosmetici",
+    "brand": "Gisou",
+    "name": "Lip Oil Set 6",
+    "variants": [
+      "Watermelon",
+      "Coconut",
+      "Mango",
+      "HONEY",
+      "CHERRY",
+      "RASPBERRY SWIRL"
+    ],
+    "image_path": "/assets/images/catalog/gisou/gi-6.jpg",
+    "description": "Codice catalogo: Gi-6"
+  },
+  {
+    "code": "Sa-1",
+    "category": "cosmetici",
+    "brand": "Saie",
+    "name": "Dew Blush Liquid Cheek Blush 2ml",
+    "variants": [
+      "BABY",
+      "ROSY",
+      "CHILLY",
+      "Star glow"
+    ],
+    "image_path": "/assets/images/catalog/saie/sa-1.jpg",
+    "description": "Codice catalogo: Sa-1"
+  },
+  {
+    "code": "Sa-2",
+    "category": "cosmetici",
+    "brand": "Saie",
+    "name": "Dew Blush Liquid Cheek Blush 15ml",
+    "variants": [
+      "BABY",
+      "ROSY",
+      "CHILLY"
+    ],
+    "image_path": "/assets/images/catalog/saie/sa-2.jpg",
+    "description": "Codice catalogo: Sa-2"
+  },
+  {
+    "code": "Sa-3",
+    "category": "cosmetici",
+    "brand": "Saie",
+    "name": "Star glow 15ml",
+    "variants": [
+      "Star glow"
+    ],
+    "image_path": "/assets/images/catalog/saie/sa-3.jpg",
+    "description": "Codice catalogo: Sa-3"
+  },
+  {
+    "code": "Ny-1",
+    "category": "cosmetici",
+    "brand": "NYX",
+    "name": "NYX lip oil 4.8ml",
+    "variants": [
+      "01 02 03",
+      "04 05 06",
+      "07 08 09",
+      "10 11 12",
+      "13 14"
+    ],
+    "image_path": "/assets/images/catalog/nyx/ny-1.jpg",
+    "description": "Codice catalogo: Ny-1"
+  },
+  {
+    "code": "NY-2",
+    "category": "cosmetici",
+    "brand": "NYX",
+    "name": "NYX lip gloss",
+    "variants": [
+      "01 02 03",
+      "04 05 06",
+      "07 08 09",
+      "10 11 12"
+    ],
+    "image_path": "/assets/images/catalog/nyx/ny-2.jpg",
+    "description": "Codice catalogo: NY-2"
+  },
+  {
+    "code": "Sh-1",
+    "category": "cosmetici",
+    "brand": "Sheglam",
+    "name": "Wave Tube Set (4 pieces)",
+    "variants": [
+      "01 02 03",
+      "04 05 06",
+      "07 08 09",
+      "10 11 12"
+    ],
+    "image_path": "/assets/images/catalog/sheglam/sh-1.jpg",
+    "description": "Codice catalogo: Sh-1"
+  },
+  {
+    "code": "Sh-2",
+    "category": "cosmetici",
+    "brand": "Sheglam",
+    "name": "Eyeshadow Stick",
+    "variants": [
+      "01-06 colour"
+    ],
+    "image_path": "/assets/images/catalog/sheglam/sh-2.jpg",
+    "description": "Codice catalogo: Sh-2"
+  },
+  {
+    "code": "Sh-3",
+    "category": "cosmetici",
+    "brand": "Sheglam",
+    "name": "Brow Gel",
+    "variants": [
+      "1CHOCOLATE",
+      "2TAUPE",
+      "3AUBUAN",
+      "4ESPRESSO"
+    ],
+    "image_path": "/assets/images/catalog/sheglam/sh-3.jpg",
+    "description": "Codice catalogo: Sh-3"
+  },
+  {
+    "code": "Sh-4",
+    "category": "cosmetici",
+    "brand": "Sheglam",
+    "name": "Lip Oil",
+    "variants": [
+      "1CHOCOLATE",
+      "2TAUPE",
+      "3AUBUAN",
+      "4ESPRESSO"
+    ],
+    "image_path": "/assets/images/catalog/sheglam/sh-4.jpg",
+    "description": "Codice catalogo: Sh-4"
+  },
+  {
+    "code": "Sh-5",
+    "category": "cosmetici",
+    "brand": "Sheglam",
+    "name": "Blush",
+    "variants": [
+      "1CHOCOLATE",
+      "2TAUPE",
+      "3AUBUAN",
+      "4ESPRESSO"
+    ],
+    "image_path": "/assets/images/catalog/sheglam/sh-5.jpg",
+    "description": "Codice catalogo: Sh-5"
+  },
+  {
+    "code": "Sol-1",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Travel Set",
+    "variants": [
+      "Yellow",
+      "Pink",
+      "Red",
+      "Blue"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-1.jpg",
+    "description": "Codice catalogo: Sol-1"
+  },
+  {
+    "code": "Sol-2",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Skincare Set",
+    "variants": [
+      "Red 40#",
+      "Yellow 62#",
+      "Pink 58#",
+      "Blue"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-2.jpg",
+    "description": "Codice catalogo: Sol-2"
+  },
+  {
+    "code": "Sol-3",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set3",
+    "variants": [
+      "62# 40# 48#",
+      "three Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-3.jpg",
+    "description": "Codice catalogo: Sol-3"
+  },
+  {
+    "code": "Sol-4",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set4",
+    "variants": [
+      "68# 62# 40# 59#",
+      "Four Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-4.jpg",
+    "description": "Codice catalogo: Sol-4"
+  },
+  {
+    "code": "Sol-5",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set4",
+    "variants": [
+      "62# 68# 59# 76#",
+      "Four Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-5.jpg",
+    "description": "Codice catalogo: Sol-5"
+  },
+  {
+    "code": "Sol-6",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set4",
+    "variants": [
+      "62# 87# 40# 48#",
+      "Four Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-6.jpg",
+    "description": "Codice catalogo: Sol-6"
+  },
+  {
+    "code": "Sol-7",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set5",
+    "variants": [
+      "39# 48# 71# 76#",
+      "77# Five Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-7.jpg",
+    "description": "Codice catalogo: Sol-7"
+  },
+  {
+    "code": "Sol-8",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set5",
+    "variants": [
+      "40# 59# 62# 68#",
+      "87# Five Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-8.jpg",
+    "description": "Codice catalogo: Sol-8"
+  },
+  {
+    "code": "Sol-9",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "perfume set5",
+    "variants": [
+      "62# 68# 40# 59#",
+      "76# Five Colors"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-9.jpg",
+    "description": "Codice catalogo: Sol-9"
+  },
+  {
+    "code": "Sol-10",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Bum Bum Cream 75ml",
+    "variants": [
+      "Yellow",
+      "Purple",
+      "Pink",
+      "Red"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-10.jpg",
+    "description": "Codice catalogo: Sol-10"
+  },
+  {
+    "code": "Sol-11",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Bum Bum Cream 240ML",
+    "variants": [
+      "Yellow",
+      "Pink",
+      "red",
+      "Blue",
+      "Green",
+      "Bright Green",
+      "Light Purple",
+      "Dark Purple"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-11.jpg",
+    "description": "Codice catalogo: Sol-11"
+  },
+  {
+    "code": "Sol-12",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Crush Perfume Mist 90ml",
+    "variants": [
+      "87#",
+      "71#",
+      "59#",
+      "40#",
+      "76#",
+      "68#",
+      "48#",
+      "62#",
+      "Blue"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-12.jpg",
+    "description": "Codice catalogo: Sol-12"
+  },
+  {
+    "code": "Sol-13",
+    "category": "cosmetici",
+    "brand": "Sol de Janeiro",
+    "name": "Crush Perfume Mist 90ml",
+    "variants": [
+      "Red",
+      "Green",
+      "Purple"
+    ],
+    "image_path": "/assets/images/catalog/sol-de-janeiro/sol-13.jpg",
+    "description": "Codice catalogo: Sol-13"
+  },
+  {
+    "code": "Ta-1",
+    "category": "cosmetici",
+    "brand": "Tarte",
+    "name": "Concealer",
+    "variants": [
+      "29N--Light Medium",
+      "12S--Fair",
+      "20S--Light Sand",
+      "20B--Light",
+      "35N--Medium"
+    ],
+    "image_path": "/assets/images/catalog/tarte/ta-1.jpg",
+    "description": "Codice catalogo: Ta-1"
+  },
+  {
+    "code": "Ct-1",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Unreal Lips Healthy Glow Nectar Oil 14ml",
+    "variants": [
+      "01 Coconut Water",
+      "02 Pure Peach",
+      "03 Strawberry Vanilla",
+      "04 Pink Watermelon",
+      "05 Cherry Glaze",
+      "06 Candy Fig"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-1.jpg",
+    "description": "Codice catalogo: Ct-1"
+  },
+  {
+    "code": "Ct-2",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "HYDRATING FOUNDATION STICK 9g",
+    "variants": [
+      "1 FAIR/CLAIRA",
+      "1.5 FAIR/CLAIRA",
+      "2 FAIR/CLAIRA",
+      "3 FAIR/CLAIRA"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-2.jpg",
+    "description": "Codice catalogo: Ct-2"
+  },
+  {
+    "code": "Ct-3",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Pillowtalk MATTE Beauty Blush 12ml",
+    "variants": [
+      "Pale-Moyen",
+      "Moyen-Fonce",
+      "Fair Clair",
+      "Dream Pop"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-3.jpg",
+    "description": "Codice catalogo: Ct-3"
+  },
+  {
+    "code": "Ct-4",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Hollywood Contour Wand 12ml",
+    "variants": [
+      "fair",
+      "fair-medium",
+      "medium-deep"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-4.jpg",
+    "description": "Codice catalogo: Ct-4"
+  },
+  {
+    "code": "Ct-5",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Cheek Chic Duo 13g",
+    "variants": [
+      "1-PINK",
+      "2-PEACH"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-5.jpg",
+    "description": "Codice catalogo: Ct-5"
+  },
+  {
+    "code": "Ct-6",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Hyaluronic Happikiss Lipstick Balm 9g",
+    "variants": [
+      "Rosy Glow",
+      "Peachy Glow",
+      "Pretty Glow",
+      "Cherry Glow"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-6.jpg",
+    "description": "Codice catalogo: Ct-6"
+  },
+  {
+    "code": "Ct-7",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Pillow Talk Collagen Lip Bath 7.6ml",
+    "variants": [
+      "PILLOWTALK",
+      "PILLOWTALK FAIR",
+      "PILLOWTALK Medium",
+      "REFRESH ROSE",
+      "Rosy Glow",
+      "Walk of no shame"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-7.jpg",
+    "description": "Codice catalogo: Ct-7"
+  },
+  {
+    "code": "Ct-8",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawness finish 8g",
+    "variants": [
+      "FAIR 1",
+      "MEDIUM 2"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-8.jpg",
+    "description": "Codice catalogo: Ct-8"
+  },
+  {
+    "code": "Ct-9",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Setting Spray 100ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-9.jpg",
+    "description": "Codice catalogo: Ct-9"
+  },
+  {
+    "code": "Ct-10",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Setting Spray Matte Blur 34ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-10.jpg",
+    "description": "Codice catalogo: Ct-10"
+  },
+  {
+    "code": "Ct-11",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Setting Spray Matte Blur 100ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-11.jpg",
+    "description": "Codice catalogo: Ct-11"
+  },
+  {
+    "code": "Ct-12",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Magic Hydrator mist",
+    "variants": [
+      "75ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-12.jpg",
+    "description": "Codice catalogo: Ct-12"
+  },
+  {
+    "code": "Ct-13",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Flawless Mini Setting Spray Kit 34ml × 2",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-13.jpg",
+    "description": "Codice catalogo: Ct-13"
+  },
+  {
+    "code": "Ct-14",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Mini Setting Spray Kit 34ml × 2",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-14.jpg",
+    "description": "Codice catalogo: Ct-14"
+  },
+  {
+    "code": "Ct-15",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Complexion perfecting set",
+    "variants": [
+      "01 fair+",
+      "34ml setting spray"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-15.jpg",
+    "description": "Codice catalogo: Ct-15"
+  },
+  {
+    "code": "Ct-16",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Mini Pillow Talk Lip Kit",
+    "variants": [
+      "1-Pillow Talk Original",
+      "2-Pillow Talk Fair",
+      "3-Pillow Talk Medium",
+      "4-Pillow Talk Deep"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-16.jpg",
+    "description": "Codice catalogo: Ct-16"
+  },
+  {
+    "code": "Ct-17",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush Bronzer & Highlighter Palette",
+    "variants": [
+      "1-romance light",
+      "2-dream light"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-17.jpg",
+    "description": "Codice catalogo: Ct-17"
+  },
+  {
+    "code": "Ct-18",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "HOLLYWOOD FLAWLESS FILTER",
+    "variants": [
+      "1",
+      "2",
+      "2.5",
+      "3",
+      "4"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-18.jpg",
+    "description": "Codice catalogo: Ct-18"
+  },
+  {
+    "code": "Ct-19",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Airbrush FLAWLESS Foundation",
+    "variants": [
+      "1C",
+      "1N",
+      "2C",
+      "2N"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-19.jpg",
+    "description": "Codice catalogo: Ct-19"
+  },
+  {
+    "code": "Ct-20",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Luxury Palette of Pops / Luxury Palette",
+    "variants": [
+      "pillow talk",
+      "Exagg Erates",
+      "Bella Sofia",
+      "the golden goddess"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-20.jpg",
+    "description": "Codice catalogo: Ct-20"
+  },
+  {
+    "code": "Ct-21",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Cheek to Chic Blush",
+    "variants": [
+      "pillow talk",
+      "sex on fire",
+      "first love",
+      "love glow"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-21.jpg",
+    "description": "Codice catalogo: Ct-21"
+  },
+  {
+    "code": "Ct-22",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Hollywood Flawless Filter Highlighter",
+    "variants": [
+      "1-pearlescent",
+      "2-champagne glow"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-22.jpg",
+    "description": "Codice catalogo: Ct-22"
+  },
+  {
+    "code": "Ct-23",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "FILMSTAR BRONZE & GLOW",
+    "variants": [
+      "Light-Medium"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-23.jpg",
+    "description": "Codice catalogo: Ct-23"
+  },
+  {
+    "code": "Ct-24",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Pink Pop Blush & Highlighter Palette",
+    "variants": [
+      "FAIR-MEDIUM"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-24.jpg",
+    "description": "Codice catalogo: Ct-24"
+  },
+  {
+    "code": "Ct-25",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Cheek To Chic Blush",
+    "variants": [
+      "1-DREAMS",
+      "2-PASSIONS"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-25.jpg",
+    "description": "Codice catalogo: Ct-25"
+  },
+  {
+    "code": "Ct-26",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Cheek To Chic Blush",
+    "variants": [
+      "1-Beach peach",
+      "2-Sunset Bronze"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-26.jpg",
+    "description": "Codice catalogo: Ct-26"
+  },
+  {
+    "code": "Ct-27",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Beautiful Skin Foundation 30ml",
+    "variants": [
+      "1N",
+      "2N",
+      "2W",
+      "3C",
+      "3N",
+      "4W",
+      "4N",
+      "5N",
+      "6C"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-27.jpg",
+    "description": "Codice catalogo: Ct-27"
+  },
+  {
+    "code": "Ct-28",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "AIRBRUSH FLAWLESS BLUR CONCEALER",
+    "variants": [
+      "1",
+      "2",
+      "2.5",
+      "3",
+      "3.5",
+      "4"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-28.jpg",
+    "description": "Codice catalogo: Ct-28"
+  },
+  {
+    "code": "Ct-29",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "ICONIC MINI LIP CHEAT TRIO",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-29.jpg",
+    "description": "Codice catalogo: Ct-29"
+  },
+  {
+    "code": "Ct-30",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Beautifying Face Palette",
+    "variants": [],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-30.jpg",
+    "description": "Codice catalogo: Ct-30"
+  },
+  {
+    "code": "Ct-31",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "HOLLYWOOD INSTANT LOOK IN A PALETTE",
+    "variants": [
+      "Dreamy Bronzed",
+      "Pretty Glowing"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-31.jpg",
+    "description": "Codice catalogo: Ct-31"
+  },
+  {
+    "code": "Ct-32",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Skin Glow Bronzer",
+    "variants": [
+      "fair、medium"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-32.jpg",
+    "description": "Codice catalogo: Ct-32"
+  },
+  {
+    "code": "Ct-33",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Lip Plumper 5.5ml",
+    "variants": [
+      "fair-medium",
+      "medium-deep"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-33.jpg",
+    "description": "Codice catalogo: Ct-33"
+  },
+  {
+    "code": "Ct-34",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Magic Cleanser 120ml",
+    "variants": [
+      "120ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-34.jpg",
+    "description": "Codice catalogo: Ct-34"
+  },
+  {
+    "code": "Ct-35",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "SPF50+ UV Primer 60ml",
+    "variants": [
+      "60ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-35.jpg",
+    "description": "Codice catalogo: Ct-35"
+  },
+  {
+    "code": "Ct-36",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Magic Water Cream 50ml",
+    "variants": [
+      "50ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-36.jpg",
+    "description": "Codice catalogo: Ct-36"
+  },
+  {
+    "code": "Ct-37",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Magic Water Cream",
+    "variants": [
+      "50ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-37.jpg",
+    "description": "Codice catalogo: Ct-37"
+  },
+  {
+    "code": "Ct-38",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Facial Oil",
+    "variants": [
+      "30ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-38.jpg",
+    "description": "Codice catalogo: Ct-38"
+  },
+  {
+    "code": "Ct-39",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Magic Serum",
+    "variants": [
+      "30ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-39.jpg",
+    "description": "Codice catalogo: Ct-39"
+  },
+  {
+    "code": "Ct-40",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "Makeup Remover for eyes and lips",
+    "variants": [
+      "120ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-40.jpg",
+    "description": "Codice catalogo: Ct-40"
+  },
+  {
+    "code": "Ct-41",
+    "category": "cosmetici",
+    "brand": "Charlotte Tilbury",
+    "name": "mascara",
+    "variants": [
+      "10ml"
+    ],
+    "image_path": "/assets/images/catalog/charlotte-tilbury/ct-41.jpg",
+    "description": "Codice catalogo: Ct-41"
+  },
+  {
+    "code": "Hu-1",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Easy Bake Setting Powder 20g",
+    "variants": [
+      "Matcha Milk/POUND",
+      "CAKE/ CUPCAKE/PEACH",
+      "PIE/ SUGAR COOKIE/UBE",
+      "BIRTHDAY/CHERRY",
+      "BLOSSOM/BANANA",
+      "BREAD/KUNAFA /BLONDIE"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-1.jpg",
+    "description": "Codice catalogo: Hu-1"
+  },
+  {
+    "code": "Hu-2",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Baby Bake Mini Setting Powder with Puff 6g",
+    "variants": [
+      "cupcake",
+      "cherry blossom cake",
+      "pound cake",
+      "banana bread",
+      "sugar cookie",
+      "peach pie"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-2.jpg",
+    "description": "Codice catalogo: Hu-2"
+  },
+  {
+    "code": "Hu-3",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "2 in 1 Easy Bake Duo Loose Powder 2*6.5g",
+    "variants": [
+      "1-Cherry peach",
+      "2-Pink pumpkin"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-3.jpg",
+    "description": "Codice catalogo: Hu-3"
+  },
+  {
+    "code": "Hu-4",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "FAUX FILLER JELLY OIL 3.9ml",
+    "variants": [
+      "JUICY TOASTY BROWN",
+      "JUICY PEACH",
+      "JUICY PINK LADY",
+      "JUICY GOJI",
+      "JUICY ROSE",
+      "JUICY CHERRY"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-4.jpg",
+    "description": "Codice catalogo: Hu-4"
+  },
+  {
+    "code": "Hu-5",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Non-staining Matte Lip Gloss 3.9ml",
+    "variants": [
+      "301--312"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-5.jpg",
+    "description": "Codice catalogo: Hu-5"
+  },
+  {
+    "code": "Hu-6",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "High-Shine Lip Gloss 3.9ml",
+    "variants": [
+      "HONEY",
+      "FOXY",
+      "BOMBSHELL",
+      "POSH",
+      "COCO",
+      "SUGAR BABY"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-6.jpg",
+    "description": "Codice catalogo: Hu-6"
+  },
+  {
+    "code": "Hu-7",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Lip Contour Stain Lip Tint 1ml",
+    "variants": [
+      "Rich Brown",
+      "Cinnamon",
+      "Cherry Red",
+      "Warm Brown",
+      "Toasty Brown",
+      "Rosewood",
+      "Baby Pink",
+      "Soft Nude"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-7.jpg",
+    "description": "Codice catalogo: Hu-7"
+  },
+  {
+    "code": "Hu-8",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Easy Bake Setting Spray 100ml",
+    "variants": [
+      "100ml Enjoy bake"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-8.jpg",
+    "description": "Codice catalogo: Hu-8"
+  },
+  {
+    "code": "Hu-9",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Blush Filter Soft Glow Liquid Blush 4.5ml",
+    "variants": [
+      "Strawberry Cream",
+      "Cotton Candy",
+      "Bubble Gum",
+      "Ube Cream",
+      "Intense Guava",
+      "Sunset Lychee",
+      "Peach Sorbet"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-9.jpg",
+    "description": "Codice catalogo: Hu-9"
+  },
+  {
+    "code": "Hu-10",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "FAUX filler jelly oil&blush filter",
+    "variants": [
+      "strawberry cream",
+      "juicy goji"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-10.jpg",
+    "description": "Codice catalogo: Hu-10"
+  },
+  {
+    "code": "Hu-11",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Color Corrector 9ml",
+    "variants": [
+      "Cherry Light",
+      "Peach Light",
+      "Whipped cream 0.1G",
+      "Honey 1.7B"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-11.jpg",
+    "description": "Codice catalogo: Hu-11"
+  },
+  {
+    "code": "Hu-12",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "STAY BLUR Foundation 50ml",
+    "variants": [
+      "S210",
+      "S220",
+      "S225"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-12.jpg",
+    "description": "Codice catalogo: Hu-12"
+  },
+  {
+    "code": "Hu-13",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Easy blur primer",
+    "variants": [],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-13.jpg",
+    "description": "Codice catalogo: Hu-13"
+  },
+  {
+    "code": "Hu-14",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "EASY BLUR Foundation 30ml",
+    "variants": [
+      "#100B #110N",
+      "#120B #140G",
+      "#150G #200B",
+      "#210B"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-14.jpg",
+    "description": "Codice catalogo: Hu-14"
+  },
+  {
+    "code": "Hu-15",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "FauxFilter Luminous Matte Buildable Coverage Foundation 35ml",
+    "variants": [
+      "#110N",
+      "#120B",
+      "#140G",
+      "#150G"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-15.jpg",
+    "description": "Codice catalogo: Hu-15"
+  },
+  {
+    "code": "Hu-16",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "BLUSH LIGHTERS PALETTE",
+    "variants": [
+      "ROSE BERRY",
+      "TOASTY PEACH",
+      "BABY PINK"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-16.jpg",
+    "description": "Codice catalogo: Hu-16"
+  },
+  {
+    "code": "Hu-17",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "EASY BAKE PRESSED POWDER",
+    "variants": [
+      "Sugar Cookie Translucent",
+      "Cherry Blossom Cake",
+      "Pound Cake",
+      "Peach Cupcake",
+      "Banana Bread",
+      "Kunafa Blondie",
+      "Cinnamon Bun",
+      "Coco Truffle"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-17.jpg",
+    "description": "Codice catalogo: Hu-17"
+  },
+  {
+    "code": "Hu-18",
+    "category": "cosmetici",
+    "brand": "Huda Beauty",
+    "name": "Eyeshadow",
+    "variants": [
+      "EM POWER ED"
+    ],
+    "image_path": "/assets/images/catalog/huda-beauty/hu-18.jpg",
+    "description": "Codice catalogo: Hu-18"
+  },
+  {
+    "code": "To-1",
+    "category": "cosmetici",
+    "brand": "Too Faced",
+    "name": "concealer 13.5ml",
+    "variants": [
+      "Warm Beige",
+      "Snow",
+      "Warm Sand",
+      "Sand",
+      "Vanilla",
+      "Golden Beige",
+      "Latte",
+      "Almond",
+      "Nude",
+      "Honey",
+      "Porcelain",
+      "light beige",
+      "Natural Beige",
+      "Swam"
+    ],
+    "image_path": "/assets/images/catalog/too-faced/to-1.jpg",
+    "description": "Codice catalogo: To-1"
+  },
+  {
+    "code": "To-2",
+    "category": "cosmetici",
+    "brand": "Too Faced",
+    "name": "mascara 8ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/too-faced/to-2.jpg",
+    "description": "Codice catalogo: To-2"
+  },
+  {
+    "code": "Pa-1",
+    "category": "cosmetici",
+    "brand": "Patrick Ta",
+    "name": "PATRICK TA Major Dimension Essential Artistry Edit Eyeshadow Palette",
+    "variants": [
+      "Light",
+      "Medium",
+      "Deep"
+    ],
+    "image_path": "/assets/images/catalog/patrick-ta/pa-1.jpg",
+    "description": "Codice catalogo: Pa-1"
+  },
+  {
+    "code": "Pa-2",
+    "category": "cosmetici",
+    "brand": "Patrick Ta",
+    "name": "PATRICK TA Major Beauty Headlines Double Take Crème & Powder Blush Duo pre-order",
+    "variants": [
+      "01 S h eSThatGirl",
+      "02 She’s the moment",
+      "03 ShesaDoll",
+      "04 ShesGiving",
+      "05 Justenough",
+      "06 SHEsFLUSHED.",
+      "07 SHESVIBRANT",
+      "08 SHesBIUShing",
+      "09 ShesWanted",
+      "10 SheLeftMeonRed",
+      "11. sheGoesToTheGym",
+      "12 Shesseductive",
+      "13 NotTooMuch",
+      "14 shessoLA"
+    ],
+    "image_path": "/assets/images/catalog/patrick-ta/pa-2.jpg",
+    "description": "Codice catalogo: Pa-2"
+  },
+  {
+    "code": "Pa-3",
+    "category": "cosmetici",
+    "brand": "Patrick Ta",
+    "name": "PATRICK TA highlight",
+    "variants": [
+      "SUGAR",
+      "MY LOVE",
+      "BABY"
+    ],
+    "image_path": "/assets/images/catalog/patrick-ta/pa-3.jpg",
+    "description": "Codice catalogo: Pa-3"
+  },
+  {
+    "code": "os-1",
+    "category": "cosmetici",
+    "brand": "One/Size",
+    "name": "Waterproof Setting Spray 143ml",
+    "variants": [
+      "143ml"
+    ],
+    "image_path": "/assets/images/catalog/one-size/os-1.jpg",
+    "description": "Codice catalogo: os-1"
+  },
+  {
+    "code": "os-2",
+    "category": "cosmetici",
+    "brand": "One/Size",
+    "name": "Mini Setting Spray 46ml",
+    "variants": [
+      "46ml"
+    ],
+    "image_path": "/assets/images/catalog/one-size/os-2.jpg",
+    "description": "Codice catalogo: os-2"
+  },
+  {
+    "code": "os-3",
+    "category": "cosmetici",
+    "brand": "One/Size",
+    "name": "Setting Powder 34.5g",
+    "variants": [
+      "Translucent",
+      "Ultra Peach",
+      "Ultra Pink",
+      "Rich Peach",
+      "Dark/Deep",
+      "Sweet Honey"
+    ],
+    "image_path": "/assets/images/catalog/one-size/os-3.jpg",
+    "description": "Codice catalogo: os-3"
+  },
+  {
+    "code": "os-4",
+    "category": "cosmetici",
+    "brand": "One/Size",
+    "name": "oil sucker 30ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/one-size/os-4.jpg",
+    "description": "Codice catalogo: os-4"
+  },
+  {
+    "code": "os-5",
+    "category": "cosmetici",
+    "brand": "One/Size",
+    "name": "ONE/SIZE Secure The Sweat",
+    "variants": [],
+    "image_path": "/assets/images/catalog/one-size/os-5.jpg",
+    "description": "Codice catalogo: os-5"
+  },
+  {
+    "code": "Di-1",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lipstick with pendant",
+    "variants": [
+      "101#",
+      "102#",
+      "103#",
+      "104#",
+      "105#"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-1.jpg",
+    "description": "Codice catalogo: Di-1"
+  },
+  {
+    "code": "Di-2",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lip Gloss 6ml",
+    "variants": [
+      "total 28 colors",
+      "001 003 004",
+      "006 007 010",
+      "012 015 018",
+      "019 020 021",
+      "026 027 028",
+      "029 037 038",
+      "039 053 061",
+      "062 063 065",
+      "084",
+      "203 204 206"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-2.jpg",
+    "description": "Codice catalogo: Di-2"
+  },
+  {
+    "code": "Di-3",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "lip glow oil",
+    "variants": [
+      "total 8 colors",
+      "001 004 007",
+      "012 015 020",
+      "030 031"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-3.jpg",
+    "description": "Codice catalogo: Di-3"
+  },
+  {
+    "code": "Di-4",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "new lip glow oil",
+    "variants": [
+      "total 16 colors",
+      "001 006 007 012",
+      "015 041 046 072",
+      "074 077 081 085",
+      "086 087 088 104"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-4.jpg",
+    "description": "Codice catalogo: Di-4"
+  },
+  {
+    "code": "Di-5",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "forever blush soft fliter 11ml",
+    "variants": [
+      "total 5 colors",
+      "01#Petal",
+      "02#Peony",
+      "03#Bloom",
+      "04#Daisy",
+      "05#Li"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-5.jpg",
+    "description": "Codice catalogo: Di-5"
+  },
+  {
+    "code": "Di-6",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Dior Addict Lip Glow-new version",
+    "variants": [
+      "001 pink",
+      "004",
+      "012",
+      "074",
+      "078"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-6.jpg",
+    "description": "Codice catalogo: Di-6"
+  },
+  {
+    "code": "Di-7",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "lip highlighter stick",
+    "variants": [
+      "total 7 colors",
+      "001 pink",
+      "006 Berry",
+      "012 Rosewood",
+      "015 Cherry",
+      "063 Pink lilac",
+      "077 Candy",
+      "103 Toffee"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-7.jpg",
+    "description": "Codice catalogo: Di-7"
+  },
+  {
+    "code": "Di-8",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lip Gloss & Lip Oil Set (2 pieces)",
+    "variants": [
+      "total 1 color",
+      "001 pink"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-8.jpg",
+    "description": "Codice catalogo: Di-8"
+  },
+  {
+    "code": "Di-9",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lip Oil Set (2 pieces)",
+    "variants": [
+      "total 1 color",
+      "001+004"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-9.jpg",
+    "description": "Codice catalogo: Di-9"
+  },
+  {
+    "code": "Di-10",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lip Gloss Set (3 pieces)",
+    "variants": [
+      "total 2 colors",
+      "1-heart pattern",
+      "2-black color"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-10.jpg",
+    "description": "Codice catalogo: Di-10"
+  },
+  {
+    "code": "Di-11",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Lip Care Set (3 pieces)",
+    "variants": [
+      "Lip Glow 001 Pink, 3.2 g.",
+      "Lip Glow Oil, 001 Pink, 6",
+      "ml.",
+      "Lip Maximizer 001 Pink, 2",
+      "ml"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-11.jpg",
+    "description": "Codice catalogo: Di-11"
+  },
+  {
+    "code": "Di-12",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "lip gloss & blush set2",
+    "variants": [],
+    "image_path": "/assets/images/catalog/dior/di-12.jpg",
+    "description": "Codice catalogo: Di-12"
+  },
+  {
+    "code": "Di-13",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "butterfly set2",
+    "variants": [
+      "pink palette 001",
+      "lipgloss 001",
+      "hand bag"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-13.jpg",
+    "description": "Codice catalogo: Di-13"
+  },
+  {
+    "code": "Di-14",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Diorshow 5 Couleurs Eyeshadow Palette",
+    "variants": [
+      "429",
+      "689",
+      "743",
+      "279",
+      "343",
+      "649"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-14.jpg",
+    "description": "Codice catalogo: Di-14"
+  },
+  {
+    "code": "Di-15",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "4c palette-normal style",
+    "variants": [
+      "total 4 colors",
+      "001",
+      "002",
+      "003",
+      "004"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-15.jpg",
+    "description": "Codice catalogo: Di-15"
+  },
+  {
+    "code": "Di-16",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "4c palette- 3D style -3D",
+    "variants": [
+      "total 4 colors",
+      "001",
+      "002",
+      "003",
+      "004"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-16.jpg",
+    "description": "Codice catalogo: Di-16"
+  },
+  {
+    "code": "Di-17",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "1c palette",
+    "variants": [
+      "total 7 colors",
+      "001 pink",
+      "006 Berry",
+      "012 Rosewood",
+      "015 Cherry",
+      "063 Pink lilac",
+      "077 Candy",
+      "103 Toffee"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-17.jpg",
+    "description": "Codice catalogo: Di-17"
+  },
+  {
+    "code": "Di-18",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "single-color blush",
+    "variants": [
+      "001 004 006",
+      "012 015 020"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-18.jpg",
+    "description": "Codice catalogo: Di-18"
+  },
+  {
+    "code": "Di-19",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "1c palette with brush",
+    "variants": [
+      "total 9 colors",
+      "211# 219#",
+      "343# 601#",
+      "621#",
+      "060 250",
+      "520 999"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-19.jpg",
+    "description": "Codice catalogo: Di-19"
+  },
+  {
+    "code": "Di-20",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "2c palette",
+    "variants": [
+      "total 4 colors",
+      "100# 257#",
+      "287# 457#"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-20.jpg",
+    "description": "Codice catalogo: Di-20"
+  },
+  {
+    "code": "Di-21",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Mascara",
+    "variants": [],
+    "image_path": "/assets/images/catalog/dior/di-21.jpg",
+    "description": "Codice catalogo: Di-21"
+  },
+  {
+    "code": "Di-22",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "lip stick set2",
+    "variants": [],
+    "image_path": "/assets/images/catalog/dior/di-22.jpg",
+    "description": "Codice catalogo: Di-22"
+  },
+  {
+    "code": "Di-23",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "lip stick set3",
+    "variants": [
+      "740#",
+      "527#",
+      "727#"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-23.jpg",
+    "description": "Codice catalogo: Di-23"
+  },
+  {
+    "code": "Di-24",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Dior bronzer",
+    "variants": [
+      "02#Light-Naturel",
+      "O3#Soft-Nature",
+      "04#Warm",
+      "05#lntense-Nature"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-24.jpg",
+    "description": "Codice catalogo: Di-24"
+  },
+  {
+    "code": "Di-25",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "Multifunctional Cream 50ml",
+    "variants": [],
+    "image_path": "/assets/images/catalog/dior/di-25.jpg",
+    "description": "Codice catalogo: Di-25"
+  },
+  {
+    "code": "Di-26",
+    "category": "cosmetici",
+    "brand": "Dior",
+    "name": "cushion foundation 14g",
+    "variants": [
+      "0N#",
+      "1N#",
+      "2N#"
+    ],
+    "image_path": "/assets/images/catalog/dior/di-26.jpg",
+    "description": "Codice catalogo: Di-26"
+  },
+  {
+    "code": "YSL-1",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "powder",
+    "variants": [
+      "total 6 colors",
+      "06# 24# 42#",
+      "44# 69# 87#"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-1.jpg",
+    "description": "Codice catalogo: YSL-1"
+  },
+  {
+    "code": "YSL-2",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "highlighter stick",
+    "variants": [
+      "total 8 colors",
+      "1B# 3B#",
+      "5B# 6B#",
+      "8B# 9B#",
+      "10B# 44B#"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-2.jpg",
+    "description": "Codice catalogo: YSL-2"
+  },
+  {
+    "code": "YSL-3",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "Lip oil",
+    "variants": [
+      "total 8 colors",
+      "01# 02#",
+      "03# 04#",
+      "05# 06#",
+      "07# 08#"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-3.jpg",
+    "description": "Codice catalogo: YSL-3"
+  },
+  {
+    "code": "YSL-4",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "Bronzer",
+    "variants": [
+      "01",
+      "02"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-4.jpg",
+    "description": "Codice catalogo: YSL-4"
+  },
+  {
+    "code": "YSL-5",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "Lipstick & Blush 2-in-1 Set",
+    "variants": [
+      "YSL LOVE SHINE",
+      "MAKE ME BLUSH"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-5.jpg",
+    "description": "Codice catalogo: YSL-5"
+  },
+  {
+    "code": "YSL-6",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "YSL COUTURE MINI CLUTCH 2-piece set",
+    "variants": [
+      "100# Stora Dolls",
+      "400# Babylone Roses"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-6.jpg",
+    "description": "Codice catalogo: YSL-6"
+  },
+  {
+    "code": "YSL-7",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "YSL Couture Eye Palette Nude Hours Eyeshadow Limited Edition",
+    "variants": [],
+    "image_path": "/assets/images/catalog/ysl/ysl-7.jpg",
+    "description": "Codice catalogo: YSL-7"
+  },
+  {
+    "code": "YSL-8",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "Limited-edition Golden Oasis Face Palette In Multi",
+    "variants": [
+      "Golden Oasis"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-8.jpg",
+    "description": "Codice catalogo: YSL-8"
+  },
+  {
+    "code": "YSL-9",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "YSL Four-Color Facial Makeup Palette",
+    "variants": [
+      "hight quality"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-9.jpg",
+    "description": "Codice catalogo: YSL-9"
+  },
+  {
+    "code": "YSL-9-B",
+    "category": "cosmetici",
+    "brand": "YSL",
+    "name": "YSL Four-Color Facial Makeup Palette",
+    "variants": [
+      "normal quality"
+    ],
+    "image_path": "/assets/images/catalog/ysl/ysl-9-b.jpg",
+    "description": "Codice catalogo: YSL-9-B"
+  },
+  {
+    "code": "Ch-1",
+    "category": "cosmetici",
+    "brand": "Chanel",
+    "name": "Bronzer",
+    "variants": [
+      "382",
+      "384",
+      "386"
+    ],
+    "image_path": "/assets/images/catalog/chanel/ch-1.jpg",
+    "description": "Codice catalogo: Ch-1"
+  },
+  {
+    "code": "Hou-1",
+    "category": "cosmetici",
+    "brand": "Hourglass",
+    "name": "Vanish™ Airbrush Concealer",
+    "variants": [
+      "Cotton",
+      "Birch",
+      "Creme",
+      "Oat",
+      "Silk",
+      "Cedar",
+      "Fawn",
+      "Pearl"
+    ],
+    "image_path": "/assets/images/catalog/hourglass/hou-1.jpg",
+    "description": "Codice catalogo: Hou-1"
+  },
+  {
+    "code": "Hou-2",
+    "category": "cosmetici",
+    "brand": "Hourglass",
+    "name": "Ambient Lighting Edit Flushed Edit Face Palette",
+    "variants": [
+      "Ethereal Glow",
+      "Luminous flush",
+      "Sublime flush",
+      "Mood Exposure",
+      "AtNight",
+      "Diffused heat"
+    ],
+    "image_path": "/assets/images/catalog/hourglass/hou-2.jpg",
+    "description": "Codice catalogo: Hou-2"
+  },
+  {
+    "code": "Hou-3",
+    "category": "cosmetici",
+    "brand": "Hourglass",
+    "name": "2025 Limited Edition Ambient Lighting Palette",
+    "variants": [
+      "Diffused heat",
+      "Horse",
+      "Swan",
+      "Deer",
+      "Fox"
+    ],
+    "image_path": "/assets/images/catalog/hourglass/hou-3.jpg",
+    "description": "Codice catalogo: Hou-3"
+  },
+  {
+    "code": "Hou-4",
+    "category": "abbigliamento",
+    "brand": "Hourglass",
+    "name": "No. 15 Blush Brush",
+    "variants": [],
+    "image_path": "/assets/images/catalog/hourglass/hou-4.jpg",
+    "description": "Codice catalogo: Hou-4"
+  },
+  {
+    "code": "Hou-5",
+    "category": "abbigliamento",
+    "brand": "Hourglass",
+    "name": "Ambient Soft Glow Foundation Brush",
+    "variants": [],
+    "image_path": "/assets/images/catalog/hourglass/hou-5.jpg",
+    "description": "Codice catalogo: Hou-5"
+  },
+  {
+    "code": "Hou-6",
+    "category": "abbigliamento",
+    "brand": "Hourglass",
+    "name": "Powder brush",
+    "variants": [],
+    "image_path": "/assets/images/catalog/hourglass/hou-6.jpg",
+    "description": "Codice catalogo: Hou-6"
+  },
+  {
+    "code": "Hou-7",
+    "category": "abbigliamento",
+    "brand": "Hourglass",
+    "name": "Concealer Brush",
+    "variants": [],
+    "image_path": "/assets/images/catalog/hourglass/hou-7.jpg",
+    "description": "Codice catalogo: Hou-7"
+  },
+  {
+    "code": "Hou-8",
+    "category": "abbigliamento",
+    "brand": "Hourglass",
+    "name": "Complexion Essentials Dragon Brush Set",
+    "variants": [],
+    "image_path": "/assets/images/catalog/hourglass/hou-8.jpg",
+    "description": "Codice catalogo: Hou-8"
+  }
+]

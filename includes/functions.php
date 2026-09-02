@@ -2,9 +2,9 @@
 require_once __DIR__ . '/auth.php';
 
 const CATEGORIES = [
-    'cosmetici' => 'Cosmetici',
-    'elettronica' => 'Elettronica & Audio',
-    'abbigliamento' => 'Abbigliamento, Scarpe & Borse',
+    'cosmetici' => 'Beauty e Cosmetici',
+    'elettronica' => 'Tech e Audio',
+    'abbigliamento' => 'Abbigliamento, Borse e Scarpe',
 ];
 
 function h(?string $value): string
@@ -15,6 +15,11 @@ function h(?string $value): string
 function category_label(string $slug): string
 {
     return CATEGORIES[$slug] ?? $slug;
+}
+
+function brand_anchor(string $brand): string
+{
+    return 'brand-' . substr(hash('sha256', $brand), 0, 12);
 }
 
 function format_price(?float $price): string
@@ -161,8 +166,14 @@ function delete_product_image(?string $imagePath): void
     }
 }
 
+function url(string $path = ''): string
+{
+    $base = rtrim(BASE_URL, '/');
+    return $base . '/' . ltrim($path, '/');
+}
+
 function redirect(string $path): void
 {
-    header('Location: ' . $path);
+    header('Location: ' . url($path));
     exit;
 }

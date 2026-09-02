@@ -42,20 +42,20 @@ require __DIR__ . '/../includes/admin-header.php';
 
 <div class="admin-toolbar">
   <h1>Prodotti</h1>
-  <a href="/admin/product-form.php" class="btn btn-primary">+ Nuovo prodotto</a>
+  <a href="<?= url('admin/product-form.php') ?>" class="btn btn-primary">+ Nuovo prodotto</a>
 </div>
 
 <div class="admin-filters">
-  <a href="/admin/dashboard.php" class="filter-pill <?= $categoryFilter === '' ? 'active' : '' ?>">Tutte</a>
+  <a href="<?= url('admin/dashboard.php') ?>" class="filter-pill <?= $categoryFilter === '' ? 'active' : '' ?>">Tutte</a>
   <?php foreach (CATEGORIES as $slug => $label): ?>
-    <a href="/admin/dashboard.php?category=<?= h($slug) ?>" class="filter-pill <?= $categoryFilter === $slug ? 'active' : '' ?>"><?= h($label) ?></a>
+    <a href="<?= url('admin/dashboard.php?category=' . $slug) ?>" class="filter-pill <?= $categoryFilter === $slug ? 'active' : '' ?>"><?= h($label) ?></a>
   <?php endforeach; ?>
 </div>
 
 <?php if (empty($products)): ?>
-  <p class="empty-state">Nessun prodotto trovato. <a href="/admin/product-form.php">Aggiungine uno</a>.</p>
+  <p class="empty-state">Nessun prodotto trovato. <a href="<?= url('admin/product-form.php') ?>">Aggiungine uno</a>.</p>
 <?php else: ?>
-<div class="admin-table-wrap">
+<div class="admin-table-wrap" id="productsTableWrap">
   <table class="admin-table">
     <thead>
       <tr>
@@ -73,7 +73,7 @@ require __DIR__ . '/../includes/admin-header.php';
         <tr>
           <td class="col-thumb">
             <?php if (!empty($product['image_path'])): ?>
-              <img src="<?= h($product['image_path']) ?>" alt="" class="table-thumb">
+              <img src="<?= h(url($product['image_path'])) ?>" alt="" class="table-thumb">
             <?php else: ?>
               <div class="table-thumb img-placeholder">BD</div>
             <?php endif; ?>
@@ -84,8 +84,8 @@ require __DIR__ . '/../includes/admin-header.php';
           <td><?= $product['price'] !== null ? format_price((float)$product['price']) : '&mdash;' ?></td>
           <td><?= render_product_badges($product, $activeOfferProductIds) ?></td>
           <td class="col-actions">
-            <a href="/admin/product-form.php?id=<?= (int)$product['id'] ?>" class="btn btn-small">Modifica</a>
-            <form method="post" class="inline-form" onsubmit="return confirm('Eliminare definitivamente questo prodotto?');">
+            <a href="<?= url('admin/product-form.php?id=' . (int)$product['id']) ?>" class="btn btn-small">Modifica</a>
+            <form method="post" class="inline-form delete-product-form">
               <?= csrf_field() ?>
               <input type="hidden" name="action" value="delete">
               <input type="hidden" name="id" value="<?= (int)$product['id'] ?>">

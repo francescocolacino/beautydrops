@@ -1,3 +1,5 @@
 config.php
 /assets/images/products/*
 !/assets/images/products/.gitkeep
+__pycache__/
+*.py[cod]

@@ -34,14 +34,22 @@ $pageTitle = 'Accesso Admin · ' . SITE_NAME;
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= h($pageTitle) ?></title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23c8a862'/><text x='50' y='66' font-size='48' font-family='Georgia,serif' fill='%23fff' text-anchor='middle'>B</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
 </head>
 <body class="admin-body login-body">
+  <div class="login-blob login-blob-1" aria-hidden="true"></div>
+  <div class="login-blob login-blob-2" aria-hidden="true"></div>
   <div class="login-card">
-    <a href="/index.php" class="brand login-brand">
-      <span class="brand-mark">BD</span>
-      <span class="brand-word">BeautyDrops</span>
+    <a href="<?= url('index.php') ?>" class="brand login-brand">
+      <img
+        src="<?= url('assets/images/beautydrops-logo.png') ?>"
+        class="brand-logo login-logo"
+        width="1942"
+        height="809"
+        alt="Beauty Drops"
+      >
     </a>
     <h1>Accesso Admin</h1>
     <?php if ($error): ?>
@@ -49,13 +57,17 @@ $pageTitle = 'Accesso Admin · ' . SITE_NAME;
     <?php endif; ?>
     <form method="post" novalidate>
       <?= csrf_field() ?>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required autofocus value="<?= h($_POST['email'] ?? '') ?>">
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autofocus value="<?= h($_POST['email'] ?? '') ?>">
+      </div>
+      <div class="form-row">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
       <button type="submit" class="btn btn-primary btn-block">Accedi</button>
     </form>
-    <a href="/index.php" class="back-link">&larr; Torna al sito</a>
+    <a href="<?= url('index.php') ?>" class="back-link">&larr; Torna al sito</a>
   </div>
 </body>
 </html>

@@ -122,7 +122,7 @@ require __DIR__ . '/../includes/admin-header.php';
 
 <div class="admin-toolbar">
   <h1><?= $id ? 'Modifica prodotto' : 'Nuovo prodotto' ?></h1>
-  <a href="/admin/dashboard.php" class="btn btn-small">&larr; Torna all'elenco</a>
+  <a href="<?= url('admin/dashboard.php') ?>" class="btn btn-small">&larr; Torna all'elenco</a>
 </div>
 
 <?php if (!empty($errors)): ?>
@@ -161,7 +161,7 @@ require __DIR__ . '/../includes/admin-header.php';
   <div class="form-row">
     <label for="image">Immagine prodotto</label>
     <?php if (!empty($formData['image_path'])): ?>
-      <img src="<?= h($formData['image_path']) ?>" alt="" class="current-image-preview">
+      <img src="<?= h(url($formData['image_path'])) ?>" alt="" class="current-image-preview">
     <?php endif; ?>
     <input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp">
   </div>

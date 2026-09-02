@@ -31,11 +31,11 @@ require __DIR__ . '/../includes/admin-header.php';
 
 <div class="admin-toolbar">
   <h1>Offerte</h1>
-  <a href="/admin/offer-form.php" class="btn btn-primary">+ Nuova offerta</a>
+  <a href="<?= url('admin/offer-form.php') ?>" class="btn btn-primary">+ Nuova offerta</a>
 </div>
 
 <?php if (empty($offers)): ?>
-  <p class="empty-state">Nessuna offerta creata. <a href="/admin/offer-form.php">Creane una</a>.</p>
+  <p class="empty-state">Nessuna offerta creata. <a href="<?= url('admin/offer-form.php') ?>">Creane una</a>.</p>
 <?php else: ?>
 <div class="admin-table-wrap">
   <table class="admin-table">
@@ -65,7 +65,7 @@ require __DIR__ . '/../includes/admin-header.php';
             </form>
           </td>
           <td class="col-actions">
-            <a href="/admin/offer-form.php?id=<?= (int)$offer['id'] ?>" class="btn btn-small">Modifica</a>
+            <a href="<?= url('admin/offer-form.php?id=' . (int)$offer['id']) ?>" class="btn btn-small">Modifica</a>
             <form method="post" class="inline-form" onsubmit="return confirm('Eliminare definitivamente questa offerta?');">
               <?= csrf_field() ?>
               <input type="hidden" name="action" value="delete">

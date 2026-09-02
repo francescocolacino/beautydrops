@@ -87,7 +87,7 @@ require __DIR__ . '/../includes/admin-header.php';
 
 <div class="admin-toolbar">
   <h1><?= $id ? 'Modifica offerta' : 'Nuova offerta' ?></h1>
-  <a href="/admin/offers.php" class="btn btn-small">&larr; Torna all'elenco</a>
+  <a href="<?= url('admin/offers.php') ?>" class="btn btn-small">&larr; Torna all'elenco</a>
 </div>
 
 <?php if (!empty($errors)): ?>
@@ -121,7 +121,7 @@ require __DIR__ . '/../includes/admin-header.php';
     <input type="search" id="offerProductSearch" placeholder="Cerca prodotto per nome o brand...">
     <div class="offer-product-list">
       <?php if (empty($allProducts)): ?>
-        <p class="empty-state">Nessun prodotto disponibile. <a href="/admin/product-form.php">Crea un prodotto</a> prima di aggiungere un'offerta.</p>
+        <p class="empty-state">Nessun prodotto disponibile. <a href="<?= url('admin/product-form.php') ?>">Crea un prodotto</a> prima di aggiungere un'offerta.</p>
       <?php endif; ?>
       <?php foreach ($allProducts as $p): ?>
         <label class="offer-product-item" data-search="<?= h(mb_strtolower($p['name'] . ' ' . $p['brand'])) ?>">

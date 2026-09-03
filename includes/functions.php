@@ -48,40 +48,45 @@ function h(?string $value): string
 }
 
 /**
- * Restituisce l'immagine principale del prodotto e le fotografie aggiuntive
- * configurate nel catalogo. Il collegamento usa il percorso dell'immagine
- * principale, che resta stabile anche quando prezzi e descrizioni vengono
- * aggiornati dal pannello amministrativo.
+ * Fotografie aggiuntive di un prodotto (oltre alla copertina), lette dal
+ * database — non dal filesystem: gli upload/eliminazioni fatti
+ * dall'admin devono sopravvivere ai redeploy del container.
+ *
+ * @return list<array{id:int,image_path:string}>
+ */
+function get_product_gallery_rows(PDO $pdo, int $productId): array
+{
+    $stmt = $pdo->prepare(
+        'SELECT id, image_path FROM product_gallery_images WHERE product_id = :product_id ORDER BY sort_order ASC, id ASC'
+    );
+    $stmt->execute(['product_id' => $productId]);
+    return $stmt->fetchAll();
+}
+
+/**
+ * Immagine di copertina + fotografie aggiuntive di un prodotto, nell'ordine
+ * in cui vanno mostrate nella galleria della pagina prodotto pubblica.
  *
  * @return list<string>
  */
-function product_gallery_images(?string $primaryImagePath): array
+function product_gallery_images(PDO $pdo, ?string $primaryImagePath, int $productId): array
 {
+    $images = [];
     $primaryImagePath = trim((string)$primaryImagePath);
-    if ($primaryImagePath === '') {
-        return [];
+    if ($primaryImagePath !== '') {
+        $images[] = $primaryImagePath;
     }
-
-    static $galleries = null;
-    if ($galleries === null) {
-        $galleryFile = __DIR__ . '/../data/product-galleries.json';
-        $decoded = is_file($galleryFile)
-            ? json_decode((string)file_get_contents($galleryFile), true)
-            : null;
-        $galleries = is_array($decoded) ? $decoded : [];
+    foreach (get_product_gallery_rows($pdo, $productId) as $row) {
+        $images[] = $row['image_path'];
     }
-
-    $images = [$primaryImagePath];
-    $additionalImages = $galleries[$primaryImagePath] ?? [];
-    if (is_array($additionalImages)) {
-        foreach ($additionalImages as $imagePath) {
-            if (is_string($imagePath) && trim($imagePath) !== '') {
-                $images[] = trim($imagePath);
-            }
-        }
-    }
-
     return array_values(array_unique($images));
+}
+
+function next_gallery_sort_order(PDO $pdo, int $productId): int
+{
+    $stmt = $pdo->prepare('SELECT COALESCE(MAX(sort_order), -1) + 1 FROM product_gallery_images WHERE product_id = :product_id');
+    $stmt->execute(['product_id' => $productId]);
+    return (int) $stmt->fetchColumn();
 }
 
 function category_label(string $slug): string

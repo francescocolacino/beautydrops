@@ -17,6 +17,58 @@ if ($id) {
 }
 
 $errors = [];
+
+// Azioni sulla galleria foto: form separati dal salvataggio prodotto
+// principale (riconosciuti dal campo "action", assente nel form principale).
+if ($id && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    csrf_verify();
+    $galleryAction = $_POST['action'];
+
+    if ($galleryAction === 'gallery_delete') {
+        $galleryImageId = (int)($_POST['gallery_image_id'] ?? 0);
+        $pdo->prepare('DELETE FROM product_gallery_images WHERE id = :gallery_id AND product_id = :product_id')
+            ->execute(['gallery_id' => $galleryImageId, 'product_id' => $id]);
+        redirect('/admin/product-form.php?id=' . $id);
+    }
+
+    if ($galleryAction === 'gallery_set_cover') {
+        $galleryImageId = (int)($_POST['gallery_image_id'] ?? 0);
+        $stmt = $pdo->prepare('SELECT image_path FROM product_gallery_images WHERE id = :gallery_id AND product_id = :product_id');
+        $stmt->execute(['gallery_id' => $galleryImageId, 'product_id' => $id]);
+        $newCover = $stmt->fetchColumn();
+
+        if ($newCover !== false) {
+            $oldCover = $product['image_path'] ?? null;
+            $pdo->beginTransaction();
+            $pdo->prepare('UPDATE products SET image_path = :new_cover WHERE id = :id')
+                ->execute(['new_cover' => $newCover, 'id' => $id]);
+            $pdo->prepare('DELETE FROM product_gallery_images WHERE id = :gallery_id')
+                ->execute(['gallery_id' => $galleryImageId]);
+            if (!empty($oldCover)) {
+                $pdo->prepare('INSERT INTO product_gallery_images (product_id, image_path, sort_order) VALUES (:product_id, :image_path, :sort_order)')
+                    ->execute(['product_id' => $id, 'image_path' => $oldCover, 'sort_order' => next_gallery_sort_order($pdo, $id)]);
+            }
+            $pdo->commit();
+        }
+        redirect('/admin/product-form.php?id=' . $id);
+    }
+
+    if ($galleryAction === 'gallery_upload') {
+        try {
+            $uploaded = upload_product_image($_FILES['gallery_image'] ?? []);
+            if ($uploaded === null) {
+                $errors[] = 'Seleziona un file da caricare.';
+            } else {
+                $pdo->prepare('INSERT INTO product_gallery_images (product_id, image_path, sort_order) VALUES (:product_id, :image_path, :sort_order)')
+                    ->execute(['product_id' => $id, 'image_path' => $uploaded, 'sort_order' => next_gallery_sort_order($pdo, $id)]);
+                redirect('/admin/product-form.php?id=' . $id);
+            }
+        } catch (RuntimeException $e) {
+            $errors[] = $e->getMessage();
+        }
+    }
+}
+
 $formData = $product ?: [
     'category' => 'cosmetici',
     'brand' => '',
@@ -30,7 +82,7 @@ $formData = $product ?: [
     'product_type' => null,
 ];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     csrf_verify();
 
     $formData['category'] = $_POST['category'] ?? '';
@@ -120,6 +172,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $variantsInputValue = $formData['variants_input'] ?? implode(', ', decode_variants($formData['variants'] ?? null));
 
+$galleryImages = $id ? get_product_gallery_rows($pdo, $id) : [];
+
 $pageTitle = ($id ? 'Modifica prodotto' : 'Nuovo prodotto') . ' · Admin';
 $activeNav = 'dashboard';
 require __DIR__ . '/../includes/admin-header.php';
@@ -174,11 +228,14 @@ require __DIR__ . '/../includes/admin-header.php';
   </div>
 
   <div class="form-row">
-    <label for="image">Immagine prodotto</label>
+    <label for="image">Immagine di copertina<?= $id ? ' (la foto principale mostrata nel catalogo)' : '' ?></label>
     <?php if (!empty($formData['image_path'])): ?>
       <img src="<?= h(url($formData['image_path'])) ?>" alt="" class="current-image-preview">
     <?php endif; ?>
     <input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp">
+    <?php if ($id): ?>
+      <p class="field-hint">Carica un file qui solo per sostituire la copertina attuale. Per aggiungere altre foto o cambiare quale usare come copertina, usa la Galleria foto qui sotto.</p>
+    <?php endif; ?>
   </div>
 
   <div class="form-row form-row-split">
@@ -204,5 +261,55 @@ require __DIR__ . '/../includes/admin-header.php';
 
   <button type="submit" class="btn btn-primary"><?= $id ? 'Salva modifiche' : 'Crea prodotto' ?></button>
 </form>
+
+<?php if ($id): ?>
+<section class="admin-gallery-section">
+  <h2>Galleria foto</h2>
+  <p class="field-hint">La copertina attuale è la prima foto qui sotto. Imposta un'altra foto come copertina, eliminane alcune o caricane di nuove.</p>
+
+  <div class="gallery-grid">
+    <?php if (!empty($formData['image_path'])): ?>
+      <figure class="gallery-item gallery-item-cover">
+        <img src="<?= h(url($formData['image_path'])) ?>" alt="Copertina attuale">
+        <figcaption>Copertina</figcaption>
+      </figure>
+    <?php endif; ?>
+
+    <?php foreach ($galleryImages as $galleryImage): ?>
+      <figure class="gallery-item">
+        <img src="<?= h(url($galleryImage['image_path'])) ?>" alt="">
+        <figcaption class="gallery-item-actions">
+          <form method="post" class="inline-form">
+            <?= csrf_field() ?>
+            <input type="hidden" name="action" value="gallery_set_cover">
+            <input type="hidden" name="gallery_image_id" value="<?= (int)$galleryImage['id'] ?>">
+            <button type="submit" class="btn btn-small">Imposta come copertina</button>
+          </form>
+          <form method="post" class="inline-form" onsubmit="return confirm('Rimuovere questa foto dalla galleria?');">
+            <?= csrf_field() ?>
+            <input type="hidden" name="action" value="gallery_delete">
+            <input type="hidden" name="gallery_image_id" value="<?= (int)$galleryImage['id'] ?>">
+            <button type="submit" class="btn btn-small btn-danger">Elimina</button>
+          </form>
+        </figcaption>
+      </figure>
+    <?php endforeach; ?>
+  </div>
+
+  <?php if (empty($galleryImages)): ?>
+    <p class="empty-state">Nessuna foto aggiuntiva oltre alla copertina.</p>
+  <?php endif; ?>
+
+  <form method="post" enctype="multipart/form-data" class="gallery-upload-form">
+    <?= csrf_field() ?>
+    <input type="hidden" name="action" value="gallery_upload">
+    <label for="gallery_image">Aggiungi una foto alla galleria</label>
+    <div class="gallery-upload-row">
+      <input type="file" id="gallery_image" name="gallery_image" accept="image/jpeg,image/png,image/webp" required>
+      <button type="submit" class="btn btn-small">Carica</button>
+    </div>
+  </form>
+</section>
+<?php endif; ?>
 
 <?php require __DIR__ . '/../includes/admin-footer.php'; ?>

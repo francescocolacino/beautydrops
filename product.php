@@ -22,7 +22,7 @@ $variants = decode_variants($product['variants']);
 $displayName = display_product_name($product['name'], $variants);
 $selectableVariants = selectable_variants($variants);
 $size = extract_product_size($product['name']);
-$productImages = product_gallery_images($product['image_path'] ?? null);
+$productImages = product_gallery_images($pdo, $product['image_path'] ?? null, (int)$product['id']);
 
 $stmt = $pdo->prepare(
     'SELECT * FROM products WHERE brand = :brand AND id != :id ORDER BY RANDOM() LIMIT 4'

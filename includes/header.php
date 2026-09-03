@@ -36,9 +36,30 @@ $activeSlug = $activeSlug ?? null;
       <?php endforeach; ?>
       <a href="<?= url('admin/login.php') ?>" class="admin-access-btn nav-only">Accesso Admin</a>
     </nav>
+    <button type="button" class="cart-button" id="cartButton" aria-label="Carrello">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.4l2.4 12.2a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21.5 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="cart-badge" id="cartBadge" hidden>0</span>
+    </button>
     <a href="<?= url('admin/login.php') ?>" class="admin-access-btn">Accesso Admin</a>
     <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<div class="cart-popup-overlay" id="cartPopupOverlay" hidden>
+  <div class="cart-popup" role="dialog" aria-modal="true" aria-label="Carrello">
+    <div class="cart-popup-header">
+      <h3>Il tuo carrello</h3>
+      <button type="button" class="cart-popup-close" id="cartPopupClose" aria-label="Chiudi">&times;</button>
+    </div>
+    <div class="cart-popup-items" id="cartPopupItems"></div>
+    <div class="cart-popup-footer">
+      <div class="cart-popup-total">
+        <span>Totale</span>
+        <span id="cartPopupTotal">€ 0,00</span>
+      </div>
+      <a href="<?= url('cart.php') ?>" class="btn btn-primary btn-block">Vai al carrello</a>
+    </div>
+  </div>
+</div>

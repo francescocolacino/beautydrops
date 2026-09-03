@@ -58,6 +58,32 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
+<section class="quantity-promo">
+  <div class="container">
+    <div class="quantity-promo-card" data-aos="fade-up">
+      <div class="quantity-promo-text">
+        <span class="eyebrow">Sconto quantità automatico</span>
+        <h2 class="section-title">Acquista di più, risparmia di più</h2>
+        <p>Scegli più pezzi della stessa referenza — anche in colori o varianti diversi — e lo sconto si applica da solo nel carrello, senza bisogno di codici.</p>
+      </div>
+      <div class="quantity-promo-tiers">
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">2 pezzi</span>
+          <span class="tier-percent">-5%</span>
+        </div>
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">3-4 pezzi</span>
+          <span class="tier-percent">-10%</span>
+        </div>
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">5+ pezzi</span>
+          <span class="tier-percent">-15%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php if (!empty($offers)): ?>
 <section class="offers-section">
   <div class="container">

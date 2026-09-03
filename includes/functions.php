@@ -92,6 +92,50 @@ function decode_variants(?string $json): array
     return is_array($decoded) ? $decoded : [];
 }
 
+/**
+ * Nome da mostrare al pubblico: se il prodotto ha una sola variante, viene
+ * assorbita nel titolo (es. "Lip Sleeping Mask — Berry") invece di essere
+ * proposta come scelta. Con 0 o 2+ varianti il nome resta invariato.
+ */
+function display_product_name(string $name, array $variants): string
+{
+    if (count($variants) === 1) {
+        return $name . ' — ' . $variants[0];
+    }
+    return $name;
+}
+
+/**
+ * Varianti da proporre come scelta al cliente: vuoto se il prodotto ne ha
+ * 0 (nessuna scelta necessaria) o 1 sola (già assorbita nel titolo).
+ */
+function selectable_variants(array $variants): array
+{
+    return count($variants) >= 2 ? $variants : [];
+}
+
+/**
+ * Sconto quantità per riga di carrello: 2 pezzi -5%, 3-4 pezzi -10%, 5+ pezzi -15%.
+ */
+function quantity_discount_percent(int $quantity): int
+{
+    if ($quantity >= 5) {
+        return 15;
+    }
+    if ($quantity >= 3) {
+        return 10;
+    }
+    if ($quantity >= 2) {
+        return 5;
+    }
+    return 0;
+}
+
+function generate_order_token(): string
+{
+    return bin2hex(random_bytes(20));
+}
+
 function encode_variants_from_input(string $commaSeparated): ?string
 {
     $parts = array_filter(array_map('trim', explode(',', $commaSeparated)), fn($v) => $v !== '');

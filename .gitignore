@@ -1,5 +1,8 @@
 config.php
 /assets/images/products/*
 !/assets/images/products/.gitkeep
+/assets/orders/*
+!/assets/orders/.gitkeep
+!/assets/orders/.htaccess
 __pycache__/
 *.py[cod]

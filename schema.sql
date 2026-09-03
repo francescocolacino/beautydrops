@@ -42,6 +42,36 @@ CREATE TABLE IF NOT EXISTS offer_products (
   FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  access_token VARCHAR(64) NOT NULL,
+  customer_first_name VARCHAR(100) NOT NULL,
+  customer_last_name VARCHAR(100) NOT NULL,
+  customer_email VARCHAR(150) NOT NULL,
+  subtotal DECIMAL(10,2) NOT NULL DEFAULT 0,
+  discount_total DECIMAL(10,2) NOT NULL DEFAULT 0,
+  total DECIMAL(10,2) NOT NULL DEFAULT 0,
+  has_price_on_request TINYINT(1) NOT NULL DEFAULT 0,
+  pdf_path VARCHAR(255) NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY idx_orders_token (access_token)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS order_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  order_id INT NOT NULL,
+  product_id INT NULL,
+  brand VARCHAR(100) NOT NULL,
+  name VARCHAR(150) NOT NULL,
+  variant VARCHAR(150) NULL,
+  quantity INT NOT NULL,
+  unit_price DECIMAL(10,2) NULL,
+  discount_percent INT NOT NULL DEFAULT 0,
+  line_total DECIMAL(10,2) NULL,
+  FOREIGN KEY (order_id) REFERENCES orders(id) ON DELETE CASCADE,
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 -- Admin di default: admin@beautydrops.it / beautydrops123
 -- IMPORTANTE: cambiare la password al primo accesso in produzione.
 INSERT INTO admins (email, password_hash) VALUES

@@ -32,6 +32,7 @@ $activeNav = $activeNav ?? '';
     <nav class="admin-nav">
       <a href="<?= url('admin/dashboard.php') ?>" class="<?= $activeNav === 'dashboard' ? 'active' : '' ?>">Prodotti</a>
       <a href="<?= url('admin/offers.php') ?>" class="<?= $activeNav === 'offers' ? 'active' : '' ?>">Offerte</a>
+      <a href="<?= url('admin/orders.php') ?>" class="<?= $activeNav === 'orders' ? 'active' : '' ?>">Ordini</a>
       <a href="<?= url('index.php') ?>" target="_blank" rel="noopener">Vedi sito</a>
       <a href="<?= url('admin/logout.php') ?>" class="logout-link">Esci</a>
     </nav>

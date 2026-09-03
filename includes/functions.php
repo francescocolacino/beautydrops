@@ -214,6 +214,14 @@ function get_offer_products(PDO $pdo, int $offerId): array
     return $stmt->fetchAll();
 }
 
+/**
+ * Estensioni eseguibili come PHP da negare tassativamente, a prescindere
+ * dal risultato dei controlli MIME/immagine: il server PHP integrato
+ * (`php -S`, usato in produzione su Railway) non applica le regole .htaccess
+ * che su Apache bloccavano l'esecuzione di script in questa cartella.
+ */
+const FORBIDDEN_UPLOAD_EXTENSIONS = ['php', 'php3', 'php4', 'php5', 'phtml', 'phar'];
+
 function upload_product_image(array $file): ?string
 {
     if (!isset($file['error']) || $file['error'] === UPLOAD_ERR_NO_FILE) {
@@ -226,21 +234,40 @@ function upload_product_image(array $file): ?string
         throw new RuntimeException('Il file supera la dimensione massima consentita (5MB).');
     }
 
+    $originalExtension = strtolower(pathinfo((string)($file['name'] ?? ''), PATHINFO_EXTENSION));
+    if (in_array($originalExtension, FORBIDDEN_UPLOAD_EXTENSIONS, true)) {
+        throw new RuntimeException('Formato immagine non supportato. Usa JPG, PNG o WEBP.');
+    }
+
     $allowed = [
         'image/jpeg' => 'jpg',
         'image/png' => 'png',
         'image/webp' => 'webp',
     ];
 
-    $mime = mime_content_type($file['tmp_name']);
-    if (!isset($allowed[$mime])) {
+    $finfo = finfo_open(FILEINFO_MIME_TYPE);
+    $mime = $finfo !== false ? finfo_file($finfo, $file['tmp_name']) : false;
+    if ($finfo !== false) {
+        finfo_close($finfo);
+    }
+    if ($mime === false || !isset($allowed[$mime])) {
         throw new RuntimeException('Formato immagine non supportato. Usa JPG, PNG o WEBP.');
+    }
+
+    // getimagesize() decodifica realmente l'intestazione dell'immagine: un
+    // file che superasse il controllo finfo ma non sia un'immagine valida
+    // (o il cui mime rilevato non coincide) viene comunque respinto.
+    $imageInfo = @getimagesize($file['tmp_name']);
+    if ($imageInfo === false || !isset($imageInfo['mime']) || $imageInfo['mime'] !== $mime) {
+        throw new RuntimeException('Il file non è un\'immagine valida.');
     }
 
     if (!is_dir(UPLOAD_DIR)) {
         mkdir(UPLOAD_DIR, 0755, true);
     }
 
+    // Nome file generato internamente: il nome fornito dall'utente non viene
+    // mai riutilizzato, solo l'estensione determinata dal mime verificato.
     $filename = uniqid('prod_', true) . '.' . $allowed[$mime];
     $destination = UPLOAD_DIR . $filename;
 

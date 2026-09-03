@@ -102,6 +102,35 @@ try {
             throw $e;
         }
     }
+
+    // Migrazione una tantum richiesta dopo l'aggiornamento dei prezzi online:
+    // elimina esclusivamente i prodotti che non hanno alcun prezzo assegnato.
+    // Il controllo avviene direttamente sul database di produzione, quindi i
+    // prezzi inseriti dall'admin online vengono rispettati.
+    $deleteMigrationName = 'delete-products-without-price-20260903';
+    $migrationCheck->execute(['name' => $deleteMigrationName]);
+
+    if (!$migrationCheck->fetchColumn()) {
+        $pdo->beginTransaction();
+        try {
+            $deleteProducts = $pdo->prepare('DELETE FROM products WHERE price IS NULL');
+            $deleteProducts->execute();
+            $deletedCount = $deleteProducts->rowCount();
+
+            $markDeleteMigration = $pdo->prepare(
+                'INSERT INTO data_migrations (name) VALUES (:name)'
+            );
+            $markDeleteMigration->execute(['name' => $deleteMigrationName]);
+            $pdo->commit();
+
+            echo "Prodotti senza prezzo eliminati: {$deletedCount}\n";
+        } catch (Throwable $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            throw $e;
+        }
+    }
 } catch (Throwable $e) {
     error_log('Seed del catalogo fallito: ' . $e->getMessage());
     fwrite(STDERR, "Errore durante l'importazione del catalogo iniziale.\n");

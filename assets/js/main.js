@@ -94,4 +94,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var productGalleryMain = document.querySelector('[data-product-gallery-main]');
+  var productGalleryThumbnails = document.querySelectorAll('[data-product-gallery-thumbnail]');
+  if (productGalleryMain && productGalleryThumbnails.length) {
+    productGalleryThumbnails.forEach(function (thumbnail) {
+      thumbnail.addEventListener('click', function () {
+        var imagePath = thumbnail.getAttribute('data-image');
+        if (!imagePath) return;
+
+        productGalleryMain.src = imagePath;
+        productGalleryThumbnails.forEach(function (item) {
+          var isSelected = item === thumbnail;
+          item.classList.toggle('active', isSelected);
+          item.setAttribute('aria-current', isSelected ? 'true' : 'false');
+        });
+      });
+    });
+  }
+
 });

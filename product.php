@@ -22,6 +22,7 @@ $variants = decode_variants($product['variants']);
 $displayName = display_product_name($product['name'], $variants);
 $selectableVariants = selectable_variants($variants);
 $size = extract_product_size($product['name']);
+$productImages = product_gallery_images($product['image_path'] ?? null);
 
 $stmt = $pdo->prepare(
     'SELECT * FROM products WHERE brand = :brand AND id != :id ORDER BY RANDOM() LIMIT 4'
@@ -52,12 +53,28 @@ require __DIR__ . '/includes/header.php';
     <div class="product-detail" data-aos="fade-up">
       <div class="product-gallery">
         <div class="product-gallery-main">
-          <?php if (!empty($product['image_path'])): ?>
-            <img src="<?= h(url($product['image_path'])) ?>" alt="<?= h($displayName) ?>">
+          <?php if (!empty($productImages)): ?>
+            <img src="<?= h(url($productImages[0])) ?>" alt="<?= h($displayName) ?>" data-product-gallery-main fetchpriority="high">
           <?php else: ?>
             <div class="img-placeholder">BD</div>
           <?php endif; ?>
         </div>
+        <?php if (count($productImages) > 1): ?>
+          <div class="product-gallery-thumbnails" aria-label="Altre fotografie di <?= h($displayName) ?>">
+            <?php foreach ($productImages as $index => $imagePath): ?>
+              <button
+                type="button"
+                class="product-gallery-thumbnail<?= $index === 0 ? ' active' : '' ?>"
+                data-product-gallery-thumbnail
+                data-image="<?= h(url($imagePath)) ?>"
+                aria-label="Visualizza foto <?= $index + 1 ?> di <?= count($productImages) ?>"
+                aria-current="<?= $index === 0 ? 'true' : 'false' ?>"
+              >
+                <img src="<?= h(url($imagePath)) ?>" alt="" loading="lazy">
+              </button>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
       </div>
 
       <div class="product-detail-info">

@@ -47,6 +47,43 @@ function h(?string $value): string
     return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');
 }
 
+/**
+ * Restituisce l'immagine principale del prodotto e le fotografie aggiuntive
+ * configurate nel catalogo. Il collegamento usa il percorso dell'immagine
+ * principale, che resta stabile anche quando prezzi e descrizioni vengono
+ * aggiornati dal pannello amministrativo.
+ *
+ * @return list<string>
+ */
+function product_gallery_images(?string $primaryImagePath): array
+{
+    $primaryImagePath = trim((string)$primaryImagePath);
+    if ($primaryImagePath === '') {
+        return [];
+    }
+
+    static $galleries = null;
+    if ($galleries === null) {
+        $galleryFile = __DIR__ . '/../data/product-galleries.json';
+        $decoded = is_file($galleryFile)
+            ? json_decode((string)file_get_contents($galleryFile), true)
+            : null;
+        $galleries = is_array($decoded) ? $decoded : [];
+    }
+
+    $images = [$primaryImagePath];
+    $additionalImages = $galleries[$primaryImagePath] ?? [];
+    if (is_array($additionalImages)) {
+        foreach ($additionalImages as $imagePath) {
+            if (is_string($imagePath) && trim($imagePath) !== '') {
+                $images[] = trim($imagePath);
+            }
+        }
+    }
+
+    return array_values(array_unique($images));
+}
+
 function category_label(string $slug): string
 {
     return CATEGORIES[$slug] ?? $slug;

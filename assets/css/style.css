@@ -883,6 +883,51 @@ svg { display: block; }
 
 .product-gallery-main .img-placeholder { border-radius: 0; font-size: 2.2rem; }
 
+.product-gallery-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 2px 2px 8px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.product-gallery-thumbnail {
+  width: 74px;
+  height: 74px;
+  flex: 0 0 74px;
+  padding: 4px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  cursor: pointer;
+  border: 1px solid rgba(58, 46, 47, 0.12);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-gallery-thumbnail:hover,
+.product-gallery-thumbnail.active {
+  border-color: var(--color-gold);
+}
+
+.product-gallery-thumbnail.active {
+  box-shadow: 0 0 0 2px rgba(200, 168, 98, 0.2);
+}
+
+.product-gallery-thumbnail:focus-visible {
+  outline: 2px solid var(--color-gold-dark);
+  outline-offset: 2px;
+}
+
+.product-gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .product-detail-info { display: flex; flex-direction: column; }
 
 .product-detail-info .product-brand { font-size: 0.8rem; }

@@ -23,4 +23,4 @@ EXPOSE 8080
 
 USER www-data
 
-CMD ["sh", "-c", "php scripts/init-db.php && if [ -n \"$ADMIN_EMAIL\" ] && [ -n \"$ADMIN_PASSWORD\" ]; then php scripts/create-admin.php; fi && exec php -S 0.0.0.0:${PORT:-8080} -t /app"]
+CMD ["sh", "-c", "php scripts/init-db.php && php scripts/seed-catalog.php && if [ -n \"$ADMIN_EMAIL\" ] && [ -n \"$ADMIN_PASSWORD\" ]; then php scripts/create-admin.php; fi && exec php -S 0.0.0.0:${PORT:-8080} -t /app"]

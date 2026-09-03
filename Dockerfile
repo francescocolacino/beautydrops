@@ -11,10 +11,20 @@ RUN apt-get update \
     && docker-php-ext-install pdo_pgsql \
     && rm -rf /var/lib/apt/lists/*
 
-# mod_rewrite abilitato; AllowOverride All per rispettare i file .htaccess
-# già presenti nel progetto (es. assets/images/products/.htaccess).
-RUN a2enmod rewrite \
-    && sed -ri 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+# mod_php richiede mpm_prefork: l'immagine base carica mpm_event di default,
+# e avere più MPM abilitati contemporaneamente manda in crash Apache all'avvio
+# ("AH00534: More than one MPM loaded"). Rimuoviamo prima gli MPM alternativi,
+# poi abilitiamo solo mpm_prefork e rewrite. AllowOverride All rispetta i file
+# .htaccess già presenti nel progetto (es. assets/images/products/.htaccess).
+# apache2ctl configtest fa fallire subito la build se la config è invalida.
+RUN rm -f /etc/apache2/mods-enabled/mpm_event.load \
+          /etc/apache2/mods-enabled/mpm_event.conf \
+          /etc/apache2/mods-enabled/mpm_worker.load \
+          /etc/apache2/mods-enabled/mpm_worker.conf \
+    && a2enmod mpm_prefork \
+    && a2enmod rewrite \
+    && sed -ri 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf \
+    && apache2ctl configtest
 
 WORKDIR /var/www/html
 

@@ -18,6 +18,20 @@ $pdo = get_db();
 $pdo->beginTransaction();
 
 try {
+    // Conserva i prezzi eventualmente modificati dall'amministrazione quando
+    // il catalogo viene reimportato. Il percorso immagine è l'identificatore
+    // stabile condiviso tra il JSON versionato e le righe del database.
+    $existingPrices = [];
+    $existingPriceRows = $pdo
+        ->query(
+            "SELECT image_path, price FROM products
+             WHERE image_path LIKE '/assets/images/catalog/%' AND price IS NOT NULL"
+        )
+        ->fetchAll();
+    foreach ($existingPriceRows as $row) {
+        $existingPrices[$row['image_path']] = (float) $row['price'];
+    }
+
     // Rimuove soltanto le schede generate da questo catalogo, lasciando intatti
     // gli eventuali prodotti caricati manualmente dall'amministrazione.
     $pdo->exec("DELETE FROM products WHERE image_path LIKE '/assets/images/catalog/%'");
@@ -28,7 +42,7 @@ try {
             stock_quantity, orderable_quantity, price, description
         ) VALUES (
             :category, :brand, :name, :variants, :image_path,
-            0, 0, NULL, :description
+            0, 0, :price, :description
         )'
     );
 
@@ -44,6 +58,11 @@ try {
             throw new RuntimeException("Varianti non valide nel prodotto #{$index}.");
         }
 
+        $catalogPrice = $product['price'] ?? null;
+        if ($catalogPrice !== null && (!is_numeric($catalogPrice) || (float) $catalogPrice <= 0)) {
+            throw new RuntimeException("Prezzo non valido nel prodotto #{$index}.");
+        }
+
         $insert->execute([
             'category' => $product['category'],
             'brand' => $product['brand'],
@@ -52,6 +71,7 @@ try {
                 ? null
                 : json_encode(array_values($variants), JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR),
             'image_path' => $product['image_path'],
+            'price' => $existingPrices[$product['image_path']] ?? $catalogPrice,
             'description' => $product['description'],
         ]);
     }

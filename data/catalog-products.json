@@ -12,6 +12,7 @@
       "/assets/images/catalog/ninja-labs/ph-1.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Pouch Phone Case di Ninja Labs. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -25,6 +26,7 @@
       "/assets/images/catalog/rhode/rh-1.jpg"
     ],
     "format_details": "Peso lordo: 10g",
+    "price": 9.99,
     "description": "Pimple Patches di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -38,6 +40,7 @@
       "/assets/images/catalog/rhode/rh-2.jpg"
     ],
     "format_details": "Peso lordo: 145g",
+    "price": 17.99,
     "description": "Caffeine Reset Mask di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -54,6 +57,7 @@
       "/assets/images/catalog/rhode/rh-3.jpg"
     ],
     "format_details": "Peso lordo: 120g",
+    "price": 14.99,
     "description": "Phone Case Set di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -70,6 +74,7 @@
       "/assets/images/catalog/rhode/rh-4.jpg"
     ],
     "format_details": "Peso lordo: 120g",
+    "price": 14.99,
     "description": "New Phone Case Set di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -83,6 +88,7 @@
       "/assets/images/catalog/rhode/rh-5.jpg"
     ],
     "format_details": "Peso lordo: 80g",
+    "price": 14.99,
     "description": "Magnetic Phone Case with Gloss di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -99,6 +105,7 @@
       "/assets/images/catalog/rhode/rh-6.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 14.99,
     "description": "Rhode Lip Boost di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -114,6 +121,7 @@
       "/assets/images/catalog/rhode/rh-7.jpg"
     ],
     "format_details": "Formato: 10ml · Peso lordo: 20g",
+    "price": 7.99,
     "description": "Rhode Gloss 10ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -132,6 +140,7 @@
       "/assets/images/catalog/rhode/rh-8.jpg"
     ],
     "format_details": "Peso lordo: 20g",
+    "price": 7.99,
     "description": "Birthday Limited Gloss di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -154,6 +163,7 @@
       "/assets/images/catalog/rhode/rh-9.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 8.99,
     "description": "Rhode Blush di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -172,6 +182,7 @@
       "/assets/images/catalog/rhode/rh-10.jpg"
     ],
     "format_details": "Peso lordo: 35g",
+    "price": 8.99,
     "description": "Rhode highlight di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -188,6 +199,7 @@
       "/assets/images/catalog/rhode/rh-11.jpg"
     ],
     "format_details": "Peso lordo: 35g",
+    "price": 8.99,
     "description": "New Rhode blush di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -201,6 +213,7 @@
       "/assets/images/catalog/rhode/rh-12.jpg"
     ],
     "format_details": "Peso lordo: 15g",
+    "price": 8.99,
     "description": "Rhode liner di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -218,6 +231,7 @@
       "/assets/images/catalog/rhode/rh-13.jpg"
     ],
     "format_details": "Peso lordo: 105g",
+    "price": 14.99,
     "description": "Gloss Set (4 pieces) di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -231,6 +245,7 @@
       "/assets/images/catalog/rhode/rh-14.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 85g",
+    "price": 14.99,
     "description": "Peptide Glazing Fluid 50ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -246,6 +261,7 @@
       "/assets/images/catalog/rhode/rh-15.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 80g",
+    "price": 9.99,
     "description": "Barrier Cream di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -261,6 +277,7 @@
       "/assets/images/catalog/rhode/rh-16.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 145g",
+    "price": null,
     "description": "Caffeine Reset Mask 50ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -276,6 +293,7 @@
       "/assets/images/catalog/rhode/rh-17.jpg"
     ],
     "format_details": "Formato: 150ml · Peso lordo: 180g",
+    "price": 9.99,
     "description": "Pineapple Face Wash 150ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -291,6 +309,7 @@
       "/assets/images/catalog/rhode/rh-18.jpg"
     ],
     "format_details": "Formato: 140ml · Peso lordo: 190g",
+    "price": 19.99,
     "description": "Glazing Milk 140ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -306,6 +325,7 @@
       "/assets/images/catalog/rhode/rh-19.jpg"
     ],
     "format_details": "Formato: 80ml · Peso lordo: 190g",
+    "price": 19.99,
     "description": "Glazing Mist 80ml di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -323,6 +343,7 @@
       "/assets/images/catalog/rhode/rh-20.jpg"
     ],
     "format_details": "Peso lordo: 60g",
+    "price": 14.99,
     "description": "Eye Patches Set (6 pieces) di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -342,6 +363,7 @@
       "/assets/images/catalog/rhode/rh-21.jpg"
     ],
     "format_details": "Peso lordo: 150g",
+    "price": 1.5,
     "description": "paper bag di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -358,6 +380,7 @@
       "/assets/images/catalog/rhode/rh-22.jpg"
     ],
     "format_details": "Peso lordo: 500g",
+    "price": 14.99,
     "description": "makeup bag di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -374,6 +397,7 @@
       "/assets/images/catalog/rhode/rh-23.jpg"
     ],
     "format_details": "Peso lordo: 600g",
+    "price": 19.99,
     "description": "big makeup bag di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -395,6 +419,7 @@
       "/assets/images/catalog/rhode/rh-24.jpg"
     ],
     "format_details": "Peso lordo: 130g",
+    "price": 9.99,
     "description": "silicone makeup bag di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -408,6 +433,7 @@
       "/assets/images/catalog/rhode/rh-25.jpg"
     ],
     "format_details": "Peso lordo: 125g",
+    "price": 14.99,
     "description": "mirror di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -421,6 +447,7 @@
       "/assets/images/catalog/rhode/rh-26.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 14.99,
     "description": "hairband di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -437,6 +464,7 @@
       "/assets/images/catalog/rhode/rh-27.jpg"
     ],
     "format_details": "Peso lordo: 4g",
+    "price": 1.5,
     "description": "sticker di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -454,6 +482,7 @@
       "/assets/images/catalog/rhode/rh-28-2.jpg"
     ],
     "format_details": "Peso lordo: 10g",
+    "price": 2.0,
     "description": "sticker set di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -467,6 +496,7 @@
       "/assets/images/catalog/rhode/rh-29.jpg"
     ],
     "format_details": "Peso lordo: 110g",
+    "price": null,
     "description": "paper box (old) di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -483,6 +513,7 @@
       "/assets/images/catalog/rhode/rh-30.jpg"
     ],
     "format_details": "Peso lordo: 150g",
+    "price": 1.5,
     "description": "paper box (new) di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -496,6 +527,7 @@
       "/assets/images/catalog/rhode/rh-31.jpg"
     ],
     "format_details": "Peso lordo: 2g",
+    "price": 1.0,
     "description": "paper (with logo) di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -509,6 +541,7 @@
       "/assets/images/catalog/rhode/rh-32.jpg"
     ],
     "format_details": "Peso lordo: 2g",
+    "price": null,
     "description": "paper di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -526,6 +559,7 @@
       "/assets/images/catalog/rhode/rh-33.jpg"
     ],
     "format_details": "Peso lordo: 4g",
+    "price": 1.0,
     "description": "card di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -539,6 +573,7 @@
       "/assets/images/catalog/rhode/rh-34.jpg"
     ],
     "format_details": "Peso lordo: 320g",
+    "price": 14.99,
     "description": "gloss set di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -552,6 +587,7 @@
       "/assets/images/catalog/rhode/rh-35.jpg"
     ],
     "format_details": "Peso lordo: 1000g",
+    "price": 29.99,
     "description": "bath towel di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -573,6 +609,7 @@
       "/assets/images/catalog/rhode/rh-36.jpg"
     ],
     "format_details": "Peso lordo: 130g",
+    "price": 9.99,
     "description": "heart makeup bag di Rhode. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -586,6 +623,7 @@
       "/assets/images/catalog/tower-28/to-1.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Lip Set di Tower 28. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -607,6 +645,7 @@
       "/assets/images/catalog/summer-fridays/su-1.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 6.99,
     "description": "gloss di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -629,6 +668,7 @@
       "/assets/images/catalog/summer-fridays/su-2.jpg"
     ],
     "format_details": "Peso lordo: 45g",
+    "price": 6.99,
     "description": "Lip Oil di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -645,6 +685,7 @@
       "/assets/images/catalog/summer-fridays/su-3.jpg"
     ],
     "format_details": "Peso lordo: 65g",
+    "price": 9.99,
     "description": "Lip set (2 in one) di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -664,6 +705,7 @@
       "/assets/images/catalog/summer-fridays/su-4.jpg"
     ],
     "format_details": null,
+    "price": 14.99,
     "description": "gloss set (3 in one) di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -681,6 +723,7 @@
       "/assets/images/catalog/summer-fridays/su-5.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": 9.99,
     "description": "mini gloss set (4 in one) di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -697,6 +740,7 @@
       "/assets/images/catalog/summer-fridays/su-6.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": 9.99,
     "description": "mini gloss set (4 in one) di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -710,6 +754,7 @@
       "/assets/images/catalog/summer-fridays/su-7.jpg"
     ],
     "format_details": "Formato: 15g · Peso lordo: 25g",
+    "price": 9.99,
     "description": "Jet Lag Mask 15g di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -723,6 +768,7 @@
       "/assets/images/catalog/summer-fridays/su-8.jpg"
     ],
     "format_details": "Formato: 64g · Peso lordo: 100g",
+    "price": 14.99,
     "description": "Jet Lag Mask 64g di Summer Fridays. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -745,6 +791,7 @@
       "/assets/images/catalog/laneige/la-1.jpg"
     ],
     "format_details": "Formato: 12g · Peso lordo: 30g",
+    "price": 8.99,
     "description": "Lip Balm 12g – Glaze Collection di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -767,6 +814,7 @@
       "/assets/images/catalog/laneige/la-2.jpg"
     ],
     "format_details": "Formato: 12g · Peso lordo: 30g",
+    "price": 7.99,
     "description": "Lip Balm 12g – Classic Collection di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -782,6 +830,7 @@
       "/assets/images/catalog/laneige/la-3.jpg"
     ],
     "format_details": "Peso lordo: 65g",
+    "price": 7.99,
     "description": "lip sleeping mask di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -799,6 +848,7 @@
       "/assets/images/catalog/laneige/la-4.jpg"
     ],
     "format_details": "Peso lordo: 90g",
+    "price": 12.99,
     "description": "Lip glow balm set3 di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -812,6 +862,7 @@
       "/assets/images/catalog/laneige/la-5.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": null,
     "description": "Dreamy lip kit x4pcs di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -825,6 +876,7 @@
       "/assets/images/catalog/laneige/la-6.jpg"
     ],
     "format_details": null,
+    "price": 14.99,
     "description": "lip sleeping mask x5pcs di Laneige. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -838,6 +890,7 @@
       "/assets/images/catalog/kiko-milano/ki-1.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": null,
     "description": "KIKO UNLIMITED DOUBLE TOUCH di Kiko Milano. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -866,6 +919,7 @@
       "/assets/images/catalog/kiko-milano/ki-2.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": null,
     "description": "Kiko Milano 3D Hydra Lip Gloss 3D di Kiko Milano. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -887,6 +941,7 @@
       "/assets/images/catalog/kiko-milano/ki-3.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": null,
     "description": "Kiko Milano 3D Hydra Lip Gloss 3D di Kiko Milano. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -914,6 +969,7 @@
       "/assets/images/catalog/rare-beauty/ra-1.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 9.99,
     "description": "Soft Pinch Liquid Blush 13 colors di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -933,6 +989,7 @@
       "/assets/images/catalog/rare-beauty/ra-2.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": null,
     "description": "Stay Vulnerable Melting Cream Blush di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -953,6 +1010,7 @@
       "/assets/images/catalog/rare-beauty/ra-3.jpg"
     ],
     "format_details": "Formato: 3.3ml · Peso lordo: 35g",
+    "price": 7.99,
     "description": "Stay Vulnerable Glossy Lip Balm 3.3ml di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -973,6 +1031,7 @@
       "/assets/images/catalog/rare-beauty/ra-4.jpg"
     ],
     "format_details": "Formato: 15ml · Peso lordo: 65g",
+    "price": 9.99,
     "description": "Positive Light Liquid Luminizer 15ml di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -994,6 +1053,7 @@
       "/assets/images/catalog/rare-beauty/ra-5.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": 9.99,
     "description": "Soft Pinch Matte Bouncy Blush di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1013,6 +1073,7 @@
       "/assets/images/catalog/rare-beauty/ra-6.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": null,
     "description": "Stay Vulnerable Glossy Lip Balm di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1032,6 +1093,7 @@
       "/assets/images/catalog/rare-beauty/ra-7.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": null,
     "description": "Soft Pinch Tinted Lip Oil di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1050,6 +1112,7 @@
       "/assets/images/catalog/rare-beauty/ra-8.jpg"
     ],
     "format_details": "Peso lordo: 65g",
+    "price": 14.99,
     "description": "Soft Pinch Contouring Liquide di Rare Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1068,6 +1131,7 @@
       "/assets/images/catalog/e-l-f/el-1.jpg"
     ],
     "format_details": null,
+    "price": 9.99,
     "description": "E.L.F. Makeup Setting Spray di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1088,6 +1152,7 @@
       "/assets/images/catalog/e-l-f/el-2.jpg"
     ],
     "format_details": "Formato: 10ML · Peso lordo: 25g",
+    "price": 6.99,
     "description": "e.l.f. Halo Glow Beauty Wand Blush 10ML di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1110,6 +1175,7 @@
       "/assets/images/catalog/e-l-f/el-3.jpg"
     ],
     "format_details": "Formato: 10g · Peso lordo: 35g",
+    "price": null,
     "description": "e.l.f. Putty Blush 10g di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1129,6 +1195,7 @@
       "/assets/images/catalog/e-l-f/el-4.jpg"
     ],
     "format_details": "Formato: 6.8 mL · Peso lordo: 75g",
+    "price": 6.99,
     "description": "e.l.f. Sheer For It Blush Tint/e.l.f. 6.8 mL di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1149,6 +1216,7 @@
       "/assets/images/catalog/e-l-f/el-5.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 6.99,
     "description": "ELF lip gloss di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1171,6 +1239,7 @@
       "/assets/images/catalog/e-l-f/el-6.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 6.99,
     "description": "ELF lip oil shine di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1194,6 +1263,7 @@
       "/assets/images/catalog/e-l-f/el-7.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 6.99,
     "description": "ELF lip oil di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1215,6 +1285,7 @@
       "/assets/images/catalog/e-l-f/el-8.jpg"
     ],
     "format_details": "Formato: 6 g · Peso lordo: 15g",
+    "price": 6.99,
     "description": "e.l.f.lip gloss 6 g di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1235,6 +1306,7 @@
       "/assets/images/catalog/e-l-f/el-9.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 6.99,
     "description": "Monochromatic Multi-Stick di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1258,6 +1330,7 @@
       "/assets/images/catalog/e-l-f/el-10.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 6.99,
     "description": "liquid blush white head di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1273,6 +1346,7 @@
       "/assets/images/catalog/e-l-f/el-11.jpg"
     ],
     "format_details": "Peso lordo: 130g",
+    "price": null,
     "description": "e.l.f. ELF X Jen Atkin (3 in 1) di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1290,6 +1364,7 @@
       "/assets/images/catalog/e-l-f/el-12.jpg"
     ],
     "format_details": "Formato: 15g · Peso lordo: 75g",
+    "price": null,
     "description": "elf MATTE FUSION 15g di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1307,6 +1382,7 @@
       "/assets/images/catalog/e-l-f/el-13.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": 8.99,
     "description": "e.l.f.HALO GLOW SETTING POWDER di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1322,6 +1398,7 @@
       "/assets/images/catalog/e-l-f/el-14.jpg"
     ],
     "format_details": "Formato: 75 ml · Peso lordo: 120g",
+    "price": 9.99,
     "description": "e.l.f. primer (75 ml) di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1338,6 +1415,7 @@
       "/assets/images/catalog/e-l-f/el-15.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": 7.99,
     "description": "e.l.f. primer ml) di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1351,6 +1429,7 @@
       "/assets/images/catalog/e-l-f/el-17.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": null,
     "description": "e.l.f. Luminous Putty Primer di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1366,6 +1445,7 @@
       "/assets/images/catalog/e-l-f/el-18.jpg"
     ],
     "format_details": "Peso lordo: 45g",
+    "price": 8.99,
     "description": "e.l.f. primer Matte di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1381,6 +1461,7 @@
       "/assets/images/catalog/e-l-f/el-19.jpg"
     ],
     "format_details": "Formato: 10ML · Peso lordo: 20g",
+    "price": 6.99,
     "description": "elf SKIN 10ML di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1396,6 +1477,7 @@
       "/assets/images/catalog/e-l-f/el-22.jpg"
     ],
     "format_details": "Peso lordo: 420g",
+    "price": null,
     "description": "elf foundation set 3 IN 1 di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1418,6 +1500,7 @@
       "/assets/images/catalog/e-l-f/el-23-2.jpg"
     ],
     "format_details": "Peso lordo: 145 g",
+    "price": null,
     "description": "Foundation / Flawless Satin Foundation di E.L.F.. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1445,6 +1528,7 @@
       "/assets/images/catalog/fenty-beauty/fe-1.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 9.99,
     "description": "Fenty beauty lip gloss di Fenty Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1463,6 +1547,7 @@
       "/assets/images/catalog/fenty-beauty/fe-2.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 14.99,
     "description": "contour stick di Fenty Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1482,6 +1567,7 @@
       "/assets/images/catalog/fenty-beauty/fe-3.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 14.99,
     "description": "Fenty beauty ice di Fenty Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1495,6 +1581,7 @@
       "/assets/images/catalog/fenty-beauty/fe-4.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "fenty gloss set di Fenty Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1518,6 +1605,7 @@
       "/assets/images/catalog/gisou/gi-1.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 7.99,
     "description": "Gisou gloss di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1531,6 +1619,7 @@
       "/assets/images/catalog/gisou/gi-2.jpg"
     ],
     "format_details": "Peso lordo: 110g",
+    "price": 9.99,
     "description": "Honey Infused Hair Oil di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1549,6 +1638,7 @@
       "/assets/images/catalog/gisou/gi-3.jpg"
     ],
     "format_details": "Peso lordo: 610g",
+    "price": 24.99,
     "description": "Honey Infused Set 4 di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1566,6 +1656,7 @@
       "/assets/images/catalog/gisou/gi-4.jpg"
     ],
     "format_details": "Peso lordo: 290g",
+    "price": 19.99,
     "description": "Lip Oil Set 3 di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1582,6 +1673,7 @@
       "/assets/images/catalog/gisou/gi-5.jpg"
     ],
     "format_details": "Peso lordo: 170g",
+    "price": 14.99,
     "description": "Honey Infused Hair Perfume di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1602,6 +1694,7 @@
       "/assets/images/catalog/gisou/gi-6.jpg"
     ],
     "format_details": "Peso lordo: 450g",
+    "price": 34.99,
     "description": "Lip Oil Set 6 di Gisou. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1620,6 +1713,7 @@
       "/assets/images/catalog/saie/sa-1.jpg"
     ],
     "format_details": "Formato: 2ml",
+    "price": null,
     "description": "Dew Blush Liquid Cheek Blush 2ml di Saie. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1637,6 +1731,7 @@
       "/assets/images/catalog/saie/sa-2.jpg"
     ],
     "format_details": "Formato: 15ml",
+    "price": 19.99,
     "description": "Dew Blush Liquid Cheek Blush 15ml di Saie. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1652,6 +1747,7 @@
       "/assets/images/catalog/saie/sa-3.jpg"
     ],
     "format_details": "Formato: 15ml",
+    "price": 14.99,
     "description": "Star glow 15ml di Saie. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1671,6 +1767,7 @@
       "/assets/images/catalog/nyx/ny-1.jpg"
     ],
     "format_details": "Formato: 4.8ml",
+    "price": null,
     "description": "NYX lip oil 4.8ml di NYX. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1689,6 +1786,7 @@
       "/assets/images/catalog/nyx/ny-2.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "NYX lip gloss di NYX. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1707,6 +1805,7 @@
       "/assets/images/catalog/sheglam/sh-1.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Wave Tube Set (4 pieces) di Sheglam. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1722,6 +1821,7 @@
       "/assets/images/catalog/sheglam/sh-2.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Eyeshadow Stick di Sheglam. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1740,6 +1840,7 @@
       "/assets/images/catalog/sheglam/sh-3.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Brow Gel di Sheglam. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1758,6 +1859,7 @@
       "/assets/images/catalog/sheglam/sh-4.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Lip Oil di Sheglam. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1776,6 +1878,7 @@
       "/assets/images/catalog/sheglam/sh-5.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Blush di Sheglam. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1794,6 +1897,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-1.jpg"
     ],
     "format_details": "Peso lordo: 300g",
+    "price": 14.99,
     "description": "Travel Set di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1812,6 +1916,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-2.jpg"
     ],
     "format_details": null,
+    "price": 17.99,
     "description": "Skincare Set di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1828,6 +1933,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-3.jpg"
     ],
     "format_details": "Peso lordo: 240g",
+    "price": null,
     "description": "perfume set3 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1844,6 +1950,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-4.jpg"
     ],
     "format_details": "Peso lordo: 310g",
+    "price": null,
     "description": "perfume set4 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1860,6 +1967,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-5.jpg"
     ],
     "format_details": "Peso lordo: 270g",
+    "price": null,
     "description": "perfume set4 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1876,6 +1984,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-6.jpg"
     ],
     "format_details": "Peso lordo: 270g",
+    "price": null,
     "description": "perfume set4 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1892,6 +2001,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-7.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "perfume set5 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1908,6 +2018,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-8.jpg"
     ],
     "format_details": "Peso lordo: 400g",
+    "price": null,
     "description": "perfume set5 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1924,6 +2035,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-9.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "perfume set5 di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1942,6 +2054,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-10.jpg"
     ],
     "format_details": "Formato: 75ml",
+    "price": 9.99,
     "description": "Bum Bum Cream 75ml di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1964,6 +2077,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-11.jpg"
     ],
     "format_details": "Formato: 240ML",
+    "price": 14.99,
     "description": "Bum Bum Cream 240ML di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -1987,6 +2101,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-12.jpg"
     ],
     "format_details": "Formato: 90ml · Peso lordo: 145g",
+    "price": 9.99,
     "description": "Crush Perfume Mist 90ml di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2006,6 +2121,7 @@
       "/assets/images/catalog/sol-de-janeiro/sol-13-3.jpg"
     ],
     "format_details": "Formato: 90ml",
+    "price": null,
     "description": "Crush Perfume Mist 90ml di Sol de Janeiro. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2025,6 +2141,7 @@
       "/assets/images/catalog/tarte/ta-1.jpg"
     ],
     "format_details": "Peso lordo: 35g",
+    "price": 9.99,
     "description": "Concealer di Tarte. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2045,6 +2162,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-1.jpg"
     ],
     "format_details": "Formato: 14ml · Peso lordo: 25g",
+    "price": 9.99,
     "description": "Unreal Lips Healthy Glow Nectar Oil 14ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2063,6 +2181,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-2.jpg"
     ],
     "format_details": "Formato: 9g · Peso lordo: 50g",
+    "price": 19.99,
     "description": "HYDRATING FOUNDATION STICK 9g di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2081,6 +2200,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-3.jpg"
     ],
     "format_details": "Formato: 12ml · Peso lordo: 30g",
+    "price": 17.99,
     "description": "Pillowtalk MATTE Beauty Blush 12ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2098,6 +2218,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-4.jpg"
     ],
     "format_details": "Formato: 12ml · Peso lordo: 30g",
+    "price": 14.99,
     "description": "Hollywood Contour Wand 12ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2114,6 +2235,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-5.jpg"
     ],
     "format_details": "Formato: 13g · Peso lordo: 135g",
+    "price": 19.99,
     "description": "Cheek Chic Duo 13g di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2132,6 +2254,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-6.jpg"
     ],
     "format_details": "Formato: 9g · Peso lordo: 50g",
+    "price": null,
     "description": "Hyaluronic Happikiss Lipstick Balm 9g di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2152,6 +2275,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-7.jpg"
     ],
     "format_details": "Formato: 7.6ml · Peso lordo: 50g",
+    "price": 12.99,
     "description": "Pillow Talk Collagen Lip Bath 7.6ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2168,6 +2292,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-8.jpg"
     ],
     "format_details": "Formato: 8g · Peso lordo: 75g",
+    "price": 19.99,
     "description": "Airbrush Flawness finish 8g di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2181,6 +2306,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-9.jpg"
     ],
     "format_details": "Formato: 100ml · Peso lordo: 190g",
+    "price": 19.99,
     "description": "Airbrush Flawless Setting Spray 100ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2194,6 +2320,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-10.jpg"
     ],
     "format_details": "Formato: 34ml",
+    "price": null,
     "description": "Airbrush Flawless Setting Spray Matte Blur 34ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2207,6 +2334,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-11.jpg"
     ],
     "format_details": "Formato: 100ml · Peso lordo: 190g",
+    "price": 19.99,
     "description": "Airbrush Flawless Setting Spray Matte Blur 100ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2222,6 +2350,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-12.jpg"
     ],
     "format_details": "Formato: 75ml",
+    "price": 19.99,
     "description": "Magic Hydrator mist di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2235,6 +2364,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-13.jpg"
     ],
     "format_details": "Formato: 34ml",
+    "price": null,
     "description": "Airbrush Flawless Mini Setting Spray Kit 34ml × 2 di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2248,6 +2378,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-14.jpg"
     ],
     "format_details": "Formato: 34ml · Peso lordo: 230g",
+    "price": null,
     "description": "Mini Setting Spray Kit 34ml × 2 di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2264,6 +2395,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-15.jpg"
     ],
     "format_details": "Formato: 34ml",
+    "price": null,
     "description": "Complexion perfecting set di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2282,6 +2414,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-16.jpg"
     ],
     "format_details": "Peso lordo: 25g",
+    "price": 19.99,
     "description": "Mini Pillow Talk Lip Kit di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2298,6 +2431,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-17.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": null,
     "description": "Airbrush Bronzer & Highlighter Palette di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2317,6 +2451,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-18.jpg"
     ],
     "format_details": "Peso lordo: 160g",
+    "price": null,
     "description": "HOLLYWOOD FLAWLESS FILTER di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2335,6 +2470,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-19.jpg"
     ],
     "format_details": "Peso lordo: 160g",
+    "price": 19.99,
     "description": "Airbrush FLAWLESS Foundation di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2353,6 +2489,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-20.jpg"
     ],
     "format_details": "Peso lordo: 60g",
+    "price": 19.99,
     "description": "Luxury Palette of Pops / Luxury Palette di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2371,6 +2508,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-21.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 19.99,
     "description": "Cheek to Chic Blush di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2387,6 +2525,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-22.jpg"
     ],
     "format_details": "Peso lordo: 80g",
+    "price": 19.99,
     "description": "Hollywood Flawless Filter Highlighter di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2402,6 +2541,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-23.jpg"
     ],
     "format_details": "Peso lordo: 130g",
+    "price": null,
     "description": "FILMSTAR BRONZE & GLOW di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2417,6 +2557,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-24.jpg"
     ],
     "format_details": "Peso lordo: 60g",
+    "price": null,
     "description": "Pink Pop Blush & Highlighter Palette di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2433,6 +2574,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-25.jpg"
     ],
     "format_details": "Peso lordo: 35g",
+    "price": 19.99,
     "description": "Cheek To Chic Blush di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2449,6 +2591,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-26.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Cheek To Chic Blush di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2472,6 +2615,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-27.jpg"
     ],
     "format_details": "Formato: 30ml · Peso lordo: 65g",
+    "price": null,
     "description": "Beautiful Skin Foundation 30ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2492,6 +2636,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-28.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 19.99,
     "description": "AIRBRUSH FLAWLESS BLUR CONCEALER di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2505,6 +2650,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-29.jpg"
     ],
     "format_details": "Peso lordo: 45g",
+    "price": null,
     "description": "ICONIC MINI LIP CHEAT TRIO di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2518,6 +2664,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-30.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Beautifying Face Palette di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2534,6 +2681,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-31.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "HOLLYWOOD INSTANT LOOK IN A PALETTE di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2549,6 +2697,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-32.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Skin Glow Bronzer di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2565,6 +2714,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-33.jpg"
     ],
     "format_details": "Formato: 5.5ml",
+    "price": null,
     "description": "Lip Plumper 5.5ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2580,6 +2730,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-34.jpg"
     ],
     "format_details": "Formato: 120ml",
+    "price": 17.99,
     "description": "Magic Cleanser 120ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2595,6 +2746,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-35.jpg"
     ],
     "format_details": "Formato: 60ml",
+    "price": 24.99,
     "description": "SPF50+ UV Primer 60ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2610,6 +2762,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-36.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 260g",
+    "price": 29.99,
     "description": "Magic Water Cream 50ml di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2625,6 +2778,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-37.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 260g",
+    "price": 29.99,
     "description": "Magic Water Cream di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2640,6 +2794,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-38.jpg"
     ],
     "format_details": "Formato: 30ml",
+    "price": 29.99,
     "description": "Facial Oil di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2655,6 +2810,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-39.jpg"
     ],
     "format_details": "Formato: 30ml · Peso lordo: 160g",
+    "price": 29.99,
     "description": "Magic Serum di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2670,6 +2826,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-40.jpg"
     ],
     "format_details": "Formato: 120ml",
+    "price": 19.99,
     "description": "Makeup Remover for eyes and lips di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2685,6 +2842,7 @@
       "/assets/images/catalog/charlotte-tilbury/ct-41.jpg"
     ],
     "format_details": "Formato: 10ml",
+    "price": 19.99,
     "description": "mascara di Charlotte Tilbury. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2705,6 +2863,7 @@
       "/assets/images/catalog/huda-beauty/hu-1.jpg"
     ],
     "format_details": "Formato: 20g · Peso lordo: 110g",
+    "price": 14.99,
     "description": "Easy Bake Setting Powder 20g di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2725,6 +2884,7 @@
       "/assets/images/catalog/huda-beauty/hu-2.jpg"
     ],
     "format_details": "Formato: 6g · Peso lordo: 40g",
+    "price": 9.99,
     "description": "Baby Bake Mini Setting Powder with Puff 6g di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2741,6 +2901,7 @@
       "/assets/images/catalog/huda-beauty/hu-3.jpg"
     ],
     "format_details": "Formato: 6.5g · Peso lordo: 110g",
+    "price": 19.99,
     "description": "2 in 1 Easy Bake Duo Loose Powder 2*6.5g di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2761,6 +2922,7 @@
       "/assets/images/catalog/huda-beauty/hu-4.jpg"
     ],
     "format_details": "Formato: 3.9ml · Peso lordo: 45g",
+    "price": 8.99,
     "description": "FAUX FILLER JELLY OIL 3.9ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2776,6 +2938,7 @@
       "/assets/images/catalog/huda-beauty/hu-5.jpg"
     ],
     "format_details": "Formato: 3.9ml · Peso lordo: 45g",
+    "price": 8.99,
     "description": "Non-staining Matte Lip Gloss 3.9ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2796,6 +2959,7 @@
       "/assets/images/catalog/huda-beauty/hu-6.jpg"
     ],
     "format_details": "Formato: 3.9ml · Peso lordo: 45g",
+    "price": 8.99,
     "description": "High-Shine Lip Gloss 3.9ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2818,6 +2982,7 @@
       "/assets/images/catalog/huda-beauty/hu-7.jpg"
     ],
     "format_details": "Formato: 1ml · Peso lordo: 12g",
+    "price": 7.99,
     "description": "Lip Contour Stain Lip Tint 1ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2833,6 +2998,7 @@
       "/assets/images/catalog/huda-beauty/hu-8.jpg"
     ],
     "format_details": "Formato: 100ml · Peso lordo: 160g",
+    "price": 14.99,
     "description": "Easy Bake Setting Spray 100ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2854,6 +3020,7 @@
       "/assets/images/catalog/huda-beauty/hu-9.jpg"
     ],
     "format_details": "Formato: 4.5ml · Peso lordo: 40g",
+    "price": 9.99,
     "description": "Blush Filter Soft Glow Liquid Blush 4.5ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2870,6 +3037,7 @@
       "/assets/images/catalog/huda-beauty/hu-10.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "FAUX filler jelly oil&blush filter di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2888,6 +3056,7 @@
       "/assets/images/catalog/huda-beauty/hu-11.jpg"
     ],
     "format_details": "Formato: 9ml / 0.1G · Peso lordo: 45g",
+    "price": 14.99,
     "description": "Color Corrector 9ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2905,6 +3074,7 @@
       "/assets/images/catalog/huda-beauty/hu-12.jpg"
     ],
     "format_details": "Formato: 50ml · Peso lordo: 70g",
+    "price": 14.99,
     "description": "STAY BLUR Foundation 50ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2918,6 +3088,7 @@
       "/assets/images/catalog/huda-beauty/hu-13.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": 14.99,
     "description": "Easy blur primer di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2936,6 +3107,7 @@
       "/assets/images/catalog/huda-beauty/hu-14.jpg"
     ],
     "format_details": "Formato: 30ml / 140G / 150G · Peso lordo: 75g",
+    "price": 14.99,
     "description": "EASY BLUR Foundation 30ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2954,6 +3126,7 @@
       "/assets/images/catalog/huda-beauty/hu-15.jpg"
     ],
     "format_details": "Formato: 35ml / 140G / 150G · Peso lordo: 135g",
+    "price": null,
     "description": "FauxFilter Luminous Matte Buildable Coverage Foundation 35ml di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2971,6 +3144,7 @@
       "/assets/images/catalog/huda-beauty/hu-16.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": 19.99,
     "description": "BLUSH LIGHTERS PALETTE di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -2993,6 +3167,7 @@
       "/assets/images/catalog/huda-beauty/hu-17.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 17.99,
     "description": "EASY BAKE PRESSED POWDER di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3008,6 +3183,7 @@
       "/assets/images/catalog/huda-beauty/hu-18.jpg"
     ],
     "format_details": "Peso lordo: 200g",
+    "price": null,
     "description": "Eyeshadow di Huda Beauty. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3036,6 +3212,7 @@
       "/assets/images/catalog/too-faced/to-1.jpg"
     ],
     "format_details": "Formato: 13.5ml · Peso lordo: 80g",
+    "price": 17.99,
     "description": "concealer 13.5ml di Too Faced. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3049,6 +3226,7 @@
       "/assets/images/catalog/too-faced/to-2.jpg"
     ],
     "format_details": "Formato: 8ml · Peso lordo: 30g",
+    "price": 14.99,
     "description": "mascara 8ml di Too Faced. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3066,6 +3244,7 @@
       "/assets/images/catalog/patrick-ta/pa-1.jpg"
     ],
     "format_details": "Peso lordo: 120g",
+    "price": null,
     "description": "PATRICK TA Major Dimension Essential Artistry Edit Eyeshadow Palette di Patrick Ta. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3094,6 +3273,7 @@
       "/assets/images/catalog/patrick-ta/pa-2.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "PATRICK TA Major Beauty Headlines Double Take Crème & Powder Blush Duo pre-order di Patrick Ta. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3111,6 +3291,7 @@
       "/assets/images/catalog/patrick-ta/pa-3.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "PATRICK TA highlight di Patrick Ta. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3126,6 +3307,7 @@
       "/assets/images/catalog/one-size/os-1.jpg"
     ],
     "format_details": "Formato: 143ml · Peso lordo: 143g",
+    "price": null,
     "description": "Waterproof Setting Spray 143ml di One/Size. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3141,6 +3323,7 @@
       "/assets/images/catalog/one-size/os-2.jpg"
     ],
     "format_details": "Formato: 46ml",
+    "price": null,
     "description": "Mini Setting Spray 46ml di One/Size. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3161,6 +3344,7 @@
       "/assets/images/catalog/one-size/os-3.jpg"
     ],
     "format_details": "Formato: 34.5g · Peso lordo: 160g",
+    "price": null,
     "description": "Setting Powder 34.5g di One/Size. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3174,6 +3358,7 @@
       "/assets/images/catalog/one-size/os-4.jpg"
     ],
     "format_details": "Formato: 30ml · Peso lordo: 75g",
+    "price": null,
     "description": "oil sucker 30ml di One/Size. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3187,6 +3372,7 @@
       "/assets/images/catalog/one-size/os-5.jpg"
     ],
     "format_details": "Peso lordo: 42g",
+    "price": null,
     "description": "ONE/SIZE Secure The Sweat di One/Size. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3206,6 +3392,7 @@
       "/assets/images/catalog/dior/di-1.jpg"
     ],
     "format_details": "Peso lordo: 25g",
+    "price": 14.99,
     "description": "Lipstick with pendant di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3231,6 +3418,7 @@
       "/assets/images/catalog/dior/di-2.jpg"
     ],
     "format_details": "Formato: 6ml · Peso lordo: 35g",
+    "price": 14.99,
     "description": "Lip Gloss 6ml di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3249,6 +3437,7 @@
       "/assets/images/catalog/dior/di-3.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 14.99,
     "description": "lip glow oil di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3268,6 +3457,7 @@
       "/assets/images/catalog/dior/di-4.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 14.99,
     "description": "new lip glow oil di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3288,6 +3478,7 @@
       "/assets/images/catalog/dior/di-5.jpg"
     ],
     "format_details": "Formato: 11ml · Peso lordo: 70g",
+    "price": 19.99,
     "description": "forever blush soft fliter 11ml di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3307,6 +3498,7 @@
       "/assets/images/catalog/dior/di-6.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 14.99,
     "description": "Dior Addict Lip Glow-new version di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3329,6 +3521,7 @@
       "/assets/images/catalog/dior/di-7.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": 19.99,
     "description": "lip highlighter stick di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3345,6 +3538,7 @@
       "/assets/images/catalog/dior/di-8.jpg"
     ],
     "format_details": null,
+    "price": 19.99,
     "description": "Lip Gloss & Lip Oil Set (2 pieces) di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3361,6 +3555,7 @@
       "/assets/images/catalog/dior/di-9.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": null,
     "description": "Lip Oil Set (2 pieces) di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3378,6 +3573,7 @@
       "/assets/images/catalog/dior/di-10.jpg"
     ],
     "format_details": "Peso lordo: 130g",
+    "price": 24.99,
     "description": "Lip Gloss Set (3 pieces) di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3397,6 +3593,7 @@
       "/assets/images/catalog/dior/di-11.jpg"
     ],
     "format_details": "Formato: 3.2 g / 6 ml / 2 ml",
+    "price": 24.99,
     "description": "Lip Care Set (3 pieces) di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3410,6 +3607,7 @@
       "/assets/images/catalog/dior/di-12.jpg"
     ],
     "format_details": null,
+    "price": 29.99,
     "description": "lip gloss & blush set2 di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3427,6 +3625,7 @@
       "/assets/images/catalog/dior/di-13.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "butterfly set2 di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3447,6 +3646,7 @@
       "/assets/images/catalog/dior/di-14.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Diorshow 5 Couleurs Eyeshadow Palette di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3466,6 +3666,7 @@
       "/assets/images/catalog/dior/di-15.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 19.99,
     "description": "4c palette-normal style di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3485,6 +3686,7 @@
       "/assets/images/catalog/dior/di-16.jpg"
     ],
     "format_details": "Peso lordo: 75g",
+    "price": null,
     "description": "4c palette- 3D style -3D di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3507,6 +3709,7 @@
       "/assets/images/catalog/dior/di-17.jpg"
     ],
     "format_details": "Peso lordo: 45g",
+    "price": 17.99,
     "description": "1c palette di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3523,6 +3726,7 @@
       "/assets/images/catalog/dior/di-18.jpg"
     ],
     "format_details": "Peso lordo: 40g",
+    "price": 17.99,
     "description": "single-color blush di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3543,6 +3747,7 @@
       "/assets/images/catalog/dior/di-19.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 17.99,
     "description": "1c palette with brush di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3560,6 +3765,7 @@
       "/assets/images/catalog/dior/di-20.jpg"
     ],
     "format_details": "Peso lordo: 50g",
+    "price": 17.99,
     "description": "2c palette di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3573,6 +3779,7 @@
       "/assets/images/catalog/dior/di-21.jpg"
     ],
     "format_details": "Peso lordo: 25g",
+    "price": 14.99,
     "description": "Mascara di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3586,6 +3793,7 @@
       "/assets/images/catalog/dior/di-22.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "lip stick set2 di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3603,6 +3811,7 @@
       "/assets/images/catalog/dior/di-23.jpg"
     ],
     "format_details": null,
+    "price": 29.99,
     "description": "lip stick set3 di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3621,6 +3830,7 @@
       "/assets/images/catalog/dior/di-24.jpg"
     ],
     "format_details": null,
+    "price": 29.99,
     "description": "Dior bronzer di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3634,6 +3844,7 @@
       "/assets/images/catalog/dior/di-25.jpg"
     ],
     "format_details": "Formato: 50ml",
+    "price": 19.99,
     "description": "Multifunctional Cream 50ml di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3651,6 +3862,7 @@
       "/assets/images/catalog/dior/di-26.jpg"
     ],
     "format_details": "Formato: 14g",
+    "price": 19.99,
     "description": "cushion foundation 14g di Dior. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3668,6 +3880,7 @@
       "/assets/images/catalog/ysl/ysl-1.jpg"
     ],
     "format_details": "Peso lordo: 70g",
+    "price": 14.99,
     "description": "powder di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3687,6 +3900,7 @@
       "/assets/images/catalog/ysl/ysl-2.jpg"
     ],
     "format_details": null,
+    "price": 12.99,
     "description": "highlighter stick di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3706,6 +3920,7 @@
       "/assets/images/catalog/ysl/ysl-3.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": 14.99,
     "description": "Lip oil di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3722,6 +3937,7 @@
       "/assets/images/catalog/ysl/ysl-4.jpg"
     ],
     "format_details": "Peso lordo: 120g",
+    "price": 19.99,
     "description": "Bronzer di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3738,6 +3954,7 @@
       "/assets/images/catalog/ysl/ysl-5.jpg"
     ],
     "format_details": null,
+    "price": 24.99,
     "description": "Lipstick & Blush 2-in-1 Set di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3754,6 +3971,7 @@
       "/assets/images/catalog/ysl/ysl-6.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "YSL COUTURE MINI CLUTCH 2-piece set di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3767,6 +3985,7 @@
       "/assets/images/catalog/ysl/ysl-7.jpg"
     ],
     "format_details": "Peso lordo: 220g",
+    "price": null,
     "description": "YSL Couture Eye Palette Nude Hours Eyeshadow Limited Edition di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3782,6 +4001,7 @@
       "/assets/images/catalog/ysl/ysl-8.jpg"
     ],
     "format_details": "Peso lordo: 200g",
+    "price": null,
     "description": "Limited-edition Golden Oasis Face Palette In Multi di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3797,6 +4017,7 @@
       "/assets/images/catalog/ysl/ysl-9.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "YSL Four-Color Facial Makeup Palette di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3812,6 +4033,7 @@
       "/assets/images/catalog/ysl/ysl-9-b.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "YSL Four-Color Facial Makeup Palette di YSL. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3829,6 +4051,7 @@
       "/assets/images/catalog/chanel/ch-1.jpg"
     ],
     "format_details": "Peso lordo: 125g",
+    "price": 24.99,
     "description": "Bronzer di Chanel. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3851,6 +4074,7 @@
       "/assets/images/catalog/hourglass/hou-1.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Vanish™ Airbrush Concealer di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3871,6 +4095,7 @@
       "/assets/images/catalog/hourglass/hou-2.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Ambient Lighting Edit Flushed Edit Face Palette di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3890,6 +4115,7 @@
       "/assets/images/catalog/hourglass/hou-3.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "2025 Limited Edition Ambient Lighting Palette di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3903,6 +4129,7 @@
       "/assets/images/catalog/hourglass/hou-4.jpg"
     ],
     "format_details": "Peso lordo: 30g",
+    "price": null,
     "description": "No. 15 Blush Brush di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3916,6 +4143,7 @@
       "/assets/images/catalog/hourglass/hou-5.jpg"
     ],
     "format_details": "Peso lordo: 35g",
+    "price": null,
     "description": "Ambient Soft Glow Foundation Brush di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3929,6 +4157,7 @@
       "/assets/images/catalog/hourglass/hou-6.jpg"
     ],
     "format_details": "Peso lordo: 45g",
+    "price": null,
     "description": "Powder brush di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3942,6 +4171,7 @@
       "/assets/images/catalog/hourglass/hou-7.jpg"
     ],
     "format_details": "Peso lordo: 20g",
+    "price": null,
     "description": "Concealer Brush di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   },
   {
@@ -3955,6 +4185,7 @@
       "/assets/images/catalog/hourglass/hou-8.jpg"
     ],
     "format_details": null,
+    "price": null,
     "description": "Complexion Essentials Dragon Brush Set di Hourglass. Consulta le varianti disponibili e scegli quella più adatta alle tue esigenze."
   }
 ]

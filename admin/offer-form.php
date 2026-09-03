@@ -59,13 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             ]);
             $pdo->prepare('DELETE FROM offer_products WHERE offer_id = :id')->execute(['id' => $id]);
         } else {
-            $stmt = $pdo->prepare('INSERT INTO offers (name, offer_price, active) VALUES (:name, :offer_price, :active)');
+            $stmt = $pdo->prepare('INSERT INTO offers (name, offer_price, active) VALUES (:name, :offer_price, :active) RETURNING id');
             $stmt->execute([
                 'name' => $formData['name'],
                 'offer_price' => $formData['offer_price'],
                 'active' => $formData['active'] ? 1 : 0,
             ]);
-            $id = (int)$pdo->lastInsertId();
+            $id = (int)$stmt->fetchColumn();
         }
 
         $insertStmt = $pdo->prepare('INSERT INTO offer_products (offer_id, product_id) VALUES (:offer_id, :product_id)');

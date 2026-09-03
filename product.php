@@ -24,7 +24,7 @@ $selectableVariants = selectable_variants($variants);
 $size = extract_product_size($product['name']);
 
 $stmt = $pdo->prepare(
-    'SELECT * FROM products WHERE brand = :brand AND id != :id ORDER BY RAND() LIMIT 4'
+    'SELECT * FROM products WHERE brand = :brand AND id != :id ORDER BY RANDOM() LIMIT 4'
 );
 $stmt->execute(['brand' => $product['brand'], 'id' => $product['id']]);
 $related = $stmt->fetchAll();

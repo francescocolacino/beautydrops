@@ -111,7 +111,8 @@ try {
     $token = generate_order_token();
     $stmt = $pdo->prepare(
         'INSERT INTO orders (access_token, customer_first_name, customer_last_name, customer_email, subtotal, discount_total, total, has_price_on_request)
-         VALUES (:token, :first_name, :last_name, :email, :subtotal, :discount_total, :total, :on_request)'
+         VALUES (:token, :first_name, :last_name, :email, :subtotal, :discount_total, :total, :on_request)
+         RETURNING id'
     );
     $stmt->execute([
         'token' => $token,
@@ -123,7 +124,7 @@ try {
         'total' => round($total, 2),
         'on_request' => $hasPriceOnRequest ? 1 : 0,
     ]);
-    $orderId = (int) $pdo->lastInsertId();
+    $orderId = (int) $stmt->fetchColumn();
 
     $itemStmt = $pdo->prepare(
         'INSERT INTO order_items (order_id, product_id, brand, name, variant, quantity, unit_price, discount_percent, line_total)

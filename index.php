@@ -4,7 +4,7 @@ require_once __DIR__ . '/includes/functions.php';
 $pdo = get_db();
 
 $offers = $pdo->query(
-    "SELECT * FROM offers WHERE active = 1 ORDER BY created_at DESC"
+    "SELECT * FROM offers WHERE active = TRUE ORDER BY created_at DESC"
 )->fetchAll();
 
 foreach ($offers as &$offer) {

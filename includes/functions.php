@@ -152,7 +152,7 @@ function get_active_offer_product_ids(PDO $pdo): array
         'SELECT DISTINCT op.product_id
          FROM offer_products op
          INNER JOIN offers o ON o.id = op.offer_id
-         WHERE o.active = 1'
+         WHERE o.active = TRUE'
     )->fetchAll(PDO::FETCH_COLUMN);
 
     return array_map('intval', $rows);

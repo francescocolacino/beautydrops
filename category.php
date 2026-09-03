@@ -23,7 +23,7 @@ $byBrand = [];
 foreach ($products as $product) {
     $byBrand[$product['brand']][] = $product;
 }
-ksort($byBrand, SORT_NATURAL | SORT_FLAG_CASE);
+$byBrand = order_brands_by_priority($byBrand);
 
 $pageTitle = category_label($slug) . ' · ' . SITE_NAME;
 $activeSlug = $slug;

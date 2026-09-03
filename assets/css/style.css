@@ -577,26 +577,41 @@ svg { display: block; }
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
-  max-width: 920px;
-  margin: 22px auto 0;
+  column-gap: 28px;
+  row-gap: 10px;
+  margin: 28px auto 0;
+  padding: 16px 12px;
+  border-top: 1px solid rgba(169, 135, 63, 0.2);
+  border-bottom: 1px solid rgba(169, 135, 63, 0.2);
 }
 
 .brand-index a {
-  padding: 6px 12px;
-  border: 1px solid rgba(169, 135, 63, 0.28);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
+  position: relative;
+  padding: 4px 2px 8px;
   color: var(--color-text-soft);
-  font-size: 0.76rem;
-  font-weight: 500;
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  font-family: var(--font-title);
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.brand-index a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-red));
+  transition: right 0.25s ease;
 }
 
 .brand-index a:hover {
   color: var(--color-gold-dark);
-  border-color: var(--color-gold);
-  background: var(--color-surface);
+}
+
+.brand-index a:hover::after {
+  right: 0;
 }
 
 .brand-group { margin-bottom: 46px; scroll-margin-top: 110px; }

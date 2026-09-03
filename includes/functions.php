@@ -22,6 +22,51 @@ function brand_anchor(string $brand): string
     return 'brand-' . substr(hash('sha256', $brand), 0, 12);
 }
 
+const FEATURED_BRANDS = [
+    'Huda Beauty',
+    'Rhode',
+    'Charlotte Tilbury',
+    'Rare Beauty',
+    'Summer Fridays',
+    'Sol de Janeiro',
+    'Laneige',
+    'Dior',
+    'E.L.F.',
+    'Tarte',
+];
+
+/**
+ * Ordina i brand: prima quelli in FEATURED_BRANDS (nell'ordine indicato),
+ * poi gli altri dal più al meno rifornito.
+ *
+ * @param array<string, array> $byBrand prodotti raggruppati per brand
+ * @return array<string, array>
+ */
+function order_brands_by_priority(array $byBrand): array
+{
+    $priority = array_flip(array_map('mb_strtolower', FEATURED_BRANDS));
+
+    $brands = array_keys($byBrand);
+    usort($brands, function (string $a, string $b) use ($priority, $byBrand) {
+        $pa = $priority[mb_strtolower($a)] ?? PHP_INT_MAX;
+        $pb = $priority[mb_strtolower($b)] ?? PHP_INT_MAX;
+        if ($pa !== $pb) {
+            return $pa <=> $pb;
+        }
+        $countDiff = count($byBrand[$b]) - count($byBrand[$a]);
+        if ($countDiff !== 0) {
+            return $countDiff;
+        }
+        return strnatcasecmp($a, $b);
+    });
+
+    $ordered = [];
+    foreach ($brands as $brand) {
+        $ordered[$brand] = $byBrand[$brand];
+    }
+    return $ordered;
+}
+
 function format_price(?float $price): string
 {
     if ($price === null) {

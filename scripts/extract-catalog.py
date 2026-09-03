@@ -15,15 +15,15 @@ CODE_RE = re.compile(
 
 # Coordinate delle colonne nei diversi fogli del PDF (punti PDF).
 LAYOUTS = [
-    (range(1, 6), (84.0, 210.2, 308.4, 398.3)),
-    (range(6, 9), (91.4, 203.4, 269.2, 393.4)),
-    (range(9, 12), (91.4, 203.4, 279.0, 368.5)),
-    (range(12, 17), (53.9, 169.4, 246.6, 382.2)),
-    (range(17, 20), (81.5, 193.4, 274.7, 357.5)),
-    (range(20, 22), (91.4, 192.0, 273.2, 365.9)),
-    (range(22, 28), (91.4, 203.4, 285.7, 383.0)),
-    (range(28, 34), (127.7, 221.7, 310.4, 429.1)),
-    (range(34, 41), (91.2, 195.8, 283.3, 401.3)),
+    (range(1, 6), (84.0, 210.2, 308.4, 398.3, 503.8, 534.4)),
+    (range(6, 9), (91.4, 203.4, 269.2, 393.4, 502.6, 540.0)),
+    (range(9, 12), (91.4, 203.4, 279.0, 368.5, 467.9, 505.5)),
+    (range(12, 17), (53.9, 169.4, 246.6, 382.2, 471.7, 509.6)),
+    (range(17, 20), (81.5, 193.4, 274.7, 357.5, 443.9, 481.5)),
+    (range(20, 22), (91.4, 192.0, 273.2, 365.9, 447.7, 485.0)),
+    (range(22, 28), (91.4, 203.4, 285.7, 383.0, 455.5, 538.0)),
+    (range(28, 34), (127.7, 221.7, 310.4, 429.1, 502.5, 534.0)),
+    (range(34, 41), (91.2, 195.8, 283.3, 401.3, 489.4, 528.0)),
 ]
 
 BRANDS_BY_PREFIX = {
@@ -128,7 +128,7 @@ ACCESSORY_CODES = {
 }
 
 
-def layout_for(page_number: int) -> tuple[float, float, float, float]:
+def layout_for(page_number: int) -> tuple[float, float, float, float, float, float]:
     for pages, layout in LAYOUTS:
         if page_number in pages:
             return layout
@@ -203,6 +203,111 @@ def text_in_cell(page: pymupdf.Page, left: float, top: float, right: float, bott
     return clean_lines(page.get_textbox(rect))
 
 
+def normalize_measure(value: str) -> str:
+    return re.sub(r"\s+", " ", value.replace(",", ".")).strip()
+
+
+def format_details(name: str, variants: list[str], weight_lines: list[str]) -> str | None:
+    format_matches = re.findall(
+        r"\b\d+(?:[.,]\d+)?\s*(?:ml|g|pcs)\b",
+        " ".join([name, *variants]),
+        flags=re.IGNORECASE,
+    )
+    formats = list(dict.fromkeys(normalize_measure(value) for value in format_matches))
+
+    gross_weight = ""
+    for line in weight_lines:
+        match = re.search(r"\b\d+(?:[.,]\d+)?\s*g\b", line, flags=re.IGNORECASE)
+        if match:
+            gross_weight = normalize_measure(match.group(0))
+            break
+        if re.fullmatch(r"\d+(?:[.,]\d+)?", line):
+            gross_weight = normalize_measure(line) + " g"
+            break
+
+    details: list[str] = []
+    if formats:
+        details.append("Formato: " + " / ".join(formats))
+    if gross_weight and gross_weight.casefold() not in {value.casefold() for value in formats}:
+        details.append("Peso lordo: " + gross_weight)
+    return " · ".join(details) or None
+
+
+def save_gallery_images(
+    document: pymupdf.Document,
+    page: pymupdf.Page,
+    image_infos: list[dict[str, object]],
+    image_left: float,
+    image_right: float,
+    top: float,
+    bottom: float,
+    destination: Path,
+    filename_stem: str,
+) -> list[Path]:
+    stale_pattern = re.compile(rf"^{re.escape(filename_stem)}-\d+\.jpg$")
+    for stale_file in destination.iterdir():
+        if stale_file.is_file() and stale_pattern.fullmatch(stale_file.name):
+            stale_file.unlink()
+
+    matching_images: list[dict[str, object]] = []
+    for info in image_infos:
+        bbox = pymupdf.Rect(info["bbox"])
+        center_x = (bbox.x0 + bbox.x1) / 2
+        center_y = (bbox.y0 + bbox.y1) / 2
+        if image_left - 2 <= center_x <= image_right + 2 and top <= center_y <= bottom:
+            matching_images.append(info)
+
+    visible_images: list[dict[str, object]] = []
+    for info in matching_images:
+        candidate = pymupdf.Rect(info["bbox"])
+        replaced = False
+        for index, existing_info in enumerate(visible_images):
+            existing = pymupdf.Rect(existing_info["bbox"])
+            intersection = candidate & existing
+            smaller_area = min(candidate.get_area(), existing.get_area())
+            overlap = intersection.get_area() / smaller_area if smaller_area else 0
+            if overlap >= 0.8:
+                # L'ultimo oggetto disegnato è quello visibile nel PDF.
+                visible_images[index] = info
+                replaced = True
+                break
+        if not replaced:
+            visible_images.append(info)
+
+    matching_images = visible_images
+    matching_images.sort(key=lambda info: (info["bbox"][1], info["bbox"][0]))
+    saved: list[Path] = []
+    seen_positions: set[tuple[int, tuple[int, int, int, int]]] = set()
+
+    for info in matching_images:
+        xref = int(info["xref"])
+        rounded_bbox = tuple(int(round(value)) for value in info["bbox"])
+        position_key = (xref, rounded_bbox)
+        if xref <= 0 or position_key in seen_positions:
+            continue
+        seen_positions.add(position_key)
+
+        number = len(saved) + 1
+        suffix = "" if number == 1 else f"-{number}"
+        output_path = destination / f"{filename_stem}{suffix}.jpg"
+        pixmap = pymupdf.Pixmap(document, xref)
+        if pixmap.colorspace is not None and pixmap.colorspace.n > 3:
+            pixmap = pymupdf.Pixmap(pymupdf.csRGB, pixmap)
+        if pixmap.alpha:
+            pixmap = pymupdf.Pixmap(pixmap, 0)
+        output_path.write_bytes(pixmap.tobytes("jpeg", jpg_quality=88))
+        saved.append(output_path)
+
+    if not saved:
+        output_path = destination / f"{filename_stem}.jpg"
+        clip = pymupdf.Rect(image_left + 1.0, top + 1.0, image_right - 1.0, bottom - 1.0)
+        pixmap = page.get_pixmap(matrix=pymupdf.Matrix(3, 3), clip=clip, alpha=False)
+        pixmap.save(output_path, jpg_quality=86)
+        saved.append(output_path)
+
+    return saved
+
+
 def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
     document = pymupdf.open(pdf_path)
     image_root = project_root / "assets" / "images" / "catalog"
@@ -215,8 +320,9 @@ def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
 
     for page_index, page in enumerate(document):
         page_number = page_index + 1
-        image_left, image_right, name_right, variants_right = layout_for(page_number)
+        image_left, image_right, name_right, variants_right, price_right, table_right = layout_for(page_number)
         boundaries = horizontal_boundaries(page)
+        image_infos = page.get_image_info(xrefs=True)
 
         code_words = []
         for word in page.get_text("words"):
@@ -241,6 +347,7 @@ def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
 
             name_lines = text_in_cell(page, image_right, top, name_right, bottom)
             variants = text_in_cell(page, name_right, top, variants_right, bottom)
+            weight_lines = text_in_cell(page, price_right, top, table_right, bottom)
             brand = brand_for(page_number, code)
             brand_aliases = {brand.casefold(), "ct", brand.replace(".", "").casefold()}
             name_lines = [line for line in name_lines if line.casefold() not in brand_aliases]
@@ -261,12 +368,22 @@ def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
 
             brand_directory = image_root / slugify(brand)
             brand_directory.mkdir(parents=True, exist_ok=True)
-            image_filename = f"{slugify(unique_code)}.jpg"
-            image_path = brand_directory / image_filename
-
-            clip = pymupdf.Rect(image_left + 1.0, top + 1.0, image_right - 1.0, bottom - 1.0)
-            pixmap = page.get_pixmap(matrix=pymupdf.Matrix(3, 3), clip=clip, alpha=False)
-            pixmap.save(image_path, jpg_quality=86)
+            filename_stem = slugify(unique_code)
+            gallery_files = save_gallery_images(
+                document,
+                page,
+                image_infos,
+                image_left,
+                image_right,
+                top,
+                bottom,
+                brand_directory,
+                filename_stem,
+            )
+            gallery_urls = [
+                "/assets/images/catalog/" + slugify(brand) + "/" + image_file.name
+                for image_file in gallery_files
+            ]
 
             if code in TECH_CODES:
                 category = "elettronica"
@@ -282,11 +399,13 @@ def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
                     "brand": brand,
                     "name": name or f"Prodotto {unique_code}",
                     "variants": variants,
-                    "image_path": "/assets/images/catalog/"
-                    + slugify(brand)
-                    + "/"
-                    + image_filename,
-                    "description": f"Codice catalogo: {unique_code}",
+                    "image_path": gallery_urls[0],
+                    "images": gallery_urls,
+                    "format_details": format_details(name, variants, weight_lines),
+                    "description": (
+                        f"{name} di {brand}. Consulta le varianti disponibili "
+                        "e scegli quella più adatta alle tue esigenze."
+                    ),
                 }
             )
 

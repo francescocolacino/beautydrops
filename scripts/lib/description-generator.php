@@ -186,6 +186,19 @@ const VARIANT_KEYWORDS = [
     'grape' => 'richiamo uva',
     'lemon' => 'richiamo limone',
     'limone' => 'richiamo limone',
+    'fuchsia' => 'tonalità fucsia',
+    'taupe' => 'tonalità taupe (grigio-marrone)',
+    'warm' => 'tonalità calda',
+    'intense' => 'tonalità intensa',
+    'neutral' => 'tonalità neutra',
+    'neutra' => 'tonalità neutra',
+    'pine apple' => 'richiamo ananas',
+    'heat' => 'finish caldo',
+    'cold' => 'nota fresca',
+    'chocolit' => 'tonalità cioccolato',
+    'sugar' => 'nota dolce zuccherata',
+    'soft' => 'tonalità delicata',
+    'coco' => 'tonalità cacao chiaro',
 ];
 
 /**
@@ -339,6 +352,27 @@ const PRODUCT_LINE_VARIANT_OVERRIDES = [
         'maldives' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
         'tahiti' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
     ],
+    'rhode blush' => [
+        'juice box piggy' => 'tonalità rosa acceso (hot pink/baby pink)',
+        'juice box' => 'tonalità rosa acceso (hot pink)',
+        'piggy' => 'tonalità rosa baby',
+        'spicy marg' => 'tonalità corallo acceso',
+        'sprinkle' => 'tonalità rosa perlato caldo',
+        'tan line sun' => 'tonalità rosa abbronzato/arancio speziato',
+        'tan line' => 'tonalità rosa abbronzato',
+        'soak' => 'tonalità arancio speziato',
+    ],
+    'fenty beauty lip gloss' => [
+        'riri' => 'tonalità firma del brand (nude-rosa)',
+        'fruit snackz' => 'tonalità rosso bacca intenso',
+    ],
+    'fenty beauty ice' => [
+        'pine apple' => 'richiamo ananas',
+        "cold heart" => 'nota fresca mentolata',
+    ],
+    'ambient lighting edit flushed' => [
+        'mood exposure' => 'tonalità prugna tenue',
+    ],
 ];
 
 function is_set_product(string $name): bool
@@ -402,7 +436,21 @@ function product_line_variant_override(string $productName, string $rawVariant):
  */
 function looks_like_pure_shade_code(string $rawVariant): bool
 {
-    return preg_match('/[a-zA-Z]{3,}/', $rawVariant) !== 1;
+    // "NEW" è un prefisso ricorrente nel dato grezzo (es. "NEW 01"), non una
+    // parola descrittiva: va ignorato prima di cercare una sequenza di 3+
+    // lettere reali, altrimenti "NEW 01" non verrebbe mai trattato come codice.
+    $withoutNoise = preg_replace('/\bnew\b/i', '', $rawVariant) ?? $rawVariant;
+    return preg_match('/[a-zA-Z]{3,}/', $withoutNoise) !== 1;
+}
+
+/**
+ * Vero se la stringa non è affatto una variante reale ma un'etichetta
+ * residua dell'estrazione dal PDF fornitore (es. "total 28 colors" che
+ * indicava il conteggio delle tonalità, finito per errore nell'elenco).
+ */
+function is_metadata_variant(string $rawVariant): bool
+{
+    return preg_match('/^\s*total\s+\d+\s+colou?rs?\s*$/i', $rawVariant) === 1;
 }
 
 function variant_descriptor(string $rawVariant, ?string $type, string $productName = ''): string
@@ -457,6 +505,8 @@ function set_composition_line(array $variants): string
  */
 function generate_rich_description(string $name, array $variants): string
 {
+    $variants = array_values(array_filter($variants, fn($v) => !is_metadata_variant($v)));
+
     $type = classify_product_type($name);
     $intro = PRODUCT_TYPE_INTROS[$type ?? '_default'] ?? PRODUCT_TYPE_INTROS['_default'];
     $isSet = is_set_product($name);

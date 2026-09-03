@@ -27,6 +27,7 @@ $formData = $product ?: [
     'orderable_quantity' => 0,
     'price' => null,
     'description' => '',
+    'product_type' => null,
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -41,6 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $priceInput = trim($_POST['price'] ?? '');
     $formData['price'] = $priceInput === '' ? null : (float)str_replace(',', '.', $priceInput);
     $formData['description'] = trim($_POST['description'] ?? '');
+    $productTypeInput = $_POST['product_type'] ?? '';
+    $formData['product_type'] = array_key_exists($productTypeInput, PRODUCT_TYPES) ? $productTypeInput : null;
 
     if (!array_key_exists($formData['category'], CATEGORIES)) {
         $errors[] = 'Seleziona una categoria valida.';
@@ -77,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare(
                 'UPDATE products SET category=:category, brand=:brand, name=:name, variants=:variants,
                  image_path=:image_path, stock_quantity=:stock_quantity, orderable_quantity=:orderable_quantity,
-                 price=:price, description=:description WHERE id=:id'
+                 price=:price, description=:description, product_type=:product_type WHERE id=:id'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -89,12 +92,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'orderable_quantity' => $formData['orderable_quantity'],
                 'price' => $formData['price'],
                 'description' => $formData['description'] ?: null,
+                'product_type' => $formData['product_type'],
                 'id' => $id,
             ]);
         } else {
             $stmt = $pdo->prepare(
-                'INSERT INTO products (category, brand, name, variants, image_path, stock_quantity, orderable_quantity, price, description)
-                 VALUES (:category, :brand, :name, :variants, :image_path, :stock_quantity, :orderable_quantity, :price, :description)'
+                'INSERT INTO products (category, brand, name, variants, image_path, stock_quantity, orderable_quantity, price, description, product_type)
+                 VALUES (:category, :brand, :name, :variants, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type)'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -106,6 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'orderable_quantity' => $formData['orderable_quantity'],
                 'price' => $formData['price'],
                 'description' => $formData['description'] ?: null,
+                'product_type' => $formData['product_type'],
             ]);
         }
 
@@ -151,6 +156,16 @@ require __DIR__ . '/../includes/admin-header.php';
   <div class="form-row">
     <label for="name">Nome prodotto</label>
     <input type="text" id="name" name="name" required value="<?= h($formData['name']) ?>">
+  </div>
+
+  <div class="form-row">
+    <label for="product_type">Tipo prodotto (opzionale, per il filtro sul sito)</label>
+    <select id="product_type" name="product_type">
+      <option value="">Nessuno / non specificato</option>
+      <?php foreach (PRODUCT_TYPES as $typeSlug => $typeLabel): ?>
+        <option value="<?= h($typeSlug) ?>" <?= $formData['product_type'] === $typeSlug ? 'selected' : '' ?>><?= h($typeLabel) ?></option>
+      <?php endforeach; ?>
+    </select>
   </div>
 
   <div class="form-row">

@@ -45,6 +45,11 @@ require __DIR__ . '/../includes/admin-header.php';
   <a href="<?= url('admin/product-form.php') ?>" class="btn btn-primary">+ Nuovo prodotto</a>
 </div>
 
+<div class="search-box admin-search-box">
+  <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+  <input type="search" id="adminProductSearch" placeholder="Cerca per brand o nome prodotto...">
+</div>
+
 <div class="admin-filters">
   <a href="<?= url('admin/dashboard.php') ?>" class="filter-pill <?= $categoryFilter === '' ? 'active' : '' ?>">Tutte</a>
   <?php foreach (CATEGORIES as $slug => $label): ?>
@@ -70,7 +75,7 @@ require __DIR__ . '/../includes/admin-header.php';
     </thead>
     <tbody>
       <?php foreach ($products as $product): ?>
-        <tr>
+        <tr data-search="<?= h(mb_strtolower($product['brand'] . ' ' . $product['name'])) ?>">
           <td class="col-thumb">
             <?php if (!empty($product['image_path'])): ?>
               <img src="<?= h(url($product['image_path'])) ?>" alt="" class="table-thumb">

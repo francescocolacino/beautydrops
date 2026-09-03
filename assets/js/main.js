@@ -22,19 +22,37 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var productSearch = document.getElementById('productSearch');
-  if (productSearch) {
-    productSearch.addEventListener('input', function () {
-      var query = productSearch.value.trim().toLowerCase();
+  var typeFilter = document.getElementById('typeFilter');
+  if (productSearch || typeFilter) {
+    var applyProductFilters = function () {
+      var query = productSearch ? productSearch.value.trim().toLowerCase() : '';
+      var type = typeFilter ? typeFilter.value : '';
       document.querySelectorAll('.brand-group').forEach(function (group) {
         var brand = group.getAttribute('data-brand') || '';
         var visibleCount = 0;
         group.querySelectorAll('.product-card').forEach(function (card) {
           var name = card.getAttribute('data-name') || '';
-          var matches = query === '' || brand.includes(query) || name.includes(query);
+          var cardType = card.getAttribute('data-type') || '';
+          var matchesQuery = query === '' || brand.includes(query) || name.includes(query);
+          var matchesType = type === '' || cardType === type;
+          var matches = matchesQuery && matchesType;
           card.hidden = !matches;
           if (matches) visibleCount++;
         });
         group.hidden = visibleCount === 0;
+      });
+    };
+    if (productSearch) productSearch.addEventListener('input', applyProductFilters);
+    if (typeFilter) typeFilter.addEventListener('change', applyProductFilters);
+  }
+
+  var adminProductSearch = document.getElementById('adminProductSearch');
+  if (adminProductSearch) {
+    adminProductSearch.addEventListener('input', function () {
+      var query = adminProductSearch.value.trim().toLowerCase();
+      document.querySelectorAll('#productsTableWrap tbody tr').forEach(function (row) {
+        var haystack = row.getAttribute('data-search') || '';
+        row.hidden = query !== '' && !haystack.includes(query);
       });
     });
   }

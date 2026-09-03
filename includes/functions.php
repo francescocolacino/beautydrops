@@ -7,6 +7,41 @@ const CATEGORIES = [
     'abbigliamento' => 'Abbigliamento, Borse e Scarpe',
 ];
 
+/**
+ * Tipo di prodotto (es. "blush", "mascara"): campo opzionale, usato per il
+ * filtro a tendina nelle pagine categoria. Non è una categoria a sé (resta
+ * dentro `category`), solo un'etichetta più specifica facoltativa.
+ */
+const PRODUCT_TYPES = [
+    'fondotinta' => 'Fondotinta',
+    'correttore' => 'Correttore',
+    'cipria' => 'Cipria',
+    'blush' => 'Blush',
+    'bronzer' => 'Bronzer e contouring',
+    'illuminante' => 'Illuminante',
+    'primer' => 'Primer',
+    'spray_fissante' => 'Spray fissante',
+    'mascara' => 'Mascara',
+    'ombretto' => 'Ombretto',
+    'rossetto' => 'Rossetto',
+    'gloss' => 'Gloss e olio labbra',
+    'matita_labbra' => 'Matita labbra',
+    'detergente' => 'Detergente',
+    'maschera' => 'Maschera viso',
+    'siero' => 'Sérum e trattamento',
+    'crema' => 'Crema viso',
+    'olio_capelli' => 'Olio per capelli',
+    'profumo_capelli' => 'Profumo per capelli',
+    'profumo' => 'Profumo',
+    'set' => 'Set e kit',
+    'accessorio' => 'Accessorio',
+];
+
+function product_type_label(?string $slug): string
+{
+    return $slug !== null && isset(PRODUCT_TYPES[$slug]) ? PRODUCT_TYPES[$slug] : '';
+}
+
 function h(?string $value): string
 {
     return htmlspecialchars($value ?? '', ENT_QUOTES, 'UTF-8');

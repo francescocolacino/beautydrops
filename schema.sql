@@ -17,8 +17,14 @@ CREATE TABLE IF NOT EXISTS products (
   updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Aggiunta in una revisione successiva: CREATE TABLE IF NOT EXISTS non tocca
+-- le tabelle già esistenti, quindi serve un ALTER esplicito e idempotente
+-- per chi ha già eseguito lo schema prima di questa colonna.
+ALTER TABLE products ADD COLUMN IF NOT EXISTS product_type VARCHAR(40) NULL;
+
 CREATE INDEX IF NOT EXISTS idx_products_category ON products (category);
 CREATE INDEX IF NOT EXISTS idx_products_brand ON products (brand);
+CREATE INDEX IF NOT EXISTS idx_products_type ON products (product_type);
 
 -- Aggiorna automaticamente updated_at ad ogni UPDATE su products.
 CREATE OR REPLACE FUNCTION set_products_updated_at()

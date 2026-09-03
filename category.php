@@ -25,6 +25,17 @@ foreach ($products as $product) {
 }
 $byBrand = order_brands_by_priority($byBrand);
 
+// Solo i tipi effettivamente presenti tra i prodotti di questa categoria,
+// nell'ordine curato di PRODUCT_TYPES (non alfabetico).
+$availableTypes = [];
+foreach ($products as $product) {
+    $type = $product['product_type'] ?? null;
+    if ($type !== null && isset(PRODUCT_TYPES[$type]) && !isset($availableTypes[$type])) {
+        $availableTypes[$type] = PRODUCT_TYPES[$type];
+    }
+}
+uksort($availableTypes, fn($a, $b) => array_search($a, array_keys(PRODUCT_TYPES)) <=> array_search($b, array_keys(PRODUCT_TYPES)));
+
 $pageTitle = category_label($slug) . ' · ' . SITE_NAME;
 $activeSlug = $slug;
 require __DIR__ . '/includes/header.php';
@@ -35,9 +46,19 @@ require __DIR__ . '/includes/header.php';
     <a href="<?= url('index.php') ?>" class="breadcrumb">&larr; Tutte le categorie</a>
     <h1><?= h(category_label($slug)) ?></h1>
     <p class="category-count"><?= count($products) ?> <?= count($products) === 1 ? 'prodotto disponibile' : 'prodotti disponibili' ?></p>
-    <div class="search-box">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
-      <input type="search" id="productSearch" placeholder="Cerca per brand o nome prodotto...">
+    <div class="search-filter-row">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
+        <input type="search" id="productSearch" placeholder="Cerca per brand o nome prodotto...">
+      </div>
+      <?php if (!empty($availableTypes)): ?>
+        <select id="typeFilter" class="type-filter-select">
+          <option value="">Tutti i tipi</option>
+          <?php foreach ($availableTypes as $typeSlug => $typeLabel): ?>
+            <option value="<?= h($typeSlug) ?>"><?= h($typeLabel) ?></option>
+          <?php endforeach; ?>
+        </select>
+      <?php endif; ?>
     </div>
     <?php if (!empty($byBrand)): ?>
       <nav class="brand-index" aria-label="Vai al brand">
@@ -64,7 +85,7 @@ require __DIR__ . '/includes/header.php';
             $cardName = display_product_name($product['name'], $variants);
             $cardVariants = selectable_variants($variants);
           ?>
-          <a href="<?= url('product.php?id=' . (int)$product['id']) ?>" class="product-card" data-name="<?= h(mb_strtolower($cardName)) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>">
+          <a href="<?= url('product.php?id=' . (int)$product['id']) ?>" class="product-card" data-name="<?= h(mb_strtolower($cardName)) ?>" data-type="<?= h($product['product_type'] ?? '') ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>">
             <div class="product-image">
               <?php if (!empty($product['image_path'])): ?>
                 <img src="<?= h(url($product['image_path'])) ?>" alt="<?= h($cardName) ?>" loading="lazy">

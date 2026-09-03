@@ -129,6 +129,24 @@ php -S localhost:8000
 Assicurati che `assets/images/products/` e `assets/orders/` siano scrivibili
 dal processo PHP locale.
 
+## Rigenerare le descrizioni prodotto
+
+`scripts/regenerate-descriptions.php` riscrive la colonna `description` di
+**tutti** i prodotti nel formato breve (cos'è/a che serve/come si usa, con
+elenco puntato delle varianti o composizione se è un set). Non gira
+automaticamente ad ogni deploy — sovrascriverebbe anche descrizioni scritte
+a mano dall'admin — va quindi eseguito manualmente quando serve:
+
+```bash
+php scripts/regenerate-descriptions.php
+```
+
+La stessa logica di generazione (`scripts/lib/description-generator.php`)
+è usata anche da `scripts/enrich-descriptions.php`, che aggiorna invece
+`data/catalog-products.json` (la fonte usata da un eventuale nuovo import a
+catalogo vuoto): tenerli sincronizzati evita che un redeploy da zero
+riporti indietro le vecchie descrizioni.
+
 ## Configurazione del database (`includes/db.php`)
 
 La connessione legge, in ordine di priorità:

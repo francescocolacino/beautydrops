@@ -116,16 +116,6 @@ MANUAL_NAMES = {
 }
 
 TECH_CODES = {"Ph-1", "Rh-3", "Rh-4", "Rh-5"}
-ACCESSORY_CODES = {
-    *(f"Rh-{number}" for number in range(21, 34)),
-    "Rh-35",
-    "Rh-36",
-    "Hou-4",
-    "Hou-5",
-    "Hou-6",
-    "Hou-7",
-    "Hou-8",
-}
 
 
 def layout_for(page_number: int) -> tuple[float, float, float, float, float, float]:
@@ -387,8 +377,6 @@ def extract(pdf_path: Path, project_root: Path) -> list[dict[str, object]]:
 
             if code in TECH_CODES:
                 category = "elettronica"
-            elif code in ACCESSORY_CODES:
-                category = "abbigliamento"
             else:
                 category = "cosmetici"
 

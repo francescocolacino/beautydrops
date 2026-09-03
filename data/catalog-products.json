@@ -348,7 +348,7 @@
   },
   {
     "code": "Rh-21",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "paper bag",
     "variants": [
@@ -368,7 +368,7 @@
   },
   {
     "code": "Rh-22",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "makeup bag",
     "variants": [
@@ -385,7 +385,7 @@
   },
   {
     "code": "Rh-23",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "big makeup bag",
     "variants": [
@@ -402,7 +402,7 @@
   },
   {
     "code": "Rh-24",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "silicone makeup bag",
     "variants": [
@@ -424,7 +424,7 @@
   },
   {
     "code": "Rh-25",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "mirror",
     "variants": [],
@@ -438,7 +438,7 @@
   },
   {
     "code": "Rh-26",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "hairband",
     "variants": [],
@@ -452,7 +452,7 @@
   },
   {
     "code": "Rh-27",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "sticker",
     "variants": [
@@ -469,7 +469,7 @@
   },
   {
     "code": "Rh-28",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "sticker set",
     "variants": [
@@ -487,7 +487,7 @@
   },
   {
     "code": "Rh-29",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "paper box (old)",
     "variants": [],
@@ -501,7 +501,7 @@
   },
   {
     "code": "Rh-30",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "paper box (new)",
     "variants": [
@@ -518,7 +518,7 @@
   },
   {
     "code": "Rh-31",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "paper (with logo)",
     "variants": [],
@@ -532,7 +532,7 @@
   },
   {
     "code": "Rh-32",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "paper",
     "variants": [],
@@ -546,7 +546,7 @@
   },
   {
     "code": "Rh-33",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "card",
     "variants": [
@@ -578,7 +578,7 @@
   },
   {
     "code": "Rh-35",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "bath towel",
     "variants": [],
@@ -592,7 +592,7 @@
   },
   {
     "code": "Rh-36",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Rhode",
     "name": "heart makeup bag",
     "variants": [
@@ -4120,7 +4120,7 @@
   },
   {
     "code": "Hou-4",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Hourglass",
     "name": "No. 15 Blush Brush",
     "variants": [],
@@ -4134,7 +4134,7 @@
   },
   {
     "code": "Hou-5",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Hourglass",
     "name": "Ambient Soft Glow Foundation Brush",
     "variants": [],
@@ -4148,7 +4148,7 @@
   },
   {
     "code": "Hou-6",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Hourglass",
     "name": "Powder brush",
     "variants": [],
@@ -4162,7 +4162,7 @@
   },
   {
     "code": "Hou-7",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Hourglass",
     "name": "Concealer Brush",
     "variants": [],
@@ -4176,7 +4176,7 @@
   },
   {
     "code": "Hou-8",
-    "category": "abbigliamento",
+    "category": "cosmetici",
     "brand": "Hourglass",
     "name": "Complexion Essentials Dragon Brush Set",
     "variants": [],

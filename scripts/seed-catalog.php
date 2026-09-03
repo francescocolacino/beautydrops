@@ -60,6 +60,48 @@ try {
     }
 
     echo "Prezzi catalogo ripristinati: {$restoredCount}\n";
+
+    // Migrazione una tantum: gli articoli che erano nella categoria
+    // "Abbigliamento, Borse e Scarpe" devono confluire in "Beauty e Cosmetici".
+    // Il marcatore evita di spostare in futuro nuovi prodotti assegnati
+    // volontariamente alla categoria abbigliamento dall'amministrazione.
+    $pdo->exec(
+        'CREATE TABLE IF NOT EXISTS data_migrations (
+            name VARCHAR(191) PRIMARY KEY,
+            applied_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+        )'
+    );
+
+    $migrationName = 'move-abbigliamento-to-cosmetici-20260903';
+    $migrationCheck = $pdo->prepare('SELECT 1 FROM data_migrations WHERE name = :name');
+    $migrationCheck->execute(['name' => $migrationName]);
+
+    if (!$migrationCheck->fetchColumn()) {
+        $pdo->beginTransaction();
+        try {
+            $moveProducts = $pdo->prepare(
+                'UPDATE products SET category = :target WHERE category = :source'
+            );
+            $moveProducts->execute([
+                'target' => 'cosmetici',
+                'source' => 'abbigliamento',
+            ]);
+            $movedCount = $moveProducts->rowCount();
+
+            $markMigration = $pdo->prepare(
+                'INSERT INTO data_migrations (name) VALUES (:name)'
+            );
+            $markMigration->execute(['name' => $migrationName]);
+            $pdo->commit();
+
+            echo "Prodotti spostati da abbigliamento a cosmetici: {$movedCount}\n";
+        } catch (Throwable $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            throw $e;
+        }
+    }
 } catch (Throwable $e) {
     error_log('Seed del catalogo fallito: ' . $e->getMessage());
     fwrite(STDERR, "Errore durante l'importazione del catalogo iniziale.\n");

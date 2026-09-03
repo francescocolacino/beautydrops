@@ -67,6 +67,7 @@ require __DIR__ . '/../includes/admin-header.php';
         <th></th>
         <th>Nome</th>
         <th>Brand</th>
+        <th>Varianti</th>
         <th>Categoria</th>
         <th>Prezzo</th>
         <th>Stato</th>
@@ -75,6 +76,7 @@ require __DIR__ . '/../includes/admin-header.php';
     </thead>
     <tbody>
       <?php foreach ($products as $product): ?>
+        <?php $productVariants = decode_variants($product['variants']); ?>
         <tr data-search="<?= h(mb_strtolower($product['brand'] . ' ' . $product['name'])) ?>">
           <td class="col-thumb">
             <?php if (!empty($product['image_path'])): ?>
@@ -85,6 +87,17 @@ require __DIR__ . '/../includes/admin-header.php';
           </td>
           <td><?= h($product['name']) ?></td>
           <td><?= h($product['brand']) ?></td>
+          <td>
+            <?php if (empty($productVariants)): ?>
+              &mdash;
+            <?php else: ?>
+              <div class="table-chips">
+                <?php foreach ($productVariants as $variant): ?>
+                  <span class="chip"><?= h($variant) ?></span>
+                <?php endforeach; ?>
+              </div>
+            <?php endif; ?>
+          </td>
           <td><?= h(category_label($product['category'])) ?></td>
           <td><?= $product['price'] !== null ? format_price((float)$product['price']) : '&mdash;' ?></td>
           <td><?= render_product_badges($product, $activeOfferProductIds) ?></td>

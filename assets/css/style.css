@@ -799,6 +799,13 @@ svg { display: block; }
   border-radius: 999px;
 }
 
+.table-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 220px;
+}
+
 .product-price {
   font-family: var(--font-title);
   font-weight: 700;

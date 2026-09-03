@@ -111,6 +111,234 @@ const VARIANT_KEYWORDS = [
     'ambra' => 'tonalità ambrata',
     'terracotta' => 'tonalità terracotta',
     'berry' => 'richiamo ai frutti di bosco',
+    'mocha' => 'tonalità marrone caffè',
+    'truffle' => 'tonalità marrone intenso',
+    'cinnamon' => 'tonalità cannella calda',
+    'cannella' => 'tonalità cannella calda',
+    'chacolit' => 'tonalità cioccolato',
+    'melon' => 'richiamo melone',
+    'cucum' => 'richiamo cetriolo',
+    'pineapple' => 'richiamo ananas',
+    'ananas' => 'richiamo ananas',
+    'matcha' => 'richiamo tè matcha',
+    'taro' => 'richiamo taro',
+    'candy' => 'nota dolce zuccherata',
+    'gummy' => 'nota dolce gommosa',
+    'cookie' => 'nota dolce da biscotto',
+    'cake' => 'nota dolce da forno',
+    'waffle' => 'nota dolce da waffle',
+    'honey' => 'richiamo miele',
+    'miele' => 'richiamo miele',
+    'guava' => 'richiamo guava',
+    'lychee' => 'richiamo litchi',
+    'mango' => 'richiamo mango',
+    'apricot' => 'richiamo albicocca',
+    'albicocca' => 'richiamo albicocca',
+    'fig' => 'richiamo fico',
+    'rosewood' => 'tonalità legno di rosa',
+    'rose' => 'tonalità rosa',
+    'mauve' => 'tonalità malva',
+    'malva' => 'tonalità malva',
+    'tea rose' => 'tonalità rosa tè',
+    'tawny' => 'tonalità fulva calda',
+    'copper' => 'tonalità rame',
+    'rame' => 'tonalità rame',
+    'champagne' => 'tonalità champagne dorato',
+    'quartz' => 'tonalità chiara cristallina',
+    'crystal' => 'tonalità cristallina trasparente',
+    'clear' => 'trasparente',
+    'trasparente' => 'trasparente',
+    'sand' => 'tonalità sabbia',
+    'sabbia' => 'tonalità sabbia',
+    'porcelain' => 'tonalità molto chiara',
+    'porcellana' => 'tonalità molto chiara',
+    'olive' => 'sottotono olivastro',
+    'oliva' => 'sottotono olivastro',
+    'birch' => 'tonalità chiara naturale',
+    'cedar' => 'tonalità chiara naturale',
+    'fawn' => 'tonalità chiara naturale',
+    'cotton' => 'tonalità molto chiara',
+    'creme' => 'tonalità chiara neutra',
+    'oat' => 'tonalità chiara naturale',
+    'silk' => 'tonalità chiara naturale',
+    'ethereal' => 'tonalità eterea luminosa',
+    'sublime' => 'tonalità luminosa elegante',
+    'luminous' => 'tonalità luminosa',
+    'radiant' => 'tonalità luminosa',
+    'glow' => 'effetto luminoso',
+    'sunset' => 'richiamo tramonto caldo',
+    'sunrise' => 'richiamo alba delicata',
+    'dream' => 'tonalità delicata',
+    'romance' => 'tonalità romantica rosata',
+    'passion' => 'tonalità intensa',
+    'petal' => 'tonalità floreale delicata',
+    'peony' => 'tonalità floreale rosata',
+    'daisy' => 'tonalità floreale chiara',
+    'bloom' => 'tonalità floreale',
+    'orchid' => 'tonalità floreale intensa',
+    'lily' => 'tonalità floreale chiara',
+    'toffee' => 'tonalità calda ambrata',
+    'java' => 'tonalità marrone caffè',
+    'fudge' => 'tonalità cioccolato intenso',
+    'citrine' => 'tonalità dorata cristallina',
+    'opal' => 'tonalità chiara iridescente',
+    'wine' => 'tonalità vinaccia',
+    'grape' => 'richiamo uva',
+    'lemon' => 'richiamo limone',
+    'limone' => 'richiamo limone',
+];
+
+/**
+ * Parole di profondità/sottotono (anche in francese, usate da alcuni brand
+ * per le taglie fondotinta/concealer: "Fair/Claira", "Moyen-Foncé"...).
+ * Controllate per ultime, dopo colori/note specifiche: sono generiche e
+ * altrimenti rischierebbero di intercettare varianti più descrivibili.
+ */
+const DEPTH_KEYWORDS = [
+    'fair' => 'profondità chiara',
+    'clair' => 'profondità chiara',
+    'pale' => 'profondità molto chiara',
+    'medium' => 'profondità media',
+    'moyen' => 'profondità media',
+    'deep' => 'profondità scura',
+    'dark' => 'profondità scura',
+    'fonce' => 'profondità scura',
+    'naturel' => 'sottotono naturale',
+    'light' => 'profondità chiara',
+];
+
+/**
+ * Descrittori specifici per linee prodotto ricercate online (colore/finish
+ * reale della tonalità, non genericamente dedotto dal nome): la chiave
+ * esterna è un frammento (minuscolo) del nome prodotto, quella interna un
+ * frammento del nome variante. Controllato prima del dizionario generico
+ * qui sopra. Fonti: schede prodotto ufficiali/rivenditori, verificate via
+ * ricerca web (non garantite identiche a collezioni future/regionali).
+ */
+const PRODUCT_LINE_VARIANT_OVERRIDES = [
+    'soft pinch liquid blush' => [
+        'lucky' => 'tonalità rosa acceso',
+        'happy' => 'tonalità rosa freddo',
+        'joy' => 'tonalità pesca tenue',
+        'hope' => 'tonalità malva nude',
+        'love' => 'tonalità terracotta',
+        'believe' => 'tonalità malva vero',
+        'grateful' => 'tonalità rosso vero',
+        'virtue' => 'tonalità pesca beige',
+        'encourage' => 'tonalità rosa neutro tenue',
+        'bliss' => 'tonalità rosa nude',
+        'worth' => 'tonalità rosa vero',
+        'faith' => 'tonalità bordeaux intenso',
+        'grace' => 'tonalità malva rosa acceso',
+    ],
+    'soft pinch matte bouncy blush' => [
+        'worth' => 'tonalità rosa vero',
+        'alive' => 'tonalità corallo-arancio acceso',
+        'thriving' => 'tonalità lampone acceso',
+        'hope' => 'tonalità malva nude',
+        'happy' => 'tonalità rosa freddo',
+        'grateful' => 'tonalità rosso tenue',
+        'truth' => 'tonalità prugna tenue',
+        'divine' => 'tonalità tea rose vera',
+        'spirited' => 'tonalità viola media',
+        'soulful' => 'tonalità bordeaux intenso',
+    ],
+    'positive light liquid luminizer' => [
+        'enlighten' => 'tonalità champagne freddo',
+        'enchant' => 'tonalità rosa tenue',
+        'mesmerize' => 'tonalità bronzo rosato',
+        'outshine' => 'tonalità oro vero',
+        'transcend' => 'tonalità oro rosato',
+        'flaunt' => 'tonalità oro vero',
+        'captivate' => 'tonalità rame',
+        'reflect' => 'tonalità bronzo intenso',
+        'exhilarate' => 'tonalità champagne dorato',
+        'reveal' => 'tonalità rame caldo',
+    ],
+    'soft pinch tinted lip oil' => [
+        'serenity' => 'tonalità rosa caldo',
+        'affection' => 'tonalità bacca tenue',
+        'happy' => 'tonalità rosa freddo',
+        'joy' => 'tonalità pesca tenue',
+        'delight' => 'tonalità marrone rosato',
+        'hope' => 'tonalità malva nude',
+        'wonder' => 'tonalità malva rosato',
+        'honesty' => 'tonalità nude marrone',
+    ],
+    'cheek to chic' => [
+        'sex on fire' => 'tonalità rosa fulvo (tawny rose)',
+        'first love' => 'tonalità pesca',
+        'love glow' => 'tonalità rosa perlato',
+        'ecstasy' => 'tonalità pesca rosato',
+        'pillow talk' => 'tonalità nude-rosa iconica',
+    ],
+    'pillow talk' => [
+        'pillowtalk fair' => 'tonalità nude-rosa chiara',
+        'pillowtalk medium' => 'tonalità nude-rosa media',
+        'pillowtalk' => 'tonalità nude-rosa iconica',
+        'pillow talk' => 'tonalità nude-rosa iconica',
+        'rosy glow' => 'tonalità rosa acceso',
+        'refresh rose' => 'tonalità rosa fresco',
+        'walk of no shame' => 'tonalità rosa intenso',
+    ],
+    'easy bake pressed powder' => [
+        'sugar cookie' => 'profondità chiara-media, translucida per ogni sottotono',
+        'cinnamon bun' => 'profondità ricca, sottotono caldo-neutro',
+        'coco truffle' => 'profondità molto ricca, sottotono neutro',
+        'cherry blossom cake' => 'profondità chiara, sottotono rosato',
+        'pound cake' => 'profondità media',
+        'peach cupcake' => 'profondità medio-chiara, sottotono pesca',
+        'banana bread' => 'profondità media, sottotono giallo caldo',
+        'kunafa blondie' => 'profondità medio-scura, sottotono dorato',
+    ],
+    'blush filter' => [
+        'strawberry cream' => 'tonalità rosa antico',
+        'ube cream' => 'tonalità lilla acceso',
+    ],
+    'faux filler' => [
+        'pink lady' => 'tonalità rosa trasparente',
+        'juicy peach' => 'tonalità pesca trasparente',
+        'juicy goji' => 'tonalità fucsia elettrico trasparente',
+    ],
+    'halo glow' => [
+        'pink-me-up' => 'tonalità rosa acceso',
+        'pink me up' => 'tonalità rosa acceso',
+        'rose you slay' => 'tonalità rosa chiaro-medio',
+        'candlelit' => 'tonalità pesca chiara',
+        'berry radiant' => 'tonalità bacca',
+    ],
+    'glow reviver' => [
+        'pink quartz' => 'tonalità rosa chiaro trasparente',
+        'coral fixation' => 'tonalità corallo trasparente',
+        'money mauve' => 'tonalità malva',
+        'jam session' => 'tonalità ciliegia scura',
+    ],
+    'major glow' => [
+        'my love' => 'finish sparkle diamantato',
+        'baby' => 'shimmer rosa tenue',
+        'sugar' => 'shimmer champagne',
+        'daddy' => 'shimmer oro rosato',
+        'honey' => 'shimmer bronzo',
+    ],
+    'dew blush' => [
+        'baby' => 'tonalità rosa baby freddo',
+        'rosy' => 'tonalità rosa tenue',
+        'chilly' => 'tonalità malva',
+    ],
+    'vanish' => [
+        'silk' => 'tonalità chiara naturale, per pelle chiara',
+        'pearl' => 'tonalità chiara naturale, per pelle chiara-media',
+    ],
+    'putty blush' => [
+        'fiji' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'bora bora' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'bahamas' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'turks and caicos' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'caribbean' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'bali' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'maldives' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+        'tahiti' => 'tonalità nella gamma sabbia-rosa, ispirata a mete tropicali',
+    ],
 ];
 
 function is_set_product(string $name): bool
@@ -147,10 +375,49 @@ function clean_variant_label(string $raw): string
     return $titled;
 }
 
-function variant_descriptor(string $rawVariant, ?string $type): string
+function product_line_variant_override(string $productName, string $rawVariant): ?string
+{
+    $productLower = mb_strtolower($productName, 'UTF-8');
+    $variantLower = mb_strtolower($rawVariant, 'UTF-8');
+
+    foreach (PRODUCT_LINE_VARIANT_OVERRIDES as $productKey => $variantMap) {
+        if (!str_contains($productLower, $productKey)) {
+            continue;
+        }
+        foreach ($variantMap as $variantKey => $descriptor) {
+            if (str_contains($variantLower, $variantKey)) {
+                return $descriptor;
+            }
+        }
+    }
+
+    return null;
+}
+
+/**
+ * Vero se la variante è, di fatto, solo un codice (numeri, #, sigle di
+ * sottotono tipo N/C/W/O attaccate a un numero) senza nessuna parola reale
+ * — cioè nessuna sequenza di 3+ lettere consecutive. In quel caso non ha
+ * senso descrivere un "colore": si segnala solo che è un codice tonalità.
+ */
+function looks_like_pure_shade_code(string $rawVariant): bool
+{
+    return preg_match('/[a-zA-Z]{3,}/', $rawVariant) !== 1;
+}
+
+function variant_descriptor(string $rawVariant, ?string $type, string $productName = ''): string
 {
     $displayName = clean_variant_label($rawVariant);
     $lower = mb_strtolower($rawVariant, 'UTF-8');
+
+    $override = product_line_variant_override($productName, $rawVariant);
+    if ($override !== null) {
+        return "{$displayName} — {$override}.";
+    }
+
+    if (str_contains($lower, 'iphone') || str_contains($lower, 'samsung') || preg_match('/pro\s?max/', $lower) === 1) {
+        return "{$displayName} — formato compatibile.";
+    }
 
     foreach (VARIANT_KEYWORDS as $keyword => $descriptor) {
         if (str_contains($lower, $keyword)) {
@@ -158,8 +425,14 @@ function variant_descriptor(string $rawVariant, ?string $type): string
         }
     }
 
-    if (str_contains($lower, 'iphone') || str_contains($lower, 'samsung') || preg_match('/pro\s?max/', $lower) === 1) {
-        return "{$displayName} — formato compatibile.";
+    foreach (DEPTH_KEYWORDS as $keyword => $descriptor) {
+        if (str_contains($lower, $keyword)) {
+            return "{$displayName} — {$descriptor}.";
+        }
+    }
+
+    if (looks_like_pure_shade_code($rawVariant)) {
+        return "{$displayName} — codice tonalità nella gamma del brand.";
     }
 
     $fallback = $type === 'accessorio' ? 'opzione disponibile' : 'una delle tonalità disponibili';
@@ -196,7 +469,7 @@ function generate_rich_description(string $name, array $variants): string
             $parts[] = $composition;
         }
     } elseif (!$isSet && count($variants) >= 2) {
-        $bullets = array_map(fn($v) => '• ' . variant_descriptor($v, $type), $variants);
+        $bullets = array_map(fn($v) => '• ' . variant_descriptor($v, $type, $name), $variants);
         $parts[] = "Varianti disponibili:\n" . implode("\n", $bullets);
     }
 

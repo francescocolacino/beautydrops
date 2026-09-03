@@ -59,7 +59,7 @@ require __DIR__ . '/includes/header.php';
       <h2 class="brand-title" data-aos="fade-up"><?= h($brand) ?></h2>
       <div class="product-grid">
         <?php foreach ($items as $i => $product): ?>
-          <div class="product-card" data-product-id="<?= (int)$product['id'] ?>" data-name="<?= h(mb_strtolower($product['name'])) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>" role="button" tabindex="0" aria-haspopup="dialog">
+          <a href="<?= url('product.php?id=' . (int)$product['id']) ?>" class="product-card" data-name="<?= h(mb_strtolower($product['name'])) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>">
             <div class="product-image">
               <?php if (!empty($product['image_path'])): ?>
                 <img src="<?= h(url($product['image_path'])) ?>" alt="<?= h($product['name']) ?>" loading="lazy">
@@ -72,59 +72,25 @@ require __DIR__ . '/includes/header.php';
               <h3 class="product-name"><?= h($product['name']) ?></h3>
               <?php $variants = decode_variants($product['variants']); ?>
               <?php if (!empty($variants)): ?>
-                <details class="product-variants">
-                  <summary><?= count($variants) ?> <?= count($variants) === 1 ? 'variante' : 'varianti' ?></summary>
-                  <div class="variant-chips">
-                    <?php foreach ($variants as $variant): ?>
-                      <span class="chip"><?= h($variant) ?></span>
-                    <?php endforeach; ?>
-                  </div>
-                </details>
-              <?php endif; ?>
-              <?= render_product_badges($product, $activeOfferProductIds) ?>
-              <?php if ($product['price'] !== null): ?>
-                <p class="product-price"><?= format_price((float)$product['price']) ?></p>
-              <?php endif; ?>
-            </div>
-          </div>
-          <template class="product-detail-template" data-product-id="<?= (int)$product['id'] ?>">
-            <div class="modal-product-image">
-              <?php if (!empty($product['image_path'])): ?>
-                <img src="<?= h(url($product['image_path'])) ?>" alt="<?= h($product['name']) ?>">
-              <?php else: ?>
-                <div class="img-placeholder">BD</div>
-              <?php endif; ?>
-            </div>
-            <div class="modal-product-body">
-              <span class="product-brand"><?= h($product['brand']) ?></span>
-              <h2 id="productModalTitle"><?= h($product['name']) ?></h2>
-              <?php if (!empty($variants)): ?>
-                <div class="variant-chips">
-                  <?php foreach ($variants as $variant): ?>
+                <div class="variant-chips variant-chips-compact">
+                  <?php foreach (array_slice($variants, 0, 3) as $variant): ?>
                     <span class="chip"><?= h($variant) ?></span>
                   <?php endforeach; ?>
+                  <?php if (count($variants) > 3): ?>
+                    <span class="chip chip-more">+<?= count($variants) - 3 ?></span>
+                  <?php endif; ?>
                 </div>
               <?php endif; ?>
               <?= render_product_badges($product, $activeOfferProductIds) ?>
               <?php if ($product['price'] !== null): ?>
                 <p class="product-price"><?= format_price((float)$product['price']) ?></p>
               <?php endif; ?>
-              <?php if (!empty($product['description'])): ?>
-                <p class="modal-description"><?= nl2br(h($product['description'])) ?></p>
-              <?php endif; ?>
             </div>
-          </template>
+          </a>
         <?php endforeach; ?>
       </div>
     </div>
   <?php endforeach; ?>
 </section>
-
-<div class="modal-overlay" id="productModalOverlay" hidden>
-  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
-    <button type="button" class="modal-close" id="productModalClose" aria-label="Chiudi">&times;</button>
-    <div class="modal-content" id="productModalContent"></div>
-  </div>
-</div>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

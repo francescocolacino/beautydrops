@@ -67,6 +67,14 @@ function order_brands_by_priority(array $byBrand): array
     return $ordered;
 }
 
+function extract_product_size(string $name): ?string
+{
+    if (preg_match('/(\d+(?:[.,]\d+)?\s?(?:ml|g|kg|l))\b/i', $name, $matches)) {
+        return str_replace(',', '.', strtolower($matches[1]));
+    }
+    return null;
+}
+
 function format_price(?float $price): string
 {
     if ($price === null) {

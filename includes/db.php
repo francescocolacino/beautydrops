@@ -1,5 +1,33 @@
 <?php
-require_once __DIR__ . '/../config.php';
+
+// Costanti di configurazione dell'app (non credenziali: possono restare nel
+// codice versionato). In precedenza vivevano in config.php, un file escluso
+// da Git che quindi non esisteva più negli ambienti con deploy da Git (es.
+// Railway), causando un fatal error al require. La connessione al database
+// resta comunque configurata esclusivamente via variabili d'ambiente, vedi
+// db_connection_params() più sotto.
+define('SITE_NAME', 'BeautyDrops');
+
+define('UPLOAD_DIR', dirname(__DIR__) . '/assets/images/products/');
+define('UPLOAD_URL_PATH', 'assets/images/products/');
+define('MAX_UPLOAD_BYTES', 5 * 1024 * 1024);
+
+// Email a cui il cliente invia il PDF del preventivo generato dal carrello.
+define('SHOP_CONTACT_EMAIL', 'admin@beautydrops.it');
+
+define('ORDERS_DIR', dirname(__DIR__) . '/assets/orders/');
+define('ORDERS_URL_PATH', 'assets/orders/');
+
+// Percorso base del progetto rispetto alla document root del webserver,
+// calcolato automaticamente: permette al sito di funzionare sia installato
+// nella root del dominio sia in una sottocartella (es. hosting condiviso).
+$documentRoot = isset($_SERVER['DOCUMENT_ROOT']) ? str_replace('\\', '/', rtrim($_SERVER['DOCUMENT_ROOT'], '/')) : '';
+$projectRoot = str_replace('\\', '/', dirname(__DIR__));
+$basePath = ($documentRoot !== '' && str_starts_with($projectRoot, $documentRoot))
+    ? substr($projectRoot, strlen($documentRoot))
+    : '';
+define('BASE_URL', $basePath);
+unset($documentRoot, $projectRoot, $basePath);
 
 /**
  * Costruisce i parametri di connessione PostgreSQL leggendo prioritariamente

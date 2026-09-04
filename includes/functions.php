@@ -533,6 +533,37 @@ function upload_product_image(array $file): ?string
     return UPLOAD_URL_PATH . $filename;
 }
 
+/**
+ * Normalizza la struttura di $_FILES prodotta da un input multiplo
+ * (name="x[]") in un elenco di singoli file, ciascuno nello stesso formato
+ * atteso da upload_product_image() (come per un input singolo). I campi
+ * lasciati vuoti (nessun file scelto in quello slot) vengono scartati.
+ */
+function normalize_multi_upload(array $filesField): array
+{
+    if (!isset($filesField['name'])) {
+        return [];
+    }
+    if (!is_array($filesField['name'])) {
+        return $filesField['error'] === UPLOAD_ERR_NO_FILE ? [] : [$filesField];
+    }
+
+    $files = [];
+    foreach ($filesField['name'] as $index => $name) {
+        if ($name === '' || ($filesField['error'][$index] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_NO_FILE) {
+            continue;
+        }
+        $files[] = [
+            'name' => $filesField['name'][$index],
+            'type' => $filesField['type'][$index],
+            'tmp_name' => $filesField['tmp_name'][$index],
+            'error' => $filesField['error'][$index],
+            'size' => $filesField['size'][$index],
+        ];
+    }
+    return $files;
+}
+
 function delete_product_image(?string $imagePath): void
 {
     if (empty($imagePath)) {

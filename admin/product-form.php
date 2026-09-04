@@ -54,17 +54,35 @@ if ($id && $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     }
 
     if ($galleryAction === 'gallery_upload') {
-        try {
-            $uploaded = upload_product_image($_FILES['gallery_image'] ?? []);
-            if ($uploaded === null) {
-                $errors[] = 'Seleziona un file da caricare.';
-            } else {
-                $pdo->prepare('INSERT INTO product_gallery_images (product_id, image_path, sort_order) VALUES (:product_id, :image_path, :sort_order)')
-                    ->execute(['product_id' => $id, 'image_path' => $uploaded, 'sort_order' => next_gallery_sort_order($pdo, $id)]);
+        $files = normalize_multi_upload($_FILES['gallery_images'] ?? []);
+        if (empty($files)) {
+            $errors[] = 'Seleziona almeno un file da caricare.';
+        } else {
+            $insertGallery = $pdo->prepare(
+                'INSERT INTO product_gallery_images (product_id, image_path, sort_order) VALUES (:product_id, :image_path, :sort_order)'
+            );
+            $uploadedCount = 0;
+            foreach ($files as $file) {
+                try {
+                    $uploaded = upload_product_image($file);
+                    if ($uploaded !== null) {
+                        $insertGallery->execute([
+                            'product_id' => $id,
+                            'image_path' => $uploaded,
+                            'sort_order' => next_gallery_sort_order($pdo, $id),
+                        ]);
+                        $uploadedCount++;
+                    }
+                } catch (RuntimeException $e) {
+                    $errors[] = $file['name'] . ': ' . $e->getMessage();
+                }
+            }
+            // Se tutti i file sono andati a buon fine, redirect (comportamento
+            // storico); in caso di errori parziali resta sulla pagina per
+            // mostrarli, le foto già caricate compaiono comunque in galleria.
+            if ($uploadedCount > 0 && empty($errors)) {
                 redirect('/admin/product-form.php?id=' . $id);
             }
-        } catch (RuntimeException $e) {
-            $errors[] = $e->getMessage();
         }
     }
 }
@@ -338,16 +356,75 @@ require __DIR__ . '/../includes/admin-header.php';
     <p class="empty-state">Nessuna foto aggiuntiva oltre alla copertina.</p>
   <?php endif; ?>
 
-  <form method="post" enctype="multipart/form-data" class="gallery-upload-form">
+  <form method="post" enctype="multipart/form-data" class="gallery-upload-form" id="galleryUploadForm">
     <?= csrf_field() ?>
     <input type="hidden" name="action" value="gallery_upload">
-    <label for="gallery_image">Aggiungi una foto alla galleria</label>
+    <label for="gallery_images">Aggiungi foto alla galleria (puoi selezionarne più di una)</label>
+    <div class="gallery-dropzone" id="galleryDropzone" tabindex="0">
+      <p class="gallery-dropzone-hint">Trascina qui le foto, oppure <span class="gallery-dropzone-browse">scegli i file</span></p>
+      <input type="file" id="gallery_images" name="gallery_images[]" accept="image/jpeg,image/png,image/webp" multiple hidden>
+    </div>
+    <ul class="gallery-dropzone-selected" id="galleryDropzoneSelected"></ul>
     <div class="gallery-upload-row">
-      <input type="file" id="gallery_image" name="gallery_image" accept="image/jpeg,image/png,image/webp" required>
-      <button type="submit" class="btn btn-small">Carica</button>
+      <button type="submit" class="btn btn-small" id="galleryUploadSubmit">Carica</button>
     </div>
   </form>
 </section>
+
+<script>
+(function () {
+  var dropzone = document.getElementById('galleryDropzone');
+  var input = document.getElementById('gallery_images');
+  var selectedList = document.getElementById('galleryDropzoneSelected');
+  var submitBtn = document.getElementById('galleryUploadSubmit');
+  if (!dropzone || !input) return;
+  submitBtn.disabled = true;
+
+  function renderSelected() {
+    var files = input.files || [];
+    selectedList.innerHTML = '';
+    Array.prototype.forEach.call(files, function (file) {
+      var li = document.createElement('li');
+      li.textContent = file.name;
+      selectedList.appendChild(li);
+    });
+    submitBtn.disabled = files.length === 0;
+  }
+
+  dropzone.addEventListener('click', function () { input.click(); });
+  dropzone.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); input.click(); }
+  });
+  input.addEventListener('change', renderSelected);
+
+  ['dragenter', 'dragover'].forEach(function (evt) {
+    dropzone.addEventListener(evt, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropzone.classList.add('dragover');
+    });
+  });
+  ['dragleave', 'dragend'].forEach(function (evt) {
+    dropzone.addEventListener(evt, function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropzone.classList.remove('dragover');
+    });
+  });
+  dropzone.addEventListener('drop', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    dropzone.classList.remove('dragover');
+    var dropped = e.dataTransfer.files;
+    if (!dropped || !dropped.length) return;
+    var transfer = new DataTransfer();
+    Array.prototype.forEach.call(input.files, function (file) { transfer.items.add(file); });
+    Array.prototype.forEach.call(dropped, function (file) { transfer.items.add(file); });
+    input.files = transfer.files;
+    renderSelected();
+  });
+})();
+</script>
 <?php endif; ?>
 
 <script>

@@ -23,4 +23,4 @@ EXPOSE 8080
 
 USER www-data
 
-CMD ["sh", "-c", "php scripts/init-db.php && php scripts/seed-catalog.php && php scripts/seed-galleries.php && php scripts/classify-product-types.php && if [ -n \"$ADMIN_EMAIL\" ] && [ -n \"$ADMIN_PASSWORD\" ]; then php scripts/create-admin.php; fi && exec php -S 0.0.0.0:${PORT:-8080} -t /app"]
+CMD ["sh", "-c", "php scripts/init-db.php && php scripts/seed-catalog.php && php scripts/seed-galleries.php && php scripts/classify-product-types.php && if [ -n \"$ADMIN_EMAIL\" ] && [ -n \"$ADMIN_PASSWORD\" ]; then php scripts/create-admin.php; fi && exec php -d upload_max_filesize=10M -d post_max_size=60M -d max_file_uploads=30 -S 0.0.0.0:${PORT:-8080} -t /app"]

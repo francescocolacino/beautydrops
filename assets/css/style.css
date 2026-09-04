@@ -1346,6 +1346,56 @@ svg { display: block; }
   flex-wrap: wrap;
 }
 
+.gallery-dropzone {
+  border: 2px dashed rgba(58, 46, 47, 0.22);
+  border-radius: var(--radius-sm);
+  padding: 22px 16px;
+  text-align: center;
+  cursor: pointer;
+  background: var(--color-bg);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.gallery-dropzone:hover,
+.gallery-dropzone:focus-visible {
+  border-color: var(--color-gold);
+  outline: none;
+}
+
+.gallery-dropzone.dragover {
+  border-color: var(--color-gold);
+  background: rgba(200, 168, 98, 0.08);
+}
+
+.gallery-dropzone-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+}
+
+.gallery-dropzone-browse {
+  color: var(--color-gold-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.gallery-dropzone-selected {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gallery-dropzone-selected li {
+  font-size: 0.78rem;
+  background: rgba(58, 46, 47, 0.06);
+  border-radius: 999px;
+  padding: 4px 12px;
+  color: var(--color-text);
+}
+
 .form-error {
   background: rgba(208, 88, 122, 0.1);
   color: var(--color-red);

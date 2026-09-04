@@ -23,6 +23,9 @@ $byBrand = [];
 foreach ($products as $product) {
     $byBrand[$product['brand']][] = $product;
 }
+foreach ($byBrand as $brand => $items) {
+    $byBrand[$brand] = order_products_for_brand($brand, $items);
+}
 $byBrand = order_brands_by_priority($byBrand);
 
 // Solo i tipi effettivamente presenti tra i prodotti di questa categoria,

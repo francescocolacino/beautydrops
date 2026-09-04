@@ -144,6 +144,113 @@ function order_brands_by_priority(array $byBrand): array
     return $ordered;
 }
 
+/**
+ * Ordina i prodotti all'interno di un brand quando il catalogo richiede una
+ * sequenza editoriale diversa da quella alfabetica. Per Rhode mostriamo prima
+ * i cosmetici/trattamenti nell'ordine richiesto e soltanto dopo packaging e
+ * accessori (scatole, carta, patch, cover, borse, ecc.).
+ *
+ * @param array<int, array> $products
+ * @return array<int, array>
+ */
+function order_products_for_brand(string $brand, array $products): array
+{
+    if (mb_strtolower(trim($brand), 'UTF-8') !== 'rhode') {
+        return $products;
+    }
+
+    usort($products, function (array $a, array $b): int {
+        $rankDiff = rhode_product_display_rank((string)($a['name'] ?? ''))
+            <=> rhode_product_display_rank((string)($b['name'] ?? ''));
+        if ($rankDiff !== 0) {
+            return $rankDiff;
+        }
+
+        // All'interno dello stesso gruppo conserva la sequenza del catalogo
+        // Rhode (rh-1, rh-2, ...); per eventuali inserimenti manuali usa il nome.
+        $numberA = catalog_product_number((string)($a['image_path'] ?? ''));
+        $numberB = catalog_product_number((string)($b['image_path'] ?? ''));
+        if ($numberA !== $numberB) {
+            return $numberA <=> $numberB;
+        }
+
+        return strnatcasecmp((string)($a['name'] ?? ''), (string)($b['name'] ?? ''));
+    });
+
+    return array_values($products);
+}
+
+function rhode_product_display_rank(string $name): int
+{
+    $name = mb_strtolower(trim($name), 'UTF-8');
+
+    // Gli accessori vanno riconosciuti prima delle parole "gloss" e "set":
+    // ad esempio "Magnetic Phone Case with Gloss" resta una cover.
+    if (str_contains($name, 'paper box')) {
+        return 200;
+    }
+    if (str_contains($name, 'paper')) {
+        return 210;
+    }
+    if (str_contains($name, 'pimple patch')) {
+        return 220;
+    }
+    if (str_contains($name, 'phone case')) {
+        return 230;
+    }
+    if (str_contains($name, 'makeup bag')) {
+        return 240;
+    }
+    if (
+        str_contains($name, 'patch')
+        || str_contains($name, 'mirror')
+        || str_contains($name, 'hairband')
+        || str_contains($name, 'sticker')
+        || $name === 'card'
+        || str_contains($name, 'towel')
+    ) {
+        return 250;
+    }
+
+    // Priorità dei prodotti Rhode: Milk, Blush, Mist, Fluid, Gloss, Set,
+    // Pineapple e Barrier. Gli altri cosmetici restano comunque prima degli
+    // accessori e mantengono tra loro l'ordine originario del catalogo.
+    if (str_contains($name, 'milk')) {
+        return 10;
+    }
+    if (str_contains($name, 'blush')) {
+        return 20;
+    }
+    if (str_contains($name, 'mist')) {
+        return 30;
+    }
+    if (str_contains($name, 'fluid')) {
+        return 40;
+    }
+    if (str_contains($name, 'gloss') && !str_contains($name, 'set')) {
+        return 50;
+    }
+    if (str_contains($name, 'gloss') && str_contains($name, 'set')) {
+        return 60;
+    }
+    if (str_contains($name, 'pineapple')) {
+        return 70;
+    }
+    if (str_contains($name, 'barrier')) {
+        return 80;
+    }
+
+    return 100;
+}
+
+function catalog_product_number(string $imagePath): int
+{
+    if (preg_match('~/rh-(\d+)(?:[-.]|$)~i', $imagePath, $matches)) {
+        return (int)$matches[1];
+    }
+    return PHP_INT_MAX;
+}
+
 function extract_product_size(string $name): ?string
 {
     if (preg_match('/(\d+(?:[.,]\d+)?\s?(?:ml|g|kg|l))\b/i', $name, $matches)) {

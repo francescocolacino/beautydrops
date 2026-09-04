@@ -249,18 +249,21 @@ require __DIR__ . '/../includes/admin-header.php';
     <input type="text" id="variants_input" name="variants_input" placeholder="Rosso, Blu, Taglia M" value="<?= h($variantsInputValue) ?>">
   </div>
 
-  <div class="form-row form-row-split">
-    <div>
-      <label for="variants_group2_label">Nome secondo gruppo di varianti (opzionale, es. Modello iPhone)</label>
-      <input type="text" id="variants_group2_label" name="variants_group2_label" placeholder="Modello iPhone" value="<?= h($variantsGroup2LabelValue) ?>">
+  <details class="admin-details"<?= $variantsGroup2LabelValue !== '' ? ' open' : '' ?>>
+    <summary>Aggiungi una seconda variante obbligatoria (es. modello telefono) &mdash; solo per prodotti che ne hanno bisogno</summary>
+    <div class="form-row form-row-split">
+      <div>
+        <label for="variants_group2_label">Nome secondo gruppo di varianti</label>
+        <input type="text" id="variants_group2_label" name="variants_group2_label" placeholder="Modello iPhone" value="<?= h($variantsGroup2LabelValue) ?>">
+      </div>
+      <div>
+        <label for="variants_group2_input">Valori secondo gruppo (separati da virgola)</label>
+        <input type="text" id="variants_group2_input" name="variants_group2_input" placeholder="iPhone 11, iPhone 12, ..." value="<?= h($variantsGroup2InputValue) ?>">
+        <button type="button" id="fillIphoneModels" class="btn btn-small btn-fill-models">Compila con tutti i modelli iPhone (11 &rarr; 17 Pro Max)</button>
+      </div>
     </div>
-    <div>
-      <label for="variants_group2_input">Valori secondo gruppo (separati da virgola)</label>
-      <input type="text" id="variants_group2_input" name="variants_group2_input" placeholder="iPhone 11, iPhone 12, ..." value="<?= h($variantsGroup2InputValue) ?>">
-      <button type="button" id="fillIphoneModels" class="btn btn-small btn-fill-models">Compila con tutti i modelli iPhone (11 &rarr; 17 Pro Max)</button>
-    </div>
-  </div>
-  <p class="field-hint">Se compili anche il secondo gruppo, sul sito il cliente dovrà scegliere obbligatoriamente sia il colore/prima variante sia il valore del secondo gruppo prima di poter aggiungere il prodotto al carrello.</p>
+    <p class="field-hint">Se compili anche il secondo gruppo, sul sito il cliente dovrà scegliere obbligatoriamente sia il colore/prima variante sia il valore del secondo gruppo prima di poter aggiungere il prodotto al carrello. Lascia questa sezione chiusa/vuota per tutti gli altri prodotti.</p>
+  </details>
 
   <div class="form-row">
     <label for="image">Immagine di copertina<?= $id ? ' (la foto principale mostrata nel catalogo)' : '' ?></label>

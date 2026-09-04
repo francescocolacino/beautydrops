@@ -19,6 +19,7 @@ if (!$product || !array_key_exists($product['category'], CATEGORIES)) {
 
 $activeOfferProductIds = get_active_offer_product_ids($pdo);
 $variants = decode_variants($product['variants']);
+$isGroupedVariants = is_variant_groups($variants);
 $displayName = display_product_name($product['name'], $variants);
 $selectableVariants = selectable_variants($variants);
 $size = extract_product_size($product['name']);
@@ -100,8 +101,31 @@ require __DIR__ . '/includes/header.php';
           </div>
         <?php endif; ?>
 
-        <form id="addToCartForm" data-product-id="<?= (int)$product['id'] ?>" data-requires-variant="<?= !empty($selectableVariants) ? '1' : '0' ?>">
-          <?php if (!empty($selectableVariants)): ?>
+        <form id="addToCartForm" data-product-id="<?= (int)$product['id'] ?>" data-requires-variant="<?= (!empty($selectableVariants) || $isGroupedVariants) ? '1' : '0' ?>">
+          <?php if ($isGroupedVariants): ?>
+            <div class="product-variant-groups" data-variant-groups>
+              <?php foreach ($variants as $groupLabel => $groupOptions): ?>
+                <div class="product-detail-variants" data-group-name="<?= h($groupLabel) ?>">
+                  <span class="product-detail-label"><?= h($groupLabel) ?></span>
+                  <?php if (count($groupOptions) > 6): ?>
+                    <select class="variant-select">
+                      <option value="">Seleziona <?= h(mb_strtolower($groupLabel)) ?>&hellip;</option>
+                      <?php foreach ($groupOptions as $option): ?>
+                        <option value="<?= h($option) ?>"><?= h($option) ?></option>
+                      <?php endforeach; ?>
+                    </select>
+                  <?php else: ?>
+                    <div class="variant-selector">
+                      <?php foreach ($groupOptions as $option): ?>
+                        <button type="button" class="variant-option" data-variant="<?= h($option) ?>"><?= h($option) ?></button>
+                      <?php endforeach; ?>
+                    </div>
+                  <?php endif; ?>
+                </div>
+              <?php endforeach; ?>
+              <p class="variant-required-hint">Seleziona tutte le opzioni prima di aggiungere al carrello.</p>
+            </div>
+          <?php elseif (!empty($selectableVariants)): ?>
             <div class="product-detail-variants">
               <span class="product-detail-label">Colori e varianti disponibili</span>
               <div class="variant-selector">

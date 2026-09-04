@@ -278,22 +278,14 @@
 
     var addForm = document.getElementById('addToCartForm');
     if (addForm) {
+      // Deve restare identico a VARIANT_GROUP_SEPARATOR in includes/functions.php.
+      var VARIANT_GROUP_SEPARATOR = ' · ';
       var productId = parseInt(addForm.getAttribute('data-product-id'), 10);
       var requiresVariant = addForm.getAttribute('data-requires-variant') === '1';
-      var selectedVariant = null;
-      var variantButtons = addForm.querySelectorAll('.variant-option');
       var hint = addForm.querySelector('.variant-required-hint');
       var qtyInput = addForm.querySelector('.qty-input');
       var addButton = addForm.querySelector('.btn-add-cart');
-
-      variantButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          variantButtons.forEach(function (b) { b.classList.remove('selected'); });
-          btn.classList.add('selected');
-          selectedVariant = btn.getAttribute('data-variant');
-          if (hint) hint.classList.remove('visible');
-        });
-      });
+      var groupsWrap = addForm.querySelector('[data-variant-groups]');
 
       addForm.querySelectorAll('.qty-decrease, .qty-increase').forEach(function (btn) {
         btn.addEventListener('click', function () {
@@ -302,25 +294,85 @@
         });
       });
 
-      addForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        if (requiresVariant && !selectedVariant) {
-          if (hint) hint.classList.add('visible');
-          return;
-        }
-        var qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
-        addToCart(productId, selectedVariant, qty);
-        if (addButton) {
-          var original = addButton.getAttribute('data-default-label') || addButton.textContent.trim();
-          addButton.setAttribute('data-default-label', original);
-          addButton.classList.add('added');
-          addButton.textContent = 'Aggiunto ✓';
-          window.setTimeout(function () {
-            addButton.classList.remove('added');
-            addButton.textContent = original;
-          }, 1600);
-        }
-      });
+      function flashAdded() {
+        if (!addButton) return;
+        var original = addButton.getAttribute('data-default-label') || addButton.textContent.trim();
+        addButton.setAttribute('data-default-label', original);
+        addButton.classList.add('added');
+        addButton.textContent = 'Aggiunto ✓';
+        window.setTimeout(function () {
+          addButton.classList.remove('added');
+          addButton.textContent = original;
+        }, 1600);
+      }
+
+      if (groupsWrap) {
+        // Prodotto a varianti raggruppate (es. Colore + Modello iPhone): ogni
+        // gruppo è obbligatorio, la selezione va combinata in un'unica stringa.
+        var groupEls = Array.prototype.slice.call(groupsWrap.querySelectorAll('[data-group-name]'));
+        var selections = {};
+
+        groupEls.forEach(function (groupEl) {
+          var groupName = groupEl.getAttribute('data-group-name');
+
+          groupEl.querySelectorAll('.variant-option').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              groupEl.querySelectorAll('.variant-option').forEach(function (b) { b.classList.remove('selected'); });
+              btn.classList.add('selected');
+              selections[groupName] = btn.getAttribute('data-variant');
+              if (hint) hint.classList.remove('visible');
+            });
+          });
+
+          var select = groupEl.querySelector('.variant-select');
+          if (select) {
+            select.addEventListener('change', function () {
+              selections[groupName] = select.value || null;
+              if (hint) hint.classList.remove('visible');
+            });
+          }
+        });
+
+        addForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var complete = groupEls.every(function (groupEl) {
+            return !!selections[groupEl.getAttribute('data-group-name')];
+          });
+          if (!complete) {
+            if (hint) hint.classList.add('visible');
+            return;
+          }
+          var combined = groupEls.map(function (groupEl) {
+            return selections[groupEl.getAttribute('data-group-name')];
+          }).join(VARIANT_GROUP_SEPARATOR);
+          var qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
+          addToCart(productId, combined, qty);
+          flashAdded();
+        });
+      } else {
+        var selectedVariant = null;
+        var variantButtons = addForm.querySelectorAll('.variant-option');
+
+        variantButtons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            variantButtons.forEach(function (b) { b.classList.remove('selected'); });
+            btn.classList.add('selected');
+            selectedVariant = btn.getAttribute('data-variant');
+            if (hint) hint.classList.remove('visible');
+          });
+        });
+
+        addForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (requiresVariant && !selectedVariant) {
+            if (hint) hint.classList.add('visible');
+            return;
+          }
+          var qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
+          addToCart(productId, selectedVariant, qty);
+          flashAdded();
+        });
+      }
     }
 
     if (document.getElementById('cartPageList')) {

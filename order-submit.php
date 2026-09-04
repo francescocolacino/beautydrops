@@ -63,16 +63,22 @@ foreach ($rawItems as $rawItem) {
     }
 
     $variants = decode_variants($product['variants']);
-    $selectable = selectable_variants($variants);
 
-    if (!empty($selectable)) {
-        if ($variant === null || $variant === '' || !in_array($variant, $selectable, true)) {
-            json_error('Seleziona una variante valida per "' . $product['name'] . '".');
+    if (is_variant_groups($variants)) {
+        if ($variant === null || $variant === '' || !is_valid_combined_variant($variants, $variant)) {
+            json_error('Seleziona tutte le varianti per "' . $product['name'] . '".');
         }
-    } elseif (count($variants) === 1) {
-        $variant = $variants[0];
     } else {
-        $variant = null;
+        $selectable = selectable_variants($variants);
+        if (!empty($selectable)) {
+            if ($variant === null || $variant === '' || !in_array($variant, $selectable, true)) {
+                json_error('Seleziona una variante valida per "' . $product['name'] . '".');
+            }
+        } elseif (count($variants) === 1) {
+            $variant = $variants[0];
+        } else {
+            $variant = null;
+        }
     }
 
     $discount = quantity_discount_percent($quantityByProduct[$productId]);

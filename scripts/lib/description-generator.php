@@ -505,6 +505,14 @@ function set_composition_line(array $variants): string
  */
 function generate_rich_description(string $name, array $variants): string
 {
+    // Prodotti a varianti raggruppate (es. Colore + Modello iPhone: `variants`
+    // è un oggetto {"Colore": [...], "Modello iPhone": [...]} invece di un
+    // semplice array) usano solo il primo gruppo per le frasi descrittive: il
+    // secondo (es. il modello del telefono) non è materiale da descrizione.
+    if (!array_is_list($variants)) {
+        $variants = array_values($variants)[0] ?? [];
+    }
+
     $variants = array_values(array_filter($variants, fn($v) => !is_metadata_variant($v)));
 
     $type = classify_product_type($name);

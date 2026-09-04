@@ -89,6 +89,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     $formData['brand'] = trim($_POST['brand'] ?? '');
     $formData['name'] = trim($_POST['name'] ?? '');
     $formData['variants_input'] = trim($_POST['variants_input'] ?? '');
+    $formData['variants_group2_label'] = trim($_POST['variants_group2_label'] ?? '');
+    $formData['variants_group2_input'] = trim($_POST['variants_group2_input'] ?? '');
     $formData['stock_quantity'] = (int)($_POST['stock_quantity'] ?? 0);
     $formData['orderable_quantity'] = (int)($_POST['orderable_quantity'] ?? 0);
     $priceInput = trim($_POST['price'] ?? '');
@@ -123,7 +125,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     }
 
     if (empty($errors)) {
-        $variantsJson = encode_variants_from_input($formData['variants_input']);
+        $variantsJson = encode_variants_from_input(
+            $formData['variants_input'],
+            $formData['variants_group2_label'],
+            $formData['variants_group2_input']
+        );
 
         if ($id) {
             if ($newImagePath !== $product['image_path']) {
@@ -170,7 +176,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     }
 }
 
-$variantsInputValue = $formData['variants_input'] ?? implode(', ', decode_variants($formData['variants'] ?? null));
+if (isset($formData['variants_group2_label'])) {
+    $variantsInputValue = $formData['variants_input'];
+    $variantsGroup2LabelValue = $formData['variants_group2_label'];
+    $variantsGroup2InputValue = $formData['variants_group2_input'];
+} else {
+    $decodedVariantsForDisplay = decode_variants($formData['variants'] ?? null);
+    if (is_variant_groups($decodedVariantsForDisplay)) {
+        $groupKeys = array_keys($decodedVariantsForDisplay);
+        $variantsInputValue = implode(', ', $decodedVariantsForDisplay[$groupKeys[0]] ?? []);
+        $variantsGroup2LabelValue = $groupKeys[1] ?? '';
+        $variantsGroup2InputValue = implode(', ', $decodedVariantsForDisplay[$groupKeys[1]] ?? []);
+    } else {
+        $variantsInputValue = implode(', ', $decodedVariantsForDisplay);
+        $variantsGroup2LabelValue = '';
+        $variantsGroup2InputValue = '';
+    }
+}
 
 $galleryImages = $id ? get_product_gallery_rows($pdo, $id) : [];
 
@@ -223,9 +245,22 @@ require __DIR__ . '/../includes/admin-header.php';
   </div>
 
   <div class="form-row">
-    <label for="variants_input">Varianti / colori (separati da virgola)</label>
+    <label for="variants_input">Colori / varianti (separati da virgola)</label>
     <input type="text" id="variants_input" name="variants_input" placeholder="Rosso, Blu, Taglia M" value="<?= h($variantsInputValue) ?>">
   </div>
+
+  <div class="form-row form-row-split">
+    <div>
+      <label for="variants_group2_label">Nome secondo gruppo di varianti (opzionale, es. Modello iPhone)</label>
+      <input type="text" id="variants_group2_label" name="variants_group2_label" placeholder="Modello iPhone" value="<?= h($variantsGroup2LabelValue) ?>">
+    </div>
+    <div>
+      <label for="variants_group2_input">Valori secondo gruppo (separati da virgola)</label>
+      <input type="text" id="variants_group2_input" name="variants_group2_input" placeholder="iPhone 11, iPhone 12, ..." value="<?= h($variantsGroup2InputValue) ?>">
+      <button type="button" id="fillIphoneModels" class="btn btn-small btn-fill-models">Compila con tutti i modelli iPhone (11 &rarr; 17 Pro Max)</button>
+    </div>
+  </div>
+  <p class="field-hint">Se compili anche il secondo gruppo, sul sito il cliente dovrà scegliere obbligatoriamente sia il colore/prima variante sia il valore del secondo gruppo prima di poter aggiungere il prodotto al carrello.</p>
 
   <div class="form-row">
     <label for="image">Immagine di copertina<?= $id ? ' (la foto principale mostrata nel catalogo)' : '' ?></label>
@@ -311,5 +346,22 @@ require __DIR__ . '/../includes/admin-header.php';
   </form>
 </section>
 <?php endif; ?>
+
+<script>
+document.getElementById('fillIphoneModels').addEventListener('click', function () {
+  var models = [
+    'iPhone 11', 'iPhone 11 Pro', 'iPhone 11 Pro Max',
+    'iPhone 12 mini', 'iPhone 12', 'iPhone 12 Pro', 'iPhone 12 Pro Max',
+    'iPhone 13 mini', 'iPhone 13', 'iPhone 13 Pro', 'iPhone 13 Pro Max',
+    'iPhone 14', 'iPhone 14 Plus', 'iPhone 14 Pro', 'iPhone 14 Pro Max',
+    'iPhone 15', 'iPhone 15 Plus', 'iPhone 15 Pro', 'iPhone 15 Pro Max',
+    'iPhone 16', 'iPhone 16 Plus', 'iPhone 16 Pro', 'iPhone 16 Pro Max', 'iPhone 16e',
+    'iPhone 17', 'iPhone 17 Air', 'iPhone 17 Pro', 'iPhone 17 Pro Max'
+  ];
+  document.getElementById('variants_group2_input').value = models.join(', ');
+  var labelInput = document.getElementById('variants_group2_label');
+  if (!labelInput.value.trim()) labelInput.value = 'Modello iPhone';
+});
+</script>
 
 <?php require __DIR__ . '/../includes/admin-footer.php'; ?>

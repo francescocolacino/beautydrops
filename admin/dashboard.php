@@ -90,6 +90,12 @@ require __DIR__ . '/../includes/admin-header.php';
           <td>
             <?php if (empty($productVariants)): ?>
               &mdash;
+            <?php elseif (is_variant_groups($productVariants)): ?>
+              <div class="table-chips">
+                <?php foreach ($productVariants as $groupLabel => $groupOptions): ?>
+                  <span class="chip"><?= h($groupLabel) ?>: <?= h(implode(', ', $groupOptions)) ?></span>
+                <?php endforeach; ?>
+              </div>
             <?php else: ?>
               <div class="table-chips">
                 <?php foreach ($productVariants as $variant): ?>

@@ -277,13 +277,38 @@ function decode_variants(?string $json): array
 }
 
 /**
+ * Separatore usato per combinare in un'unica stringa la selezione di più
+ * gruppi di varianti (es. colore + modello iPhone) prima di salvarla nel
+ * carrello/ordine. Deve restare identico alla costante JS in cart.js.
+ */
+const VARIANT_GROUP_SEPARATOR = ' · ';
+
+/**
+ * Un prodotto ha "varianti raggruppate" (es. Colore + Modello iPhone, invece
+ * di una singola lista di colori) quando `variants` è un oggetto JSON con
+ * chiavi stringa (nome gruppo => elenco opzioni), non un semplice array.
+ */
+function is_variant_groups(array $variants): bool
+{
+    if (empty($variants)) {
+        return false;
+    }
+    foreach (array_keys($variants) as $key) {
+        if (!is_string($key)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+/**
  * Nome da mostrare al pubblico: se il prodotto ha una sola variante, viene
  * assorbita nel titolo (es. "Lip Sleeping Mask — Berry") invece di essere
  * proposta come scelta. Con 0 o 2+ varianti il nome resta invariato.
  */
 function display_product_name(string $name, array $variants): string
 {
-    if (count($variants) === 1) {
+    if (!is_variant_groups($variants) && count($variants) === 1) {
         return $name . ' — ' . $variants[0];
     }
     return $name;
@@ -291,11 +316,36 @@ function display_product_name(string $name, array $variants): string
 
 /**
  * Varianti da proporre come scelta al cliente: vuoto se il prodotto ne ha
- * 0 (nessuna scelta necessaria) o 1 sola (già assorbita nel titolo).
+ * 0 (nessuna scelta necessaria) o 1 sola (già assorbita nel titolo). I
+ * prodotti a varianti raggruppate (colore + modello) usano invece
+ * `is_variant_groups()` e vengono gestiti a parte: qui restituiscono [].
  */
 function selectable_variants(array $variants): array
 {
+    if (is_variant_groups($variants)) {
+        return [];
+    }
     return count($variants) >= 2 ? $variants : [];
+}
+
+/**
+ * Valida una stringa di variante combinata (es. "Nero · iPhone 11") contro
+ * i gruppi di varianti raggruppate del prodotto: deve avere esattamente un
+ * segmento per gruppo, nell'ordine dei gruppi, ciascuno tra le opzioni valide.
+ */
+function is_valid_combined_variant(array $groups, string $variant): bool
+{
+    $groupOptions = array_values($groups);
+    $parts = explode(VARIANT_GROUP_SEPARATOR, $variant);
+    if (count($parts) !== count($groupOptions)) {
+        return false;
+    }
+    foreach ($groupOptions as $i => $options) {
+        if (!in_array($parts[$i], $options, true)) {
+            return false;
+        }
+    }
+    return true;
 }
 
 /**
@@ -320,14 +370,35 @@ function generate_order_token(): string
     return bin2hex(random_bytes(20));
 }
 
-function encode_variants_from_input(string $commaSeparated): ?string
+/**
+ * Codifica l'input del form admin in JSON per la colonna `variants`.
+ *
+ * Senza secondo gruppo: lista piatta di colori/varianti (comportamento
+ * storico). Con un secondo gruppo (nome + valori compilati): oggetto
+ * raggruppato {"Colore": [...], "<nome gruppo 2>": [...]} — usato per i
+ * prodotti dove il cliente deve scegliere due varianti indipendenti (es.
+ * colore + modello iPhone per le cover Rhode), entrambe obbligatorie in
+ * fase di aggiunta al carrello.
+ */
+function encode_variants_from_input(string $commaSeparated, string $group2Label = '', string $group2CommaSeparated = ''): ?string
 {
-    $parts = array_filter(array_map('trim', explode(',', $commaSeparated)), fn($v) => $v !== '');
-    $parts = array_values($parts);
-    if (empty($parts)) {
+    $split = fn(string $v) => array_values(array_filter(array_map('trim', explode(',', $v)), fn($p) => $p !== ''));
+
+    $group1 = $split($commaSeparated);
+    $group2Label = trim($group2Label);
+    $group2 = $split($group2CommaSeparated);
+
+    if ($group2Label !== '' && !empty($group2)) {
+        if (empty($group1)) {
+            return null;
+        }
+        return json_encode(['Colore' => $group1, $group2Label => $group2], JSON_UNESCAPED_UNICODE);
+    }
+
+    if (empty($group1)) {
         return null;
     }
-    return json_encode($parts, JSON_UNESCAPED_UNICODE);
+    return json_encode($group1, JSON_UNESCAPED_UNICODE);
 }
 
 function get_active_offer_product_ids(PDO $pdo): array

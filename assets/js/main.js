@@ -22,28 +22,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   var productSearch = document.getElementById('productSearch');
-  var typeFilter = document.getElementById('typeFilter');
-  if (productSearch || typeFilter) {
+  if (productSearch) {
     var applyProductFilters = function () {
-      var query = productSearch ? productSearch.value.trim().toLowerCase() : '';
-      var type = typeFilter ? typeFilter.value : '';
+      var query = productSearch.value.trim().toLowerCase();
       document.querySelectorAll('.brand-group').forEach(function (group) {
         var brand = group.getAttribute('data-brand') || '';
         var visibleCount = 0;
         group.querySelectorAll('.product-card').forEach(function (card) {
           var name = card.getAttribute('data-name') || '';
-          var cardType = card.getAttribute('data-type') || '';
-          var matchesQuery = query === '' || brand.includes(query) || name.includes(query);
-          var matchesType = type === '' || cardType === type;
-          var matches = matchesQuery && matchesType;
+          var matches = query === '' || brand.includes(query) || name.includes(query);
           card.hidden = !matches;
           if (matches) visibleCount++;
         });
         group.hidden = visibleCount === 0;
       });
     };
-    if (productSearch) productSearch.addEventListener('input', applyProductFilters);
-    if (typeFilter) typeFilter.addEventListener('change', applyProductFilters);
+    productSearch.addEventListener('input', applyProductFilters);
   }
 
   var adminProductSearch = document.getElementById('adminProductSearch');

@@ -590,40 +590,6 @@ svg { display: block; }
   margin: -6px 0 22px;
 }
 
-.search-filter-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.search-filter-row .search-box { flex: 1 1 260px; max-width: 420px; }
-
-.type-filter-select {
-  flex: 0 0 auto;
-  padding: 12px 38px 12px 18px;
-  border-radius: 999px;
-  border: 1px solid rgba(58, 46, 47, 0.14);
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--color-text);
-  background-color: var(--color-surface);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237a6b6c' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 14px center;
-  background-size: 14px;
-  box-shadow: var(--shadow-soft);
-  appearance: none;
-  cursor: pointer;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.type-filter-select:focus {
-  outline: none;
-  border-color: var(--color-gold);
-  box-shadow: 0 0 0 3px rgba(200, 168, 98, 0.18);
-}
-
 .admin-search-box { margin-bottom: 16px; }
 
 .search-box { position: relative; max-width: 420px; }
@@ -819,6 +785,36 @@ svg { display: block; }
   color: var(--color-text-soft);
   padding: 50px 0;
 }
+
+/* ---------- Sezione in allestimento (categoria) ---------- */
+
+.coming-soon-card {
+  max-width: 640px;
+  margin: 20px auto 60px;
+  text-align: center;
+  background: linear-gradient(120deg, var(--color-pink-soft), #fff 65%);
+  border: 1px solid rgba(200, 168, 98, 0.28);
+  border-radius: var(--radius);
+  padding: 40px 30px;
+  box-shadow: var(--shadow-soft);
+}
+
+.coming-soon-card p {
+  color: var(--color-text-soft);
+  font-size: 0.95rem;
+  max-width: 480px;
+  margin: 10px auto 0;
+}
+
+.coming-soon-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 22px 0 26px;
+}
+
+.coming-soon-cta { margin-top: 4px; }
 
 /* ---------- Product card (link) ---------- */
 

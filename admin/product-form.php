@@ -253,7 +253,7 @@ require __DIR__ . '/../includes/admin-header.php';
   </div>
 
   <div class="form-row">
-    <label for="product_type">Tipo prodotto (opzionale, per il filtro sul sito)</label>
+    <label for="product_type">Tipo prodotto (opzionale, usato per generare la descrizione)</label>
     <select id="product_type" name="product_type">
       <option value="">Nessuno / non specificato</option>
       <?php foreach (PRODUCT_TYPES as $typeSlug => $typeLabel): ?>

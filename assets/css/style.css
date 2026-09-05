@@ -814,7 +814,12 @@ svg { display: block; }
   margin: 22px 0 26px;
 }
 
-.coming-soon-cta { margin-top: 4px; }
+.coming-soon-contact {
+  margin-top: 4px;
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  color: var(--color-gold-dark);
+}
 
 /* ---------- Product card (link) ---------- */
 

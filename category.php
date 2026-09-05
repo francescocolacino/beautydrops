@@ -28,8 +28,18 @@ foreach ($byBrand as $brand => $items) {
 }
 $byBrand = order_brands_by_priority($byBrand);
 
-$isComingSoon = $slug === 'abbigliamento';
-$comingSoonBrands = ['Ralph Lauren', 'Dior', 'Gucci', 'Balenciaga', 'The North Face', 'Burberry', 'Tommy Hilfiger'];
+$comingSoonSections = [
+    'abbigliamento' => [
+        'description' => 'Stiamo preparando la selezione di abbigliamento, borse e scarpe: trattiamo brand come Ralph Lauren, Dior, Gucci, Balenciaga, The North Face, Burberry, Tommy Hilfiger e molti altri.',
+        'brands' => ['Ralph Lauren', 'Dior', 'Gucci', 'Balenciaga', 'The North Face', 'Burberry', 'Tommy Hilfiger'],
+    ],
+    'elettronica' => [
+        'description' => 'Stiamo preparando la selezione di tech e audio: cover, caricatori, powerbank e cavi Apple, casse JBL e Marshall, microfoni Shure e molto altro.',
+        'brands' => ['Apple', 'JBL', 'Marshall', 'Shure'],
+    ],
+];
+$isComingSoon = isset($comingSoonSections[$slug]);
+$comingSoon = $comingSoonSections[$slug] ?? null;
 
 $pageTitle = category_label($slug) . ' · ' . SITE_NAME;
 $activeSlug = $slug;
@@ -62,14 +72,14 @@ require __DIR__ . '/includes/header.php';
     <div class="coming-soon-card" data-aos="fade-up">
       <span class="eyebrow">In arrivo</span>
       <h2 class="section-title">Sezione in allestimento</h2>
-      <p>Stiamo preparando la selezione di abbigliamento, borse e scarpe: trattiamo brand come Ralph Lauren, Dior, Gucci, Balenciaga, The North Face, Burberry, Tommy Hilfiger e molti altri.</p>
+      <p><?= h($comingSoon['description']) ?></p>
       <div class="coming-soon-brands">
-        <?php foreach ($comingSoonBrands as $brandName): ?>
+        <?php foreach ($comingSoon['brands'] as $brandName): ?>
           <span class="chip"><?= h($brandName) ?></span>
         <?php endforeach; ?>
         <span class="chip chip-more">e molti altri</span>
       </div>
-      <a class="btn btn-primary coming-soon-cta" href="mailto:<?= h(SHOP_CONTACT_EMAIL) ?>">Scrivici per verificare la disponibilità di un brand</a>
+      <p class="coming-soon-contact">Contattaci per altre info.</p>
     </div>
   </section>
 <?php else: ?>

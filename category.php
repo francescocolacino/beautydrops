@@ -28,18 +28,25 @@ foreach ($byBrand as $brand => $items) {
 }
 $byBrand = order_brands_by_priority($byBrand);
 
-$comingSoonSections = [
+// Categorie senza ancora prodotti reali: sostituiscono l'intera griglia con
+// un avviso "in allestimento".
+$fullComingSoonSections = [
     'abbigliamento' => [
         'description' => 'Stiamo preparando la selezione di abbigliamento, borse e scarpe: trattiamo brand come Ralph Lauren, Dior, Gucci, Balenciaga, The North Face, Burberry, Tommy Hilfiger e molti altri.',
         'brands' => ['Ralph Lauren', 'Dior', 'Gucci', 'Balenciaga', 'The North Face', 'Burberry', 'Tommy Hilfiger'],
     ],
+];
+// Categorie già con prodotti reali ma ancora in espansione: mostrano la
+// griglia normale e in più un avviso sotto per gli altri brand in arrivo.
+$appendComingSoonSections = [
     'elettronica' => [
-        'description' => 'Stiamo preparando la selezione di tech e audio: cover, caricatori, powerbank e cavi Apple, casse JBL e Marshall, microfoni Shure e molto altro.',
-        'brands' => ['Apple', 'JBL', 'Marshall', 'Shure'],
+        'description' => 'Stiamo ampliando ulteriormente la selezione tech e audio: in arrivo anche altri brand audio e accessori.',
+        'brands' => ['Marshall', 'Shure'],
     ],
 ];
-$isComingSoon = isset($comingSoonSections[$slug]);
-$comingSoon = $comingSoonSections[$slug] ?? null;
+$isComingSoon = isset($fullComingSoonSections[$slug]);
+$comingSoon = $fullComingSoonSections[$slug] ?? null;
+$appendComingSoon = $appendComingSoonSections[$slug] ?? null;
 
 $pageTitle = category_label($slug) . ' · ' . SITE_NAME;
 $activeSlug = $slug;
@@ -130,6 +137,23 @@ require __DIR__ . '/includes/header.php';
       </div>
     <?php endforeach; ?>
   </section>
+
+  <?php if ($appendComingSoon !== null): ?>
+    <section class="products-section container">
+      <div class="coming-soon-card coming-soon-card-compact" data-aos="fade-up">
+        <span class="eyebrow">In arrivo</span>
+        <h2 class="section-title-small">Sezione in allestimento</h2>
+        <p><?= h($appendComingSoon['description']) ?></p>
+        <div class="coming-soon-brands">
+          <?php foreach ($appendComingSoon['brands'] as $brandName): ?>
+            <span class="chip"><?= h($brandName) ?></span>
+          <?php endforeach; ?>
+          <span class="chip chip-more">e molti altri</span>
+        </div>
+        <p class="coming-soon-contact">Contattaci per altre info.</p>
+      </div>
+    </section>
+  <?php endif; ?>
 <?php endif; ?>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

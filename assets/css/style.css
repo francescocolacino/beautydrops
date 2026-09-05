@@ -821,6 +821,11 @@ svg { display: block; }
   color: var(--color-gold-dark);
 }
 
+.coming-soon-card-compact {
+  margin-top: 20px;
+  padding: 28px 30px;
+}
+
 /* ---------- Product card (link) ---------- */
 
 .product-card:focus-visible {

@@ -31,6 +31,7 @@ foreach ($rows as $row) {
         'image' => !empty($row['image_path']) ? url($row['image_path']) : null,
         'price' => $row['price'] !== null ? (float) $row['price'] : null,
         'variants' => selectable_variants($variants),
+        'variantPrices' => is_variant_groups($variants) ? [] : decode_variant_prices($row['variant_prices'] ?? null),
         'inOffer' => in_array((int) $row['id'], $activeOfferProductIds, true),
         'productUrl' => url('product.php?id=' . (int) $row['id']),
     ];

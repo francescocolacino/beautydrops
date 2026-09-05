@@ -116,13 +116,18 @@
         var product = byId[item.productId];
         if (!product) return null;
         var discount = discountPercent(qtyByProduct[item.productId]);
-        var lineSubtotal = product.price !== null ? product.price * item.quantity : null;
+        var unitPrice = product.price;
+        if (item.variant && product.variantPrices && Object.prototype.hasOwnProperty.call(product.variantPrices, item.variant)) {
+          unitPrice = product.variantPrices[item.variant];
+        }
+        var lineSubtotal = unitPrice !== null ? unitPrice * item.quantity : null;
         var lineTotal = lineSubtotal !== null ? lineSubtotal * (1 - discount / 100) : null;
         return {
           productId: item.productId,
           variant: item.variant,
           quantity: item.quantity,
           product: product,
+          unitPrice: unitPrice,
           discount: discount,
           lineSubtotal: lineSubtotal,
           lineTotal: lineTotal
@@ -151,7 +156,7 @@
         var imgHtml = line.product.image
           ? '<img src="' + line.product.image + '" alt="">'
           : '<div class="img-placeholder">BD</div>';
-        var priceHtml = line.product.price === null
+        var priceHtml = line.unitPrice === null
           ? '<span class="price on-request">Su richiesta</span>'
           : '<span class="price">' +
               (line.discount > 0 ? '<span class="original">' + formatPrice(line.lineSubtotal) + '</span>' : '') +
@@ -195,7 +200,7 @@
         row.className = 'cart-line';
         var imgHtml = line.product.image ? '<img src="' + line.product.image + '" alt="">' : '<div class="img-placeholder">BD</div>';
         var priceHtml;
-        if (line.product.price === null) {
+        if (line.unitPrice === null) {
           priceHtml = '<span class="on-request">Prezzo su richiesta</span>';
           hasOnRequest = true;
         } else {
@@ -352,6 +357,7 @@
       } else {
         var selectedVariant = null;
         var variantButtons = addForm.querySelectorAll('.variant-option');
+        var priceEl = document.querySelector('[data-product-price]');
 
         variantButtons.forEach(function (btn) {
           btn.addEventListener('click', function () {
@@ -359,6 +365,10 @@
             btn.classList.add('selected');
             selectedVariant = btn.getAttribute('data-variant');
             if (hint) hint.classList.remove('visible');
+            var variantPrice = btn.getAttribute('data-price');
+            if (variantPrice !== null && priceEl) {
+              priceEl.textContent = formatPrice(parseFloat(variantPrice));
+            }
           });
         });
 

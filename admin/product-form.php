@@ -92,6 +92,7 @@ $formData = $product ?: [
     'brand' => '',
     'name' => '',
     'variants' => null,
+    'variant_prices' => null,
     'image_path' => null,
     'stock_quantity' => 0,
     'orderable_quantity' => 0,
@@ -109,6 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     $formData['variants_input'] = trim($_POST['variants_input'] ?? '');
     $formData['variants_group2_label'] = trim($_POST['variants_group2_label'] ?? '');
     $formData['variants_group2_input'] = trim($_POST['variants_group2_input'] ?? '');
+    $formData['variant_prices_input'] = trim($_POST['variant_prices_input'] ?? '');
     $formData['stock_quantity'] = (int)($_POST['stock_quantity'] ?? 0);
     $formData['orderable_quantity'] = (int)($_POST['orderable_quantity'] ?? 0);
     $priceInput = trim($_POST['price'] ?? '');
@@ -148,6 +150,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
             $formData['variants_group2_label'],
             $formData['variants_group2_input']
         );
+        // I prezzi per variante valgono solo per liste piatte (non
+        // raggruppate): con un secondo gruppo attivo non si applicano.
+        $flatVariantsForPricing = ($formData['variants_group2_label'] === '')
+            ? decode_variants($variantsJson)
+            : [];
+        $variantPricesJson = encode_variant_prices_from_input($formData['variant_prices_input'], $flatVariantsForPricing);
 
         if ($id) {
             if ($newImagePath !== $product['image_path']) {
@@ -155,14 +163,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
             }
             $stmt = $pdo->prepare(
                 'UPDATE products SET category=:category, brand=:brand, name=:name, variants=:variants,
-                 image_path=:image_path, stock_quantity=:stock_quantity, orderable_quantity=:orderable_quantity,
-                 price=:price, description=:description, product_type=:product_type WHERE id=:id'
+                 variant_prices=:variant_prices, image_path=:image_path, stock_quantity=:stock_quantity,
+                 orderable_quantity=:orderable_quantity, price=:price, description=:description,
+                 product_type=:product_type WHERE id=:id'
             );
             $stmt->execute([
                 'category' => $formData['category'],
                 'brand' => $formData['brand'],
                 'name' => $formData['name'],
                 'variants' => $variantsJson,
+                'variant_prices' => $variantPricesJson,
                 'image_path' => $newImagePath,
                 'stock_quantity' => $formData['stock_quantity'],
                 'orderable_quantity' => $formData['orderable_quantity'],
@@ -173,14 +183,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
             ]);
         } else {
             $stmt = $pdo->prepare(
-                'INSERT INTO products (category, brand, name, variants, image_path, stock_quantity, orderable_quantity, price, description, product_type)
-                 VALUES (:category, :brand, :name, :variants, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type)'
+                'INSERT INTO products (category, brand, name, variants, variant_prices, image_path, stock_quantity, orderable_quantity, price, description, product_type)
+                 VALUES (:category, :brand, :name, :variants, :variant_prices, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type)'
             );
             $stmt->execute([
                 'category' => $formData['category'],
                 'brand' => $formData['brand'],
                 'name' => $formData['name'],
                 'variants' => $variantsJson,
+                'variant_prices' => $variantPricesJson,
                 'image_path' => $newImagePath,
                 'stock_quantity' => $formData['stock_quantity'],
                 'orderable_quantity' => $formData['orderable_quantity'],
@@ -198,8 +209,15 @@ if (isset($formData['variants_group2_label'])) {
     $variantsInputValue = $formData['variants_input'];
     $variantsGroup2LabelValue = $formData['variants_group2_label'];
     $variantsGroup2InputValue = $formData['variants_group2_input'];
+    $variantPricesInputValue = $formData['variant_prices_input'];
 } else {
     $decodedVariantsForDisplay = decode_variants($formData['variants'] ?? null);
+    $decodedVariantPricesForDisplay = decode_variant_prices($formData['variant_prices'] ?? null);
+    $variantPricesInputValue = implode("\n", array_map(
+        fn($label, $price) => $label . ':' . number_format((float)$price, 2, ',', ''),
+        array_keys($decodedVariantPricesForDisplay),
+        $decodedVariantPricesForDisplay
+    ));
     if (is_variant_groups($decodedVariantsForDisplay)) {
         $groupKeys = array_keys($decodedVariantsForDisplay);
         $variantsInputValue = implode(', ', $decodedVariantsForDisplay[$groupKeys[0]] ?? []);
@@ -265,6 +283,12 @@ require __DIR__ . '/../includes/admin-header.php';
   <div class="form-row">
     <label for="variants_input">Colori / varianti (separati da virgola)</label>
     <input type="text" id="variants_input" name="variants_input" placeholder="Rosso, Blu, Taglia M" value="<?= h($variantsInputValue) ?>">
+  </div>
+
+  <div class="form-row">
+    <label for="variant_prices_input">Prezzi per variante (opzionale, una riga per variante)</label>
+    <textarea id="variant_prices_input" name="variant_prices_input" rows="3" placeholder="1 metro:7,99&#10;2 metri:9,99"><?= h($variantPricesInputValue) ?></textarea>
+    <p class="field-hint">Solo per varianti senza secondo gruppo. Formato "Variante:Prezzo", una per riga (o separate da virgola). Le varianti non elencate qui usano il prezzo base del prodotto.</p>
   </div>
 
   <details class="admin-details"<?= $variantsGroup2LabelValue !== '' ? ' open' : '' ?>>

@@ -22,6 +22,8 @@ $variants = decode_variants($product['variants']);
 $isGroupedVariants = is_variant_groups($variants);
 $displayName = display_product_name($product['name'], $variants);
 $selectableVariants = selectable_variants($variants);
+$basePrice = $product['price'] !== null ? (float) $product['price'] : null;
+$variantPrices = $isGroupedVariants ? [] : decode_variant_prices($product['variant_prices'] ?? null);
 $size = extract_product_size($product['name']);
 $productImages = product_gallery_images($pdo, $product['image_path'] ?? null, (int)$product['id']);
 
@@ -84,8 +86,8 @@ require __DIR__ . '/includes/header.php';
 
         <?= render_product_badges($product, $activeOfferProductIds) ?>
 
-        <?php if ($product['price'] !== null): ?>
-          <p class="product-detail-price"><?= format_price((float)$product['price']) ?></p>
+        <?php if ($basePrice !== null): ?>
+          <p class="product-detail-price" data-product-price><?= format_price($basePrice) ?></p>
         <?php else: ?>
           <p class="product-detail-price product-detail-price-muted">Prezzo su richiesta</p>
         <?php endif; ?>
@@ -130,7 +132,8 @@ require __DIR__ . '/includes/header.php';
               <span class="product-detail-label">Colori e varianti disponibili</span>
               <div class="variant-selector">
                 <?php foreach ($selectableVariants as $variant): ?>
-                  <button type="button" class="variant-option" data-variant="<?= h($variant) ?>"><?= h($variant) ?></button>
+                  <?php $variantPrice = resolve_variant_price($basePrice, $variantPrices, $variant); ?>
+                  <button type="button" class="variant-option" data-variant="<?= h($variant) ?>"<?= $variantPrice !== null ? ' data-price="' . h((string)$variantPrice) . '"' : '' ?>><?= h($variant) ?></button>
                 <?php endforeach; ?>
               </div>
               <p class="variant-required-hint">Seleziona una variante prima di aggiungere al carrello.</p>

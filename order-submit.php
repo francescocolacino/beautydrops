@@ -82,7 +82,9 @@ foreach ($rawItems as $rawItem) {
     }
 
     $discount = quantity_discount_percent($quantityByProduct[$productId]);
-    $unitPrice = $product['price'] !== null ? (float) $product['price'] : null;
+    $basePrice = $product['price'] !== null ? (float) $product['price'] : null;
+    $variantPrices = is_variant_groups($variants) ? [] : decode_variant_prices($product['variant_prices'] ?? null);
+    $unitPrice = resolve_variant_price($basePrice, $variantPrices, $variant);
     $lineSubtotal = $unitPrice !== null ? $unitPrice * $quantity : null;
     $lineTotal = $lineSubtotal !== null ? round($lineSubtotal * (1 - $discount / 100), 2) : null;
 

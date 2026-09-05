@@ -276,6 +276,54 @@ function decode_variants(?string $json): array
     return is_array($decoded) ? $decoded : [];
 }
 
+function decode_variant_prices(?string $json): array
+{
+    if (empty($json)) {
+        return [];
+    }
+    $decoded = json_decode($json, true);
+    return is_array($decoded) ? $decoded : [];
+}
+
+/**
+ * Prezzo per la variante scelta: usa l'override in variant_prices se
+ * presente per quella variante, altrimenti il prezzo base del prodotto.
+ * Solo per varianti "piatte" (non raggruppate) — non si applica a
+ * combinazioni colore+modello.
+ */
+function resolve_variant_price(?float $basePrice, array $variantPrices, ?string $variant): ?float
+{
+    if ($variant !== null && array_key_exists($variant, $variantPrices)) {
+        return (float) $variantPrices[$variant];
+    }
+    return $basePrice;
+}
+
+/**
+ * Converte l'input admin "Variante:Prezzo" (una coppia per riga o separate
+ * da virgola) in mappa variante => prezzo, scartando le righe che non
+ * corrispondono a una delle varianti valide del prodotto.
+ */
+function encode_variant_prices_from_input(string $input, array $validVariants): ?string
+{
+    $map = [];
+    foreach (preg_split('/[\r\n,]+/', $input) as $part) {
+        $part = trim($part);
+        if ($part === '' || !str_contains($part, ':')) {
+            continue;
+        }
+        [$label, $rawPrice] = array_map('trim', explode(':', $part, 2));
+        if ($label === '' || !in_array($label, $validVariants, true)) {
+            continue;
+        }
+        $price = (float) str_replace(',', '.', $rawPrice);
+        if ($price > 0) {
+            $map[$label] = $price;
+        }
+    }
+    return empty($map) ? null : json_encode($map, JSON_UNESCAPED_UNICODE);
+}
+
 /**
  * Separatore usato per combinare in un'unica stringa la selezione di più
  * gruppi di varianti (es. colore + modello iPhone) prima di salvarla nel

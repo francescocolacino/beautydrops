@@ -11,7 +11,18 @@ require __DIR__ . '/includes/header.php';
 
   <div class="cart-page-grid">
     <div id="cartPageList">
-      <p class="empty-state">Caricamento carrello...</p>
+      <div role="status" aria-label="Caricamento carrello">
+        <?php for ($i = 0; $i < 3; $i++): ?>
+          <div class="skeleton-row">
+            <span class="skeleton skeleton-thumb"></span>
+            <span class="skeleton-lines">
+              <span class="skeleton skeleton-text"></span>
+              <span class="skeleton skeleton-text short"></span>
+            </span>
+            <span class="skeleton skeleton-price"></span>
+          </div>
+        <?php endfor; ?>
+      </div>
     </div>
 
     <div>

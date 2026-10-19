@@ -91,12 +91,33 @@ document.addEventListener('DOMContentLoaded', function () {
   var productGalleryMain = document.querySelector('[data-product-gallery-main]');
   var productGalleryThumbnails = document.querySelectorAll('[data-product-gallery-thumbnail]');
   if (productGalleryMain && productGalleryThumbnails.length) {
+    // Dissolvenza tra una foto e l'altra: la nuova viene precaricata e
+    // sostituita solo quando la vecchia è già sparita, così non si vede mai
+    // un'immagine a metà caricamento.
+    var gallerySwapId = 0;
+    var swapMainImage = function (imagePath) {
+      if (productGalleryMain.getAttribute('src') === imagePath) return;
+      var swapId = ++gallerySwapId;
+      var isLoaded = false;
+      var isFadedOut = false;
+      var finishSwap = function () {
+        if (swapId !== gallerySwapId || !isLoaded || !isFadedOut) return;
+        productGalleryMain.src = imagePath;
+        productGalleryMain.classList.remove('is-swapping');
+      };
+      var preload = new Image();
+      preload.onload = preload.onerror = function () { isLoaded = true; finishSwap(); };
+      preload.src = imagePath;
+      productGalleryMain.classList.add('is-swapping');
+      window.setTimeout(function () { isFadedOut = true; finishSwap(); }, 220);
+    };
+
     productGalleryThumbnails.forEach(function (thumbnail) {
       thumbnail.addEventListener('click', function () {
         var imagePath = thumbnail.getAttribute('data-image');
         if (!imagePath) return;
 
-        productGalleryMain.src = imagePath;
+        swapMainImage(imagePath);
         productGalleryThumbnails.forEach(function (item) {
           var isSelected = item === thumbnail;
           item.classList.toggle('active', isSelected);

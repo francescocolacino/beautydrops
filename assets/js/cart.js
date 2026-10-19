@@ -62,19 +62,311 @@
     return readCart().reduce(function (sum, item) { return sum + item.quantity; }, 0);
   }
 
-  function updateBadge() {
+  function productQuantityInCart(productId) {
+    return readCart().reduce(function (sum, item) {
+      return item.productId === productId ? sum + item.quantity : sum;
+    }, 0);
+  }
+
+  function setBadgeCount(qty) {
     var badge = document.getElementById('cartBadge');
     if (!badge) return;
-    var qty = totalQuantity();
     badge.textContent = String(qty);
     badge.hidden = qty === 0;
   }
 
+  function updateBadge() {
+    setBadgeCount(totalQuantity());
+  }
+
+  // Deve restare identico a quantity_discount_percent() in includes/functions.php.
+  var DISCOUNT_TIERS = [
+    { minQty: 2, percent: 5 },
+    { minQty: 3, percent: 10 },
+    { minQty: 5, percent: 15 }
+  ];
+  var MAX_TIER_QTY = DISCOUNT_TIERS[DISCOUNT_TIERS.length - 1].minQty;
+
   function discountPercent(qty) {
-    if (qty >= 5) return 15;
-    if (qty >= 3) return 10;
-    if (qty >= 2) return 5;
-    return 0;
+    var percent = 0;
+    DISCOUNT_TIERS.forEach(function (tier) {
+      if (qty >= tier.minQty) percent = tier.percent;
+    });
+    return percent;
+  }
+
+  function nextDiscountTier(qty) {
+    for (var i = 0; i < DISCOUNT_TIERS.length; i++) {
+      if (qty < DISCOUNT_TIERS[i].minQty) return DISCOUNT_TIERS[i];
+    }
+    return null;
+  }
+
+  function piecesLabel(qty) {
+    return qty === 1 ? '1 pezzo' : qty + ' pezzi';
+  }
+
+  function tierMessageHtml(qty) {
+    var current = discountPercent(qty);
+    var next = nextDiscountTier(qty);
+    if (!next) return 'Sconto massimo <strong>-' + current + '%</strong> raggiunto ✨';
+    var prefix = current > 0 ? 'Sconto <strong>-' + current + '%</strong> attivo · aggiungi' : 'Aggiungi';
+    return prefix + ' ancora ' + piecesLabel(next.minQty - qty) + ' per il <strong>-' + next.percent + '%</strong>';
+  }
+
+  function prefersReducedMotion() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  // ---- Effetti di aggiunta al carrello ----
+
+  function isOnScreen(rect) {
+    return rect.width > 0 && rect.bottom > 0 && rect.top < window.innerHeight;
+  }
+
+  // La foto vola dal prodotto all'icona del carrello: lo spostamento
+  // orizzontale (sul contenitore) e quello verticale (sul contenuto) usano
+  // curve diverse, così la traiettoria è un arco invece di una linea retta.
+  // Se la foto è già uscita dallo schermo (succede quasi sempre su telefono,
+  // dove il pulsante sta sotto la galleria) il volo parte dal pulsante.
+  function flyToCart(sourceImg, fallbackEl, onLand) {
+    var cartButton = document.getElementById('cartButton');
+    if (!sourceImg || !cartButton || !sourceImg.animate || prefersReducedMotion()) { onLand(); return; }
+    var from = sourceImg.getBoundingClientRect();
+    var to = cartButton.getBoundingClientRect();
+    if (!isOnScreen(from) && fallbackEl) {
+      var button = fallbackEl.getBoundingClientRect();
+      var top = button.top + button.height / 2 - 40;
+      from = { left: button.left + button.width / 2 - 40, top: top, bottom: top + 80, width: 80, height: 80 };
+    }
+    if (!isOnScreen(from)) { onLand(); return; }
+
+    var size = Math.min(from.width, from.height, 220);
+    var startX = from.left + from.width / 2 - size / 2;
+    var startY = from.top + from.height / 2 - size / 2;
+    var dx = to.left + to.width / 2 - (startX + size / 2);
+    var dy = to.top + to.height / 2 - (startY + size / 2);
+
+    var flyer = document.createElement('div');
+    flyer.className = 'fly-to-cart';
+    flyer.style.left = startX + 'px';
+    flyer.style.top = startY + 'px';
+    flyer.style.width = size + 'px';
+    flyer.style.height = size + 'px';
+    var inner = document.createElement('div');
+    inner.className = 'fly-to-cart-inner';
+    var img = document.createElement('img');
+    img.src = sourceImg.currentSrc || sourceImg.src;
+    img.alt = '';
+    inner.appendChild(img);
+    flyer.appendChild(inner);
+    document.body.appendChild(flyer);
+
+    var duration = 750;
+    var landed = false;
+    function land() {
+      if (landed) return;
+      landed = true;
+      flyer.remove();
+      onLand();
+    }
+    flyer.animate(
+      [{ transform: 'translateX(0)' }, { transform: 'translateX(' + dx + 'px)' }],
+      { duration: duration, easing: 'cubic-bezier(0.55, 0, 0.9, 0.5)', fill: 'forwards' }
+    );
+    inner.animate(
+      [
+        { transform: 'translateY(0) scale(1) rotate(0deg)', opacity: 1 },
+        { transform: 'translateY(' + dy + 'px) scale(0.12) rotate(18deg)', opacity: 0.7 }
+      ],
+      { duration: duration, easing: 'cubic-bezier(0.15, 0.7, 0.35, 1)', fill: 'forwards' }
+    ).onfinish = land;
+    window.setTimeout(land, duration + 300);
+  }
+
+  function bumpCart() {
+    updateBadge();
+    [document.getElementById('cartBadge'), document.getElementById('cartButton')].forEach(function (el) {
+      if (!el) return;
+      el.classList.remove('bump');
+      void el.offsetWidth; // riavvia l'animazione anche con aggiunte ravvicinate
+      el.classList.add('bump');
+    });
+  }
+
+  var CONFETTI_COLORS = ['#c8a862', '#e3c98a', '#a9873f', '#f6d9df', '#d0587a', '#fff3d6'];
+
+  function burstConfetti(x, y) {
+    if (!document.body.animate || prefersReducedMotion()) return;
+    for (var i = 0; i < 28; i++) {
+      var piece = document.createElement('span');
+      var size = 5 + Math.random() * 5;
+      var isStrip = Math.random() < 0.5;
+      piece.className = 'confetti-piece';
+      piece.style.width = (isStrip ? size * 0.5 : size) + 'px';
+      piece.style.height = (isStrip ? size * 1.6 : size) + 'px';
+      piece.style.background = CONFETTI_COLORS[i % CONFETTI_COLORS.length];
+      piece.style.borderRadius = isStrip ? '2px' : '50%';
+      document.body.appendChild(piece);
+
+      // Esplodono a ventaglio verso l'alto, poi ricadono girando.
+      var angle = -Math.PI / 2 + (Math.random() - 0.5) * Math.PI * 1.3;
+      var distance = 50 + Math.random() * 90;
+      var midX = x + Math.cos(angle) * distance;
+      var midY = y + Math.sin(angle) * distance;
+      var spin = (Math.random() - 0.5) * 720;
+      piece.animate(
+        [
+          { transform: 'translate(' + x + 'px, ' + y + 'px) rotate(0deg)', opacity: 1 },
+          { transform: 'translate(' + midX + 'px, ' + midY + 'px) rotate(' + spin / 2 + 'deg)', opacity: 1, offset: 0.45 },
+          { transform: 'translate(' + (midX + (Math.random() - 0.5) * 30) + 'px, ' + (midY + 60 + Math.random() * 80) + 'px) rotate(' + spin + 'deg)', opacity: 0 }
+        ],
+        { duration: 1000 + Math.random() * 500, easing: 'cubic-bezier(0.2, 0.7, 0.4, 1)' }
+      ).onfinish = (function (p) { return function () { p.remove(); }; })(piece);
+    }
+  }
+
+  // ---- Mini-carrello dopo l'aggiunta ----
+
+  var TOAST_DURATION = 5000;
+  var toastEl = null;
+  var toastTimer = null;
+  var toastRemaining = 0;
+  var toastStartedAt = 0;
+  var toastSeq = 0;
+
+  function startToastTimer(ms) {
+    window.clearTimeout(toastTimer);
+    toastRemaining = ms;
+    toastStartedAt = Date.now();
+    toastTimer = window.setTimeout(hideToast, ms);
+  }
+
+  function pauseToast() {
+    if (!toastEl || !toastEl.classList.contains('visible') || toastEl.classList.contains('paused')) return;
+    window.clearTimeout(toastTimer);
+    toastRemaining -= Date.now() - toastStartedAt;
+    toastEl.classList.add('paused');
+  }
+
+  function resumeToast() {
+    if (!toastEl || !toastEl.classList.contains('paused')) return;
+    toastEl.classList.remove('paused');
+    startToastTimer(Math.max(toastRemaining, 1200));
+  }
+
+  function hideToast() {
+    window.clearTimeout(toastTimer);
+    if (toastEl) toastEl.classList.remove('visible', 'paused');
+  }
+
+  function ensureToast() {
+    if (toastEl) return toastEl;
+    toastEl = document.createElement('div');
+    toastEl.className = 'cart-toast';
+    toastEl.setAttribute('role', 'status');
+    toastEl.setAttribute('aria-live', 'polite');
+    toastEl.style.setProperty('--toast-duration', TOAST_DURATION + 'ms');
+    toastEl.addEventListener('mouseenter', pauseToast);
+    toastEl.addEventListener('mouseleave', resumeToast);
+    toastEl.addEventListener('focusin', pauseToast);
+    toastEl.addEventListener('focusout', resumeToast);
+    toastEl.addEventListener('click', function (e) {
+      if (e.target.closest('.cart-toast-close, .cart-toast-continue')) hideToast();
+    });
+    document.body.appendChild(toastEl);
+    return toastEl;
+  }
+
+  function showAddedToast(info) {
+    var el = ensureToast();
+    var seq = ++toastSeq;
+    var imgHtml = info.image ? '<img src="' + info.image + '" alt="">' : '<div class="img-placeholder">BD</div>';
+    el.innerHTML =
+      '<div class="cart-toast-head">' +
+        '<span class="cart-toast-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
+        'Aggiunto al carrello' +
+        '<button type="button" class="cart-toast-close" aria-label="Chiudi">&times;</button>' +
+      '</div>' +
+      '<div class="cart-toast-item">' + imgHtml +
+        '<div class="cart-toast-info">' +
+          '<span class="cart-toast-name">' + escapeHtml(info.name) + '</span>' +
+          '<span class="cart-toast-meta">' + (info.variant ? escapeHtml(info.variant) + ' · ' : '') + 'Qt. ' + info.quantity + '</span>' +
+        '</div>' +
+      '</div>' +
+      (info.hasPrice ? '<div class="cart-toast-tier">' + tierMessageHtml(info.productQuantity) + '</div>' : '') +
+      '<div class="cart-toast-summary">' +
+        '<span>Nel carrello: <strong>' + piecesLabel(totalQuantity()) + '</strong></span>' +
+        '<span class="js-toast-total"></span>' +
+      '</div>' +
+      '<div class="cart-toast-actions">' +
+        '<button type="button" class="cart-toast-continue">Continua</button>' +
+        '<a href="' + baseUrl + 'cart.php" class="btn btn-primary">Vai al carrello</a>' +
+      '</div>' +
+      '<span class="cart-toast-timer"></span>';
+
+    el.classList.remove('visible', 'paused');
+    void el.offsetWidth; // fa ripartire l'animazione d'ingresso se era già aperto
+    el.classList.add('visible');
+    startToastTimer(TOAST_DURATION);
+
+    buildEnrichedCart(function (lines) {
+      var totalEl = el.querySelector('.js-toast-total');
+      if (seq !== toastSeq || !totalEl) return;
+      var total = lines.reduce(function (sum, line) { return line.lineTotal !== null ? sum + line.lineTotal : sum; }, 0);
+      if (total > 0) totalEl.innerHTML = 'Totale <strong>' + formatPrice(total) + '</strong>';
+    });
+  }
+
+  // ---- Barra di avanzamento dello sconto quantità (pagina carrello) ----
+
+  // Stato del render precedente per prodotto: serve ad animare la barra dal
+  // valore di prima e a lanciare i coriandoli solo quando si sale di soglia.
+  var lastCartTierState = {};
+
+  function tierProgressHtml(productId, qty) {
+    var fill = Math.min(qty, MAX_TIER_QTY) / MAX_TIER_QTY * 100;
+    var previous = lastCartTierState[productId];
+    var startFill = previous ? previous.fill : 0;
+    var marks = DISCOUNT_TIERS.map(function (tier) {
+      var left = tier.minQty / MAX_TIER_QTY * 100;
+      return '<i class="tier-progress-mark' + (startFill >= left ? ' reached' : '') + '" data-min="' + tier.minQty + '" style="left:' + left + '%">' +
+        '<span>-' + tier.percent + '%</span></i>';
+    }).join('');
+    return '<div class="tier-progress" data-product-id="' + productId + '" data-fill="' + fill + '">' +
+      '<div class="tier-progress-track"><span class="tier-progress-fill" style="width:' + startFill + '%"></span>' + marks + '</div>' +
+      '<span class="tier-progress-label">' + tierMessageHtml(qty) + '</span>' +
+    '</div>';
+  }
+
+  function animateTierProgress(container, qtyByProduct) {
+    var newState = {};
+    container.querySelectorAll('.tier-progress').forEach(function (bar) {
+      var productId = bar.getAttribute('data-product-id');
+      var qty = qtyByProduct[productId];
+      var fill = parseFloat(bar.getAttribute('data-fill'));
+      var discount = discountPercent(qty);
+      var previous = lastCartTierState[productId];
+      var reachedNewTier = !!previous && discount > previous.discount;
+      newState[productId] = { fill: fill, discount: discount };
+
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { bar.querySelector('.tier-progress-fill').style.width = fill + '%'; });
+      });
+      window.setTimeout(function () {
+        // Con clic ravvicinati la barra può essere già stata ridisegnata.
+        var current = bar.isConnected ? bar : container.querySelector('.tier-progress[data-product-id="' + productId + '"]');
+        if (!current) return;
+        current.querySelectorAll('.tier-progress-mark').forEach(function (mark) {
+          mark.classList.toggle('reached', qtyByProduct[productId] >= parseInt(mark.getAttribute('data-min'), 10));
+        });
+        if (reachedNewTier) {
+          var rect = current.querySelector('.tier-progress-fill').getBoundingClientRect();
+          burstConfetti(rect.right, rect.top + rect.height / 2);
+        }
+      }, 550);
+    });
+    lastCartTierState = newState;
   }
 
   function formatPrice(value) {
@@ -141,6 +433,11 @@
     var itemsEl = document.getElementById('cartPopupItems');
     var totalEl = document.getElementById('cartPopupTotal');
     if (!itemsEl) return;
+    if (readCart().length && !itemsEl.querySelector('.cart-popup-item')) {
+      var skeletonRow = '<div class="skeleton-row"><span class="skeleton skeleton-thumb"></span>' +
+        '<span class="skeleton-lines"><span class="skeleton skeleton-text"></span><span class="skeleton skeleton-text short"></span></span></div>';
+      itemsEl.innerHTML = skeletonRow + skeletonRow;
+    }
     buildEnrichedCart(function (lines) {
       itemsEl.innerHTML = '';
       if (!lines.length) {
@@ -195,7 +492,20 @@
 
       var subtotal = 0, discountTotal = 0, total = 0, hasOnRequest = false;
 
+      // La barra sconto va una sola volta per prodotto, anche se è nel
+      // carrello in più varianti (lo sconto conta i pezzi totali).
+      var qtyByProduct = {};
       lines.forEach(function (line) {
+        qtyByProduct[line.productId] = (qtyByProduct[line.productId] || 0) + line.quantity;
+      });
+      var progressShown = {};
+
+      lines.forEach(function (line) {
+        var progressHtml = '';
+        if (line.unitPrice !== null && !progressShown[line.productId]) {
+          progressShown[line.productId] = true;
+          progressHtml = tierProgressHtml(line.productId, qtyByProduct[line.productId]);
+        }
         var row = document.createElement('div');
         row.className = 'cart-line';
         var imgHtml = line.product.image ? '<img src="' + line.product.image + '" alt="">' : '<div class="img-placeholder">BD</div>';
@@ -211,7 +521,7 @@
             '<span class="final">' + formatPrice(line.lineTotal) + '</span>';
         }
         row.innerHTML =
-          '<a href="' + line.product.productUrl + '">' + imgHtml + '</a>' +
+          '<a href="' + line.product.productUrl + '" class="cart-line-thumb">' + imgHtml + '</a>' +
           '<div class="cart-line-info">' +
             '<span class="brand">' + escapeHtml(line.product.brand) + '</span>' +
             '<p class="name"><a href="' + line.product.productUrl + '">' + escapeHtml(line.product.name) + '</a></p>' +
@@ -226,7 +536,8 @@
             '</div>' +
           '</div>' +
           '<div class="cart-line-price">' + priceHtml + '</div>' +
-          '<button type="button" class="cart-line-remove">Rimuovi</button>';
+          '<button type="button" class="cart-line-remove">Rimuovi</button>' +
+          progressHtml;
 
         row.querySelector('.qty-decrease').addEventListener('click', function () {
           updateLineQuantity(line.productId, line.variant, Math.max(1, line.quantity - 1));
@@ -240,6 +551,8 @@
 
         cartPageList.appendChild(row);
       });
+
+      animateTierProgress(cartPageList, qtyByProduct);
 
       if (summaryEl) {
         var subtotalEl = summaryEl.querySelector('.js-subtotal');
@@ -311,6 +624,38 @@
         }, 1600);
       }
 
+      function addAndCelebrate(variant, qty) {
+        var previousProductQty = productQuantityInCart(productId);
+        var previousTotal = totalQuantity();
+        addToCart(productId, variant, qty);
+        flashAdded();
+
+        var mainImg = document.querySelector('[data-product-gallery-main]');
+        var title = document.querySelector('.product-detail-info h1');
+        var hasPrice = !!document.querySelector('[data-product-price]');
+        var productQty = previousProductQty + qty;
+        var reachedNewTier = hasPrice && discountPercent(productQty) > discountPercent(previousProductQty);
+
+        // Il numero sul badge si aggiorna quando la foto "atterra" sul carrello.
+        setBadgeCount(previousTotal);
+        flyToCart(mainImg, addButton, function () {
+          bumpCart();
+          showAddedToast({
+            name: title ? title.textContent.trim() : '',
+            image: mainImg ? (mainImg.currentSrc || mainImg.src) : null,
+            variant: variant,
+            quantity: qty,
+            hasPrice: hasPrice,
+            productQuantity: productQty
+          });
+          var tierEl = reachedNewTier && toastEl ? toastEl.querySelector('.cart-toast-tier') : null;
+          if (tierEl) {
+            var rect = tierEl.getBoundingClientRect();
+            burstConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2);
+          }
+        });
+      }
+
       if (groupsWrap) {
         // Prodotto a varianti raggruppate (es. Colore + Modello iPhone): ogni
         // gruppo è obbligatorio, la selezione va combinata in un'unica stringa.
@@ -351,8 +696,7 @@
             return selections[groupEl.getAttribute('data-group-name')];
           }).join(VARIANT_GROUP_SEPARATOR);
           var qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
-          addToCart(productId, combined, qty);
-          flashAdded();
+          addAndCelebrate(combined, qty);
         });
       } else {
         var selectedVariant = null;
@@ -379,8 +723,7 @@
             return;
           }
           var qty = Math.max(1, parseInt(qtyInput.value, 10) || 1);
-          addToCart(productId, selectedVariant, qty);
-          flashAdded();
+          addAndCelebrate(selectedVariant, qty);
         });
       }
     }

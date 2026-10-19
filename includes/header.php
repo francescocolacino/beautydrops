@@ -17,6 +17,10 @@ $activeSlug = $activeSlug ?? null;
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <link rel="stylesheet" href="<?= url('assets/css/style.css') ?>">
+<?php if (!empty($renderBlockingId)): ?>
+<link rel="expect" href="#<?= h($renderBlockingId) ?>" blocking="render">
+<?php endif; ?>
+<script src="<?= url('assets/js/transitions.js') ?>"></script>
 </head>
 <body>
 <header class="site-header" id="siteHeader">

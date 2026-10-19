@@ -35,6 +35,9 @@ $related = $stmt->fetchAll();
 
 $pageTitle = $displayName . ' · ' . $product['brand'] . ' · ' . SITE_NAME;
 $activeSlug = $product['category'];
+// La foto principale deve esistere già al primo disegno della pagina, perché
+// la transizione dalla card possa "allargarsi" su di lei.
+$renderBlockingId = !empty($productImages) ? 'productGalleryMain' : null;
 require __DIR__ . '/includes/header.php';
 ?>
 
@@ -53,11 +56,11 @@ require __DIR__ . '/includes/header.php';
       Indietro
     </a>
 
-    <div class="product-detail" data-aos="fade-up">
+    <div class="product-detail">
       <div class="product-gallery">
         <div class="product-gallery-main">
           <?php if (!empty($productImages)): ?>
-            <img src="<?= h(url($productImages[0])) ?>" alt="<?= h($displayName) ?>" data-product-gallery-main fetchpriority="high">
+            <img src="<?= h(url($productImages[0])) ?>" alt="<?= h($displayName) ?>" id="productGalleryMain" data-product-gallery-main fetchpriority="high">
           <?php else: ?>
             <div class="img-placeholder">BD</div>
           <?php endif; ?>
@@ -80,7 +83,7 @@ require __DIR__ . '/includes/header.php';
         <?php endif; ?>
       </div>
 
-      <div class="product-detail-info">
+      <div class="product-detail-info" data-aos="fade-up">
         <span class="product-brand"><?= h($product['brand']) ?></span>
         <h1><?= h($displayName) ?></h1>
 

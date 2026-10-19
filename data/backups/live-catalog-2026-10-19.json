@@ -1,0 +1,4780 @@
+{
+  "source": "https://beautydrops-production.up.railway.app",
+  "product_count": 152,
+  "products": [
+    {
+      "id": 2,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Pimple Patches",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Cerotti anti-brufoli in idrocolloide per assorbire e proteggere le imperfezioni. Applica su pelle pulita e asciutta direttamente sul brufolo.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/2-pimple-patches-cover.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Caffeine Reset Mask",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Maschera viso alla caffeina per un effetto rassodante e rivitalizzante. Applica uno strato generoso, lascia in posa 10-15 minuti e risciacqua.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/3-caffeine-reset-mask-cover.jpg",
+        "assets/images/catalog/updated-2026-09/3-caffeine-reset-mask-gallery1.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Phone Case Set",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {
+        "Colore": [
+          "Peach Pit",
+          "Lemontini",
+          "Shortcake",
+          "Ribbon",
+          "Guava Spritz",
+          "Raspberry Jelly",
+          "Toast",
+          "Salty Tan",
+          "Espresso",
+          "Black",
+          "Unscented",
+          "Sweet Pea",
+          "Pretzel."
+        ],
+        "Modello iPhone": [
+          "iPhone 11",
+          "iPhone 11 Pro",
+          "iPhone 11 Pro Max",
+          "iPhone 12 mini",
+          "iPhone 12",
+          "iPhone 12 Pro",
+          "iPhone 12 Pro Max",
+          "iPhone 13 mini",
+          "iPhone 13",
+          "iPhone 13 Pro",
+          "iPhone 13 Pro Max",
+          "iPhone 14",
+          "iPhone 14 Plus",
+          "iPhone 14 Pro",
+          "iPhone 14 Pro Max",
+          "iPhone 15",
+          "iPhone 15 Plus",
+          "iPhone 15 Pro",
+          "iPhone 15 Pro Max",
+          "iPhone 16",
+          "iPhone 16 Plus",
+          "iPhone 16 Pro",
+          "iPhone 16 Pro Max",
+          "iPhone 16e",
+          "iPhone 17",
+          "iPhone 17 Air",
+          "iPhone 17 Pro",
+          "iPhone 17 Pro Max"
+        ]
+      },
+      "description": "Cover per iPhone in silicone con porta-gloss magnetico integrato, include un rossetto liquido Rhode. Scegli colore e modello del telefono al momento dell'acquisto.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/4-phone-case-set-cover.webp",
+        "assets/images/catalog/updated-2026-09/4-phone-case-set-gallery1.jpeg"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Magnetic Phone Case with Gloss",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {
+        "Colore": [
+          "Ribbon",
+          "Toast",
+          "Cinnamon Roll",
+          "Unscented",
+          "Raspberry Jelly",
+          "Espresso",
+          "Sweet Pea",
+          "Pretzel",
+          "Shortcake",
+          "Guava Spritz",
+          "Lemontini",
+          "Espresso."
+        ],
+        "Modello iPhone": [
+          "iPhone 11",
+          "iPhone 11 Pro",
+          "iPhone 11 Pro Max",
+          "iPhone 12 mini",
+          "iPhone 12",
+          "iPhone 12 Pro",
+          "iPhone 12 Pro Max",
+          "iPhone 13 mini",
+          "iPhone 13",
+          "iPhone 13 Pro",
+          "iPhone 13 Pro Max",
+          "iPhone 14",
+          "iPhone 14 Plus",
+          "iPhone 14 Pro",
+          "iPhone 14 Pro Max",
+          "iPhone 15",
+          "iPhone 15 Plus",
+          "iPhone 15 Pro",
+          "iPhone 15 Pro Max",
+          "iPhone 16",
+          "iPhone 16 Plus",
+          "iPhone 16 Pro",
+          "iPhone 16 Pro Max",
+          "iPhone 16e",
+          "iPhone 17",
+          "iPhone 17 Air",
+          "iPhone 17 Pro",
+          "iPhone 17 Pro Max"
+        ]
+      },
+      "description": "Cover magnetica per iPhone con porta-gloss removibile, include un lip gloss Rhode. Scegli colore e modello del telefono al momento dell'acquisto.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/6-magnetic-phone-case-cover.png"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Rhode Lip Boost",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "sugarmint",
+          "price": 14.99
+        },
+        {
+          "variant": "unscented",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Trattamento labbra rimpolpante alla formula peptidica, dona volume e idratazione immediata. Applica da solo, giorno o notte, riapplicando quando serve.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/7-rhode-lip-boost-cover.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Rhode Gloss 10ml",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Ribbon",
+          "price": 7.99
+        },
+        {
+          "variant": "Toast",
+          "price": 7.99
+        },
+        {
+          "variant": "Raspberry Jelly",
+          "price": 7.99
+        },
+        {
+          "variant": "Espresso",
+          "price": 7.99
+        },
+        {
+          "variant": "Salty Tan",
+          "price": 7.99
+        },
+        {
+          "variant": "Peach Pit",
+          "price": 7.99
+        },
+        {
+          "variant": "Shortcake",
+          "price": 7.99
+        },
+        {
+          "variant": "Guava Spritz",
+          "price": 7.99
+        },
+        {
+          "variant": "Unscented",
+          "price": 7.99
+        },
+        {
+          "variant": "Watermelon Slice",
+          "price": 7.99
+        },
+        {
+          "variant": "Salted Caramel",
+          "price": 7.99
+        },
+        {
+          "variant": "Rhode Vanilla",
+          "price": 7.99
+        },
+        {
+          "variant": "Strawberry Glaze",
+          "price": 7.99
+        },
+        {
+          "variant": "Jelly Bean",
+          "price": 7.99
+        },
+        {
+          "variant": "Birthday Cake",
+          "price": 7.99
+        },
+        {
+          "variant": "Cinnamon Roll",
+          "price": 7.99
+        },
+        {
+          "variant": "Passionfruit",
+          "price": 7.99
+        },
+        {
+          "variant": "Sugar Plum",
+          "price": 7.99
+        },
+        {
+          "variant": "Hot Cocoa",
+          "price": 7.99
+        },
+        {
+          "variant": "Peppermint Glaze",
+          "price": 7.99
+        },
+        {
+          "variant": "Vanilla Spice",
+          "price": 7.99
+        },
+        {
+          "variant": "Ginger Swirl",
+          "price": 7.99
+        },
+        {
+          "variant": "Cherry Pop",
+          "price": 7.99
+        },
+        {
+          "variant": "Berry Crisp",
+          "price": 7.99
+        },
+        {
+          "variant": "Peach Tea.",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra colorato alla formula peptidica, idrata e dona un velo di colore luminoso. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/gallery/rhode/rh-7-lip-01.jpg",
+        "assets/images/gallery/rhode/rh-7-lip-02.jpg",
+        "assets/images/gallery/rhode/rh-7-lip-03.jpg",
+        "assets/images/gallery/rhode/rh-7-shades-01.jpg",
+        "assets/images/gallery/rhode/rh-7-shades-02.jpg",
+        "assets/images/gallery/rhode/rh-7-shades-03.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Birthday Limited Gloss",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "raspberry",
+          "price": 8.99
+        },
+        {
+          "variant": "espresso",
+          "price": 8.99
+        },
+        {
+          "variant": "toast",
+          "price": 8.99
+        },
+        {
+          "variant": "ribbon",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set edizione limitata di gloss labbra Rhode Peptide Lip Tint in tonalità esclusive, idrata e colora le labbra.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/9-birthday-limited-gloss-cover.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Rhode Blush",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Piggy",
+          "price": 8.99
+        },
+        {
+          "variant": "Juice Box",
+          "price": 8.99
+        },
+        {
+          "variant": "Spicy Marg",
+          "price": 8.99
+        },
+        {
+          "variant": "Freckle",
+          "price": 8.99
+        },
+        {
+          "variant": "Sleepy Girl",
+          "price": 8.99
+        },
+        {
+          "variant": "Toasted Teddy",
+          "price": 8.99
+        },
+        {
+          "variant": "Sprinkle",
+          "price": 8.99
+        },
+        {
+          "variant": "Tan Line",
+          "price": 8.99
+        },
+        {
+          "variant": "Teacup",
+          "price": 8.99
+        },
+        {
+          "variant": "Sun Soak",
+          "price": 8.99
+        },
+        {
+          "variant": "Plum.",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in stick formato tascabile, colore buildable e sfumabile con le dita. Applica a puntini sulle guance e sfuma con i polpastrelli.",
+      "images": [
+        "assets/images/gallery/rhode/rh-9-blush-01.jpg",
+        "assets/images/gallery/rhode/rh-9-blush-02.jpg",
+        "assets/images/gallery/rhode/rh-9-blush-shades.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Rhode highlight",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01-bronzo",
+          "price": 8.99
+        },
+        {
+          "variant": "02-sunlight",
+          "price": 8.99
+        },
+        {
+          "variant": "03-pearl",
+          "price": 8.99
+        },
+        {
+          "variant": "04-rose",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Illuminante in stick per un effetto luminoso naturale su zigomi, naso e arco di Cupido. Applica a puntini e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/rhode/rh-10.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "New Rhode blush",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "candy apple",
+          "price": 8.99
+        },
+        {
+          "variant": "teacup",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in stick formato tascabile nelle nuove tonalità Rhode, colore buildable e sfumabile con le dita. Applica a puntini sulle guance e sfuma con i polpastrelli.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/12-new-rhode-blush-cover.jpg",
+        "assets/images/catalog/rhode/rh-11.jpg",
+        "assets/images/catalog/updated-2026-09/12-new-rhode-blush-gallery1.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Rhode liner",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Lunge",
+          "price": 8.99
+        },
+        {
+          "variant": "Press",
+          "price": 8.99
+        },
+        {
+          "variant": "Spin",
+          "price": 8.99
+        },
+        {
+          "variant": "Twist",
+          "price": 8.99
+        },
+        {
+          "variant": "Move",
+          "price": 8.99
+        },
+        {
+          "variant": "Stretch",
+          "price": 8.99
+        },
+        {
+          "variant": "Bend",
+          "price": 8.99
+        },
+        {
+          "variant": "Lean",
+          "price": 8.99
+        },
+        {
+          "variant": "Lift",
+          "price": 8.99
+        },
+        {
+          "variant": "Flex",
+          "price": 8.99
+        },
+        {
+          "variant": "Balance.",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Matita contorno labbra scorrevole, definisce e prepara le labbra prima del rossetto o del gloss. Disegna il bordo partendo dal centro verso gli angoli.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/13-rhode-liner-cover.png",
+        "assets/images/catalog/updated-2026-09/13-rhode-liner-gallery1.webp"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Gloss Set (4 pieces)",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 4 gloss labbra Rhode Peptide Lip Tint in diverse tonalità, idratano e colorano le labbra.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/14-gloss-set-4-pieces-cover.jpeg"
+      ]
+    },
+    {
+      "id": 15,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Peptide Glazing Fluid 50ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Siero viso idratante alla formula peptidica per un effetto 'glazed skin' luminoso. Applica 2-3 pompette su viso, collo e décolleté.",
+      "images": [
+        "assets/images/gallery/rhode/rh-14-fluid-01.jpg",
+        "assets/images/gallery/rhode/rh-14-fluid-02.jpg",
+        "assets/images/gallery/rhode/rh-14-fluid-03.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg",
+        "assets/images/gallery/rhode/rhode-routine-set.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Barrier restore Cream",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Crema viso nutriente per rinforzare la barriera cutanea e idratare in profondità. Applica su viso e collo puliti, mattina e/o sera.",
+      "images": [
+        "assets/images/gallery/rhode/rh-15-barrier-03.jpg",
+        "assets/images/gallery/rhode/rh-15-barrier-02.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg",
+        "assets/images/gallery/rhode/rhode-routine-set.jpg",
+        "assets/images/gallery/rhode/rh-15-barrier-01.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Pineapple refresh Face Wash 150ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Detergente viso delicato che si trasforma da balsamo a schiuma, rimuove trucco e SPF senza seccare la pelle. Applica su viso umido, massaggia e risciacqua.",
+      "images": [
+        "assets/images/gallery/rhode/rh-17-pineapple-01.jpg",
+        "assets/images/gallery/rhode/rh-17-pineapple-02.jpg",
+        "assets/images/gallery/rhode/rh-17-pineapple-03.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg",
+        "assets/images/gallery/rhode/rhode-routine-set.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Glazing Milk 140ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Latte idratante viso per un effetto pelle 'glazed' luminosa e morbida. Applica sulle mani e tampona su viso, collo e décolleté.",
+      "images": [
+        "assets/images/gallery/rhode/rh-18-milk-01.jpg",
+        "assets/images/gallery/rhode/rh-18-milk-02.jpg",
+        "assets/images/gallery/rhode/rh-18-milk-03.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg"
+      ]
+    },
+    {
+      "id": 20,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Glazing Mist 80ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Spray viso idratante per rinfrescare la pelle e fissare il trucco con un velo di luminosità. Vaporizza su viso pulito o sopra il make-up.",
+      "images": [
+        "assets/images/gallery/rhode/rh-19-mist-01.jpg",
+        "assets/images/gallery/rhode/rh-19-mist-02.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg"
+      ]
+    },
+    {
+      "id": 21,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "Eye Patches Set (6 pieces)",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-rhode logo",
+          "price": 14.99
+        },
+        {
+          "variant": "2-L logo",
+          "price": 14.99
+        },
+        {
+          "variant": "3-banana",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set di patch occhi decongestionanti alla formula peptidica, riducono gonfiore e stanchezza. Applica sotto gli occhi per 10-15 minuti prima del trucco.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/21-eye-patches-set-cover.jpg",
+        "assets/images/gallery/rhode/rhode-must-haves.jpg",
+        "assets/images/catalog/updated-2026-09/21-eye-patches-set-gallery1.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "paper bag",
+      "price_label": "€ 1,50",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-grey",
+          "price": 1.5
+        },
+        {
+          "variant": "2-espresso",
+          "price": 1.5
+        },
+        {
+          "variant": "3-raspberry",
+          "price": 1.5
+        },
+        {
+          "variant": "4-saltytan",
+          "price": 1.5
+        },
+        {
+          "variant": "5-shortcake",
+          "price": 1.5
+        }
+      ],
+      "variant_groups": {},
+      "description": "Shopper di carta Rhode, ideale per confezionare un regalo o riporre i tuoi prodotti preferiti.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/22-paper-bag-cover.jpg",
+        "assets/images/catalog/rhode/rh-21.jpg"
+      ]
+    },
+    {
+      "id": 23,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "makeup bag",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "gray (big / samll)",
+          "price": 14.99
+        },
+        {
+          "variant": "yellow (big / samll)",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Beauty case Rhode per organizzare trucco e prodotti skincare, pratica da portare in borsa o in viaggio.",
+      "images": [
+        "assets/images/gallery/rhode/rh-22-gray-03.jpg",
+        "assets/images/gallery/rhode/rh-22-gray-02.jpg",
+        "assets/images/gallery/rhode/rh-22-yellow-01.jpg",
+        "assets/images/gallery/rhode/rh-22-yellow-02.jpg",
+        "assets/images/gallery/rhode/rh-22-shades.jpg",
+        "assets/images/gallery/rhode/rh-22-gray-01.jpg"
+      ]
+    },
+    {
+      "id": 24,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "big makeup bag",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-black",
+          "price": 19.99
+        },
+        {
+          "variant": "2-blue",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Beauty case Rhode formato grande per organizzare trucco e prodotti skincare, pratica da portare in borsa o in viaggio.",
+      "images": [
+        "assets/images/gallery/rhode/rh-23-black-01.jpg",
+        "assets/images/gallery/rhode/rh-23-black-02.jpg"
+      ]
+    },
+    {
+      "id": 25,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "silicone makeup bag",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "rasperberry jelly",
+          "price": 9.99
+        },
+        {
+          "variant": "shortcake",
+          "price": 9.99
+        },
+        {
+          "variant": "saltytan",
+          "price": 9.99
+        },
+        {
+          "variant": "toast ribbion",
+          "price": 9.99
+        },
+        {
+          "variant": "unscented",
+          "price": 9.99
+        },
+        {
+          "variant": "lemontini",
+          "price": 9.99
+        },
+        {
+          "variant": "espresso black",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Beauty case Rhode in silicone, resistente e facile da pulire, per organizzare trucco e skincare.",
+      "images": [
+        "assets/images/gallery/rhode/rh-24-silicone-01.jpg",
+        "assets/images/gallery/rhode/rh-24-silicone-02.jpg",
+        "assets/images/gallery/rhode/rh-24-silicone-03.jpg"
+      ]
+    },
+    {
+      "id": 26,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "mirror",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Specchietto tascabile Rhode con custodia in ecopelle, pratico per ritocchi al trucco fuori casa.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/26-mirror-cover.jpg"
+      ]
+    },
+    {
+      "id": 27,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "hairband",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Fascia per capelli Rhode, comoda per la skincare routine o per tenere i capelli raccolti durante la beauty routine.",
+      "images": [
+        "assets/images/gallery/rhode/rh-26-hairband-01.jpg",
+        "assets/images/gallery/rhode/rh-26-hairband-02.jpg"
+      ]
+    },
+    {
+      "id": 28,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "sticker",
+      "price_label": "€ 1,50",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "strawberry",
+          "price": 1.5
+        },
+        {
+          "variant": "milk",
+          "price": 1.5
+        }
+      ],
+      "variant_groups": {},
+      "description": "Adesivo Rhode da collezione, perfetto per personalizzare quaderni, borracce e accessori.",
+      "images": [
+        "assets/images/catalog/rhode/rh-27.jpg"
+      ]
+    },
+    {
+      "id": 29,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "sticker set",
+      "price_label": "€ 2,00",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "green",
+          "price": 2.0
+        },
+        {
+          "variant": "brown",
+          "price": 2.0
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set di adesivi Rhode da collezione, perfetti per personalizzare quaderni, borracce e accessori.",
+      "images": [
+        "assets/images/catalog/rhode/rh-28.jpg"
+      ]
+    },
+    {
+      "id": 31,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "paper box (new)",
+      "price_label": "€ 1,50",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "gray",
+          "price": 1.5
+        },
+        {
+          "variant": "espresso",
+          "price": 1.5
+        }
+      ],
+      "variant_groups": {},
+      "description": "Scatola di carta Rhode, ideale per confezionare un regalo o conservare i tuoi prodotti preferiti.",
+      "images": [
+        "assets/images/catalog/rhode/rh-30.jpg"
+      ]
+    },
+    {
+      "id": 32,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "paper (with logo)",
+      "price_label": "€ 1,00",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Carta velina Rhode con logo del brand, per confezionare i tuoi acquisti con un tocco curato.",
+      "images": [
+        "assets/images/catalog/rhode/rh-31.jpg"
+      ]
+    },
+    {
+      "id": 34,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "card",
+      "price_label": "€ 1,00",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1",
+          "price": 1.0
+        },
+        {
+          "variant": "2",
+          "price": 1.0
+        },
+        {
+          "variant": "3",
+          "price": 1.0
+        }
+      ],
+      "variant_groups": {},
+      "description": "Biglietto Rhode da abbinare a un regalo o da collezionare.",
+      "images": [
+        "assets/images/catalog/rhode/rh-33.jpg"
+      ]
+    },
+    {
+      "id": 35,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "gloss set",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di gloss labbra Rhode Peptide Lip Tint in confezione rigida, idratano e colorano le labbra.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/35-gloss-set-cover.jpg"
+      ]
+    },
+    {
+      "id": 36,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "bath towel",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Telo da bagno Rhode, morbido e assorbente, per completare la tua routine di cura personale.",
+      "images": [
+        "assets/images/gallery/rhode/rh-35-towel-02.jpg",
+        "assets/images/gallery/rhode/rh-35-towel-03.jpg",
+        "assets/images/gallery/rhode/rh-35-towel-04.jpg",
+        "assets/images/gallery/rhode/rh-35-towel-01.jpeg"
+      ]
+    },
+    {
+      "id": 37,
+      "category": "cosmetici",
+      "brand": "Rhode",
+      "name": "heart makeup bag",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "rasperberry jelly",
+          "price": 9.99
+        },
+        {
+          "variant": "shortcake",
+          "price": 9.99
+        },
+        {
+          "variant": "saltytan",
+          "price": 9.99
+        },
+        {
+          "variant": "toast ribbion",
+          "price": 9.99
+        },
+        {
+          "variant": "unscented",
+          "price": 9.99
+        },
+        {
+          "variant": "lemontini",
+          "price": 9.99
+        },
+        {
+          "variant": "espresso black",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Beauty case Rhode a forma di cuore, per organizzare trucco e skincare con un tocco giocoso.",
+      "images": [
+        "assets/images/gallery/rhode/rh-36-heart-01.jpg",
+        "assets/images/gallery/rhode/rh-36-heart-02.jpg",
+        "assets/images/gallery/rhode/rh-36-heart-03.jpg"
+      ]
+    },
+    {
+      "id": 39,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "gloss",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "poppy",
+          "price": 6.99
+        },
+        {
+          "variant": "cberry",
+          "price": 6.99
+        },
+        {
+          "variant": "pinksugar",
+          "price": 6.99
+        },
+        {
+          "variant": "vanillabeige",
+          "price": 6.99
+        },
+        {
+          "variant": "sweetmint",
+          "price": 6.99
+        },
+        {
+          "variant": "brownsugar",
+          "price": 6.99
+        },
+        {
+          "variant": "vanilla",
+          "price": 6.99
+        },
+        {
+          "variant": "icedcoffee",
+          "price": 6.99
+        },
+        {
+          "variant": "birthdaycake",
+          "price": 6.99
+        },
+        {
+          "variant": "hotcocoa",
+          "price": 6.99
+        },
+        {
+          "variant": "pink-Guava",
+          "price": 6.99
+        },
+        {
+          "variant": "strawberry",
+          "price": 6.99
+        },
+        {
+          "variant": "Toasted",
+          "price": 6.99
+        },
+        {
+          "variant": "Marshmallow",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra idratante e lucido, dona morbidezza e un velo di colore naturale. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-1-product.jpg",
+        "assets/images/gallery/summer-fridays/su-1-shades.jpg"
+      ]
+    },
+    {
+      "id": 40,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "Lip Oil",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Softmauve",
+          "price": 6.99
+        },
+        {
+          "variant": "RosewoodNights",
+          "price": 6.99
+        },
+        {
+          "variant": "PinkCloud",
+          "price": 6.99
+        },
+        {
+          "variant": "BlushDreams",
+          "price": 6.99
+        },
+        {
+          "variant": "BareSand",
+          "price": 6.99
+        },
+        {
+          "variant": "RoseBud",
+          "price": 6.99
+        },
+        {
+          "variant": "MidnightBerry",
+          "price": 6.99
+        },
+        {
+          "variant": "WarmBeige",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra idratante e nutriente per labbra morbide e luminose. Applica da solo durante il giorno o prima di dormire.",
+      "images": [
+        "assets/images/products/prod_6aa12a423d63b6.46013315.jpg",
+        "assets/images/products/prod_6aa12a42405d86.69654218.jpg",
+        "assets/images/products/prod_6aa12a424292d3.71635890.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "Lip set (2 in one)",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set con 2 prodotti labbra Summer Fridays, per idratare e curare le labbra ogni giorno.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-3-set-01.jpg",
+        "assets/images/gallery/summer-fridays/su-3-set-02.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "gloss set (3 in one)",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 3 gloss/balsami labbra Summer Fridays in diverse fragranze, per labbra sempre curate e luminose.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-4-set-01.jpg",
+        "assets/images/gallery/summer-fridays/su-4-set-02.jpg"
+      ]
+    },
+    {
+      "id": 43,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "mini gloss set (4 in one)",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 4 mini gloss/balsami labbra Summer Fridays, perfetto da provare o portare in viaggio.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-5-set-01.jpg",
+        "assets/images/gallery/summer-fridays/su-5-set-02.jpg"
+      ]
+    },
+    {
+      "id": 44,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "mini gloss set (4 in one)",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 4 mini gloss/balsami labbra Summer Fridays, perfetto da provare o portare in viaggio.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-6-set-01.jpg"
+      ]
+    },
+    {
+      "id": 45,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "Jet Lag Mask 15g",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Maschera viso idratante e lenitiva, rivitalizza la pelle stanca e spenta. Usa come maschera lampo, maschera notte o crema quotidiana.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-7-8-closeup.jpg",
+        "assets/images/gallery/summer-fridays/su-7-8-sizes.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "category": "cosmetici",
+      "brand": "Summer Fridays",
+      "name": "Jet Lag Mask 64g",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Maschera viso idratante e lenitiva, rivitalizza la pelle stanca e spenta. Usa come maschera lampo, maschera notte o crema quotidiana.",
+      "images": [
+        "assets/images/gallery/summer-fridays/su-7-8-closeup.jpg",
+        "assets/images/gallery/summer-fridays/su-7-8-sizes.jpg",
+        "assets/images/gallery/summer-fridays/su-8-product.jpg"
+      ]
+    },
+    {
+      "id": 47,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "Lip Balm 12g – Glaze Collection",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "suagr glaze",
+          "price": 8.99
+        },
+        {
+          "variant": "peacg galze",
+          "price": 8.99
+        },
+        {
+          "variant": "maple glaze",
+          "price": 8.99
+        },
+        {
+          "variant": "raspberry jam",
+          "price": 8.99
+        },
+        {
+          "variant": "blueberry jelly",
+          "price": 8.99
+        },
+        {
+          "variant": "strawberry",
+          "price": 8.99
+        },
+        {
+          "variant": "chocolate",
+          "price": 8.99
+        },
+        {
+          "variant": "cinnamon",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Balsamo labbra effetto glassato, idrata e dona una lucentezza naturale. Applica sulle labbra quando servono morbidezza e comfort.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/47-lip-balm-glaze-cover.jpg",
+        "assets/images/catalog/updated-2026-09/47-lip-balm-glaze-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/47-lip-balm-glaze-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 48,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "Lip Balm 12g – Classic Collection",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "gummy bear",
+          "price": 7.99
+        },
+        {
+          "variant": "vnilla",
+          "price": 7.99
+        },
+        {
+          "variant": "mango",
+          "price": 7.99
+        },
+        {
+          "variant": "berry",
+          "price": 7.99
+        },
+        {
+          "variant": "blur berry",
+          "price": 7.99
+        },
+        {
+          "variant": "sweet candy",
+          "price": 7.99
+        },
+        {
+          "variant": "matcha",
+          "price": 7.99
+        },
+        {
+          "variant": "taro",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Balsamo labbra idratante nelle fragranze classiche Laneige, per labbra morbide tutto il giorno. Applica quando serve e prima del rossetto.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/48-lip-balm-classic-cover.jpg",
+        "assets/images/catalog/updated-2026-09/48-lip-balm-classic-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/48-lip-balm-classic-gallery2.jpg",
+        "assets/images/catalog/updated-2026-09/48-lip-balm-classic-gallery3.jpg"
+      ]
+    },
+    {
+      "id": 49,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "lip sleeping mask — BERRY",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Maschera labbra da notte, ripara e idrata intensamente mentre dormi. Applica uno strato generoso sulle labbra prima di andare a dormire.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/49-lip-sleeping-mask-cover.jpg",
+        "assets/images/catalog/updated-2026-09/49-lip-sleeping-mask-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/49-lip-sleeping-mask-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 50,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "Lip glow balm set3",
+      "price_label": "€ 12,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 3 balsami labbra lucidi Laneige in diverse tonalità, per idratare e dare colore naturale alle labbra.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/50-lip-glow-balm-set3-cover.jpg"
+      ]
+    },
+    {
+      "id": 51,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "Dreamy lip kit x4pcs",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Kit labbra Laneige con 4 prodotti tra balsami e maschere, per una routine labbra completa.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/51-dreamy-lip-kit-cover.jpg",
+        "assets/images/catalog/updated-2026-09/51-dreamy-lip-kit-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/51-dreamy-lip-kit-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 52,
+      "category": "cosmetici",
+      "brand": "Laneige",
+      "name": "lip sleeping mask x5pcs",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 5 maschere labbra da notte Laneige in mini formato, da provare in viaggio o da regalare.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/52-lip-sleeping-mask-x5-cover.jpg",
+        "assets/images/catalog/updated-2026-09/52-lip-sleeping-mask-x5-gallery1.jpg"
+      ]
+    },
+    {
+      "id": 56,
+      "category": "cosmetici",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch Liquid Blush 13 colors",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Lucky",
+          "price": 9.99
+        },
+        {
+          "variant": "02 Happy",
+          "price": 9.99
+        },
+        {
+          "variant": "03 Joy",
+          "price": 9.99
+        },
+        {
+          "variant": "04 Hope",
+          "price": 9.99
+        },
+        {
+          "variant": "05 Love",
+          "price": 9.99
+        },
+        {
+          "variant": "06 Believe",
+          "price": 9.99
+        },
+        {
+          "variant": "07 Grateful",
+          "price": 9.99
+        },
+        {
+          "variant": "08 Virtue",
+          "price": 9.99
+        },
+        {
+          "variant": "09 Encourage",
+          "price": 9.99
+        },
+        {
+          "variant": "10 Bliss",
+          "price": 9.99
+        },
+        {
+          "variant": "11 Worth",
+          "price": 9.99
+        },
+        {
+          "variant": "12 Faith",
+          "price": 9.99
+        },
+        {
+          "variant": "13 Grace",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido leggero e sfumabile disponibile in tante tonalità, per un colore naturale sulle guance. Applica qualche goccia e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/56-soft-pinch-liquid-blush-cover.jpg",
+        "assets/images/catalog/updated-2026-09/56-soft-pinch-liquid-blush-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/56-soft-pinch-liquid-blush-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "category": "cosmetici",
+      "brand": "Rare Beauty",
+      "name": "Stay Vulnerable Glossy Lip Balm 3.3ml",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Dazzle",
+          "price": 7.99
+        },
+        {
+          "variant": "02 Beam",
+          "price": 7.99
+        },
+        {
+          "variant": "03 Flicker",
+          "price": 7.99
+        },
+        {
+          "variant": "04 Glimmer",
+          "price": 7.99
+        },
+        {
+          "variant": "05 Spark",
+          "price": 7.99
+        },
+        {
+          "variant": "06 Blaze",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Balsamo labbra lucido e colorato, idrata mentre dona un velo di colore. Applica direttamente sulle labbra da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/58-stay-vulnerable-lip-balm-cover.jpg",
+        "assets/images/catalog/updated-2026-09/58-stay-vulnerable-lip-balm-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/58-stay-vulnerable-lip-balm-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 59,
+      "category": "cosmetici",
+      "brand": "Rare Beauty",
+      "name": "Positive Light Liquid Luminizer 15ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Outshine",
+          "price": 9.99
+        },
+        {
+          "variant": "02 Transcend",
+          "price": 9.99
+        },
+        {
+          "variant": "03 Reflect",
+          "price": 9.99
+        },
+        {
+          "variant": "04 Enchant",
+          "price": 9.99
+        },
+        {
+          "variant": "05 Flaunt",
+          "price": 9.99
+        },
+        {
+          "variant": "06 Reveal",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Illuminante liquido per un effetto luminoso naturale su viso e zigomi. Applica qualche goccia da sola o mixata al fondotinta.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/59-liquid-luminizer-cover.jpg",
+        "assets/images/catalog/updated-2026-09/59-liquid-luminizer-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/59-liquid-luminizer-gallery2.jpg",
+        "assets/images/catalog/updated-2026-09/59-liquid-luminizer-gallery3.jpg"
+      ]
+    },
+    {
+      "id": 60,
+      "category": "cosmetici",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch Matte Bouncy Blush",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Happy",
+          "price": 9.99
+        },
+        {
+          "variant": "02Hope",
+          "price": 9.99
+        },
+        {
+          "variant": "03Thriving",
+          "price": 9.99
+        },
+        {
+          "variant": "04 Alive",
+          "price": 9.99
+        },
+        {
+          "variant": "05 Grateful",
+          "price": 9.99
+        },
+        {
+          "variant": "06 Worth",
+          "price": 9.99
+        },
+        {
+          "variant": "07 Truth",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in crema dal finish opaco morbido, per un colore guance naturale e a lunga tenuta. Applica a puntini e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/60-matte-bouncy-blush-cover.jpg",
+        "assets/images/catalog/updated-2026-09/60-matte-bouncy-blush-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/60-matte-bouncy-blush-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 63,
+      "category": "cosmetici",
+      "brand": "Rare Beauty",
+      "name": "Soft Pinch Contouring Liquide",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Serene",
+          "price": 14.99
+        },
+        {
+          "variant": "Solace",
+          "price": 14.99
+        },
+        {
+          "variant": "Gentle",
+          "price": 14.99
+        },
+        {
+          "variant": "Mellow",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Contouring liquido leggero e sfumabile per scolpire il viso con un effetto naturale. Applica su zigomi e mascella e sfuma con una spugnetta.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/63-contouring-liquide-cover.jpg",
+        "assets/images/catalog/updated-2026-09/63-contouring-liquide-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/63-contouring-liquide-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 64,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "E.L.F. Makeup Setting Spray",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "BLUE LIGHT",
+          "price": 9.99
+        },
+        {
+          "variant": "MICRO-FINE",
+          "price": 9.99
+        },
+        {
+          "variant": "CLEAR",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Spray fissante per il trucco, per una tenuta a lunga durata senza appesantire la pelle. Vaporizza a circa 20 cm dal viso a occhi chiusi.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-1.jpg"
+      ]
+    },
+    {
+      "id": 65,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f. Halo Glow Beauty Wand Blush 10ML",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 PINK ME UP",
+          "price": 6.99
+        },
+        {
+          "variant": "2 YOU GO COCOA",
+          "price": 6.99
+        },
+        {
+          "variant": "3 CANDLELIT",
+          "price": 6.99
+        },
+        {
+          "variant": "4 ROSE YOU SLAY",
+          "price": 6.99
+        },
+        {
+          "variant": "5 MAGIC HOUR",
+          "price": 6.99
+        },
+        {
+          "variant": "6 BERRY RADIANT",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido in stick con applicatore a bacchetta, per un colore naturale e luminoso sulle guance. Applica a puntini e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-2.jpg"
+      ]
+    },
+    {
+      "id": 67,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f. Sheer For It Blush Tint/e.l.f. 6.8 mL",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 Pink Positive",
+          "price": 6.99
+        },
+        {
+          "variant": "2 Cherry Cola",
+          "price": 6.99
+        },
+        {
+          "variant": "3 Orange Crush",
+          "price": 6.99
+        },
+        {
+          "variant": "4 Left on Red",
+          "price": 6.99
+        },
+        {
+          "variant": "5 Plums Up",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Tinta guance leggera e sfumabile per un colore naturale come appena pizzicate. Applica qualche goccia sugli zigomi e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-4.jpg"
+      ]
+    },
+    {
+      "id": 68,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "ELF lip gloss",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01—VANILLA TOFFEE",
+          "price": 6.99
+        },
+        {
+          "variant": "02—JAVA CHIP",
+          "price": 6.99
+        },
+        {
+          "variant": "03—BLACKBERRY SORBET",
+          "price": 6.99
+        },
+        {
+          "variant": "04—YUMMY GUMMY",
+          "price": 6.99
+        },
+        {
+          "variant": "05—WILD CHERRY",
+          "price": 6.99
+        },
+        {
+          "variant": "06—STRAWBERRY SHOTCAKE",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra lucido e leggero per un effetto volumizzante. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-5.jpg"
+      ]
+    },
+    {
+      "id": 69,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "ELF lip oil shine",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "CRYSTAL BALLER - 01",
+          "price": 6.99
+        },
+        {
+          "variant": "CANDY CODED - 02",
+          "price": 6.99
+        },
+        {
+          "variant": "PRINCESS CUT - 03",
+          "price": 6.99
+        },
+        {
+          "variant": "CITRINE GLEAM - 04",
+          "price": 6.99
+        },
+        {
+          "variant": "SUPER-NEUTRAL - 05",
+          "price": 6.99
+        },
+        {
+          "variant": "CHOCOLUXE - 06",
+          "price": 6.99
+        },
+        {
+          "variant": "OPAL-OGY TOUR - 07",
+          "price": 6.99
+        },
+        {
+          "variant": "DIVINE WINE - 08",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra lucido e nutriente per labbra morbide e idratate. Applica da solo per un finish brillante.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-6.jpg"
+      ]
+    },
+    {
+      "id": 70,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "ELF lip oil",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Coral Fixation - 01",
+          "price": 6.99
+        },
+        {
+          "variant": "It’s giving guava - 02",
+          "price": 6.99
+        },
+        {
+          "variant": "Pink Quartz - 03",
+          "price": 6.99
+        },
+        {
+          "variant": "Rose Envy - 04",
+          "price": 6.99
+        },
+        {
+          "variant": "Red Delicious - 05",
+          "price": 6.99
+        },
+        {
+          "variant": "Honey Talks - 06",
+          "price": 6.99
+        },
+        {
+          "variant": "Hot as fudge - 07",
+          "price": 6.99
+        },
+        {
+          "variant": "Money Mauve - 08",
+          "price": 6.99
+        },
+        {
+          "variant": "Jam Session - 09",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra idratante per la cura quotidiana delle labbra. Applica da solo o come base prima del rossetto.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-7.jpg"
+      ]
+    },
+    {
+      "id": 71,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f.lip gloss 6 g",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Crystal Clear",
+          "price": 6.99
+        },
+        {
+          "variant": "Peach",
+          "price": 6.99
+        },
+        {
+          "variant": "Vanilla frosting",
+          "price": 6.99
+        },
+        {
+          "variant": "Strawberry",
+          "price": 6.99
+        },
+        {
+          "variant": "Honeydew",
+          "price": 6.99
+        },
+        {
+          "variant": "Blueberry",
+          "price": 6.99
+        },
+        {
+          "variant": "Grape",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra lucido e leggero per un effetto volumizzante. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-8.jpg"
+      ]
+    },
+    {
+      "id": 72,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "Monochromatic Multi-Stick",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "(elf) DAZZLING PEONY",
+          "price": 6.99
+        },
+        {
+          "variant": "(elf) GLOWING MANGO",
+          "price": 6.99
+        },
+        {
+          "variant": "(elf) SPARKLING ROSE",
+          "price": 6.99
+        },
+        {
+          "variant": "(elf) GLISTENING PEACH",
+          "price": 6.99
+        },
+        {
+          "variant": "(elf) BRONZED CHERRY",
+          "price": 6.99
+        },
+        {
+          "variant": "(elf) GLIMMERING GUAVA",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Stick multiuso per occhi, guance e labbra in un'unica tonalità, per un look monocromatico veloce da realizzare. Applica a puntini e sfuma con le dita.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-9.jpg"
+      ]
+    },
+    {
+      "id": 73,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "liquid blush white head",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "GLIMMERING GUAVA",
+          "price": 6.99
+        },
+        {
+          "variant": "CORAL CRUSH",
+          "price": 6.99
+        },
+        {
+          "variant": "DUSTY ROSE",
+          "price": 6.99
+        },
+        {
+          "variant": "PEACH PERFECT",
+          "price": 6.99
+        },
+        {
+          "variant": "COPPER ETIQUETTE",
+          "price": 6.99
+        },
+        {
+          "variant": "CHEEKY LYCHEE",
+          "price": 6.99
+        },
+        {
+          "variant": "PINKY PROMISE",
+          "price": 6.99
+        },
+        {
+          "variant": "SUAVE MAUVE",
+          "price": 6.99
+        },
+        {
+          "variant": "GORG ORANGE",
+          "price": 6.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido leggero e sfumabile per un colore naturale sulle guance. Applica qualche goccia e sfuma con le dita o una spugnetta.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-10.jpg"
+      ]
+    },
+    {
+      "id": 76,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f.HALO GLOW SETTING POWDER",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01#",
+          "price": 8.99
+        },
+        {
+          "variant": "02#",
+          "price": 8.99
+        },
+        {
+          "variant": "03#",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cipria in polvere effetto filtro per sfocare i pori e illuminare l'incarnato. Applica con un pennello soffice sulle zone da opacizzare.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-13.jpg"
+      ]
+    },
+    {
+      "id": 77,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f. primer (75 ml) — 01 Green Tube",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Primer viso per preparare la pelle al trucco, per una base uniforme e una tenuta più lunga. Applica un velo sottile prima del fondotinta.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-14.jpg"
+      ]
+    },
+    {
+      "id": 78,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f. primer 24ml",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Green Tube",
+          "price": 7.99
+        },
+        {
+          "variant": "02 Pink Tube",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Primer viso per preparare la pelle al trucco, per una base uniforme e una tenuta più lunga. Applica un velo sottile prima del fondotinta.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-15.jpg"
+      ]
+    },
+    {
+      "id": 80,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "e.l.f. primer Matte",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Primer opacizzante per controllare la lucidità e uniformare la pelle prima del trucco. Applica un velo sottile sulle zone più lucide.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-18.jpg"
+      ]
+    },
+    {
+      "id": 81,
+      "category": "cosmetici",
+      "brand": "E.L.F.",
+      "name": "elf SKIN 10ML — blue",
+      "price_label": "€ 6,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Trattamento viso e.l.f. Skin per idratare e migliorare la texture della pelle. Applica su viso pulito, mattina o sera.",
+      "images": [
+        "assets/images/catalog/e-l-f/el-19.jpg"
+      ]
+    },
+    {
+      "id": 84,
+      "category": "cosmetici",
+      "brand": "Fenty Beauty",
+      "name": "Fenty beauty lip gloss",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "fenty glow 01",
+          "price": 9.99
+        },
+        {
+          "variant": "sweet mouth 04",
+          "price": 9.99
+        },
+        {
+          "variant": "fussy 02",
+          "price": 9.99
+        },
+        {
+          "variant": "fuchsia flex 12",
+          "price": 9.99
+        },
+        {
+          "variant": "riri",
+          "price": 9.99
+        },
+        {
+          "variant": "hot chacolit",
+          "price": 9.99
+        },
+        {
+          "variant": "fruit snackz 05",
+          "price": 9.99
+        },
+        {
+          "variant": "fenty glow 02",
+          "price": 9.99
+        },
+        {
+          "variant": "honey waffles 03",
+          "price": 9.99
+        },
+        {
+          "variant": "hot cherry 01",
+          "price": 9.99
+        },
+        {
+          "variant": "fussy heat 02",
+          "price": 9.99
+        },
+        {
+          "variant": "hot chocolit heat 04",
+          "price": 9.99
+        },
+        {
+          "variant": "fenty glow heat 03",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra universale non appiccicoso, per un effetto ultra lucido su ogni tonalità di labbra. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/products/prod_6a9ef66604bc85.95365937.jpg",
+        "assets/images/products/prod_6a9ef66607e8a8.25165131.jpg",
+        "assets/images/products/prod_6ab3df1eb775f1.77263275.png"
+      ]
+    },
+    {
+      "id": 85,
+      "category": "cosmetici",
+      "brand": "Fenty Beauty",
+      "name": "contour stick",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "03 MOCHA",
+          "price": 14.99
+        },
+        {
+          "variant": "04 TRUFFLE",
+          "price": 14.99
+        },
+        {
+          "variant": "08 SOFT AMBER",
+          "price": 14.99
+        },
+        {
+          "variant": "09 AMBER SUEDE",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Stick contouring cremoso per scolpire il viso con un effetto naturale. Applica su zigomi e mascella e sfuma con una spugnetta o le dita.",
+      "images": [
+        "assets/images/products/prod_6aa13149de6808.65299505.jpg",
+        "assets/images/products/prod_6aa13149db2f18.80571114.jpg",
+        "assets/images/products/prod_6aa13149e0add9.01718009.jpg",
+        "assets/images/catalog/fenty-beauty/fe-2.jpg"
+      ]
+    },
+    {
+      "id": 86,
+      "category": "cosmetici",
+      "brand": "Fenty Beauty",
+      "name": "Fenty beauty ice",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 MELON CHILLZ",
+          "price": 14.99
+        },
+        {
+          "variant": "02 CUCUM BRRR",
+          "price": 14.99
+        },
+        {
+          "variant": "03 BERRY JELLY",
+          "price": 14.99
+        },
+        {
+          "variant": "04 ICE'D PINE APPLE",
+          "price": 14.99
+        },
+        {
+          "variant": "05 COLD HEART'D",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra Fenty Beauty in finitura ghiacciata e luminosa. Applica da solo o sopra il rossetto per un effetto brillante.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b02114a1dc1.93474078.jpg",
+        "assets/images/products/prod_6a9ef63ea17ea2.20579003.jpg"
+      ]
+    },
+    {
+      "id": 88,
+      "category": "cosmetici",
+      "brand": "Gisou",
+      "name": "Gisou gloss",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "PEACH",
+          "price": 7.99
+        },
+        {
+          "variant": "Strawberry",
+          "price": 7.99
+        },
+        {
+          "variant": "GLAZED PLUM",
+          "price": 7.99
+        },
+        {
+          "variant": "MILKY MOCHA",
+          "price": 7.99
+        },
+        {
+          "variant": "RASPBERRY SWIRL",
+          "price": 7.99
+        },
+        {
+          "variant": "STICKY TOFFEE",
+          "price": 7.99
+        },
+        {
+          "variant": "VANILLA GLAZE",
+          "price": 7.99
+        },
+        {
+          "variant": "HONEY",
+          "price": 7.99
+        },
+        {
+          "variant": "CHERRY",
+          "price": 7.99
+        },
+        {
+          "variant": "Watermelon",
+          "price": 7.99
+        },
+        {
+          "variant": "Coconut",
+          "price": 7.99
+        },
+        {
+          "variant": "Mango",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra al miele per nutrire e dare lucentezza. Applica da solo o sopra il rossetto per labbra morbide e brillanti.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/88-gisou-gloss-cover.jpg",
+        "assets/images/catalog/updated-2026-09/88-gisou-gloss-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/88-gisou-gloss-gallery2.png"
+      ]
+    },
+    {
+      "id": 89,
+      "category": "cosmetici",
+      "brand": "Gisou",
+      "name": "Honey Infused Hair Oil",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Olio per capelli al miele Mirsalehi, nutre e dona lucentezza senza appesantire. Applica poche gocce su lunghezze e punte, su capelli asciutti o umidi.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/89-honey-infused-hair-oil-cover.jpg",
+        "assets/images/catalog/updated-2026-09/89-honey-infused-hair-oil-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/89-honey-infused-hair-oil-gallery2.jpg",
+        "assets/images/catalog/updated-2026-09/89-honey-infused-hair-oil-gallery3.jpg"
+      ]
+    },
+    {
+      "id": 90,
+      "category": "cosmetici",
+      "brand": "Gisou",
+      "name": "Honey Infused Set 4",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 4 prodotti Gisou al miele per la cura di capelli e labbra, per una routine beauty completa firmata Gisou.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/90-honey-infused-set4-cover.jpg"
+      ]
+    },
+    {
+      "id": 91,
+      "category": "cosmetici",
+      "brand": "Gisou",
+      "name": "Lip Oil Set 3",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 3 oli labbra Gisou al miele in diverse tonalità, per nutrire e illuminare le labbra ogni giorno.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/91-lip-oil-set3-cover.jpg",
+        "assets/images/catalog/updated-2026-09/91-lip-oil-set3-gallery1.jpg"
+      ]
+    },
+    {
+      "id": 92,
+      "category": "cosmetici",
+      "brand": "Gisou",
+      "name": "Honey Infused Hair Perfume",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Rose",
+          "price": 14.99
+        },
+        {
+          "variant": "02 Lavender berry",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Profumo per capelli al miele, profuma e dona morbidezza senza appesantire. Vaporizza su lunghezze e punte a distanza dal cuoio capelluto.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-cover.jpg",
+        "assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-gallery2.jpg"
+      ]
+    },
+    {
+      "id": 95,
+      "category": "cosmetici",
+      "brand": "Saie",
+      "name": "Dew Blush Liquid Cheek Blush 15ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "BABY",
+          "price": 19.99
+        },
+        {
+          "variant": "ROSY",
+          "price": 19.99
+        },
+        {
+          "variant": "CHILLY",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido effetto dewy per un colore guance naturale e luminoso. Applica qualche goccia e sfuma con le dita o una spugnetta.",
+      "images": [
+        "assets/images/products/prod_6aa12e37920ef0.76189623.jpg",
+        "assets/images/products/prod_6aa4633b5b7136.47756528.jpg"
+      ]
+    },
+    {
+      "id": 96,
+      "category": "cosmetici",
+      "brand": "Saie",
+      "name": "Star glow 15ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Gel illuminante multiuso per un effetto pelle luminosa, da usare da solo, sotto il trucco o mixato alla crema. Applica qualche goccia sui punti alti del viso.",
+      "images": [
+        "assets/images/products/prod_6aa12e80e8a275.67757450.jpg",
+        "assets/images/catalog/saie/sa-3.jpg",
+        "assets/images/products/prod_6aa12ead660b54.34591820.jpg"
+      ]
+    },
+    {
+      "id": 104,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "Travel Set",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Yellow",
+          "price": 14.99
+        },
+        {
+          "variant": "Pink",
+          "price": 14.99
+        },
+        {
+          "variant": "Red",
+          "price": 14.99
+        },
+        {
+          "variant": "Blue",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set da viaggio Sol de Janeiro con mini formati dei prodotti corpo più amati del brand, pratico per la valigia.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/104-travel-set-cover.jpeg",
+        "assets/images/catalog/updated-2026-09/104-travel-set-gallery1.jpeg",
+        "assets/images/catalog/updated-2026-09/104-travel-set-gallery2.jpeg",
+        "assets/images/catalog/updated-2026-09/104-travel-set-gallery3.jpeg",
+        "assets/images/catalog/updated-2026-09/104-travel-set-gallery4.jpeg"
+      ]
+    },
+    {
+      "id": 105,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "Skincare Set",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Red 40#",
+          "price": 17.99
+        },
+        {
+          "variant": "Yellow 62#",
+          "price": 17.99
+        },
+        {
+          "variant": "Pink 58#",
+          "price": 17.99
+        },
+        {
+          "variant": "Blue",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set skincare Sol de Janeiro con prodotti per il corpo in formato mini, ideale da provare o regalare.",
+      "images": [
+        "assets/images/catalog/sol-de-janeiro/sol-2.jpg"
+      ]
+    },
+    {
+      "id": 106,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "perfume set3",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Trio di mist profumate Sol de Janeiro in formato da viaggio, per scoprire le fragranze più amate del brand.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/106-perfume-set3-cover.jpeg",
+        "assets/images/catalog/updated-2026-09/106-perfume-set3-gallery1.jpeg"
+      ]
+    },
+    {
+      "id": 110,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "perfume set5",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di 5 mist profumate Sol de Janeiro in formato da viaggio, per scoprire le fragranze più amate del brand.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/110-perfume-set5-cover.jpeg",
+        "assets/images/catalog/updated-2026-09/110-perfume-set5-gallery1.jpeg"
+      ]
+    },
+    {
+      "id": 113,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "Bum Bum Cream 75ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Yellow",
+          "price": 9.99
+        },
+        {
+          "variant": "Purple",
+          "price": 9.99
+        },
+        {
+          "variant": "Pink",
+          "price": 9.99
+        },
+        {
+          "variant": "Red",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Crema corpo idratante al profumo iconico Sol de Janeiro, nutre e leviga la pelle. Applica su corpo pulito, massaggiando fino a completo assorbimento.",
+      "images": [
+        "assets/images/products/prod_6aa1298cafd523.94802815.jpg"
+      ]
+    },
+    {
+      "id": 114,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "Bum Bum Cream 240ML",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Yellow",
+          "price": 14.99
+        },
+        {
+          "variant": "Pink",
+          "price": 14.99
+        },
+        {
+          "variant": "Red",
+          "price": 14.99
+        },
+        {
+          "variant": "Green",
+          "price": 14.99
+        },
+        {
+          "variant": "Purple",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Crema corpo idratante al profumo iconico Sol de Janeiro, nutre e leviga la pelle. Applica su corpo pulito, massaggiando fino a completo assorbimento.",
+      "images": [
+        "assets/images/products/prod_6aa131f75c33b5.67866716.png"
+      ]
+    },
+    {
+      "id": 115,
+      "category": "cosmetici",
+      "brand": "Sol de Janeiro",
+      "name": "Crush Perfume Mist 90ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "87#",
+          "price": 9.99
+        },
+        {
+          "variant": "71#",
+          "price": 9.99
+        },
+        {
+          "variant": "59#",
+          "price": 9.99
+        },
+        {
+          "variant": "40#",
+          "price": 9.99
+        },
+        {
+          "variant": "76#",
+          "price": 9.99
+        },
+        {
+          "variant": "68#",
+          "price": 9.99
+        },
+        {
+          "variant": "48#",
+          "price": 9.99
+        },
+        {
+          "variant": "62#",
+          "price": 9.99
+        },
+        {
+          "variant": "Blue",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Mist profumata per corpo e capelli con note fruttate e dolci, per una fragranza avvolgente che dura nel tempo. Vaporizza su corpo o capelli.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/115-crush-perfume-mist-cover.jpeg",
+        "assets/images/catalog/updated-2026-09/115-crush-perfume-mist-gallery1.jpeg"
+      ]
+    },
+    {
+      "id": 117,
+      "category": "cosmetici",
+      "brand": "Tarte",
+      "name": "Concealer",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "29N--Light Medium",
+          "price": 9.99
+        },
+        {
+          "variant": "12S--Fair",
+          "price": 9.99
+        },
+        {
+          "variant": "20S--Light Sand",
+          "price": 9.99
+        },
+        {
+          "variant": "20B--Light",
+          "price": 9.99
+        },
+        {
+          "variant": "35N--Medium",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Correttore a copertura piena con applicatore doe-foot, illumina e copre occhiaie e imperfezioni senza segnare. Applica e sfuma con spugnetta o pennello.",
+      "images": [
+        "assets/images/products/prod_6aa11f9f41eaa8.16965472.jpg",
+        "assets/images/products/prod_6aa11f9f496d47.60290850.webp"
+      ]
+    },
+    {
+      "id": 118,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Unreal Lips Healthy Glow Nectar Oil 14ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01 Coconut Water",
+          "price": 9.99
+        },
+        {
+          "variant": "02 Pure Peach",
+          "price": 9.99
+        },
+        {
+          "variant": "03 Strawberry Vanilla",
+          "price": 9.99
+        },
+        {
+          "variant": "04 Pink Watermelon",
+          "price": 9.99
+        },
+        {
+          "variant": "05 Cherry Glaze",
+          "price": 9.99
+        },
+        {
+          "variant": "06 Candy Fig",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra nutriente per un effetto lucido e rimpolpante. Applica da solo o sopra il rossetto per labbra morbide e luminose.",
+      "images": [
+        "assets/images/catalog/charlotte-tilbury/ct-1.jpg"
+      ]
+    },
+    {
+      "id": 119,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "HYDRATING FOUNDATION STICK 9g",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 FAIR/CLAIRA",
+          "price": 19.99
+        },
+        {
+          "variant": "1.5 FAIR/CLAIRA",
+          "price": 19.99
+        },
+        {
+          "variant": "2 FAIR/CLAIRA",
+          "price": 19.99
+        },
+        {
+          "variant": "3 FAIR/CLAIRA",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Fondotinta in stick idratante per una copertura modulabile e luminosa. Applica e sfuma con le dita o una spugnetta direttamente sul viso.",
+      "images": [
+        "assets/images/products/prod_6aa12d0e0c31e8.20283895.jpg",
+        "assets/images/catalog/charlotte-tilbury/ct-2.jpg"
+      ]
+    },
+    {
+      "id": 120,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Pillowtalk MATTE Beauty Blush 12ml",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Pale-Moyen",
+          "price": 17.99
+        },
+        {
+          "variant": "Moyen-Fonce",
+          "price": 17.99
+        },
+        {
+          "variant": "Fair Clair",
+          "price": 17.99
+        },
+        {
+          "variant": "Dream Pop",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in polvere nella iconica tonalità Pillow Talk, per un colore naturale sulle guance. Applica con un pennello sfumando verso le tempie.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad70d24d861.22984332.jpg"
+      ]
+    },
+    {
+      "id": 121,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Hollywood Contour Wand 12ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "fair",
+          "price": 14.99
+        },
+        {
+          "variant": "fair-medium",
+          "price": 14.99
+        },
+        {
+          "variant": "medium-deep",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Contouring liquido in stick con applicatore, per scolpire il viso con un effetto naturale. Applica su zigomi e mascella e sfuma con una spugnetta.",
+      "images": [
+        "assets/images/catalog/charlotte-tilbury/ct-4.jpg"
+      ]
+    },
+    {
+      "id": 122,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Cheek Chic Duo 13g",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-PINK",
+          "price": 19.99
+        },
+        {
+          "variant": "2-PEACH",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Duo blush e illuminante in polvere per guance con colore e luminosità in un solo prodotto. Applica con un pennello sugli zigomi.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad76703bd37.91810487.jpg",
+        "assets/images/uploads-backup/prod_6a9ad7a07baaa6.87352213.jpg",
+        "assets/images/uploads-backup/prod_6a9ad7ab972c04.72208416.jpg"
+      ]
+    },
+    {
+      "id": 124,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Pillow Talk Collagen Lip Bath 7.6ml",
+      "price_label": "€ 12,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "PILLOWTALK",
+          "price": 12.99
+        },
+        {
+          "variant": "PILLOWTALK FAIR",
+          "price": 12.99
+        },
+        {
+          "variant": "PILLOWTALK Medium",
+          "price": 12.99
+        },
+        {
+          "variant": "REFRESH ROSE",
+          "price": 12.99
+        },
+        {
+          "variant": "Rosy Glow",
+          "price": 12.99
+        },
+        {
+          "variant": "Walk of no shame",
+          "price": 12.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra effetto volumizzante nella tonalità Pillow Talk, con formula al collagene. Applica da solo per labbra lucide e piene.",
+      "images": [
+        "assets/images/products/prod_6aa12badb5ed00.58042450.jpg",
+        "assets/images/products/prod_6aa12badb2bed3.79170686.jpg",
+        "assets/images/catalog/charlotte-tilbury/ct-7.jpg"
+      ]
+    },
+    {
+      "id": 125,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Airbrush Flawness finish 8g",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "FAIR 1",
+          "price": 19.99
+        },
+        {
+          "variant": "MEDIUM 2",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cipria in polvere effetto airbrush per opacizzare e fissare il trucco. Applica con un pennello soffice sulle zone più lucide.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad02904eb63.59319680.webp",
+        "assets/images/uploads-backup/prod_6a9ad0b32fc6f1.92080723.jpg"
+      ]
+    },
+    {
+      "id": 126,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Airbrush Flawless Setting Spray 100ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Spray fissante per far durare il trucco tutto il giorno con una finitura naturale. Vaporizza a distanza dal viso per sigillare il make-up.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9acd5bb045d7.00915280.jpg"
+      ]
+    },
+    {
+      "id": 128,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Airbrush Flawless Setting Spray Matte Blur 100ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Spray fissante opacizzante per un effetto pelle levigata e trucco a lunga tenuta. Vaporizza a circa 20 cm dal viso a occhi chiusi.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9acda8e4b645.91082895.webp"
+      ]
+    },
+    {
+      "id": 129,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Magic Hydrator mist  75 ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Spray viso idratante per rinfrescare la pelle e fissare il trucco. Vaporizza su viso pulito o sopra il make-up per un effetto luminoso.",
+      "images": [
+        "assets/images/products/prod_6aa12c0ff18198.30092908.jpg",
+        "assets/images/products/prod_6aa12c1000a9f6.34219703.jpg"
+      ]
+    },
+    {
+      "id": 133,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Mini Pillow Talk Lip Kit",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-Pillow Talk Original",
+          "price": 19.99
+        },
+        {
+          "variant": "2-Pillow Talk Fair",
+          "price": 19.99
+        },
+        {
+          "variant": "3-Pillow Talk Medium",
+          "price": 19.99
+        },
+        {
+          "variant": "4-Pillow Talk Deep",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Mini kit labbra con rossetto e matita contorno nella iconica tonalità Pillow Talk, per un colore labbra naturale sempre pronto.",
+      "images": [
+        "assets/images/products/prod_6aa12b37e307c5.03402961.jpg",
+        "assets/images/products/prod_6aa12b37db00e0.19833389.jpg",
+        "assets/images/products/prod_6aa12b37de1e33.24673971.jpg",
+        "assets/images/products/prod_6aa12b37e0b494.23015812.jpg",
+        "assets/images/catalog/charlotte-tilbury/ct-16.jpg"
+      ]
+    },
+    {
+      "id": 136,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Airbrush FLAWLESS Foundation",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1C",
+          "price": 19.99
+        },
+        {
+          "variant": "1N",
+          "price": 19.99
+        },
+        {
+          "variant": "2C",
+          "price": 19.99
+        },
+        {
+          "variant": "2N",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Fondotinta a copertura modulabile con finish opaco e luminoso al tempo stesso, effetto pelle levigata. Applica con pennello, spugnetta o dita.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/136-airbrush-flawless-foundation-cover.jpg",
+        "assets/images/catalog/updated-2026-09/136-airbrush-flawless-foundation-gallery1.png"
+      ]
+    },
+    {
+      "id": 137,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Luxury Palette of Pops / Luxury Palette",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "pillow talk",
+          "price": 19.99
+        },
+        {
+          "variant": "Exagg Erates",
+          "price": 19.99
+        },
+        {
+          "variant": "Bella Sofia",
+          "price": 19.99
+        },
+        {
+          "variant": "the golden goddess",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Palette occhi con ombretti multi-finish per look sia naturali che intensi. Applica con un pennello o le dita, sfumando i colori a piacere.",
+      "images": [
+        "assets/images/products/prod_6aa12c8fc01889.18989922.jpg",
+        "assets/images/products/prod_6aa12c8fc359c2.13120210.jpg"
+      ]
+    },
+    {
+      "id": 138,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Cheek to Chic Blush",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "pillow talk",
+          "price": 19.99
+        },
+        {
+          "variant": "sex on fire",
+          "price": 19.99
+        },
+        {
+          "variant": "first love",
+          "price": 19.99
+        },
+        {
+          "variant": "love glow",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in polvere con texture swirl per un colore luminoso e naturale sulle guance. Applica con un pennello sfumando verso l'esterno.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad84caf4ac0.51472559.jpg",
+        "assets/images/uploads-backup/prod_6a9ad8607bd328.10281183.jpg",
+        "assets/images/uploads-backup/prod_6a9ad8893e9c10.88991321.png"
+      ]
+    },
+    {
+      "id": 139,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Hollywood Flawless Filter Highlighter",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-pearlescent",
+          "price": 19.99
+        },
+        {
+          "variant": "2-champagne glow",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Illuminante liquido effetto filtro per una pelle luminosa e levigata. Applica da solo, sotto o sopra il fondotinta con pennello o dita.",
+      "images": [
+        "assets/images/catalog/charlotte-tilbury/ct-22.jpg",
+        "assets/images/products/prod_6a9b1baa2aeb52.64214059.jpg",
+        "assets/images/products/prod_6a9b1baa2e0728.60243566.jpg"
+      ]
+    },
+    {
+      "id": 145,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "AIRBRUSH FLAWLESS BLUR CONCEALER",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1",
+          "price": 19.99
+        },
+        {
+          "variant": "2",
+          "price": 19.99
+        },
+        {
+          "variant": "2.5",
+          "price": 19.99
+        },
+        {
+          "variant": "3",
+          "price": 19.99
+        },
+        {
+          "variant": "3.5",
+          "price": 19.99
+        },
+        {
+          "variant": "4",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Correttore a copertura medio-alta con finish sfocato, per coprire occhiaie e imperfezioni senza segnare le linee di espressione. Applica con lo speciale applicatore e sfuma con le dita.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b01f153a208.11801082.webp",
+        "assets/images/uploads-backup/prod_6a9b01f159eb12.50172069.png"
+      ]
+    },
+    {
+      "id": 151,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Magic Cleanser 120ml",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Detergente viso in gel-crema per rimuovere trucco e impurità senza seccare la pelle. Applica su viso umido, massaggia e risciacqua.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad1ce091cc6.15575496.jpg"
+      ]
+    },
+    {
+      "id": 152,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "SPF50+ UV Primer 60ml",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Primer viso con protezione solare SPF50+ per preparare la pelle al trucco e proteggerla dai raggi UV. Applica un velo sottile prima del fondotinta.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad60e0d04d7.99477001.jpg"
+      ]
+    },
+    {
+      "id": 153,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Magic Water Cream 50ml",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Crema gel idratante leggera per una pelle fresca e luminosa tutto il giorno. Applica su viso e collo puliti, mattina e sera.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad468171dd7.33465367.jpg",
+        "assets/images/uploads-backup/prod_6a9ad46ee17bd1.60167772.jpg",
+        "assets/images/uploads-backup/prod_6a9ad4905695f2.72743657.jpg"
+      ]
+    },
+    {
+      "id": 154,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Magic Water Cream 30 ml",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Crema gel idratante leggera per una pelle fresca e luminosa tutto il giorno. Applica su viso e collo puliti, mattina e sera.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad5295618e4.88281129.jpg",
+        "assets/images/uploads-backup/prod_6a9ad5c1d12f66.57966876.jpg",
+        "assets/images/uploads-backup/prod_6a9ad5cb6c4f98.97177790.jpg",
+        "assets/images/uploads-backup/prod_6a9ad5d5a3b181.89309249.jpg"
+      ]
+    },
+    {
+      "id": 155,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Facial Oil — 30ml",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Olio viso nutriente per illuminare e idratare in profondità la pelle. Applica poche gocce su viso e collo prima della crema, mattina o sera.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad14eb50543.19162320.jpg",
+        "assets/images/uploads-backup/prod_6a9ad12e8506b9.67175314.jpg"
+      ]
+    },
+    {
+      "id": 156,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Magic Serum 30 ml",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Siero viso per idratare e dare luminosità immediata alla pelle. Applica poche gocce su viso e collo prima della crema.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad23adcedb0.21758118.jpg"
+      ]
+    },
+    {
+      "id": 157,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "Makeup Remover for eyes and lips 120ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Struccante bifasico per occhi e labbra, rimuove anche il trucco waterproof senza irritare. Agita bene, applica su un dischetto e passa su occhi e labbra.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad348068c14.64037453.webp",
+        "assets/images/uploads-backup/prod_6a9ad35364b486.47945248.jpg"
+      ]
+    },
+    {
+      "id": 158,
+      "category": "cosmetici",
+      "brand": "Charlotte Tilbury",
+      "name": "mascara 10 ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Mascara volumizzante per ciglia dall'aspetto pieno e definito. Applica dalla radice alle punte con movimenti a zig-zag.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9ad3cbe6d398.47767999.jpg",
+        "assets/images/uploads-backup/prod_6a9ad397e12a70.30934761.jpg"
+      ]
+    },
+    {
+      "id": 159,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Easy Bake Setting Powder 20g",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Matcha Milk",
+          "price": 14.99
+        },
+        {
+          "variant": "POUND CAKE",
+          "price": 14.99
+        },
+        {
+          "variant": "CUPCAKE",
+          "price": 14.99
+        },
+        {
+          "variant": "PEACH PIE",
+          "price": 14.99
+        },
+        {
+          "variant": "SUGAR COOKIE",
+          "price": 14.99
+        },
+        {
+          "variant": "UBE",
+          "price": 14.99
+        },
+        {
+          "variant": "BIRTHDAY cake",
+          "price": 14.99
+        },
+        {
+          "variant": "CHERRY BLOSSOM",
+          "price": 14.99
+        },
+        {
+          "variant": "BANANA BREAD",
+          "price": 14.99
+        },
+        {
+          "variant": "KUNAFA",
+          "price": 14.99
+        },
+        {
+          "variant": "BLONDIE",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cipria in polvere per fissare il trucco con un effetto airbrush, sfoca pori e linee sottili. Applica con un pennello soffice sulle zone da opacizzare.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-1-cipria-grande.avif",
+        "assets/images/gallery/huda-beauty/hu-1-shades.jpg"
+      ]
+    },
+    {
+      "id": 160,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Baby Bake Mini Setting Powder with Puff 6g",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "cupcake",
+          "price": 9.99
+        },
+        {
+          "variant": "cherry blossom cake",
+          "price": 9.99
+        },
+        {
+          "variant": "pound cake",
+          "price": 9.99
+        },
+        {
+          "variant": "banana bread",
+          "price": 9.99
+        },
+        {
+          "variant": "sugar cookie",
+          "price": 9.99
+        },
+        {
+          "variant": "peach pie",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Mini cipria in polvere con piumino incluso, pratica da portare in borsa per ritocchi al trucco. Applica con il piumino sulle zone più lucide.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-2-banana-bread.jpg",
+        "assets/images/gallery/huda-beauty/hu-2-cherry-blossom.jpg",
+        "assets/images/gallery/huda-beauty/hu-2-peach-pie.webp",
+        "assets/images/gallery/huda-beauty/hu-2-pound-cake.avif",
+        "assets/images/gallery/huda-beauty/hu-2-sugar-cookie.avif"
+      ]
+    },
+    {
+      "id": 161,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "2 in 1 Easy Bake Duo Loose Powder 2*6.5g",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-Cherry peach",
+          "price": 19.99
+        },
+        {
+          "variant": "2-Pink pumpkin",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Duo di cipria in polvere Easy Bake in due tonalità, per fissare e illuminare il trucco. Applica con un pennello sulle zone da opacizzare.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-3-duo-01.avif",
+        "assets/images/gallery/huda-beauty/hu-3-duo-02.avif"
+      ]
+    },
+    {
+      "id": 162,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "FAUX FILLER JELLY OIL 3.9ml",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "JUICY TOASTY BROWN",
+          "price": 8.99
+        },
+        {
+          "variant": "JUICY PEACH",
+          "price": 8.99
+        },
+        {
+          "variant": "JUICY PINK LADY",
+          "price": 8.99
+        },
+        {
+          "variant": "JUICY GOJI",
+          "price": 8.99
+        },
+        {
+          "variant": "JUICY ROSE",
+          "price": 8.99
+        },
+        {
+          "variant": "JUICY CHERRY",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra effetto volumizzante immediato, dona un aspetto più pieno. Applica da solo o sopra il rossetto per labbra lucide e voluminose.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/162-faux-filler-jelly-oil-cover.jpeg",
+        "assets/images/gallery/huda-beauty/hu-4-jelly-oil.jpg",
+        "assets/images/catalog/updated-2026-09/162-faux-filler-jelly-oil-gallery1.jpeg"
+      ]
+    },
+    {
+      "id": 164,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "High-Shine Lip Gloss 3.9ml",
+      "price_label": "€ 8,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "HONEY",
+          "price": 8.99
+        },
+        {
+          "variant": "FOXY",
+          "price": 8.99
+        },
+        {
+          "variant": "BOMBSHELL",
+          "price": 8.99
+        },
+        {
+          "variant": "POSH",
+          "price": 8.99
+        },
+        {
+          "variant": "COCO",
+          "price": 8.99
+        },
+        {
+          "variant": "SUGAR BABY",
+          "price": 8.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra super lucido per un effetto plumping naturale. Applica da solo o sopra il rossetto per labbra brillanti.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/164-high-shine-lip-gloss-cover.jpg",
+        "assets/images/catalog/updated-2026-09/164-high-shine-lip-gloss-gallery1.jpg",
+        "assets/images/catalog/updated-2026-09/164-high-shine-lip-gloss-gallery2.png"
+      ]
+    },
+    {
+      "id": 165,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Lip Contour Stain Lip Tint 1ml",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Rich Brown",
+          "price": 7.99
+        },
+        {
+          "variant": "Cinnamon",
+          "price": 7.99
+        },
+        {
+          "variant": "Cherry Red",
+          "price": 7.99
+        },
+        {
+          "variant": "Warm Brown",
+          "price": 7.99
+        },
+        {
+          "variant": "Toasty Brown",
+          "price": 7.99
+        },
+        {
+          "variant": "Rosewood",
+          "price": 7.99
+        },
+        {
+          "variant": "Baby Pink",
+          "price": 7.99
+        },
+        {
+          "variant": "Soft Nude",
+          "price": 7.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Tinta labbra a lunga tenuta per definire il contorno e colorare le labbra con un finish satinato-sfumato. Applica direttamente sul bordo delle labbra e sfuma verso l'interno.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-7-lip-stain.jpg",
+        "assets/images/gallery/huda-beauty/hu-7-lip-stain-shades.jpg"
+      ]
+    },
+    {
+      "id": 166,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Easy Bake Setting Spray 100ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Spray fissante per il trucco, per una tenuta a lunga durata con finish naturale. Vaporizza a circa 20 cm dal viso a occhi chiusi.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-8-setting-spray-01.jpg",
+        "assets/images/gallery/huda-beauty/hu-8-setting-spray-02.jpg"
+      ]
+    },
+    {
+      "id": 167,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Blush Filter Soft Glow Liquid Blush 4.5ml",
+      "price_label": "€ 9,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Strawberry Cream",
+          "price": 9.99
+        },
+        {
+          "variant": "Cotton Candy",
+          "price": 9.99
+        },
+        {
+          "variant": "Bubble Gum",
+          "price": 9.99
+        },
+        {
+          "variant": "Ube Cream",
+          "price": 9.99
+        },
+        {
+          "variant": "Intense Guava",
+          "price": 9.99
+        },
+        {
+          "variant": "Sunset Lychee",
+          "price": 9.99
+        },
+        {
+          "variant": "Peach Sorbet",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido leggero con micro-perle per un effetto guance luminose e sfumate. Applica qualche goccia e sfuma con le dita o una spugnetta.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-9-blush-filter-01.jpg",
+        "assets/images/gallery/huda-beauty/hu-9-blush-filter-02.jpg"
+      ]
+    },
+    {
+      "id": 169,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Color Corrector 9ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Cherry Light",
+          "price": 14.99
+        },
+        {
+          "variant": "Peach Light",
+          "price": 14.99
+        },
+        {
+          "variant": "Whipped cream 0.1G",
+          "price": 14.99
+        },
+        {
+          "variant": "Honey 1.7B",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Correttore colorato per neutralizzare rossori e discromie prima del fondotinta. Applica sulla zona interessata e sfuma con le dita o una spugnetta.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/169-color-corrector-cover.jpeg",
+        "assets/images/gallery/huda-beauty/hu-11-color-corrector.jpg"
+      ]
+    },
+    {
+      "id": 170,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "STAY BLUR Foundation 50ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "S210",
+          "price": 14.99
+        },
+        {
+          "variant": "S220",
+          "price": 14.99
+        },
+        {
+          "variant": "S225",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Fondotinta fluido con SPF, copertura modulabile e finish sfocato che dura fino a 24 ore. Applica con pennello, spugnetta o dita.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/170-stay-blur-foundation-cover.jpeg",
+        "assets/images/catalog/updated-2026-09/170-stay-blur-foundation-gallery1.png"
+      ]
+    },
+    {
+      "id": 171,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "Easy blur primer",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Primer levigante senza silicone per sfocare pori e imperfezioni prima del trucco. Applica un velo sottile su viso pulito.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/171-easy-blur-primer-cover.webp",
+        "assets/images/catalog/updated-2026-09/171-easy-blur-primer-gallery1.webp"
+      ]
+    },
+    {
+      "id": 172,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "EASY BLUR Foundation 30ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "#100B",
+          "price": 14.99
+        },
+        {
+          "variant": "#110N",
+          "price": 14.99
+        },
+        {
+          "variant": "#120B",
+          "price": 14.99
+        },
+        {
+          "variant": "#140G",
+          "price": 14.99
+        },
+        {
+          "variant": "#150G",
+          "price": 14.99
+        },
+        {
+          "variant": "#200B",
+          "price": 14.99
+        },
+        {
+          "variant": "#210B",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Fondotinta fluido leggero con finish sfocato e naturale. Applica con pennello, spugnetta o dita su viso pulito.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-14-shade-100.avif",
+        "assets/images/gallery/huda-beauty/hu-14-shade-110.avif",
+        "assets/images/gallery/huda-beauty/hu-14-shade-120.avif",
+        "assets/images/gallery/huda-beauty/hu-14-shade-200.avif",
+        "assets/images/gallery/huda-beauty/hu-14-shade-210.avif",
+        "assets/images/gallery/huda-beauty/hu-14-shade-220.avif"
+      ]
+    },
+    {
+      "id": 174,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "BLUSH LIGHTERS PALETTE",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "ROSE BERRY",
+          "price": 19.99
+        },
+        {
+          "variant": "TOASTY PEACH",
+          "price": 19.99
+        },
+        {
+          "variant": "BABY PINK",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Palette blush e illuminante in polvere per colorare e illuminare le guance in un solo gesto. Applica con un pennello sfumando verso le tempie.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-16-baby-pink.avif",
+        "assets/images/gallery/huda-beauty/hu-16-rose-berry.avif",
+        "assets/images/gallery/huda-beauty/hu-16-shades.jpg",
+        "assets/images/gallery/huda-beauty/hu-16-toasty-peach.avif"
+      ]
+    },
+    {
+      "id": 175,
+      "category": "cosmetici",
+      "brand": "Huda Beauty",
+      "name": "EASY BAKE PRESSED POWDER",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Sugar Cookie",
+          "price": 17.99
+        },
+        {
+          "variant": "Cherry Blossom Cake",
+          "price": 17.99
+        },
+        {
+          "variant": "Pound Cake",
+          "price": 17.99
+        },
+        {
+          "variant": "Peach",
+          "price": 17.99
+        },
+        {
+          "variant": "Cupcake",
+          "price": 17.99
+        },
+        {
+          "variant": "Banana Bread",
+          "price": 17.99
+        },
+        {
+          "variant": "Kunafa",
+          "price": 17.99
+        },
+        {
+          "variant": "Blondie",
+          "price": 17.99
+        },
+        {
+          "variant": "Cinnamon Bun",
+          "price": 17.99
+        },
+        {
+          "variant": "Coco Truffle",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cipria compatta per fissare il trucco e opacizzare la pelle, pratica da portare sempre con sé. Applica con un pennello soffice sulle zone più lucide.",
+      "images": [
+        "assets/images/gallery/huda-beauty/hu-17-product.avif",
+        "assets/images/gallery/huda-beauty/hu-17-shades-01.avif",
+        "assets/images/gallery/huda-beauty/hu-17-shades-02.avif"
+      ]
+    },
+    {
+      "id": 177,
+      "category": "cosmetici",
+      "brand": "Too Faced",
+      "name": "concealer 13.5ml",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Warm Beige",
+          "price": 17.99
+        },
+        {
+          "variant": "Snow",
+          "price": 17.99
+        },
+        {
+          "variant": "Warm Sand",
+          "price": 17.99
+        },
+        {
+          "variant": "Sand",
+          "price": 17.99
+        },
+        {
+          "variant": "Vanilla",
+          "price": 17.99
+        },
+        {
+          "variant": "Golden Beige",
+          "price": 17.99
+        },
+        {
+          "variant": "Latte",
+          "price": 17.99
+        },
+        {
+          "variant": "Almond",
+          "price": 17.99
+        },
+        {
+          "variant": "Nude",
+          "price": 17.99
+        },
+        {
+          "variant": "Honey",
+          "price": 17.99
+        },
+        {
+          "variant": "Porcelain",
+          "price": 17.99
+        },
+        {
+          "variant": "light beige",
+          "price": 17.99
+        },
+        {
+          "variant": "Natural Beige",
+          "price": 17.99
+        },
+        {
+          "variant": "Swam",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Correttore a copertura modulabile dall'effetto naturale e luminoso, con formula idratante. Applica e sfuma con spugnetta o pennello.",
+      "images": [
+        "assets/images/gallery/too-faced/to-1-product.jpg",
+        "assets/images/gallery/too-faced/to-1-shades-01.jpg",
+        "assets/images/gallery/too-faced/to-1-shades-02.jpg"
+      ]
+    },
+    {
+      "id": 178,
+      "category": "cosmetici",
+      "brand": "Too Faced",
+      "name": "mascara 8ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Mascara volumizzante per ciglia dall'aspetto pieno e drammatico. Applica dalla radice alle punte con movimenti a zig-zag.",
+      "images": [
+        "assets/images/gallery/too-faced/to-2-mascara-01.jpg",
+        "assets/images/gallery/too-faced/to-2-mascara-02.jpg",
+        "assets/images/gallery/too-faced/to-2-mascara-03.jpg"
+      ]
+    },
+    {
+      "id": 188,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Lip Gloss 6ml",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001",
+          "price": 14.99
+        },
+        {
+          "variant": "003",
+          "price": 14.99
+        },
+        {
+          "variant": "004",
+          "price": 14.99
+        },
+        {
+          "variant": "006",
+          "price": 14.99
+        },
+        {
+          "variant": "007",
+          "price": 14.99
+        },
+        {
+          "variant": "010",
+          "price": 14.99
+        },
+        {
+          "variant": "012",
+          "price": 14.99
+        },
+        {
+          "variant": "015",
+          "price": 14.99
+        },
+        {
+          "variant": "018",
+          "price": 14.99
+        },
+        {
+          "variant": "019",
+          "price": 14.99
+        },
+        {
+          "variant": "020",
+          "price": 14.99
+        },
+        {
+          "variant": "021",
+          "price": 14.99
+        },
+        {
+          "variant": "026",
+          "price": 14.99
+        },
+        {
+          "variant": "027",
+          "price": 14.99
+        },
+        {
+          "variant": "028",
+          "price": 14.99
+        },
+        {
+          "variant": "029",
+          "price": 14.99
+        },
+        {
+          "variant": "037",
+          "price": 14.99
+        },
+        {
+          "variant": "038",
+          "price": 14.99
+        },
+        {
+          "variant": "039",
+          "price": 14.99
+        },
+        {
+          "variant": "053",
+          "price": 14.99
+        },
+        {
+          "variant": "061",
+          "price": 14.99
+        },
+        {
+          "variant": "062",
+          "price": 14.99
+        },
+        {
+          "variant": "063",
+          "price": 14.99
+        },
+        {
+          "variant": "065",
+          "price": 14.99
+        },
+        {
+          "variant": "084",
+          "price": 14.99
+        },
+        {
+          "variant": "203",
+          "price": 14.99
+        },
+        {
+          "variant": "204",
+          "price": 14.99
+        },
+        {
+          "variant": "206",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Gloss labbra lucido e nutriente per un effetto volumizzante naturale. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/catalog/dior/di-2.jpg"
+      ]
+    },
+    {
+      "id": 189,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "lip glow oil",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001",
+          "price": 14.99
+        },
+        {
+          "variant": "004",
+          "price": 14.99
+        },
+        {
+          "variant": "006",
+          "price": 14.99
+        },
+        {
+          "variant": "007",
+          "price": 14.99
+        },
+        {
+          "variant": "012",
+          "price": 14.99
+        },
+        {
+          "variant": "015",
+          "price": 14.99
+        },
+        {
+          "variant": "020",
+          "price": 14.99
+        },
+        {
+          "variant": "030",
+          "price": 14.99
+        },
+        {
+          "variant": "031",
+          "price": 14.99
+        },
+        {
+          "variant": "041",
+          "price": 14.99
+        },
+        {
+          "variant": "046",
+          "price": 14.99
+        },
+        {
+          "variant": "072",
+          "price": 14.99
+        },
+        {
+          "variant": "074",
+          "price": 14.99
+        },
+        {
+          "variant": "077",
+          "price": 14.99
+        },
+        {
+          "variant": "081",
+          "price": 14.99
+        },
+        {
+          "variant": "085",
+          "price": 14.99
+        },
+        {
+          "variant": "086",
+          "price": 14.99
+        },
+        {
+          "variant": "087",
+          "price": 14.99
+        },
+        {
+          "variant": "088",
+          "price": 14.99
+        },
+        {
+          "variant": "104",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra colorato che si adatta al pH per un colore personalizzato, con effetto lucido. Applica da solo per labbra idratate e brillanti.",
+      "images": [
+        "assets/images/products/prod_6aa125f1620386.80654792.jpg",
+        "assets/images/products/prod_6aa1279ac71302.39655366.jpg",
+        "assets/images/products/prod_6aa1279acad070.82313736.jpg"
+      ]
+    },
+    {
+      "id": 191,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "forever blush soft fliter 11ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01#Petal",
+          "price": 19.99
+        },
+        {
+          "variant": "02#Peony",
+          "price": 19.99
+        },
+        {
+          "variant": "03#Bloom",
+          "price": 19.99
+        },
+        {
+          "variant": "04#Daisy",
+          "price": 19.99
+        },
+        {
+          "variant": "05#Li",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush liquido a lunga tenuta con finitura soft-matte, per un colore naturale che dura tutto il giorno. Applica qualche goccia sugli zigomi e sfuma con le dita.",
+      "images": [
+        "assets/images/products/prod_6aa122bfc1cdc9.95043405.jpg",
+        "assets/images/products/prod_6aa122bfc50103.23367426.jpg"
+      ]
+    },
+    {
+      "id": 192,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Dior Addict Lip Glow — pink",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Balsamo labbra colorato che si attiva con il pH per un rosa naturale personalizzato, arricchito con olio di fiori di ciliegio. Applica da solo per labbra morbide e idratate.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b0630014e75.29034029.jpg"
+      ]
+    },
+    {
+      "id": 193,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "lip highlighter stick",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001 pink",
+          "price": 19.99
+        },
+        {
+          "variant": "006 Berry",
+          "price": 19.99
+        },
+        {
+          "variant": "012 Rosewood",
+          "price": 19.99
+        },
+        {
+          "variant": "015 Cherry",
+          "price": 19.99
+        },
+        {
+          "variant": "063 Pink lilac",
+          "price": 19.99
+        },
+        {
+          "variant": "077 Candy",
+          "price": 19.99
+        },
+        {
+          "variant": "103 Toffee",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Stick illuminante labbra per un effetto luminoso e voluminizzante. Applica direttamente sulle labbra o sull'arco di cupido.",
+      "images": [
+        "assets/images/products/prod_6aa12470ab6cb8.12634110.jpg",
+        "assets/images/products/prod_6aa12455a783b5.17171582.jpg"
+      ]
+    },
+    {
+      "id": 194,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Lip Gloss & Lip Oil Set (2 pieces)",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set con gloss labbra e olio labbra Dior, due formule lucide e nutrienti da abbinare o alternare per labbra sempre curate.",
+      "images": [
+        "assets/images/products/prod_6aa127e669f382.52585613.jpg",
+        "assets/images/products/prod_6aa127e666dc83.37943098.jpg"
+      ]
+    },
+    {
+      "id": 196,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Lip Gloss Set (3 pieces)",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1-heart pattern",
+          "price": 24.99
+        },
+        {
+          "variant": "2-black color",
+          "price": 24.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set di tre gloss labbra Dior in diverse tonalità, per un effetto lucido e labbra idratate. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/catalog/dior/di-10.jpg"
+      ]
+    },
+    {
+      "id": 197,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Lip Care Set (3 pieces)",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set di tre prodotti Dior per la cura delle labbra, tra balsami e oli nutrienti. Applica quotidianamente per labbra morbide e idratate.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b06695a7036.31037610.jpg",
+        "assets/images/uploads-backup/prod_6a9b06695d8e26.12493971.jpg"
+      ]
+    },
+    {
+      "id": 198,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "lip gloss & blush set2",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Set con gloss labbra e blush Dior, per un look fresco e coordinato. Applica il blush sugli zigomi e il gloss sulle labbra.",
+      "images": [
+        "assets/images/catalog/dior/di-12.jpg"
+      ]
+    },
+    {
+      "id": 201,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Blush 4color palette",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001",
+          "price": 19.99
+        },
+        {
+          "variant": "002",
+          "price": 19.99
+        },
+        {
+          "variant": "003",
+          "price": 19.99
+        },
+        {
+          "variant": "004",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Palette blush con 4 tonalità sfumabili per personalizzare il colore delle guance. Applica con un pennello, da sola o mixando i colori.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b05345acb76.53322954.jpg",
+        "assets/images/uploads-backup/prod_6a9b05345e7193.02406762.png",
+        "assets/images/catalog/dior/di-15.jpg"
+      ]
+    },
+    {
+      "id": 203,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Blush 1 color palette",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001 pink",
+          "price": 17.99
+        },
+        {
+          "variant": "006 Berry",
+          "price": 17.99
+        },
+        {
+          "variant": "012 Rosewood",
+          "price": 17.99
+        },
+        {
+          "variant": "015 Cherry",
+          "price": 17.99
+        },
+        {
+          "variant": "063 Pink lilac",
+          "price": 17.99
+        },
+        {
+          "variant": "077 Candy",
+          "price": 17.99
+        },
+        {
+          "variant": "103 Toffee",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in cialda singola per un colore naturale e sfumabile sulle guance. Applica con un pennello sfumando verso le tempie.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b02f2bcd8c6.03647623.webp",
+        "assets/images/uploads-backup/prod_6a9b02f2c66919.08668842.webp",
+        "assets/images/uploads-backup/prod_6a9b035ad34329.93938961.jpg",
+        "assets/images/catalog/dior/di-17.jpg"
+      ]
+    },
+    {
+      "id": 204,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "single-color blush",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "001",
+          "price": 17.99
+        },
+        {
+          "variant": "004",
+          "price": 17.99
+        },
+        {
+          "variant": "006",
+          "price": 17.99
+        },
+        {
+          "variant": "012",
+          "price": 17.99
+        },
+        {
+          "variant": "015",
+          "price": 17.99
+        },
+        {
+          "variant": "020",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in cialda singola per un colore naturale e sfumabile sulle guance. Applica con un pennello sfumando verso le tempie.",
+      "images": [
+        "assets/images/products/prod_6aa1238862f784.27248317.jpg",
+        "assets/images/catalog/dior/di-18.jpg"
+      ]
+    },
+    {
+      "id": 205,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "blush 1color palette with brush",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "211#",
+          "price": 17.99
+        },
+        {
+          "variant": "219#",
+          "price": 17.99
+        },
+        {
+          "variant": "343#",
+          "price": 17.99
+        },
+        {
+          "variant": "601#",
+          "price": 17.99
+        },
+        {
+          "variant": "621#",
+          "price": 17.99
+        },
+        {
+          "variant": "060#",
+          "price": 17.99
+        },
+        {
+          "variant": "250#",
+          "price": 17.99
+        },
+        {
+          "variant": "520#",
+          "price": 17.99
+        },
+        {
+          "variant": "999#",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in cialda singola con pennello incluso, pratico da portare sempre con sé. Applica sfumando verso le tempie per un colore naturale.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b03bc4e8620.65192771.webp",
+        "assets/images/catalog/dior/di-19.jpg"
+      ]
+    },
+    {
+      "id": 206,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Blush 2 color palette",
+      "price_label": "€ 17,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "#100",
+          "price": 17.99
+        },
+        {
+          "variant": "#257",
+          "price": 17.99
+        },
+        {
+          "variant": "#287",
+          "price": 17.99
+        },
+        {
+          "variant": "#457",
+          "price": 17.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Palette blush con 2 tonalità abbinabili per un colore guance personalizzabile. Applica con un pennello, da sole o mixate insieme.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b04240c2f86.34031168.webp",
+        "assets/images/catalog/dior/di-20.jpg"
+      ]
+    },
+    {
+      "id": 207,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Mascara",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Mascara volumizzante e allungante per ciglia dall'aspetto intenso. Applica dalla radice alle punte con movimenti a zig-zag.",
+      "images": [
+        "assets/images/products/prod_6aa122808c1192.87407861.jpg",
+        "assets/images/products/prod_6aa1228084df71.94429167.jpg",
+        "assets/images/products/prod_6aa12280896e90.83282634.jpg"
+      ]
+    },
+    {
+      "id": 209,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "lip stick set3",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "740#",
+          "price": 29.99
+        },
+        {
+          "variant": "527#",
+          "price": 29.99
+        },
+        {
+          "variant": "727#",
+          "price": 29.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set di tre mini rossetti Dior in diverse tonalità, per avere sempre il colore giusto a portata di mano.",
+      "images": [
+        "assets/images/products/prod_6a9b1b218229a6.26950428.jpg",
+        "assets/images/products/prod_6a9b1b217b6727.73770014.jpg",
+        "assets/images/products/prod_6a9b1b21847127.80698771.jpg",
+        "assets/images/products/prod_6a9b1b2186baf2.21610308.jpg"
+      ]
+    },
+    {
+      "id": 210,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Dior bronzer",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "Light-Naturel",
+          "price": 29.99
+        },
+        {
+          "variant": "Soft-Nature",
+          "price": 29.99
+        },
+        {
+          "variant": "Warm",
+          "price": 29.99
+        },
+        {
+          "variant": "lntense-Nature",
+          "price": 29.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Bronzer in polvere per un effetto abbronzato naturale e luminoso. Applica con un pennello su zigomi, fronte e mento.",
+      "images": [
+        "assets/images/products/prod_6aa128dbdcd8b9.09446296.jpg",
+        "assets/images/products/prod_6aa128dbe02427.44962751.jpg"
+      ]
+    },
+    {
+      "id": 211,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "Multifunctional Cream 50ml",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Crema viso multifunzione per idratare e nutrire la pelle in profondità. Applica su viso e collo puliti, mattina e/o sera.",
+      "images": [
+        "assets/images/products/prod_6aa120f686f0d9.02868550.webp",
+        "assets/images/products/prod_6aa120f68a3a62.34248170.jpg"
+      ]
+    },
+    {
+      "id": 212,
+      "category": "cosmetici",
+      "brand": "Dior",
+      "name": "cushion foundation 14g",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "0N#",
+          "price": 19.99
+        },
+        {
+          "variant": "1N#",
+          "price": 19.99
+        },
+        {
+          "variant": "2N#",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Fondotinta cushion in spugnetta per una copertura naturale e luminosa, facile da applicare e ritoccare. Tampona sul viso con l'applicatore incluso.",
+      "images": [
+        "assets/images/uploads-backup/prod_6a9b06e9a217c4.22511394.png",
+        "assets/images/uploads-backup/prod_6a9b06e9a648c4.87322742.jpg",
+        "assets/images/catalog/dior/di-26.jpg"
+      ]
+    },
+    {
+      "id": 213,
+      "category": "cosmetici",
+      "brand": "YSL",
+      "name": "MAKE ME BLUSH POWDER - Blush in polvere vellutato",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "06#",
+          "price": 14.99
+        },
+        {
+          "variant": "24#",
+          "price": 14.99
+        },
+        {
+          "variant": "42#",
+          "price": 14.99
+        },
+        {
+          "variant": "44#",
+          "price": 14.99
+        },
+        {
+          "variant": "69#",
+          "price": 14.99
+        },
+        {
+          "variant": "87#",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Blush in polvere firmato YSL, dalla TEXTURE VELLUTATA e COLORE INTENSO. \r\nLa sua formula levigante minimizza l'aspetto di pori ed imperfezioni, si fonde perfettamente con la pelle e dona un COLORITO SANO E LUMINOSO, a TENUTA 24H",
+      "images": [
+        "assets/images/products/prod_6aa12f9f8302f1.61873973.jpg",
+        "assets/images/products/prod_6aa12f9f7cf0b5.24220704.jpg",
+        "assets/images/products/prod_6aa12f9f805782.87822646.jpg",
+        "assets/images/catalog/ysl/ysl-1.jpg"
+      ]
+    },
+    {
+      "id": 215,
+      "category": "cosmetici",
+      "brand": "YSL",
+      "name": "Lip oil",
+      "price_label": "€ 14,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01#",
+          "price": 14.99
+        },
+        {
+          "variant": "02#",
+          "price": 14.99
+        },
+        {
+          "variant": "03#",
+          "price": 14.99
+        },
+        {
+          "variant": "04#",
+          "price": 14.99
+        },
+        {
+          "variant": "05#",
+          "price": 14.99
+        },
+        {
+          "variant": "06#",
+          "price": 14.99
+        },
+        {
+          "variant": "07#",
+          "price": 14.99
+        },
+        {
+          "variant": "08#",
+          "price": 14.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Olio labbra lucido e nutriente per labbra morbide e brillanti. Applica da solo o sopra il rossetto.",
+      "images": [
+        "assets/images/products/prod_6aa1301e2179e6.40967829.jpg",
+        "assets/images/products/prod_6aa1301e259f09.06593960.jpg"
+      ]
+    },
+    {
+      "id": 216,
+      "category": "cosmetici",
+      "brand": "YSL",
+      "name": "Bronzer",
+      "price_label": "€ 19,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "01",
+          "price": 19.99
+        },
+        {
+          "variant": "02",
+          "price": 19.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Bronzer in polvere a lunga tenuta per un effetto abbronzato naturale. Applica con un pennello su zigomi, fronte e mento.",
+      "images": [
+        "assets/images/products/prod_6aa130c0d6b9c9.89294141.jpg",
+        "assets/images/products/prod_6aa130c0db7659.90569602.jpg"
+      ]
+    },
+    {
+      "id": 217,
+      "category": "cosmetici",
+      "brand": "YSL",
+      "name": "Lipstick & Blush 2-in-1 Set",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "LOVE SHINE",
+          "price": 24.99
+        },
+        {
+          "variant": "MAKE ME BLUSH",
+          "price": 24.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Set 2 in 1 con rossetto e blush YSL, per un look labbra-guance coordinato in pochi gesti.",
+      "images": [
+        "assets/images/catalog/ysl/ysl-5.jpg"
+      ]
+    },
+    {
+      "id": 223,
+      "category": "cosmetici",
+      "brand": "Chanel",
+      "name": "Bronzer",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "382",
+          "price": 24.99
+        },
+        {
+          "variant": "384",
+          "price": 24.99
+        },
+        {
+          "variant": "386",
+          "price": 24.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Bronzer in polvere per un incarnato dorato e naturale. Applica con un pennello su zigomi, fronte e mento per un effetto sole.",
+      "images": [
+        "assets/images/products/prod_6aa12dc8f0cc39.74820388.jpg",
+        "assets/images/catalog/chanel/ch-1.jpg"
+      ]
+    },
+    {
+      "id": 232,
+      "category": "elettronica",
+      "brand": "JBL",
+      "name": "JBL Go 3",
+      "price_label": "€ 24,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Speaker cassa bluetooth JBL.",
+      "images": []
+    },
+    {
+      "id": 233,
+      "category": "elettronica",
+      "brand": "JBL",
+      "name": "JBL Clip 3",
+      "price_label": "€ 29,99",
+      "badges": [],
+      "variants": [],
+      "variant_groups": {},
+      "description": "Speaker cassa bluetooth JBL.",
+      "images": []
+    },
+    {
+      "id": 240,
+      "category": "elettronica",
+      "brand": "Apple",
+      "name": "Cavo USB-A a Lightning",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 metro",
+          "price": 7.99
+        },
+        {
+          "variant": "2 metri",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cavo di ricarica e sincronizzazione USB-A a Lightning.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/cavo-usb-a-lightning-cover.webp"
+      ]
+    },
+    {
+      "id": 241,
+      "category": "elettronica",
+      "brand": "Apple",
+      "name": "Cavo USB-C a Lightning",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 metro",
+          "price": 7.99
+        },
+        {
+          "variant": "2 metri",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cavo di ricarica e sincronizzazione USB-C a Lightning.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/cavo-usb-c-lightning-cover.webp"
+      ]
+    },
+    {
+      "id": 242,
+      "category": "elettronica",
+      "brand": "Apple",
+      "name": "Cavo USB-C a USB-C",
+      "price_label": "€ 7,99",
+      "badges": [],
+      "variants": [
+        {
+          "variant": "1 metro",
+          "price": 7.99
+        },
+        {
+          "variant": "2 metri",
+          "price": 9.99
+        }
+      ],
+      "variant_groups": {},
+      "description": "Cavo di ricarica e sincronizzazione USB-C a USB-C.",
+      "images": [
+        "assets/images/catalog/updated-2026-09/cavo-usb-c-usb-c-cover.webp"
+      ]
+    }
+  ]
+}

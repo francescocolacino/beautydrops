@@ -13,6 +13,13 @@ foreach ($offers as &$offer) {
 }
 unset($offer);
 
+// Prodotti scelti dall'admin (checkbox nel form prodotto) per la sezione
+// "Nuovi prodotti arrivati": i più recenti per primi.
+$newArrivals = $pdo->query(
+    'SELECT * FROM products WHERE is_new_arrival = TRUE ORDER BY created_at DESC, brand ASC, name ASC'
+)->fetchAll();
+$activeOfferProductIds = $newArrivals ? get_active_offer_product_ids($pdo) : [];
+
 $categoryIcons = [
     'cosmetici' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6l1 3H8l1-3Z" stroke-linejoin="round"/><path d="M8 6h8l1 4a6 6 0 0 1-4 8.5V21h-2v-2.5A6 6 0 0 1 7 10l1-4Z" stroke-linejoin="round"/></svg>',
     'elettronica' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2" stroke-linecap="round"/></svg>',
@@ -75,6 +82,22 @@ require __DIR__ . '/includes/header.php';
     </div>
   </div>
 </section>
+
+<?php if (!empty($newArrivals)): ?>
+<section class="new-arrivals-section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="eyebrow">Novità in catalogo</span>
+      <h2 class="section-title">Nuovi prodotti arrivati</h2>
+    </div>
+    <div class="product-grid new-arrivals-grid">
+      <?php foreach ($newArrivals as $i => $product): ?>
+        <?php require __DIR__ . '/includes/product-card.php'; ?>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
 
 <section class="quantity-promo">
   <div class="container">

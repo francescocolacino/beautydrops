@@ -12,8 +12,11 @@ require_once __DIR__ . '/../includes/functions.php';
  * ma ogni lotto viene applicato una sola volta: il nome del file viene
  * registrato in data_migrations, così un prodotto eliminato o modificato
  * dall'admin non viene mai ricreato o sovrascritto dai deploy successivi.
- * Lo script inserisce soltanto: non aggiorna né cancella righe esistenti, e
- * salta i prodotti la cui foto di copertina è già usata da un altro prodotto.
+ * Lo script inserisce soltanto: non cancella righe esistenti e salta i
+ * prodotti la cui foto di copertina è già usata da un altro prodotto. L'unico
+ * aggiornamento è la selezione iniziale (una tantum, anch'essa registrata in
+ * data_migrations) dei prodotti marcati "new_arrival" per la sezione
+ * "Nuovi prodotti arrivati" della homepage.
  */
 
 try {
@@ -146,6 +149,45 @@ try {
 
         echo basename($batchFile) . ": prodotti aggiunti {$inserted}, foto di galleria {$galleryInserted}";
         echo $skipped > 0 ? ", già presenti {$skipped}\n" : "\n";
+    }
+
+    // Selezione iniziale della sezione "Nuovi prodotti arrivati" in homepage
+    // (campo "new_arrival" nel lotto). Applicata una sola volta per lotto:
+    // da lì in poi la gestisce l'admin con la checkbox nel form prodotto.
+    $flagNewArrival = $pdo->prepare('UPDATE products SET is_new_arrival = TRUE WHERE image_path = :image_path');
+    foreach ($batchFiles as $batchFile) {
+        $migrationName = 'product-additions/' . basename($batchFile) . '#nuovi-arrivi';
+        $migrationCheck->execute(['name' => $migrationName]);
+        if ($migrationCheck->fetchColumn()) {
+            continue;
+        }
+
+        $products = json_decode((string) file_get_contents($batchFile), true, 512, JSON_THROW_ON_ERROR);
+        $newArrivalPaths = array_column(
+            array_filter(is_array($products) ? $products : [], fn($p) => is_array($p) && ($p['new_arrival'] ?? false) === true),
+            'image_path'
+        );
+        if ($newArrivalPaths === []) {
+            continue;
+        }
+
+        $flagged = 0;
+        $pdo->beginTransaction();
+        try {
+            foreach ($newArrivalPaths as $imagePath) {
+                $flagNewArrival->execute(['image_path' => $imagePath]);
+                $flagged += $flagNewArrival->rowCount();
+            }
+            $markMigration->execute(['name' => $migrationName]);
+            $pdo->commit();
+        } catch (Throwable $e) {
+            if ($pdo->inTransaction()) {
+                $pdo->rollBack();
+            }
+            throw $e;
+        }
+
+        echo basename($batchFile) . ": prodotti in «Nuovi prodotti arrivati» {$flagged}\n";
     }
 } catch (Throwable $e) {
     error_log('Import nuovi prodotti fallito: ' . $e->getMessage());

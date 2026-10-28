@@ -372,6 +372,21 @@ button, input, select, textarea { font-family: inherit; }
 
 .section-title { font-size: 1.9rem; margin: 0; }
 
+/* ---------- Nuovi prodotti arrivati (homepage) ---------- */
+
+.new-arrivals-section { padding: 30px 0 40px; position: relative; z-index: 1; }
+
+.product-grid.new-arrivals-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 0; }
+
+@media (max-width: 639px) {
+  .new-arrivals-grid .product-card .product-body { padding: 12px; }
+  .new-arrivals-grid .product-card .product-name { font-size: 0.9rem; }
+}
+
+@media (min-width: 640px) {
+  .product-grid.new-arrivals-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+}
+
 /* ---------- Promo sconto quantità ---------- */
 
 .quantity-promo { padding: 10px 0 30px; position: relative; z-index: 1; }

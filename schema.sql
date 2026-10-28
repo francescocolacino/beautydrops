@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS products (
 -- per chi ha già eseguito lo schema prima di questa colonna.
 ALTER TABLE products ADD COLUMN IF NOT EXISTS product_type VARCHAR(40) NULL;
 ALTER TABLE products ADD COLUMN IF NOT EXISTS variant_prices JSONB NULL;
+ALTER TABLE products ADD COLUMN IF NOT EXISTS is_new_arrival BOOLEAN NOT NULL DEFAULT FALSE;
 
 CREATE INDEX IF NOT EXISTS idx_products_category ON products (category);
 CREATE INDEX IF NOT EXISTS idx_products_brand ON products (brand);

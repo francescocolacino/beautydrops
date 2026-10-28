@@ -140,6 +140,11 @@ esistenti, quindi prezzi e modifiche fatte dall'admin non vengono toccati
 dai deploy successivi. `price: null` mostra "Prezzo su richiesta" finché
 l'admin non imposta un prezzo.
 
+`"new_arrival": true` su un prodotto del lotto lo inserisce (una sola volta)
+nella sezione "Nuovi prodotti arrivati" della homepage. In seguito la
+sezione si gestisce dal pannello admin, con la checkbox "Mostra in homepage
+nella sezione «Nuovi prodotti arrivati»" del form prodotto.
+
 ## Rigenerare le descrizioni prodotto
 
 `scripts/regenerate-descriptions.php` riscrive la colonna `description` di

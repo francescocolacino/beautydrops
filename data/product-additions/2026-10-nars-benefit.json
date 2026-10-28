@@ -6,6 +6,7 @@
         "product_type": "mascara",
         "variants": [],
         "image_path": "/assets/images/catalog/benefit/badgal-bang-volumizing-mascara.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Mascara volumizzante nero intenso per ciglia piene e voluminose fino a 36 ore. Applica dalla radice alle punte con movimenti a zig-zag."
@@ -17,6 +18,7 @@
         "product_type": "mascara",
         "variants": [],
         "image_path": "/assets/images/catalog/benefit/theyre-real-magnet-mascara.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Mascara allungante con scovolino magnetico per ciglia lunghe, incurvate e definite. Applica dalla radice alle punte, insistendo sulle ciglia esterne."
@@ -28,6 +30,7 @@
         "product_type": "primer",
         "variants": [],
         "image_path": "/assets/images/catalog/benefit/porefessional-pore-primer.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Primer viso che minimizza l'aspetto dei pori e leviga la pelle, per un trucco uniforme e a lunga tenuta. Applica un velo sottile prima del fondotinta."
@@ -50,6 +53,7 @@
         "product_type": "mascara",
         "variants": [],
         "image_path": "/assets/images/catalog/nars/climax-mascara.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Mascara volumizzante nero intenso per ciglia piene e definite, senza grumi. Applica dalla radice alle punte con movimenti a zig-zag."
@@ -127,6 +131,7 @@
         "product_type": "correttore",
         "variants": ["1276 Vanilla", "1277 Crème Brûlée", "1279 Honey", "1280 Custard"],
         "image_path": "/assets/images/catalog/nars/soft-matte-complete-concealer.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Correttore cremoso a copertura piena con finish opaco morbido, copre occhiaie e imperfezioni. Picchietta poco prodotto e sfuma con il dito o una spugnetta."
@@ -171,6 +176,7 @@
         "product_type": "correttore",
         "variants": ["Light 1 Chantilly", "Light 2 Vanilla", "Light 3 Honey", "Medium 1 Custard"],
         "image_path": "/assets/images/catalog/nars/radiant-creamy-concealer.jpg",
+        "new_arrival": true,
         "gallery": [],
         "price": null,
         "description": "Correttore cremoso a copertura media modulabile con finish luminoso, illumina le occhiaie e copre le imperfezioni. Applica con l'applicatore e sfuma con il dito o una spugnetta."

@@ -1,0 +1,189 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Benefit",
+        "name": "BADgal BANG! Volumizing Mascara",
+        "product_type": "mascara",
+        "variants": [],
+        "image_path": "/assets/images/catalog/benefit/badgal-bang-volumizing-mascara.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Mascara volumizzante nero intenso per ciglia piene e voluminose fino a 36 ore. Applica dalla radice alle punte con movimenti a zig-zag."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Benefit",
+        "name": "They're Real! Magnet Mascara",
+        "product_type": "mascara",
+        "variants": [],
+        "image_path": "/assets/images/catalog/benefit/theyre-real-magnet-mascara.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Mascara allungante con scovolino magnetico per ciglia lunghe, incurvate e definite. Applica dalla radice alle punte, insistendo sulle ciglia esterne."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Benefit",
+        "name": "The POREfessional Pore Primer 22ml",
+        "product_type": "primer",
+        "variants": [],
+        "image_path": "/assets/images/catalog/benefit/porefessional-pore-primer.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Primer viso che minimizza l'aspetto dei pori e leviga la pelle, per un trucco uniforme e a lunga tenuta. Applica un velo sottile prima del fondotinta."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Precision Lip Liner",
+        "product_type": "matita_labbra",
+        "variants": [],
+        "image_path": "/assets/images/catalog/nars/precision-lip-liner.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Matita labbra di precisione a lunga tenuta per definire e riempire il contorno. Disegna il bordo delle labbra prima del rossetto o del gloss."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Climax Mascara",
+        "product_type": "mascara",
+        "variants": [],
+        "image_path": "/assets/images/catalog/nars/climax-mascara.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Mascara volumizzante nero intenso per ciglia piene e definite, senza grumi. Applica dalla radice alle punte con movimenti a zig-zag."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Light Reflecting Moisturizer 50ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/nars/light-reflecting-moisturizer.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Crema viso idratante leggera che dona luminosità e prepara la pelle al trucco. Applica su viso e collo puliti, mattina e sera."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Light Reflecting Foundation 30ml",
+        "product_type": "fondotinta",
+        "variants": ["0", "1", "2", "2.5", "3", "4"],
+        "image_path": "/assets/images/catalog/nars/light-reflecting-foundation.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Fondotinta a copertura media con finish naturale e luminoso, arricchito con attivi skincare. Applica con spugnetta o pennello dal centro del viso verso l'esterno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Natural Radiant Longwear Foundation 30ml",
+        "product_type": "fondotinta",
+        "variants": ["1", "2", "2.5", "3", "3.5", "4"],
+        "image_path": "/assets/images/catalog/nars/natural-radiant-longwear-foundation.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Fondotinta a copertura piena e lunga tenuta con finish naturale radioso, resiste a sudore e umidità. Applica con spugnetta o pennello sfumando verso l'esterno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "All Day Luminous Weightless Foundation 30ml",
+        "product_type": "fondotinta",
+        "variants": ["1", "2", "3", "4", "5", "6"],
+        "image_path": "/assets/images/catalog/nars/all-day-luminous-weightless-foundation.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Fondotinta leggerissimo a copertura modulabile con finish luminoso, per una pelle uniforme tutto il giorno. Applica con spugnetta o pennello."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Light Reflecting Setting Mist 90ml",
+        "product_type": "spray_fissante",
+        "variants": [],
+        "image_path": "/assets/images/catalog/nars/light-reflecting-setting-mist.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Spray fissante che sigilla il trucco e dona un finish fresco e luminoso. Vaporizza a 20-30 cm dal viso, a occhi chiusi."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Light Reflecting Pressed Setting Powder",
+        "product_type": "cipria",
+        "variants": [],
+        "image_path": "/assets/images/catalog/nars/light-reflecting-pressed-setting-powder.jpg",
+        "gallery": ["/assets/images/catalog/nars/light-reflecting-pressed-setting-powder-box.jpg"],
+        "price": null,
+        "description": "Cipria compatta trasparente (tonalità Crystal) che fissa il trucco e sfuma la pelle con un effetto luminoso naturale. Applica con pennello o piumino sulle zone da opacizzare."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Soft Matte Complete Concealer 6.2g",
+        "product_type": "correttore",
+        "variants": ["1276 Vanilla", "1277 Crème Brûlée", "1279 Honey", "1280 Custard"],
+        "image_path": "/assets/images/catalog/nars/soft-matte-complete-concealer.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Correttore cremoso a copertura piena con finish opaco morbido, copre occhiaie e imperfezioni. Picchietta poco prodotto e sfuma con il dito o una spugnetta."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Soft Matte Advanced Perfecting Powder",
+        "product_type": "cipria",
+        "variants": ["Cliff", "Cove"],
+        "image_path": "/assets/images/catalog/nars/soft-matte-advanced-perfecting-powder.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Cipria compatta dal finish opaco morbido che fissa il trucco e minimizza pori e lucidità. Applica con pennello o piumino sulle zone più lucide."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Blush 4.8g",
+        "product_type": "blush",
+        "variants": ["Orgasm", "Deep Throat", "Taj Mahal"],
+        "image_path": "/assets/images/catalog/nars/blush.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Blush in polvere setoso dal colore modulabile, nelle iconiche tonalità NARS. Applica con un pennello sugli zigomi e sfuma verso le tempie."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Light Reflecting Loose Setting Powder 10g",
+        "product_type": "cipria",
+        "variants": ["Milky Way", "Translucent"],
+        "image_path": "/assets/images/catalog/nars/light-reflecting-loose-setting-powder.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Cipria in polvere libera ultra-fine che fissa il trucco e sfuma la pelle con un effetto luminoso. Applica con un pennello soffice, picchiettando sulle zone da fissare."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Radiant Creamy Concealer 6ml",
+        "product_type": "correttore",
+        "variants": ["Light 1 Chantilly", "Light 2 Vanilla", "Light 3 Honey", "Medium 1 Custard"],
+        "image_path": "/assets/images/catalog/nars/radiant-creamy-concealer.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Correttore cremoso a copertura media modulabile con finish luminoso, illumina le occhiaie e copre le imperfezioni. Applica con l'applicatore e sfuma con il dito o una spugnetta."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "NARS",
+        "name": "Afterglow Liquid Blush",
+        "product_type": "blush",
+        "variants": ["Orgasm", "Behave", "Dolce Vita"],
+        "image_path": "/assets/images/catalog/nars/afterglow-liquid-blush.jpg",
+        "gallery": [],
+        "price": null,
+        "description": "Blush liquido leggero e sfumabile con acido ialuronico, per un colore guance fresco e luminoso. Applica qualche puntino sugli zigomi e sfuma con le dita."
+    }
+]

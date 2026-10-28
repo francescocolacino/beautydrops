@@ -129,6 +129,17 @@ php -S localhost:8000
 Assicurati che `assets/images/products/` e `assets/orders/` siano scrivibili
 dal processo PHP locale.
 
+## Aggiungere nuovi prodotti al catalogo live
+
+Ogni file `data/product-additions/*.json` è un lotto di nuovi prodotti, con
+le foto versionate sotto `assets/images/catalog/<brand>/`.
+`scripts/seed-product-additions.php` gira all'avvio del container e applica
+ogni lotto **una sola volta** (il nome del file viene registrato in
+`data_migrations`): inserisce soltanto, non modifica né cancella prodotti
+esistenti, quindi prezzi e modifiche fatte dall'admin non vengono toccati
+dai deploy successivi. `price: null` mostra "Prezzo su richiesta" finché
+l'admin non imposta un prezzo.
+
 ## Rigenerare le descrizioni prodotto
 
 `scripts/regenerate-descriptions.php` riscrive la colonna `description` di

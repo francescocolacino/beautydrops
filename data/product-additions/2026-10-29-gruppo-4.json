@@ -1,0 +1,68 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Diamond Bomb All-Over Diamond Veil 8g",
+        "product_type": "illuminante",
+        "variants": ["Diamond", "Rose"],
+        "image_path": "/assets/images/catalog/fenty-beauty/diamond-bomb-diamond-veil.jpg",
+        "gallery": ["/assets/images/catalog/fenty-beauty/diamond-bomb-diamond-veil-2.jpg"],
+        "price": 19.99,
+        "description": "Illuminante in polvere per viso e corpo con effetto pioggia di diamanti, dalla texture morbida che si fonde sulla pelle. Picchietta con il dito o un pennello su zigomi, decolleté e spalle."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Gloss Bomb Stix",
+        "product_type": "gloss",
+        "variants": ["03 Fenty Glow", "04 Fu$$y", "08 Spiced Cold"],
+        "image_path": "/assets/images/catalog/fenty-beauty/gloss-bomb-stix.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Gloss in stick ad alta brillantezza che nutre le labbra e dona un colore leggero e luminoso, senza effetto appiccicoso. Passalo direttamente sulle labbra e stratifica per più intensità."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Pro Filt'r Instant Retouch Setting Powder 28g",
+        "product_type": "cipria",
+        "variants": ["Lavender", "Butter"],
+        "image_path": "/assets/images/catalog/fenty-beauty/pro-filtr-instant-retouch-setting-powder.jpg",
+        "gallery": [],
+        "price": 17.99,
+        "description": "Cipria in polvere libera ultra-fine che fissa il trucco, sfuma i pori e opacizza senza appesantire. Picchietta con un piumino o un pennello sulle zone da fissare e rimuovi l'eccesso."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Killawatt Freestyle Highlighter",
+        "product_type": "illuminante",
+        "variants": ["Trophy Wife", "Wattabrat"],
+        "image_path": "/assets/images/catalog/fenty-beauty/killawatt-highlighter-trophy-wife.jpg",
+        "gallery": ["/assets/images/catalog/fenty-beauty/killawatt-highlighter-wattabrat.jpg"],
+        "price": 17.99,
+        "description": "Illuminante in polvere leggero e ad alto impatto, modulabile da un bagliore delicato a un effetto metallico intenso. Applica con un pennello sugli zigomi, sull'arco di Cupido e sul dorso del naso."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Killawatt Freestyle Highlighter Duo",
+        "product_type": "illuminante",
+        "variants": ["03+04", "05+06", "07+08", "09+10"],
+        "image_path": "/assets/images/catalog/fenty-beauty/killawatt-highlighter-duo.jpg",
+        "gallery": [],
+        "price": 17.99,
+        "description": "Duo di illuminanti in polvere da usare da soli o mixati, per un glow modulabile da naturale a intenso. Applica con un pennello sugli zigomi e nei punti luce del viso."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Fenty You Mist Setting Spray 100ml",
+        "product_type": "spray_fissante",
+        "variants": [],
+        "image_path": "/assets/images/catalog/fenty-beauty/you-mist-setting-spray.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Spray fissante che prolunga la tenuta del trucco e rinfresca la pelle con un finish naturale. Vaporizza a 20-30 cm dal viso a occhi chiusi, a fine trucco o durante la giornata."
+    }
+]

@@ -69,6 +69,23 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 
+<?php if (!empty(UNAVAILABLE_BRANDS)): ?>
+<?php $unavailableBrandsLabel = implode(' e ', UNAVAILABLE_BRANDS); ?>
+<section class="brand-notice-section">
+  <div class="container">
+    <div class="brand-notice" role="status" data-aos="fade-up">
+      <span class="brand-notice-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.5v.01" stroke-linecap="round"/></svg>
+      </span>
+      <div>
+        <strong><?= h($unavailableBrandsLabel) ?> temporaneamente non disponibili</strong>
+        <p>Al momento non riceviamo forniture dei trucchi <?= h($unavailableBrandsLabel) ?>: puoi continuare a sfogliarli in catalogo, torneranno ordinabili a breve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
 <section class="categories-section" id="categorie">
   <div class="container">
     <div class="category-cards">

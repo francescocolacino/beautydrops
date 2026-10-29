@@ -1,0 +1,156 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "La Crème Main 50ml",
+        "product_type": "crema",
+        "variants": ["Bianca", "Nera"],
+        "image_path": "/assets/images/catalog/chanel/chan-001-pic1.jpg",
+        "gallery": [],
+        "price": 16.99,
+        "description": "Crema mani nutriente e illuminante nell'iconico flacone a sasso, che ammorbidisce la pelle e rinforza le unghie. Massaggia una piccola quantità sulle mani, anche più volte al giorno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Ombre Première Ombretto Mono",
+        "product_type": "ombretto",
+        "variants": ["220", "222", "224", "234", "236", "238"],
+        "image_path": "/assets/images/catalog/chanel/chan-002-col2.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-002-pic1.jpg"],
+        "price": 24.99,
+        "description": "Ombretto mono in polvere dalla texture setosa e luminosa, modulabile e a lunga tenuta. Applica con l'applicatore o un pennello sulla palpebra mobile, da solo o sovrapposto ad altre tonalità."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Les Beiges Poudre Belle Mine Naturelle 12g",
+        "product_type": "cipria",
+        "variants": ["B10", "B20"],
+        "image_path": "/assets/images/catalog/chanel/chan-003-pic1.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-003-col2.jpg"],
+        "price": 29.99,
+        "description": "Cipria compatta dall'effetto bonne mine che illumina e uniforma l'incarnato con un velo naturale e luminoso. Applica con il pennello incluso su tutto il viso o solo nei punti luce."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Le Blanc Rosy Light Drops 30ml",
+        "product_type": "illuminante",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-004-pic1.jpg",
+        "gallery": [],
+        "price": 29.99,
+        "description": "Fluido illuminante trasparente dal riflesso rosato, da usare da solo, sotto o mescolato al fondotinta per una luminosità su misura. Picchietta qualche goccia sui punti luce del viso o mescola al fondotinta."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Le Blanc Huile Healthy Light Creator Oil 50ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-005-pic1.jpg",
+        "gallery": [],
+        "price": 24.99,
+        "description": "Olio viso rivitalizzante che illumina, uniforma e ripara la pelle, lasciandola morbida e radiosa. Scalda qualche goccia tra i palmi e premi delicatamente sul viso deterso, la sera o mattina e sera."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Chance Latte Corpo e Sapone Liquido 400ml",
+        "product_type": "crema",
+        "variants": ["Latte corpo idratante", "Sapone liquido mani e corpo"],
+        "image_path": "/assets/images/catalog/chanel/chan-006-pic2.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-006-col1.jpg"],
+        "price": 34.99,
+        "description": "Latte corpo idratante o sapone liquido per mani e corpo nella fragranza Chance, in formato da 400ml con dosatore. Il latte va massaggiato sulla pelle dopo la doccia, il sapone si usa con acqua e si risciacqua."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Bleu de Chanel Deodorante Stick 75ml",
+        "product_type": null,
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-007-pic1.jpg",
+        "gallery": [],
+        "price": 29.99,
+        "description": "Deodorante stick senza alcol nella fragranza legnosa aromatica Bleu de Chanel, per una sensazione di freschezza duratura. Applica sulla pelle pulita e asciutta delle ascelle."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "N°1 de Chanel Sérum Revitalisant 30ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-009-pic1.jpg",
+        "gallery": [],
+        "price": 24.99,
+        "description": "Siero viso rivitalizzante alla camelia rossa che contrasta i segni dell'età, rimpolpa e illumina la pelle. Applica 1-2 erogazioni su viso e collo detersi, mattina e sera, prima della crema."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "N°5 Le Savon 150g",
+        "product_type": "detergente",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-011-col2.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-011-pic1.jpg"],
+        "price": 19.99,
+        "description": "Sapone solido delicato nella fragranza iconica N°5, che deterge la pelle lasciandola morbida e delicatamente profumata. Fai schiumare con acqua tiepida su mani e corpo e risciacqua."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Hydra Beauty Micro Liquid Essence 150ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-012-col2.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-012-pic1.jpg"],
+        "price": 29.99,
+        "description": "Essenza viso idratante con micro-gocce di camelia, che rinfresca, affina la grana e prepara la pelle ai trattamenti successivi. Picchietta con le mani su viso e collo detersi, mattina e sera."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Coco Mademoiselle Emulsione Idratante Corpo 200ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-013-pic1.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-013-col2.jpg"],
+        "price": 29.99,
+        "description": "Emulsione corpo idratante e vellutata nella fragranza Coco Mademoiselle, che lascia la pelle morbida e delicatamente profumata. Massaggia su tutto il corpo dopo la doccia."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Coco Mademoiselle Gel Doccia 200ml",
+        "product_type": "detergente",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-014-pic1.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-014-col2.jpg"],
+        "price": 24.99,
+        "description": "Gel doccia schiumogeno nella fragranza Coco Mademoiselle, che deterge delicatamente e profuma la pelle. Fai schiumare su pelle bagnata e risciacqua."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Éclat Premier La Base 30ml",
+        "product_type": "primer",
+        "variants": ["La Base", "La Base Légère"],
+        "image_path": "/assets/images/catalog/chanel/chan-015-col2.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-015-pic1.jpg"],
+        "price": 15.99,
+        "description": "Base trucco illuminante e correttiva con protezione solare, che uniforma il colorito con un effetto rosato luminoso. Applica su viso pulito prima del fondotinta oppure da sola per un effetto pelle nuda."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Chanel",
+        "name": "Sublime de Chanel Waterproof Mascara 6ml",
+        "product_type": "mascara",
+        "variants": [],
+        "image_path": "/assets/images/catalog/chanel/chan-016-pic1.jpg",
+        "gallery": ["/assets/images/catalog/chanel/chan-016-col2.jpg"],
+        "price": 14.99,
+        "description": "Mascara waterproof nero intenso che allunga e incurva le ciglia, resistente ad acqua e umidità. Applica dalla radice alle punte con movimenti a zig-zag, ripassando per più intensità."
+    }
+]

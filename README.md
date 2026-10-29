@@ -142,11 +142,11 @@ l'admin non imposta un prezzo.
 
 ## Prezzi d'acquisto (solo admin)
 
-La colonna `purchase_price` contiene il prezzo del fornitore in USD alla MOQ
-più bassa, come sui listini PDF. Nel pannello admin l'elenco prodotti mostra
-il costo con la spedizione (`SHIPPING_COST_USD`, $2,50 a pezzo) e il
-guadagno netto in euro, convertito al cambio `USD_PER_EUR`: entrambe le
-costanti sono in `includes/functions.php`. Il valore si modifica dal form
+La colonna `purchase_price` contiene il prezzo del fornitore alla MOQ più
+bassa, come sui listini PDF, trattato nella stessa valuta del prezzo di
+vendita (senza cambio). Nel pannello admin l'elenco prodotti mostra il costo
+con la spedizione (`SHIPPING_COST`, 2,50 a pezzo, in `includes/functions.php`)
+e il guadagno netto. Il valore si modifica dal form
 prodotto, oppure in blocco da **Admin → Prodotti → Importa prezzi d'acquisto**
 caricando un file JSON (elenco di `{id, purchase_price}`).
 

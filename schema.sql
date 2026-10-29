@@ -24,7 +24,7 @@ ALTER TABLE products ADD COLUMN IF NOT EXISTS product_type VARCHAR(40) NULL;
 ALTER TABLE products ADD COLUMN IF NOT EXISTS variant_prices JSONB NULL;
 ALTER TABLE products ADD COLUMN IF NOT EXISTS is_new_arrival BOOLEAN NOT NULL DEFAULT FALSE;
 ALTER TABLE products ADD COLUMN IF NOT EXISTS is_special_edition BOOLEAN NOT NULL DEFAULT FALSE;
--- Prezzo d'acquisto dal fornitore in USD (alla MOQ più bassa), visibile solo in admin.
+-- Prezzo d'acquisto dal fornitore (alla MOQ più bassa), visibile solo in admin.
 ALTER TABLE products ADD COLUMN IF NOT EXISTS purchase_price NUMERIC(10,2) NULL;
 
 CREATE INDEX IF NOT EXISTS idx_products_category ON products (category);

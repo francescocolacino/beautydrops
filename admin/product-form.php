@@ -351,20 +351,19 @@ require __DIR__ . '/../includes/admin-header.php';
   <?php
     $formPurchasePrice = $formData['purchase_price'] !== null ? (float)$formData['purchase_price'] : null;
     $formSalePrice = $formData['price'] !== null ? (float)$formData['price'] : null;
-    $formNetProfit = product_net_profit_eur($formSalePrice, $formPurchasePrice);
+    $formNetProfit = product_net_profit($formSalePrice, $formPurchasePrice);
   ?>
   <div class="form-row">
-    <label for="purchase_price">Prezzo d'acquisto fornitore in USD (alla MOQ più bassa, visibile solo in admin)</label>
+    <label for="purchase_price">Prezzo d'acquisto fornitore (alla MOQ più bassa, visibile solo in admin)</label>
     <input type="text" id="purchase_price" name="purchase_price" value="<?= $formPurchasePrice !== null ? h(number_format($formPurchasePrice, 2, ',', '')) : '' ?>">
     <?php if ($formPurchasePrice !== null): ?>
       <p class="field-hint">
-        Costo con spedizione: <?= format_usd($formPurchasePrice) ?> + <?= format_usd(SHIPPING_COST_USD) ?> = <strong><?= format_usd(product_total_cost_usd($formPurchasePrice)) ?></strong>
-        (≈ <?= format_price(product_total_cost_eur($formPurchasePrice)) ?> al cambio <?= h(number_format(USD_PER_EUR, 2, ',', '')) ?> $/€)<?php if ($formNetProfit !== null): ?>
+        Costo con spedizione: <?= format_price($formPurchasePrice) ?> + <?= format_price(SHIPPING_COST) ?> = <strong><?= format_price(product_total_cost($formPurchasePrice)) ?></strong><?php if ($formNetProfit !== null): ?>
           · Netto: <strong class="<?= $formNetProfit >= 0 ? 'net-positive' : 'net-negative' ?>"><?= format_price($formNetProfit) ?></strong>
         <?php endif; ?>
       </p>
     <?php else: ?>
-      <p class="field-hint">A ogni pezzo vengono aggiunti <?= format_usd(SHIPPING_COST_USD) ?> di spedizione per calcolare costo e guadagno netto.</p>
+      <p class="field-hint">A ogni pezzo vengono aggiunti <?= format_price(SHIPPING_COST) ?> di spedizione per calcolare costo e guadagno netto.</p>
     <?php endif; ?>
   </div>
 

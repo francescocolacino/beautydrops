@@ -114,14 +114,14 @@ require __DIR__ . '/../includes/admin-header.php';
           <?php
             $purchasePrice = $product['purchase_price'] !== null ? (float)$product['purchase_price'] : null;
             $salePrice = $product['price'] !== null ? (float)$product['price'] : null;
-            $netProfit = product_net_profit_eur($salePrice, $purchasePrice);
+            $netProfit = product_net_profit($salePrice, $purchasePrice);
           ?>
           <td class="col-cost">
             <?php if ($purchasePrice === null): ?>
               &mdash;
             <?php else: ?>
-              <?= format_usd(product_total_cost_usd($purchasePrice)) ?>
-              <span class="cost-detail"><?= format_usd($purchasePrice) ?> + <?= format_usd(SHIPPING_COST_USD) ?> sped. · ≈ <?= format_price(product_total_cost_eur($purchasePrice)) ?></span>
+              <?= format_price(product_total_cost($purchasePrice)) ?>
+              <span class="cost-detail"><?= format_price($purchasePrice) ?> + <?= format_price(SHIPPING_COST) ?> sped.</span>
             <?php endif; ?>
           </td>
           <td class="col-net">

@@ -281,38 +281,22 @@ function format_price(?float $price): string
 }
 
 /**
- * Costi d'acquisto, solo per l'area admin. Il prezzo del fornitore resta in
- * dollari come sui listini PDF (purchase_price, alla MOQ più bassa) e a ogni
- * pezzo si aggiunge la spedizione; il netto viene poi convertito in euro per
- * confrontarlo con il prezzo di vendita. Aggiornare USD_PER_EUR quando il
- * cambio si sposta.
+ * Costi d'acquisto, solo per l'area admin. purchase_price è il prezzo del
+ * fornitore alla MOQ più bassa, come sui listini PDF: per scelta del titolare
+ * viene trattato nella stessa valuta del prezzo di vendita, senza cambio. A
+ * ogni pezzo si aggiunge la spedizione.
  */
-const SHIPPING_COST_USD = 2.50;
-const USD_PER_EUR = 1.12;
+const SHIPPING_COST = 2.50;
 
-function format_usd(?float $amount): string
+function product_total_cost(?float $purchasePrice): ?float
 {
-    if ($amount === null) {
-        return '';
-    }
-    return '$ ' . number_format($amount, 2, ',', '.');
+    return $purchasePrice === null ? null : $purchasePrice + SHIPPING_COST;
 }
 
-function product_total_cost_usd(?float $purchasePrice): ?float
+function product_net_profit(?float $salePrice, ?float $purchasePrice): ?float
 {
-    return $purchasePrice === null ? null : $purchasePrice + SHIPPING_COST_USD;
-}
-
-function product_total_cost_eur(?float $purchasePrice): ?float
-{
-    $totalUsd = product_total_cost_usd($purchasePrice);
-    return $totalUsd === null ? null : $totalUsd / USD_PER_EUR;
-}
-
-function product_net_profit_eur(?float $salePrice, ?float $purchasePrice): ?float
-{
-    $costEur = product_total_cost_eur($purchasePrice);
-    return ($salePrice === null || $costEur === null) ? null : $salePrice - $costEur;
+    $totalCost = product_total_cost($purchasePrice);
+    return ($salePrice === null || $totalCost === null) ? null : $salePrice - $totalCost;
 }
 
 function decode_variants(?string $json): array

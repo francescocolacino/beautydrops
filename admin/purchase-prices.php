@@ -94,8 +94,8 @@ require __DIR__ . '/../includes/admin-header.php';
 <form method="post" enctype="multipart/form-data" class="admin-form">
   <?= csrf_field() ?>
   <p class="field-hint">
-    Carica il file JSON con i prezzi del fornitore in USD alla MOQ più bassa (un elenco di <code>{"id", "purchase_price"}</code>).
-    Nell'elenco prodotti verranno mostrati con <?= format_usd(SHIPPING_COST_USD) ?> di spedizione a pezzo e il guadagno netto in euro.
+    Carica il file JSON con i prezzi del fornitore alla MOQ più bassa (un elenco di <code>{"id", "purchase_price"}</code>).
+    Nell'elenco prodotti verranno mostrati con <?= format_price(SHIPPING_COST) ?> di spedizione a pezzo e il guadagno netto.
     I prezzi restano solo nel database, visibili esclusivamente in admin.
   </p>
 

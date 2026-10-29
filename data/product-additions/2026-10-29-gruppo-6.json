@@ -1,0 +1,35 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "La Mer",
+        "name": "The Body Crème 300ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/la-mer/the-body-creme-300ml.jpg",
+        "gallery": [],
+        "price": 34.99,
+        "description": "Crema corpo ricca e vellutata con il Miracle Broth La Mer, che nutre in profondità e lascia la pelle morbida, levigata e luminosa. Massaggia su tutto il corpo dopo la doccia, insistendo sulle zone più secche."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "La Mer",
+        "name": "The Hydrating Infused Emulsion 125ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/la-mer/the-hydrating-infused-emulsion-125ml.jpg",
+        "gallery": [],
+        "price": 29.99,
+        "description": "Emulsione viso leggera e idratante con Miracle Broth, che disseta la pelle e la lascia fresca e rimpolpata senza ungere. Applica mattina e sera su viso e collo detersi, dopo la lozione e prima della crema."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "La Mer",
+        "name": "The Treatment Lotion 150ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/la-mer/the-treatment-lotion-150ml.jpg",
+        "gallery": [],
+        "price": 24.99,
+        "description": "Lozione trattante idratante con Miracle Broth che prepara la pelle ad assorbire i trattamenti successivi e le dona luminosità. Picchietta con le mani su viso e collo detersi, mattina e sera, prima di siero e crema."
+    }
+]

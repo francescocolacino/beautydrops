@@ -1,0 +1,104 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Reflection Glossy Liquid Balm 8ml",
+        "product_type": "gloss",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/reflection-glossy-liquid-balm.jpg",
+        "gallery": ["/assets/images/catalog/prada/reflection-glossy-liquid-balm-shades.jpg"],
+        "price": 19.99,
+        "description": "Balsamo labbra liquido dall'effetto gloss specchiato, che nutre e ammorbidisce le labbra con un colore trasparente e luminoso. Applica con l'applicatore al centro delle labbra e sfuma verso l'esterno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Refine Blurring Extending Primer 30ml",
+        "product_type": "primer",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/refine-blurring-extending-primer-30ml.jpg",
+        "gallery": [],
+        "price": 14.99,
+        "description": "Primer viso che sfoca all'istante pori e linee sottili, controlla la lucidità e prolunga la tenuta del trucco. Applica una piccola quantità su viso pulito prima del fondotinta, insistendo sulla zona T."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Light Glowing Lip Oil Stick",
+        "product_type": "rossetto",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/light-glowing-lip-oil-stick.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Rossetto-olio in stick dal colore trasparente e dal finish glow, che idrata le labbra a lungo. Passalo direttamente sulle labbra e stratifica per un colore più intenso."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Monochrome Lipstick",
+        "product_type": "rossetto",
+        "variants": ["B01", "B03", "B15", "U000", "U001", "U011", "U002", "B101", "B103", "B106", "B107", "P62", "P163", "P63", "P162"],
+        "image_path": "/assets/images/catalog/prada/monochrome-lipstick.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Rossetto ricaricabile dal colore pieno e confortevole, arricchito con olio di jojoba per labbra morbide e idratate. Applica direttamente dal centro delle labbra verso gli angoli."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Reveal Skin-Optimizing Soft Matte Foundation 30ml",
+        "product_type": "fondotinta",
+        "variants": ["LC5", "LW5", "LN10"],
+        "image_path": "/assets/images/catalog/prada/reveal-soft-matte-foundation.jpg",
+        "gallery": [],
+        "price": 24.99,
+        "description": "Fondotinta ricaricabile a copertura modulabile con finish soft matte, che uniforma l'incarnato e si prende cura della pelle. Applica con pennello o spugnetta dal centro del viso verso l'esterno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Reset Rebalancing Setting Powder 6,8g",
+        "product_type": "cipria",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/reset-rebalancing-setting-powder-open.jpg",
+        "gallery": [
+            "/assets/images/catalog/prada/reset-rebalancing-setting-powder.jpg",
+            "/assets/images/catalog/prada/reset-rebalancing-setting-powder-2.jpg"
+        ],
+        "price": 24.99,
+        "description": "Cipria compatta ricaricabile che fissa il trucco e controlla la lucidità tutto il giorno, con un finish naturale e uniforme. Applica con il piumino o un pennello sulle zone da opacizzare."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Dimensions Multi-Effect Eyeshadow Palette",
+        "product_type": "ombretto",
+        "variants": ["1#", "2#", "3#"],
+        "image_path": "/assets/images/catalog/prada/dimensions-eyeshadow-palette-open.jpg",
+        "gallery": ["/assets/images/catalog/prada/dimensions-eyeshadow-palette.jpg"],
+        "price": 19.99,
+        "description": "Palette ricaricabile da 4 ombretti con finish multi-effetto, tre neutri e una nuance accento, a lunga tenuta. Stendi la tonalità chiara su tutta la palpebra e intensifica piega e angolo esterno con le altre."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Hydrating Hand Cream con Niacinamide e Biotina 50ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/hydrating-hand-cream-50ml.jpg",
+        "gallery": [],
+        "price": 18.99,
+        "description": "Crema mani idratante con burro di karité, niacinamide e biotina, che nutre, uniforma e rinforza unghie e cuticole. Massaggia una piccola quantità sulle mani, anche più volte al giorno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Prada",
+        "name": "Augmented Skin The Cleanser 125ml",
+        "product_type": "detergente",
+        "variants": [],
+        "image_path": "/assets/images/catalog/prada/augmented-skin-cleanser-125ml.jpg",
+        "gallery": [],
+        "price": 21.99,
+        "description": "Detergente viso cremoso che rimuove impurità e trucco rispettando la barriera cutanea, lasciando la pelle morbida e confortevole. Massaggia sul viso umido, emulsiona con acqua e risciacqua."
+    }
+]

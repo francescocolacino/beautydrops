@@ -14,21 +14,81 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var productSearch = document.getElementById('productSearch');
   if (productSearch) {
-    var applyProductFilters = function () {
-      var query = productSearch.value.trim().toLowerCase();
-      document.querySelectorAll('.brand-group').forEach(function (group) {
-        var brand = group.getAttribute('data-brand') || '';
-        var visibleCount = 0;
-        group.querySelectorAll('.product-card').forEach(function (card) {
-          var name = card.getAttribute('data-name') || '';
-          var matches = query === '' || brand.includes(query) || name.includes(query);
-          card.hidden = !matches;
-          if (matches) visibleCount++;
-        });
-        group.hidden = visibleCount === 0;
-      });
+    // Minuscole, senza accenti né punteggiatura: "E.L.F." si trova con "elf",
+    // "Crème" con "creme".
+    var normalizeSearch = function (text) {
+      return (text || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
     };
+
+    var searchCards = Array.prototype.map.call(document.querySelectorAll('.brand-group .product-card'), function (card) {
+      return { card: card, text: normalizeSearch(card.getAttribute('data-search') || card.getAttribute('data-name')) };
+    });
+    var brandGroups = document.querySelectorAll('.brand-group');
+    var categoryCount = document.getElementById('categoryCount');
+    var defaultCountText = categoryCount ? categoryCount.textContent : '';
+    var searchEmpty = document.getElementById('searchEmpty');
+    var brandIndex = document.querySelector('.brand-index');
+
+    var applyProductFilters = function () {
+      var rawQuery = productSearch.value.trim();
+      var words = normalizeSearch(rawQuery).split(' ').filter(Boolean);
+      var total = 0;
+
+      // Ogni parola scritta deve comparire (anche a metà) in brand, nome,
+      // varianti o tipo: più lettere si aggiungono, più i risultati si restringono.
+      searchCards.forEach(function (entry) {
+        var matches = words.every(function (word) { return entry.text.indexOf(word) !== -1; });
+        entry.card.hidden = !matches;
+        if (matches) {
+          total++;
+          // Le card ancora in attesa dell'animazione di comparsa resterebbero
+          // invisibili finché non si scorre: le mostriamo subito.
+          entry.card.classList.add('aos-animate');
+        }
+      });
+
+      brandGroups.forEach(function (group) {
+        var hasResults = group.querySelector('.product-card:not([hidden])') !== null;
+        group.hidden = !hasResults;
+        if (hasResults) {
+          group.querySelectorAll('[data-aos]').forEach(function (el) { el.classList.add('aos-animate'); });
+        }
+        var indexLink = document.querySelector('.brand-index a[href="#' + group.id + '"]');
+        if (indexLink) indexLink.hidden = !hasResults;
+      });
+      if (brandIndex) brandIndex.hidden = total === 0;
+
+      if (categoryCount) {
+        if (words.length === 0) {
+          categoryCount.textContent = defaultCountText;
+        } else if (total === 0) {
+          categoryCount.textContent = 'Nessun prodotto trovato per «' + rawQuery + '»';
+        } else {
+          categoryCount.textContent = total + (total === 1 ? ' prodotto trovato' : ' prodotti trovati') + ' per «' + rawQuery + '»';
+        }
+      }
+      if (searchEmpty) searchEmpty.hidden = !(words.length > 0 && total === 0);
+    };
+
     productSearch.addEventListener('input', applyProductFilters);
+    productSearch.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        productSearch.value = '';
+        applyProductFilters();
+      } else if (e.key === 'Enter') {
+        // Su telefono chiude la tastiera e porta ai risultati.
+        e.preventDefault();
+        productSearch.blur();
+        var firstResult = document.querySelector('.brand-group:not([hidden])');
+        if (firstResult) firstResult.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
   }
 
   var adminProductSearch = document.getElementById('adminProductSearch');

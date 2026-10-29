@@ -8,8 +8,14 @@
 $variants = decode_variants($product['variants']);
 $cardName = display_product_name($product['name'], $variants);
 $cardVariants = selectable_variants($variants);
+// Testo su cui lavora la ricerca nella pagina categoria: brand, nome,
+// tutte le varianti (anche quelle raggruppate) e tipo di prodotto.
+$cardSearchText = implode(' ', array_merge(
+    [$product['brand'], $cardName, product_type_label($product['product_type'] ?? null)],
+    is_variant_groups($variants) ? array_merge(...array_values($variants)) : $variants
+));
 ?>
-<a href="<?= url('product.php?id=' . (int)$product['id']) ?>" class="product-card" data-name="<?= h(mb_strtolower($cardName)) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>">
+<a href="<?= url('product.php?id=' . (int)$product['id']) ?>" class="product-card" data-name="<?= h(mb_strtolower($cardName)) ?>" data-search="<?= h(mb_strtolower($cardSearchText)) ?>" data-aos="fade-up" data-aos-delay="<?= ($i % 4) * 60 ?>">
   <div class="product-image">
     <?php if (!empty($product['image_path'])): ?>
       <img src="<?= h(url($product['image_path'])) ?>" alt="<?= h($cardName) ?>" loading="lazy">

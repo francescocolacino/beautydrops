@@ -58,10 +58,10 @@ require __DIR__ . '/includes/header.php';
     <a href="<?= url('index.php') ?>" class="breadcrumb">&larr; Tutte le categorie</a>
     <h1><?= h(category_label($slug)) ?></h1>
     <?php if (!$isComingSoon): ?>
-      <p class="category-count"><?= count($products) ?> <?= count($products) === 1 ? 'prodotto disponibile' : 'prodotti disponibili' ?></p>
+      <p class="category-count" id="categoryCount" aria-live="polite"><?= count($products) ?> <?= count($products) === 1 ? 'prodotto disponibile' : 'prodotti disponibili' ?></p>
       <div class="search-box">
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3" stroke-linecap="round"/></svg>
-        <input type="search" id="productSearch" placeholder="Cerca per brand o nome prodotto...">
+        <input type="search" id="productSearch" placeholder="Cerca brand, prodotto o colore..." autocomplete="off" enterkeyhint="search" aria-label="Cerca nel catalogo">
       </div>
       <?php if (!empty($byBrand)): ?>
         <nav class="brand-index" aria-label="Vai al brand">
@@ -93,6 +93,11 @@ require __DIR__ . '/includes/header.php';
   <section class="products-section container">
     <?php if (empty($byBrand)): ?>
       <p class="empty-state">Nessun prodotto disponibile in questa categoria al momento.</p>
+    <?php else: ?>
+      <div class="search-empty" id="searchEmpty" hidden>
+        <p><strong>Nessun prodotto trovato.</strong></p>
+        <p>Prova con il nome del brand (es. Rhode, NARS) o con una parola del prodotto (es. blush, mascara).</p>
+      </div>
     <?php endif; ?>
 
     <?php foreach ($byBrand as $brand => $items): ?>

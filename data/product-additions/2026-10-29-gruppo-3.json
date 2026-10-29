@@ -1,0 +1,24 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Rhode",
+        "name": "Pocket Brush",
+        "product_type": "accessorio",
+        "variants": [],
+        "image_path": "/assets/images/catalog/rhode/pocket-brush.jpg",
+        "gallery": [],
+        "price": 14.99,
+        "description": "Pennello doppio da borsetta con una punta per sfumare blush e bronzer in crema e una per i dettagli. Usalo con le Pocket Blush e Pocket Bronze, picchiettando e sfumando sulla pelle."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Rare Beauty",
+        "name": "Always An Optimist 4-in-1 Mist 85ml",
+        "product_type": "spray_fissante",
+        "variants": [],
+        "image_path": "/assets/images/catalog/rare-beauty/always-an-optimist-4-in-1-mist.jpg",
+        "gallery": [],
+        "price": 12.99,
+        "description": "Spray 4 in 1 che idrata, prepara la pelle al trucco, la rinfresca e fissa il make-up. Vaporizza a 20-30 cm dal viso prima del trucco, a fine look o durante la giornata."
+    }
+]

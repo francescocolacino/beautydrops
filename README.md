@@ -140,6 +140,19 @@ esistenti, quindi prezzi e modifiche fatte dall'admin non vengono toccati
 dai deploy successivi. `price: null` mostra "Prezzo su richiesta" finché
 l'admin non imposta un prezzo.
 
+## Prezzi d'acquisto (solo admin)
+
+La colonna `purchase_price` contiene il prezzo del fornitore in USD alla MOQ
+più bassa, come sui listini PDF. Nel pannello admin l'elenco prodotti mostra
+il costo con la spedizione (`SHIPPING_COST_USD`, $2,50 a pezzo) e il
+guadagno netto in euro, convertito al cambio `USD_PER_EUR`: entrambe le
+costanti sono in `includes/functions.php`. Il valore si modifica dal form
+prodotto, oppure in blocco da **Admin → Prodotti → Importa prezzi d'acquisto**
+caricando un file JSON (elenco di `{id, purchase_price}`).
+
+I prezzi d'acquisto **non vanno mai salvati nella repository**, che è
+pubblica: restano solo nel database.
+
 `"special_edition": true` su un prodotto del lotto gli assegna il bollino
 dorato "Special Edition"; dopo l'import si attiva o si toglie dal pannello
 admin con la checkbox «Mostra il bollino «Special Edition»».

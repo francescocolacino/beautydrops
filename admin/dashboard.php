@@ -42,7 +42,10 @@ require __DIR__ . '/../includes/admin-header.php';
 
 <div class="admin-toolbar">
   <h1>Prodotti</h1>
-  <a href="<?= url('admin/product-form.php') ?>" class="btn btn-primary">+ Nuovo prodotto</a>
+  <div class="admin-toolbar-actions">
+    <a href="<?= url('admin/purchase-prices.php') ?>" class="btn btn-small">Importa prezzi d'acquisto</a>
+    <a href="<?= url('admin/product-form.php') ?>" class="btn btn-primary">+ Nuovo prodotto</a>
+  </div>
 </div>
 
 <div class="search-box admin-search-box">
@@ -70,6 +73,8 @@ require __DIR__ . '/../includes/admin-header.php';
         <th>Varianti</th>
         <th>Categoria</th>
         <th>Prezzo</th>
+        <th>Costo</th>
+        <th>Netto</th>
         <th>Stato</th>
         <th></th>
       </tr>
@@ -106,6 +111,29 @@ require __DIR__ . '/../includes/admin-header.php';
           </td>
           <td><?= h(category_label($product['category'])) ?></td>
           <td><?= $product['price'] !== null ? format_price((float)$product['price']) : '&mdash;' ?></td>
+          <?php
+            $purchasePrice = $product['purchase_price'] !== null ? (float)$product['purchase_price'] : null;
+            $salePrice = $product['price'] !== null ? (float)$product['price'] : null;
+            $netProfit = product_net_profit_eur($salePrice, $purchasePrice);
+          ?>
+          <td class="col-cost">
+            <?php if ($purchasePrice === null): ?>
+              &mdash;
+            <?php else: ?>
+              <?= format_usd(product_total_cost_usd($purchasePrice)) ?>
+              <span class="cost-detail"><?= format_usd($purchasePrice) ?> + <?= format_usd(SHIPPING_COST_USD) ?> sped. · ≈ <?= format_price(product_total_cost_eur($purchasePrice)) ?></span>
+            <?php endif; ?>
+          </td>
+          <td class="col-net">
+            <?php if ($netProfit === null): ?>
+              &mdash;
+            <?php else: ?>
+              <span class="<?= $netProfit >= 0 ? 'net-positive' : 'net-negative' ?>"><?= format_price($netProfit) ?></span>
+              <?php if ($salePrice > 0): ?>
+                <span class="cost-detail"><?= (int)round($netProfit / $salePrice * 100) ?>% del prezzo</span>
+              <?php endif; ?>
+            <?php endif; ?>
+          </td>
           <td><?= render_product_badges($product, $activeOfferProductIds) ?></td>
           <td class="col-actions">
             <a href="<?= url('admin/product-form.php?id=' . (int)$product['id']) ?>" class="btn btn-small">Modifica</a>

@@ -101,6 +101,7 @@ $formData = $product ?: [
     'product_type' => null,
     'is_new_arrival' => false,
     'is_special_edition' => false,
+    'purchase_price' => null,
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
@@ -117,6 +118,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     $formData['orderable_quantity'] = (int)($_POST['orderable_quantity'] ?? 0);
     $priceInput = trim($_POST['price'] ?? '');
     $formData['price'] = $priceInput === '' ? null : (float)str_replace(',', '.', $priceInput);
+    $purchasePriceInput = trim($_POST['purchase_price'] ?? '');
+    $formData['purchase_price'] = $purchasePriceInput === '' ? null : (float)str_replace(',', '.', $purchasePriceInput);
     $formData['description'] = trim($_POST['description'] ?? '');
     $productTypeInput = $_POST['product_type'] ?? '';
     $formData['product_type'] = array_key_exists($productTypeInput, PRODUCT_TYPES) ? $productTypeInput : null;
@@ -170,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                  variant_prices=:variant_prices, image_path=:image_path, stock_quantity=:stock_quantity,
                  orderable_quantity=:orderable_quantity, price=:price, description=:description,
                  product_type=:product_type, is_new_arrival=:is_new_arrival,
-                 is_special_edition=:is_special_edition WHERE id=:id'
+                 is_special_edition=:is_special_edition, purchase_price=:purchase_price WHERE id=:id'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -186,12 +189,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                 'product_type' => $formData['product_type'],
                 'is_new_arrival' => $formData['is_new_arrival'] ? 1 : 0,
                 'is_special_edition' => $formData['is_special_edition'] ? 1 : 0,
+                'purchase_price' => $formData['purchase_price'],
                 'id' => $id,
             ]);
         } else {
             $stmt = $pdo->prepare(
-                'INSERT INTO products (category, brand, name, variants, variant_prices, image_path, stock_quantity, orderable_quantity, price, description, product_type, is_new_arrival, is_special_edition)
-                 VALUES (:category, :brand, :name, :variants, :variant_prices, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type, :is_new_arrival, :is_special_edition)'
+                'INSERT INTO products (category, brand, name, variants, variant_prices, image_path, stock_quantity, orderable_quantity, price, description, product_type, is_new_arrival, is_special_edition, purchase_price)
+                 VALUES (:category, :brand, :name, :variants, :variant_prices, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type, :is_new_arrival, :is_special_edition, :purchase_price)'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -207,6 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                 'product_type' => $formData['product_type'],
                 'is_new_arrival' => $formData['is_new_arrival'] ? 1 : 0,
                 'is_special_edition' => $formData['is_special_edition'] ? 1 : 0,
+                'purchase_price' => $formData['purchase_price'],
             ]);
         }
 
@@ -341,6 +346,26 @@ require __DIR__ . '/../includes/admin-header.php';
   <div class="form-row">
     <label for="price">Prezzo (opzionale, es. 19,90)</label>
     <input type="text" id="price" name="price" value="<?= $formData['price'] !== null ? h(number_format((float)$formData['price'], 2, ',', '')) : '' ?>">
+  </div>
+
+  <?php
+    $formPurchasePrice = $formData['purchase_price'] !== null ? (float)$formData['purchase_price'] : null;
+    $formSalePrice = $formData['price'] !== null ? (float)$formData['price'] : null;
+    $formNetProfit = product_net_profit_eur($formSalePrice, $formPurchasePrice);
+  ?>
+  <div class="form-row">
+    <label for="purchase_price">Prezzo d'acquisto fornitore in USD (alla MOQ più bassa, visibile solo in admin)</label>
+    <input type="text" id="purchase_price" name="purchase_price" value="<?= $formPurchasePrice !== null ? h(number_format($formPurchasePrice, 2, ',', '')) : '' ?>">
+    <?php if ($formPurchasePrice !== null): ?>
+      <p class="field-hint">
+        Costo con spedizione: <?= format_usd($formPurchasePrice) ?> + <?= format_usd(SHIPPING_COST_USD) ?> = <strong><?= format_usd(product_total_cost_usd($formPurchasePrice)) ?></strong>
+        (≈ <?= format_price(product_total_cost_eur($formPurchasePrice)) ?> al cambio <?= h(number_format(USD_PER_EUR, 2, ',', '')) ?> $/€)<?php if ($formNetProfit !== null): ?>
+          · Netto: <strong class="<?= $formNetProfit >= 0 ? 'net-positive' : 'net-negative' ?>"><?= format_price($formNetProfit) ?></strong>
+        <?php endif; ?>
+      </p>
+    <?php else: ?>
+      <p class="field-hint">A ogni pezzo vengono aggiunti <?= format_usd(SHIPPING_COST_USD) ?> di spedizione per calcolare costo e guadagno netto.</p>
+    <?php endif; ?>
   </div>
 
   <div class="form-row">

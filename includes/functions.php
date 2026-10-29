@@ -280,6 +280,41 @@ function format_price(?float $price): string
     return '€ ' . number_format($price, 2, ',', '.');
 }
 
+/**
+ * Costi d'acquisto, solo per l'area admin. Il prezzo del fornitore resta in
+ * dollari come sui listini PDF (purchase_price, alla MOQ più bassa) e a ogni
+ * pezzo si aggiunge la spedizione; il netto viene poi convertito in euro per
+ * confrontarlo con il prezzo di vendita. Aggiornare USD_PER_EUR quando il
+ * cambio si sposta.
+ */
+const SHIPPING_COST_USD = 2.50;
+const USD_PER_EUR = 1.12;
+
+function format_usd(?float $amount): string
+{
+    if ($amount === null) {
+        return '';
+    }
+    return '$ ' . number_format($amount, 2, ',', '.');
+}
+
+function product_total_cost_usd(?float $purchasePrice): ?float
+{
+    return $purchasePrice === null ? null : $purchasePrice + SHIPPING_COST_USD;
+}
+
+function product_total_cost_eur(?float $purchasePrice): ?float
+{
+    $totalUsd = product_total_cost_usd($purchasePrice);
+    return $totalUsd === null ? null : $totalUsd / USD_PER_EUR;
+}
+
+function product_net_profit_eur(?float $salePrice, ?float $purchasePrice): ?float
+{
+    $costEur = product_total_cost_eur($purchasePrice);
+    return ($salePrice === null || $costEur === null) ? null : $salePrice - $costEur;
+}
+
 function decode_variants(?string $json): array
 {
     if (empty($json)) {

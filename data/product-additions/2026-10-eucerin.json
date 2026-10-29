@@ -1,0 +1,63 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Eucerin",
+        "name": "Anti-Pigment Eye Cream 15ml",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/eucerin/anti-pigment-eye-cream.jpg",
+        "gallery": [],
+        "price": 17.99,
+        "description": "Crema contorno occhi illuminante con Thiamidol che attenua le occhiaie scure e dona freschezza allo sguardo. Picchietta una piccola quantità attorno agli occhi, mattina e sera."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Eucerin",
+        "name": "Spotless Brightening Pro Aesthetic Crystal Booster Serum 30ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/eucerin/spotless-brightening-pro-aesthetic-serum.jpg",
+        "gallery": [],
+        "price": 16.99,
+        "description": "Siero schiarente con Thiamidol brevettato che riduce le macchie scure e corregge il colorito spento, per una pelle più luminosa e uniforme. Applica 2-3 gocce su viso deterso, mattina e sera, prima della crema."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Eucerin",
+        "name": "Serum 30ml",
+        "product_type": "siero",
+        "variants": [
+            "Spotless Brightening Booster Serum",
+            "Hyaluron-Filler Epigenetic Serum",
+            "Anti-Pigment Serum Duo",
+            "Hyaluron-Filler + Elasticity 3D Serum",
+            "Anti-Pigment Dual Serum"
+        ],
+        "image_path": "/assets/images/catalog/eucerin/serum-collection.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Sieri concentrati Eucerin a doppia formula, nelle versioni anti-macchie (Thiamidol) e anti-età (acido ialuronico). Applica 2-3 erogazioni su viso deterso, mattina e sera, prima della crema."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Eucerin",
+        "name": "Spotless Brightening Boosting Essence 100ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/eucerin/spotless-brightening-boosting-essence.jpg",
+        "gallery": ["/assets/images/catalog/eucerin/spotless-brightening-boosting-essence-bottles.jpg"],
+        "price": 21.99,
+        "description": "Essenza tonica illuminante con Thiamidol e acido ialuronico che idrata in profondità, uniforma il tono e prepara la pelle ai trattamenti successivi. Picchietta con le mani o un dischetto su viso deterso, mattina e sera, prima del siero."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Eucerin",
+        "name": "UltraSENSITIVE Repair Intensive Source Serum 30ml",
+        "product_type": "siero",
+        "variants": [],
+        "image_path": "/assets/images/catalog/eucerin/ultrasensitive-repair-intensive-source-serum.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Siero lenitivo e riparatore per pelli sensibili e reattive, che rinforza la barriera cutanea e calma arrossamenti e fastidi. Applica 2-3 gocce su viso deterso, mattina e sera, prima della crema."
+    }
+]

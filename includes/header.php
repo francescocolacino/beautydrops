@@ -45,9 +45,6 @@ $activeSlug = $activeSlug ?? null;
       <span class="cart-badge" id="cartBadge" hidden>0</span>
     </button>
     <a href="<?= url('admin/login.php') ?>" class="admin-access-btn">Accesso Admin</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 

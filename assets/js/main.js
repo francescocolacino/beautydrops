@@ -12,15 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', toggleHeaderShadow, { passive: true });
   }
 
-  var navToggle = document.getElementById('navToggle');
-  var mainNav = document.querySelector('.main-nav');
-  if (navToggle && mainNav) {
-    navToggle.addEventListener('click', function () {
-      var isOpen = mainNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  }
-
   var productSearch = document.getElementById('productSearch');
   if (productSearch) {
     var applyProductFilters = function () {

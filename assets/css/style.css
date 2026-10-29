@@ -170,76 +170,7 @@ button, input, select, textarea { font-family: inherit; }
   transform: translateY(-1px);
 }
 
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 4px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-}
-
-.nav-toggle span {
-  width: 22px;
-  height: 2px;
-  background: var(--color-text);
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-/* ---------- Hero ---------- */
-
-.hero {
-  position: relative;
-  padding: 44px 0 40px;
-  text-align: center;
-  overflow: hidden;
-  background: radial-gradient(circle at top, var(--color-pink-soft), var(--color-bg) 72%);
-}
-
-.hero-blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(50px);
-  opacity: 0.55;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.hero-blob-1 {
-  width: 340px;
-  height: 340px;
-  top: -140px;
-  left: -100px;
-  background: radial-gradient(circle, var(--color-pink) 0%, transparent 70%);
-}
-
-.hero-blob-2 {
-  width: 300px;
-  height: 300px;
-  bottom: -160px;
-  right: -80px;
-  background: radial-gradient(circle, var(--color-gold-light) 0%, transparent 70%);
-}
-
-.hero-inner { position: relative; z-index: 1; }
-
-.hero-logo {
-  display: block;
-  width: min(290px, 64vw);
-  height: auto;
-  margin: 0 auto 12px;
-  filter: drop-shadow(0 10px 20px rgba(169, 135, 63, 0.12));
-}
-
-.hero h1 {
-  font-size: clamp(2.4rem, 6.5vw, 3.6rem);
-  color: var(--color-text);
-  background: linear-gradient(135deg, var(--color-text) 40%, var(--color-gold-dark));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+/* ---------- Homepage: apertura diretta sulle offerte ---------- */
 
 .visually-hidden {
   position: absolute !important;
@@ -253,80 +184,9 @@ button, input, select, textarea { font-family: inherit; }
   border: 0 !important;
 }
 
-.hero .tagline {
-  max-width: 440px;
-  margin: 0 auto;
-  color: var(--color-text-soft);
-  font-weight: 300;
-  font-size: 0.98rem;
-  letter-spacing: 0.01em;
-}
-
-/* Categorie subito sotto il logo: tre tessere su telefono, pillole in riga
-   da tablet in su. */
-.hero-categories {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  max-width: 760px;
-  margin: 26px auto 0;
-}
-
-.hero-category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 8px 12px;
-  background: rgba(255, 255, 255, 0.78);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 168, 98, 0.3);
-  border-radius: 18px;
-  color: var(--color-text);
-  font-size: 0.76rem;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(58, 46, 47, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.hero-category:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-gold);
-  box-shadow: 0 14px 28px rgba(169, 135, 63, 0.16);
-}
-
-.hero-category-icon {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  color: #fff;
-}
-
-.hero-category-icon svg { width: 20px; height: 20px; }
-
-.hero-category.cat-cosmetici .hero-category-icon { background: linear-gradient(135deg, #e69cb1, #f2c1b4); }
-.hero-category.cat-elettronica .hero-category-icon { background: linear-gradient(135deg, #6f7fa8, #a0b3d6); }
-.hero-category.cat-abbigliamento .hero-category-icon { background: linear-gradient(135deg, #c9a86a, #e8cfa0); }
-
-@media (min-width: 640px) {
-  .hero { padding: 56px 0 48px; }
-  .hero-categories { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
-  .hero-category {
-    flex-direction: row;
-    gap: 10px;
-    padding: 9px 20px 9px 10px;
-    border-radius: 999px;
-    font-size: 0.88rem;
-  }
-  .hero-category-icon { width: 32px; height: 32px; }
-  .hero-category-icon svg { width: 17px; height: 17px; }
+.home-top {
+  background: radial-gradient(ellipse at top, var(--color-pink-soft), var(--color-bg) 70%);
+  padding-top: 18px;
 }
 
 .brand-notice-section { padding: 0 0 8px; position: relative; z-index: 1; }
@@ -488,7 +348,7 @@ button, input, select, textarea { font-family: inherit; }
 
 /* ---------- Offers ---------- */
 
-.offers-section { padding: 36px 0 10px; position: relative; z-index: 1; }
+.offers-section { padding: 26px 0 10px; position: relative; z-index: 1; }
 
 .offer-cards {
   display: grid;
@@ -2099,97 +1959,6 @@ button, input, select, textarea { font-family: inherit; }
 
 .order-confirmation-hint { margin-top: 22px; }
 
-/* ---------- Hero: gocce e brillantini ---------- */
-
-.hero-drops {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-  container-type: size;
-}
-
-/* Goccia: quadrato con un angolo vivo, ruotato perché la punta guardi in alto. */
-.hero-drop,
-.hero-drop-fall {
-  position: absolute;
-  width: var(--size, 16px);
-  height: var(--size, 16px);
-  border-radius: 50% 0 50% 50%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), var(--drop-color, var(--color-pink)) 62%);
-  box-shadow: inset -2px -3px 6px rgba(169, 135, 63, 0.16), 0 6px 14px rgba(200, 168, 98, 0.16);
-}
-
-.hero-drop {
-  opacity: 0.8;
-  transform: rotate(-45deg);
-  animation: drop-float var(--dur, 9s) ease-in-out var(--delay, 0s) infinite;
-}
-
-@keyframes drop-float {
-  0%, 100% { transform: translateY(0) rotate(-45deg); }
-  50% { transform: translateY(-18px) rotate(-45deg); }
-}
-
-.hero-drop-fall {
-  top: 4%;
-  opacity: 0;
-  transform: translateX(-50%) rotate(-45deg);
-  animation: drop-fall var(--dur, 7s) cubic-bezier(0.55, 0, 0.85, 0.4) var(--delay, 0s) infinite;
-}
-
-@keyframes drop-fall {
-  0% { transform: translate(-50%, 0) rotate(-45deg) scale(0.5); opacity: 0; }
-  12% { opacity: 0.9; }
-  72% { transform: translate(-50%, 70cqh) rotate(-45deg) scale(1); opacity: 0.9; }
-  76%, 100% { transform: translate(-50%, 70cqh) rotate(-45deg) scale(1.1); opacity: 0; }
-}
-
-.hero-ripple {
-  position: absolute;
-  top: calc(4% + 70cqh + 10px);
-  width: 46px;
-  height: 12px;
-  border: 1.5px solid rgba(200, 168, 98, 0.55);
-  border-radius: 50%;
-  opacity: 0;
-  transform: translateX(-50%) scale(0);
-  animation: drop-ripple var(--dur, 7s) ease-out var(--delay, 0s) infinite;
-}
-
-@keyframes drop-ripple {
-  0%, 72% { transform: translateX(-50%) scale(0.2); opacity: 0; }
-  75% { opacity: 0.9; }
-  100% { transform: translateX(-50%) scale(1.7); opacity: 0; }
-}
-
-/* Corsie delle gocce che cadono: su telefono il testo occupa tutta la
-   larghezza, quindi le spostiamo ai bordi. */
-.hero-lane-left { left: 22%; }
-.hero-lane-right { left: 78%; }
-
-@media (max-width: 720px) {
-  .hero-lane-left { left: 6%; }
-  .hero-lane-right { left: 94%; }
-  .hero-drop.hero-desktop-only { display: none; }
-}
-
-.hero-sparkle {
-  position: absolute;
-  width: var(--size, 14px);
-  height: var(--size, 14px);
-  background: linear-gradient(135deg, #fff6dc, var(--color-gold));
-  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
-  transform: scale(0);
-  animation: sparkle-twinkle var(--dur, 3.2s) ease-in-out var(--delay, 0s) infinite;
-}
-
-@keyframes sparkle-twinkle {
-  0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
-  50% { transform: scale(1) rotate(90deg); opacity: 1; }
-}
-
 /* ---------- Aggiunta al carrello: volo, badge, mini-carrello ---------- */
 
 .fly-to-cart {
@@ -2535,19 +2304,38 @@ button, input, select, textarea { font-family: inherit; }
 @media (max-width: 720px) {
   .brand-logo-header { width: 138px; }
   .brand-logo-admin { width: 132px; }
+  /* Su telefono le categorie restano sempre visibili: una riga di pillole
+     sotto il logo, scorrevole se non ci sta tutta. */
   .main-nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
     order: 3;
-    padding-top: 10px;
-    gap: 14px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+    padding: 2px 20px 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
-  .main-nav.open { display: flex; }
-  .main-nav a.nav-only { display: inline-flex; margin-top: 4px; }
+  .main-nav::-webkit-scrollbar { display: none; }
+  .main-nav a {
+    flex-shrink: 0;
+    padding: 7px 14px;
+    border: 1px solid rgba(200, 168, 98, 0.35);
+    border-radius: 999px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  .main-nav a::after { display: none; }
+  .main-nav a.active {
+    background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
+    border-color: transparent;
+    color: #fff;
+  }
+  .main-nav a.nav-only { display: inline-flex; font-size: 0.74rem; color: var(--color-gold-dark); }
+  .site-header-inner { gap: 12px; }
   .site-header-inner > .admin-access-btn { display: none; }
-  .nav-toggle { display: flex; }
   .form-row-split { grid-template-columns: 1fr; }
   .cart-toast { top: 76px; left: 16px; right: 16px; width: auto; }
   .cart-popup-overlay { padding: 0; align-items: flex-end; }

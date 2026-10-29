@@ -1,0 +1,98 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Pressed Powder con Piumino",
+        "product_type": "cipria",
+        "variants": ["Sugar Cookie", "Peach Pie", "Cherry Blossom", "Banana Bread", "Ube Birthday Cake", "Blondie", "Cupcake", "Pound Cake", "Matcha Milk Cake"],
+        "image_path": "/assets/images/catalog/huda-beauty/pressed-powder-puff.jpg",
+        "gallery": [],
+        "price": 15.99,
+        "description": "Cipria compatta con piumino incluso che fissa il trucco, illumina e sfuma le imperfezioni con un finish vellutato. Picchietta con il piumino sulle zone da fissare, anche per i ritocchi durante la giornata."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Liquid Matte Minis Set (4 rossetti)",
+        "product_type": "set",
+        "variants": ["Nude Edition", "Red Edition", "Pink Edition", "Brown Edition"],
+        "image_path": "/assets/images/catalog/huda-beauty/liquid-matte-minis-set-4.jpg",
+        "gallery": [],
+        "price": 9.99,
+        "description": "Set di 4 mini rossetti liquidi a finish opaco e lunga tenuta, in quattro edizioni di colore coordinate. Applica dal centro delle labbra verso l'esterno e lascia asciugare qualche secondo."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Obsessions Eyeshadow Palette",
+        "product_type": "ombretto",
+        "variants": ["Topaz", "Amethyst", "Emerald", "Ruby", "Sapphire"],
+        "image_path": "/assets/images/catalog/huda-beauty/obsessions-eyeshadow-palette.jpg",
+        "gallery": [],
+        "price": 14.99,
+        "description": "Mini palette da 9 ombretti mat e shimmer ad alta pigmentazione, ispirata alle pietre preziose. Applica le tonalità chiare su tutta la palpebra e intensifica la piega e l'angolo esterno con quelle più scure."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Sketch Pen Liquid Eyeliner Nero",
+        "product_type": null,
+        "variants": [],
+        "image_path": "/assets/images/catalog/huda-beauty/eyeliner-black.jpg",
+        "gallery": [],
+        "price": 6.99,
+        "description": "Eyeliner liquido nero in penna con punta sottile e waterproof, per una linea precisa e intensa. Traccia la linea dall'angolo interno verso l'esterno, il più vicino possibile alle ciglia."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Cheek & Lip Duo Berries and Cream",
+        "product_type": "set",
+        "variants": [
+            "Strawberry Cream + Juicy Goji",
+            "Ube Cream + Juicy Toasty Brown",
+            "Intense Guava + Juicy Pink Lady",
+            "Cotton Candy + Juicy Peach",
+            "Sunset Lychee + Juicy Cherry",
+            "Bubble Gum + Juicy Rose"
+        ],
+        "image_path": "/assets/images/catalog/huda-beauty/cheek-lip-duo-berries-and-cream.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Duo in edizione limitata con un blush liquido Blush Filter e un gloss Faux Filler abbinati, per guance e labbra coordinate. Sfuma il blush sugli zigomi con le dita e completa con il gloss al centro delle labbra."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Huda Beauty",
+        "name": "Easy Bake Intense Eau de Parfum 50ml",
+        "product_type": "profumo",
+        "variants": [],
+        "image_path": "/assets/images/catalog/huda-beauty/easy-bake-intense-eau-de-parfum.jpg",
+        "gallery": [],
+        "price": 29.99,
+        "description": "Eau de parfum gourmand ispirata alla celebre cipria Easy Bake, calda e avvolgente con note dolci e vanigliate. Vaporizza su polsi, collo e dietro le orecchie a qualche centimetro dalla pelle."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Invisimatte Instant Setting + Blotting Powder",
+        "product_type": "cipria",
+        "variants": [],
+        "image_path": "/assets/images/catalog/fenty-beauty/invisimatte-setting-blotting-powder.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Cipria compatta trasparente che fissa il trucco e assorbe la lucidità in un attimo, con specchio per i ritocchi in borsa. Picchietta con il piumino sulla zona T e dove serve durante la giornata."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Fenty Beauty",
+        "name": "Gloss Bomb Swirl",
+        "product_type": "gloss",
+        "variants": ["Fu$$y Flex", "Fu$$y Chocolit", "Sweet Riri"],
+        "image_path": "/assets/images/catalog/fenty-beauty/gloss-bomb-swirl.jpg",
+        "gallery": ["/assets/images/catalog/fenty-beauty/gloss-bomb-swirl-boxes.jpg"],
+        "price": 12.99,
+        "special_edition": true,
+        "description": "Gloss bicolore in edizione speciale con due tonalità che si fondono in un riflesso luminoso, per labbra piene e brillanti. Applica al centro delle labbra e sfuma verso i bordi, da solo o sopra il rossetto."
+    }
+]

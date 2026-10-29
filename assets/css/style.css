@@ -1354,6 +1354,198 @@ button, input, select, textarea { font-family: inherit; }
 .net-positive { color: var(--color-green); font-weight: 600; }
 .net-negative { color: var(--color-red); font-weight: 600; }
 
+.admin-toolbar h1 { margin-bottom: 2px; }
+.admin-toolbar-meta { margin: 0; font-size: 0.82rem; color: var(--color-text-soft); }
+
+.filter-count {
+  margin-left: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(58, 46, 47, 0.07);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.filter-pill:hover .filter-count,
+.filter-pill.active .filter-count { background: rgba(255, 255, 255, 0.28); }
+
+/* Tabella prodotti: una colonna "Prodotto" larga (foto, brand, nome,
+   varianti riassunte) e colonne numeriche strette allineate a destra. */
+.products-table { min-width: 0; table-layout: auto; }
+
+.products-table th { padding-top: 14px; padding-bottom: 14px; background: #fff; }
+
+.products-table td { padding-top: 10px; padding-bottom: 10px; }
+
+.products-table .col-product { width: 100%; min-width: 260px; }
+
+.products-table .col-num {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.products-table .table-amount { font-weight: 500; }
+.products-table .table-empty { color: rgba(58, 46, 47, 0.3); }
+
+.products-table .col-status { min-width: 270px; }
+.products-table .col-status .badges { margin: 0; gap: 4px; }
+
+.products-table .badge { font-size: 0.66rem; padding: 3px 9px; white-space: nowrap; }
+
+/* In tabella niente pulse/riflesso: con centinaia di righe distraggono. */
+.products-table .badge-offer { animation: none; }
+.products-table .badge::after { display: none; }
+
+.badge-muted { background: rgba(58, 46, 47, 0.07); color: var(--color-text-soft); }
+
+.table-product {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: inherit;
+}
+
+.products-table .table-thumb {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  object-fit: contain;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid rgba(58, 46, 47, 0.08);
+  font-size: 0.9rem;
+}
+
+.table-product-text { display: flex; flex-direction: column; min-width: 0; }
+
+.table-product-brand {
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold-dark);
+}
+
+.table-product-name {
+  font-weight: 500;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.2s ease;
+}
+
+.table-product:hover .table-product-name { color: var(--color-gold-dark); }
+
+.table-product-meta {
+  margin-top: 2px;
+  font-size: 0.74rem;
+  color: var(--color-text-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-product-meta[title] { cursor: help; }
+
+.products-table td.col-actions { display: table-cell; white-space: nowrap; text-align: right; }
+
+.products-table .col-actions .inline-form { margin-left: 4px; }
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-pink-soft);
+  color: var(--color-text);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn svg { width: 16px; height: 16px; }
+.icon-btn:hover { background: var(--color-pink); transform: translateY(-1px); }
+.icon-btn-danger { background: rgba(208, 88, 122, 0.1); color: var(--color-red); }
+.icon-btn-danger:hover { background: rgba(208, 88, 122, 0.2); }
+
+.table-search-empty {
+  margin: 0;
+  padding: 28px 20px;
+  text-align: center;
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
+}
+
+/* Desktop: intestazione fissa mentre si scorre la lista. */
+@media (min-width: 721px) {
+  .products-table-wrap { overflow: visible; }
+  .products-table thead th { position: sticky; top: 0; z-index: 2; box-shadow: 0 1px 0 rgba(58, 46, 47, 0.08); }
+  .products-table thead th:first-child { border-top-left-radius: var(--radius); }
+  .products-table thead th:last-child { border-top-right-radius: var(--radius); }
+  .products-table tbody tr:last-child td { border-bottom: none; }
+}
+
+/* Telefono: ogni prodotto diventa una scheda, senza scorrere di lato. */
+@media (max-width: 720px) {
+  .admin-toolbar-actions { width: 100%; flex-wrap: nowrap; }
+  .admin-toolbar-actions .btn { flex: 1 1 auto; justify-content: center; text-align: center; white-space: nowrap; padding: 11px 12px; font-size: 0.76rem; }
+
+  .admin-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 -20px 20px;
+    padding: 0 20px 4px;
+    scrollbar-width: none;
+  }
+
+  .admin-filters::-webkit-scrollbar { display: none; }
+  .admin-filters .filter-pill { flex: none; white-space: nowrap; }
+
+  .products-table .table-product-meta { white-space: normal; }
+
+  .products-table,
+  .products-table tbody { display: block; }
+  .products-table thead { display: none; }
+
+  .products-table tr {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(58, 46, 47, 0.07);
+  }
+
+  .products-table tr[hidden] { display: none; }
+
+  .products-table td { padding: 0; border: none; }
+
+  .products-table td.col-product { grid-column: 1 / -1; min-width: 0; padding-right: 80px; }
+
+  .products-table td.col-num { text-align: left; white-space: normal; }
+
+  .products-table td.col-num::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.64rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-soft);
+  }
+
+  .products-table td.col-status { grid-column: 1 / -1; min-width: 0; }
+
+  .products-table td.col-actions { position: absolute; top: 14px; right: 16px; }
+}
+
 .table-thumb {
   width: 44px;
   height: 44px;

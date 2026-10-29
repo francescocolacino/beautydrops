@@ -299,6 +299,33 @@ function product_net_profit(?float $salePrice, ?float $purchasePrice): ?float
     return ($salePrice === null || $totalCost === null) ? null : $salePrice - $totalCost;
 }
 
+/**
+ * Riassunto compatto delle varianti per la tabella prodotti dell'admin: il
+ * nome se è una sola, altrimenti il conteggio ("12 varianti" oppure
+ * "Colore 5 · Modello 8"). L'elenco completo va nel tooltip.
+ *
+ * @return array{label: string, title: string}
+ */
+function admin_variants_summary(array $variants): array
+{
+    if (empty($variants)) {
+        return ['label' => '', 'title' => ''];
+    }
+    if (is_variant_groups($variants)) {
+        $parts = [];
+        $titles = [];
+        foreach ($variants as $groupLabel => $groupOptions) {
+            $parts[] = $groupLabel . ' ' . count($groupOptions);
+            $titles[] = $groupLabel . ': ' . implode(', ', $groupOptions);
+        }
+        return ['label' => implode(' · ', $parts), 'title' => implode("\n", $titles)];
+    }
+    if (count($variants) === 1) {
+        return ['label' => (string)$variants[0], 'title' => ''];
+    }
+    return ['label' => count($variants) . ' varianti', 'title' => implode(', ', $variants)];
+}
+
 function decode_variants(?string $json): array
 {
     if (empty($json)) {

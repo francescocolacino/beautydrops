@@ -93,12 +93,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var adminProductSearch = document.getElementById('adminProductSearch');
   if (adminProductSearch) {
+    var adminSearchEmpty = document.getElementById('adminSearchEmpty');
     adminProductSearch.addEventListener('input', function () {
       var query = adminProductSearch.value.trim().toLowerCase();
+      var visible = 0;
       document.querySelectorAll('#productsTableWrap tbody tr').forEach(function (row) {
         var haystack = row.getAttribute('data-search') || '';
         row.hidden = query !== '' && !haystack.includes(query);
+        if (!row.hidden) visible++;
       });
+      if (adminSearchEmpty) adminSearchEmpty.hidden = visible > 0;
     });
   }
 
@@ -111,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
       sessionStorage.removeItem(PRODUCTS_SCROLL_KEY);
     }
 
-    productsTableWrap.querySelectorAll('a.btn-small').forEach(function (link) {
+    productsTableWrap.querySelectorAll('a[href*="product-form.php"]').forEach(function (link) {
       link.addEventListener('click', function () {
         sessionStorage.setItem(PRODUCTS_SCROLL_KEY, String(window.scrollY));
       });

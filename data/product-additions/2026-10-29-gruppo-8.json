@@ -1,0 +1,106 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Palette de Beauté Quatuor",
+        "product_type": "ombretto",
+        "variants": ["01", "02", "03"],
+        "image_path": "/assets/images/catalog/gucci/gudc-001-pic2.jpg",
+        "gallery": [
+            "/assets/images/catalog/gucci/gudc-001-pic1.jpg",
+            "/assets/images/catalog/gucci/gudc-001-col3.jpg",
+            "/assets/images/catalog/gucci/gudc-001-col4.jpg",
+            "/assets/images/catalog/gucci/gudc-001-col5.jpg"
+        ],
+        "price": 24.99,
+        "description": "Palette multiuso da 4 colori in crema e polvere, con un illuminante, due ombretti opachi e una nuance in crema ispirata ai rossetti Gucci, per occhi, guance e labbra. Applica con l'applicatore o con le dita, sfumando a piacere."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Glow Highlighter",
+        "product_type": "illuminante",
+        "variants": [],
+        "image_path": "/assets/images/catalog/gucci/gudc-002-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-002-col2.jpg"],
+        "price": 23.99,
+        "description": "Illuminante in polvere setoso dall'effetto glow luminoso e modulabile, in un elegante astuccio dorato. Applica con un pennello sugli zigomi, sull'arcata sopracciliare e sul dorso del naso."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Poudre de Beauté Mat Naturel 10g",
+        "product_type": "cipria",
+        "variants": ["#0.5", "#00", "#01", "#02", "#03"],
+        "image_path": "/assets/images/catalog/gucci/gudc-003-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-003-col2.jpg"],
+        "price": 24.99,
+        "description": "Cipria compatta opacizzante dal finish naturale, che fissa il trucco e uniforma l'incarnato senza seccare. Applica con il piumino o un pennello sulle zone da opacizzare."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Bronzing Powder 12g",
+        "product_type": "bronzer",
+        "variants": ["01", "02", "03", "04", "05"],
+        "image_path": "/assets/images/catalog/gucci/gudc-004-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-004-col2.jpg"],
+        "price": 23.99,
+        "description": "Terra in polvere dall'effetto abbronzato luminoso e naturale, modulabile per un colorito sano e baciato dal sole. Applica con un pennello grande su zigomi, tempie e mandibola, sfumando bene."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Cushion de Beauté Limited Edition",
+        "product_type": "fondotinta",
+        "variants": ["02", "03"],
+        "image_path": "/assets/images/catalog/gucci/gudc-005-pic1.jpg",
+        "gallery": [],
+        "price": 25.99,
+        "description": "Fondotinta cushion in edizione limitata dalla texture leggera e luminosa, che uniforma l'incarnato con una copertura modulabile. Picchietta con il piumino incluso dal centro del viso verso l'esterno."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Blush de Beauté Cheeks & Eyes Powder 5,5g",
+        "product_type": "blush",
+        "variants": ["#01", "#02", "#03", "#04", "#05", "#06", "#07", "#09"],
+        "image_path": "/assets/images/catalog/gucci/gudc-008-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-008-col2.jpg"],
+        "price": 25.99,
+        "description": "Blush in polvere luminoso e modulabile, da usare anche come ombretto per un look coordinato. Applica con un pennello sugli zigomi o picchietta sulla palpebra con le dita."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Baume Nourrissant Universel 8g",
+        "product_type": "crema",
+        "variants": [],
+        "image_path": "/assets/images/catalog/gucci/gudc-012-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-012-col2.jpg"],
+        "price": 25.99,
+        "description": "Balsamo multiuso nutriente e idratante per labbra, viso e corpo, che dona morbidezza e un tocco luminoso. Picchietta con le dita su labbra, zigomi o zone secche, da solo o sopra il trucco."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Sérum de Beauté Fluide Soyeux Silk Priming Serum 30ml",
+        "product_type": "primer",
+        "variants": [],
+        "image_path": "/assets/images/catalog/gucci/gudc-014-pic1.jpg",
+        "gallery": [],
+        "price": 24.99,
+        "description": "Siero-primer dalla texture setosa che idrata, leviga la pelle e prepara una base uniforme per il fondotinta. Applica qualche goccia su viso pulito prima del trucco, oppure da solo per un effetto pelle nuda."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Gucci",
+        "name": "Set 3 Rossetti con Shopper",
+        "product_type": "set",
+        "variants": [],
+        "image_path": "/assets/images/catalog/gucci/gudc-015-pic1.jpg",
+        "gallery": ["/assets/images/catalog/gucci/gudc-015-col2.jpg"],
+        "price": 24.99,
+        "description": "Set regalo con tre rossetti Gucci Rouge à Lèvres in tonalità coordinate, presentato con shopper Gucci. Applica direttamente dal centro delle labbra verso gli angoli, da soli o sovrapposti."
+    }
+]

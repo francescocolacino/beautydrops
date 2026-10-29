@@ -127,4 +127,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var unavailablePopup = document.querySelector('[data-unavailable-popup]');
+  if (unavailablePopup) {
+    // Avviso dei brand momentaneamente non ordinabili (UNAVAILABLE_BRANDS in
+    // includes/functions.php): si apre da solo all'arrivo sulla pagina.
+    var closeUnavailablePopup = function () {
+      unavailablePopup.classList.remove('open');
+      window.setTimeout(function () { unavailablePopup.hidden = true; }, 220);
+    };
+    unavailablePopup.hidden = false;
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () { unavailablePopup.classList.add('open'); });
+    });
+    unavailablePopup.querySelectorAll('[data-unavailable-popup-close]').forEach(function (btn) {
+      btn.addEventListener('click', closeUnavailablePopup);
+    });
+    unavailablePopup.addEventListener('click', function (e) {
+      if (e.target === unavailablePopup) closeUnavailablePopup();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !unavailablePopup.hidden) closeUnavailablePopup();
+    });
+  }
+
 });

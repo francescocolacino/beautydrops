@@ -145,6 +145,19 @@ function order_brands_by_priority(array $byBrand): array
 }
 
 /**
+ * Brand momentaneamente non ordinabili: restano visibili nel catalogo, ma la
+ * pagina prodotto mostra un avviso in popup, il pulsante "Aggiungi al
+ * carrello" è disattivato e gli ordini che li contengono vengono rifiutati.
+ * Per renderli di nuovo ordinabili basta togliere il brand dall'elenco.
+ */
+const UNAVAILABLE_BRANDS = ['Dior', 'YSL'];
+
+function is_brand_unavailable(string $brand): bool
+{
+    return in_array(mb_strtolower($brand), array_map('mb_strtolower', UNAVAILABLE_BRANDS), true);
+}
+
+/**
  * Ordina i prodotti all'interno di un brand quando il catalogo richiede una
  * sequenza editoriale diversa da quella alfabetica. Per Rhode mostriamo prima
  * i cosmetici/trattamenti nell'ordine richiesto e soltanto dopo packaging e

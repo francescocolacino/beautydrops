@@ -61,6 +61,9 @@ foreach ($rawItems as $rawItem) {
     if (!$product) {
         json_error('Un prodotto nel carrello non è più disponibile.');
     }
+    if (is_brand_unavailable($product['brand'])) {
+        json_error('I prodotti ' . $product['brand'] . ' sono temporaneamente non disponibili: rimuovi "' . $product['name'] . '" dal carrello per continuare.');
+    }
 
     $variants = decode_variants($product['variants']);
 

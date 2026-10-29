@@ -1811,6 +1811,89 @@ button, input, select, textarea { font-family: inherit; }
 .btn-add-cart:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
 .btn-add-cart svg { width: 18px; height: 18px; }
 .btn-add-cart.added { background: linear-gradient(135deg, var(--color-green), #3d7d55); }
+.btn-add-cart:disabled,
+.btn-add-cart:disabled:hover {
+  background: rgba(58, 46, 47, 0.12);
+  color: var(--color-text-soft);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ---------- Popup avviso (brand non disponibili) ---------- */
+
+.notice-popup-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(58, 46, 47, 0.4);
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+
+.notice-popup-overlay[hidden] { display: none; }
+.notice-popup-overlay.open { opacity: 1; }
+
+.notice-popup {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  background: linear-gradient(120deg, var(--color-pink-soft), #fff 65%);
+  border: 1px solid rgba(200, 168, 98, 0.28);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hover);
+  padding: 34px 28px 28px;
+  transform: translateY(10px) scale(0.95);
+  transition: transform 0.22s ease;
+}
+
+.notice-popup-overlay.open .notice-popup { transform: translateY(0) scale(1); }
+
+.notice-popup h2 { font-size: 1.45rem; }
+
+.notice-popup p {
+  color: var(--color-text-soft);
+  font-size: 0.92rem;
+  margin: 0 0 22px;
+}
+
+.notice-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text-soft);
+}
+
+.notice-popup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.notice-popup-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1px solid rgba(58, 46, 47, 0.15);
+  border-radius: 999px;
+  font-size: 0.88rem;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.notice-popup-link:hover { background: var(--color-pink-soft); }
 
 /* ---------- Pagina carrello ---------- */
 

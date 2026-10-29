@@ -26,6 +26,7 @@ $basePrice = $product['price'] !== null ? (float) $product['price'] : null;
 $variantPrices = $isGroupedVariants ? [] : decode_variant_prices($product['variant_prices'] ?? null);
 $size = extract_product_size($product['name']);
 $productImages = product_gallery_images($pdo, $product['image_path'] ?? null, (int)$product['id']);
+$isUnavailable = is_brand_unavailable($product['brand']);
 
 $stmt = $pdo->prepare(
     'SELECT * FROM products WHERE brand = :brand AND id != :id ORDER BY RANDOM() LIMIT 4'
@@ -149,10 +150,14 @@ require __DIR__ . '/includes/header.php';
               <input type="number" class="qty-input" min="1" value="1" inputmode="numeric">
               <button type="button" class="qty-increase" aria-label="Aumenta quantità">+</button>
             </div>
-            <button type="submit" class="btn-add-cart">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.4l2.4 12.2a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21.5 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              Aggiungi al carrello
-            </button>
+            <?php if ($isUnavailable): ?>
+              <button type="submit" class="btn-add-cart" disabled>Temporaneamente non disponibile</button>
+            <?php else: ?>
+              <button type="submit" class="btn-add-cart">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.4l2.4 12.2a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21.5 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Aggiungi al carrello
+              </button>
+            <?php endif; ?>
           </div>
         </form>
       </div>
@@ -186,5 +191,20 @@ require __DIR__ . '/includes/header.php';
     <?php endif; ?>
   </div>
 </section>
+
+<?php if ($isUnavailable): ?>
+  <div class="notice-popup-overlay" data-unavailable-popup hidden>
+    <div class="notice-popup" role="dialog" aria-modal="true" aria-labelledby="unavailablePopupTitle">
+      <button type="button" class="notice-popup-close" data-unavailable-popup-close aria-label="Chiudi">&times;</button>
+      <span class="eyebrow">Avviso</span>
+      <h2 id="unavailablePopupTitle">Temporaneamente non disponibili</h2>
+      <p>I trucchi <?= h(implode(' e ', UNAVAILABLE_BRANDS)) ?> al momento non sono ordinabili. Puoi continuare a sfogliarli e torneranno disponibili a breve.</p>
+      <div class="notice-popup-actions">
+        <button type="button" class="btn btn-primary" data-unavailable-popup-close>Ho capito</button>
+        <a href="<?= url('category.php?slug=' . $product['category']) ?>" class="notice-popup-link">Scopri gli altri brand</a>
+      </div>
+    </div>
+  </div>
+<?php endif; ?>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

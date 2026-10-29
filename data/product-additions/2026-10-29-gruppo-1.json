@@ -1,0 +1,35 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Benefit",
+        "name": "Dandelion Blush 6g",
+        "product_type": "blush",
+        "variants": [],
+        "image_path": "/assets/images/catalog/benefit/dandelion-blush.jpg",
+        "gallery": [],
+        "price": 19.99,
+        "description": "Blush in polvere rosa baby dall'effetto luminoso e naturale, per un colorito fresco e radioso. Applica con un pennello sugli zigomi e sfuma verso le tempie."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Benefit",
+        "name": "Benetint Lip & Cheek Tint 12,5ml",
+        "product_type": "blush",
+        "variants": [],
+        "image_path": "/assets/images/catalog/benefit/benetint.jpg",
+        "gallery": [],
+        "price": 11.99,
+        "description": "Tinta liquida rosa per labbra e guance, a lunga tenuta e no transfer, per un colorito naturale effetto bonne mine. Picchietta qualche goccia su labbra o zigomi e sfuma subito con le dita."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Rhode",
+        "name": "Pocket Bronze",
+        "product_type": "bronzer",
+        "variants": ["Pebble", "Sip", "Bake", "Sunbed", "Shade", "Drench", "Anklet", "Plunge"],
+        "image_path": "/assets/images/catalog/rhode/pocket-bronze.jpg",
+        "gallery": [],
+        "price": 9.99,
+        "description": "Bronzer in crema in stick, leggero e modulabile, per un colorito caldo e baciato dal sole a lunga tenuta. Passa lo stick su zigomi, tempie e mandibola e sfuma con le dita o un pennello."
+    }
+]

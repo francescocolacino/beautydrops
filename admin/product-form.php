@@ -100,6 +100,7 @@ $formData = $product ?: [
     'description' => '',
     'product_type' => null,
     'is_new_arrival' => false,
+    'is_special_edition' => false,
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
@@ -120,6 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
     $productTypeInput = $_POST['product_type'] ?? '';
     $formData['product_type'] = array_key_exists($productTypeInput, PRODUCT_TYPES) ? $productTypeInput : null;
     $formData['is_new_arrival'] = isset($_POST['is_new_arrival']);
+    $formData['is_special_edition'] = isset($_POST['is_special_edition']);
 
     if (!array_key_exists($formData['category'], CATEGORIES)) {
         $errors[] = 'Seleziona una categoria valida.';
@@ -167,7 +169,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                 'UPDATE products SET category=:category, brand=:brand, name=:name, variants=:variants,
                  variant_prices=:variant_prices, image_path=:image_path, stock_quantity=:stock_quantity,
                  orderable_quantity=:orderable_quantity, price=:price, description=:description,
-                 product_type=:product_type, is_new_arrival=:is_new_arrival WHERE id=:id'
+                 product_type=:product_type, is_new_arrival=:is_new_arrival,
+                 is_special_edition=:is_special_edition WHERE id=:id'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -182,12 +185,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                 'description' => $formData['description'] ?: null,
                 'product_type' => $formData['product_type'],
                 'is_new_arrival' => $formData['is_new_arrival'] ? 1 : 0,
+                'is_special_edition' => $formData['is_special_edition'] ? 1 : 0,
                 'id' => $id,
             ]);
         } else {
             $stmt = $pdo->prepare(
-                'INSERT INTO products (category, brand, name, variants, variant_prices, image_path, stock_quantity, orderable_quantity, price, description, product_type, is_new_arrival)
-                 VALUES (:category, :brand, :name, :variants, :variant_prices, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type, :is_new_arrival)'
+                'INSERT INTO products (category, brand, name, variants, variant_prices, image_path, stock_quantity, orderable_quantity, price, description, product_type, is_new_arrival, is_special_edition)
+                 VALUES (:category, :brand, :name, :variants, :variant_prices, :image_path, :stock_quantity, :orderable_quantity, :price, :description, :product_type, :is_new_arrival, :is_special_edition)'
             );
             $stmt->execute([
                 'category' => $formData['category'],
@@ -202,6 +206,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['action'])) {
                 'description' => $formData['description'] ?: null,
                 'product_type' => $formData['product_type'],
                 'is_new_arrival' => $formData['is_new_arrival'] ? 1 : 0,
+                'is_special_edition' => $formData['is_special_edition'] ? 1 : 0,
             ]);
         }
 
@@ -347,6 +352,13 @@ require __DIR__ . '/../includes/admin-header.php';
     <label class="checkbox-label">
       <input type="checkbox" name="is_new_arrival" <?= !empty($formData['is_new_arrival']) ? 'checked' : '' ?>>
       Mostra in homepage nella sezione «Nuovi prodotti arrivati»
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label class="checkbox-label">
+      <input type="checkbox" name="is_special_edition" <?= !empty($formData['is_special_edition']) ? 'checked' : '' ?>>
+      Mostra il bollino «Special Edition»
     </label>
   </div>
 

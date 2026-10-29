@@ -478,6 +478,9 @@ function render_product_badges(array $product, array $activeOfferProductIds): st
 {
     $badges = [];
 
+    if (!empty($product['is_special_edition'])) {
+        $badges[] = '<span class="badge badge-special">Special Edition</span>';
+    }
     if ((int)$product['stock_quantity'] >= 1) {
         $badges[] = '<span class="badge badge-available">Disponibile</span>';
     }

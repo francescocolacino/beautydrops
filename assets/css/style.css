@@ -574,6 +574,14 @@ button, input, select, textarea { font-family: inherit; }
 .badge-available { background: rgba(76, 154, 106, 0.12); color: var(--color-green); }
 .badge-orderable { background: rgba(74, 127, 201, 0.12); color: var(--color-blue); }
 
+.badge-special {
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold-dark));
+  color: #fff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.64rem;
+}
+
 .badge-offer {
   background: rgba(208, 88, 122, 0.12);
   color: var(--color-red);
@@ -588,11 +596,13 @@ button, input, select, textarea { font-family: inherit; }
 /* Riflesso dorato che attraversa periodicamente bollino "In offerta",
    ribbon -% delle offerte e sconti quantità. */
 .badge-offer,
+.badge-special,
 .cart-line-discount { position: relative; overflow: hidden; }
 
 .offer-ribbon { overflow: hidden; }
 
 .badge-offer::after,
+.badge-special::after,
 .offer-ribbon::after,
 .cart-line-discount::after {
   content: '';

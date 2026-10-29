@@ -43,10 +43,10 @@ try {
     $insertProduct = $pdo->prepare(
         'INSERT INTO products (
             category, brand, name, product_type, variants, image_path,
-            stock_quantity, orderable_quantity, price, description
+            stock_quantity, orderable_quantity, price, description, is_special_edition
         ) VALUES (
             :category, :brand, :name, :product_type, :variants, :image_path,
-            0, 0, :price, :description
+            0, 0, :price, :description, :is_special_edition
         ) RETURNING id'
     );
     $insertGalleryImage = $pdo->prepare(
@@ -124,6 +124,7 @@ try {
                     'image_path' => $product['image_path'],
                     'price' => $price === null ? null : (float) $price,
                     'description' => $product['description'],
+                    'is_special_edition' => ($product['special_edition'] ?? false) === true ? 1 : 0,
                 ]);
                 $productId = (int) $insertProduct->fetchColumn();
                 $inserted++;

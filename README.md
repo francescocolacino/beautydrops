@@ -140,6 +140,10 @@ esistenti, quindi prezzi e modifiche fatte dall'admin non vengono toccati
 dai deploy successivi. `price: null` mostra "Prezzo su richiesta" finché
 l'admin non imposta un prezzo.
 
+`"special_edition": true` su un prodotto del lotto gli assegna il bollino
+dorato "Special Edition"; dopo l'import si attiva o si toglie dal pannello
+admin con la checkbox «Mostra il bollino «Special Edition»».
+
 `"new_arrival": true` su un prodotto del lotto lo inserisce (una sola volta)
 nella sezione "Nuovi prodotti arrivati" della homepage. In seguito la
 sezione si gestisce dal pannello admin, con la checkbox "Mostra in homepage

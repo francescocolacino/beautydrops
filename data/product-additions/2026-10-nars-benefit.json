@@ -38,17 +38,6 @@
     {
         "category": "cosmetici",
         "brand": "NARS",
-        "name": "Precision Lip Liner",
-        "product_type": "matita_labbra",
-        "variants": [],
-        "image_path": "/assets/images/catalog/nars/precision-lip-liner.jpg",
-        "gallery": [],
-        "price": null,
-        "description": "Matita labbra di precisione a lunga tenuta per definire e riempire il contorno. Disegna il bordo delle labbra prima del rossetto o del gloss."
-    },
-    {
-        "category": "cosmetici",
-        "brand": "NARS",
         "name": "Climax Mascara",
         "product_type": "mascara",
         "variants": [],
@@ -72,39 +61,6 @@
     {
         "category": "cosmetici",
         "brand": "NARS",
-        "name": "Light Reflecting Foundation 30ml",
-        "product_type": "fondotinta",
-        "variants": ["0", "1", "2", "2.5", "3", "4"],
-        "image_path": "/assets/images/catalog/nars/light-reflecting-foundation.jpg",
-        "gallery": [],
-        "price": null,
-        "description": "Fondotinta a copertura media con finish naturale e luminoso, arricchito con attivi skincare. Applica con spugnetta o pennello dal centro del viso verso l'esterno."
-    },
-    {
-        "category": "cosmetici",
-        "brand": "NARS",
-        "name": "Natural Radiant Longwear Foundation 30ml",
-        "product_type": "fondotinta",
-        "variants": ["1", "2", "2.5", "3", "3.5", "4"],
-        "image_path": "/assets/images/catalog/nars/natural-radiant-longwear-foundation.jpg",
-        "gallery": [],
-        "price": null,
-        "description": "Fondotinta a copertura piena e lunga tenuta con finish naturale radioso, resiste a sudore e umidità. Applica con spugnetta o pennello sfumando verso l'esterno."
-    },
-    {
-        "category": "cosmetici",
-        "brand": "NARS",
-        "name": "All Day Luminous Weightless Foundation 30ml",
-        "product_type": "fondotinta",
-        "variants": ["1", "2", "3", "4", "5", "6"],
-        "image_path": "/assets/images/catalog/nars/all-day-luminous-weightless-foundation.jpg",
-        "gallery": [],
-        "price": null,
-        "description": "Fondotinta leggerissimo a copertura modulabile con finish luminoso, per una pelle uniforme tutto il giorno. Applica con spugnetta o pennello."
-    },
-    {
-        "category": "cosmetici",
-        "brand": "NARS",
         "name": "Light Reflecting Setting Mist 90ml",
         "product_type": "spray_fissante",
         "variants": [],
@@ -123,18 +79,6 @@
         "gallery": ["/assets/images/catalog/nars/light-reflecting-pressed-setting-powder-box.jpg"],
         "price": null,
         "description": "Cipria compatta trasparente (tonalità Crystal) che fissa il trucco e sfuma la pelle con un effetto luminoso naturale. Applica con pennello o piumino sulle zone da opacizzare."
-    },
-    {
-        "category": "cosmetici",
-        "brand": "NARS",
-        "name": "Soft Matte Complete Concealer 6.2g",
-        "product_type": "correttore",
-        "variants": ["1276 Vanilla", "1277 Crème Brûlée", "1279 Honey", "1280 Custard"],
-        "image_path": "/assets/images/catalog/nars/soft-matte-complete-concealer.jpg",
-        "new_arrival": true,
-        "gallery": [],
-        "price": null,
-        "description": "Correttore cremoso a copertura piena con finish opaco morbido, copre occhiaie e imperfezioni. Picchietta poco prodotto e sfuma con il dito o una spugnetta."
     },
     {
         "category": "cosmetici",

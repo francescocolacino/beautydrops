@@ -1,0 +1,35 @@
+[
+    {
+        "category": "cosmetici",
+        "brand": "Sol de Janeiro",
+        "name": "Perfume Mist 90ml Summer Edition",
+        "product_type": "profumo",
+        "variants": ["Summer é Amor", "Beijos de Sol", "Carioca Crush"],
+        "image_path": "/assets/images/catalog/sol-de-janeiro/perfume-mist-summer-edition.jpg",
+        "gallery": [],
+        "price": 12.99,
+        "description": "Spray profumato per corpo e capelli nelle fragranze estive in edizione limitata, fruttate e solari. Vaporizza su corpo e capelli a 15-20 cm di distanza, anche più volte durante la giornata."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Sol de Janeiro",
+        "name": "Perfume Mist 90ml Edizione Limitata",
+        "product_type": "profumo",
+        "variants": ["Água Mística", "Flora", "Danica"],
+        "image_path": "/assets/images/catalog/sol-de-janeiro/agua-mistica-perfume-mist.jpg",
+        "gallery": [],
+        "price": 12.99,
+        "description": "Spray profumato per corpo e capelli in edizione limitata, con note fresche e luminose. Vaporizza su corpo e capelli a 15-20 cm di distanza, anche più volte durante la giornata."
+    },
+    {
+        "category": "cosmetici",
+        "brand": "Sol de Janeiro",
+        "name": "Body Cream 240ml",
+        "product_type": "crema",
+        "variants": ["Rio Radiance", "Sundays in Rio", "Açaí Body Power", "Coco Cabana"],
+        "image_path": "/assets/images/catalog/sol-de-janeiro/body-cream-240ml-new-boxes.jpg",
+        "gallery": ["/assets/images/catalog/sol-de-janeiro/body-cream-240ml-new.jpg"],
+        "price": 14.99,
+        "description": "Crema corpo idratante a rapido assorbimento nelle nuove fragranze Sol de Janeiro, per una pelle morbida, luminosa e profumata a lungo. Massaggia su tutto il corpo dopo la doccia, insistendo sulle zone più secche."
+    }
+]

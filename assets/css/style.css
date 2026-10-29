@@ -1388,7 +1388,7 @@ button, input, select, textarea { font-family: inherit; }
 .products-table .table-amount { font-weight: 500; }
 .products-table .table-empty { color: rgba(58, 46, 47, 0.3); }
 
-.products-table .col-status { min-width: 270px; }
+.products-table .col-status { min-width: 130px; }
 .products-table .col-status .badges { margin: 0; gap: 4px; }
 
 .products-table .badge { font-size: 0.66rem; padding: 3px 9px; white-space: nowrap; }
@@ -1396,8 +1396,6 @@ button, input, select, textarea { font-family: inherit; }
 /* In tabella niente pulse/riflesso: con centinaia di righe distraggono. */
 .products-table .badge-offer { animation: none; }
 .products-table .badge::after { display: none; }
-
-.badge-muted { background: rgba(58, 46, 47, 0.07); color: var(--color-text-soft); }
 
 .table-product {
   display: flex;
@@ -1440,16 +1438,42 @@ button, input, select, textarea { font-family: inherit; }
 
 .table-product:hover .table-product-name { color: var(--color-gold-dark); }
 
-.table-product-meta {
-  margin-top: 2px;
-  font-size: 0.74rem;
+.table-product-category {
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
   color: var(--color-text-soft);
+}
+
+.table-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.table-variants[title] { cursor: help; }
+
+.table-variant {
+  max-width: 170px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--color-pink-soft);
+  border: 1px solid rgba(58, 46, 47, 0.06);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  color: var(--color-text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.table-product-meta[title] { cursor: help; }
+.table-variant-more {
+  background: transparent;
+  border-color: rgba(169, 135, 63, 0.35);
+  color: var(--color-gold-dark);
+  font-weight: 600;
+}
 
 .products-table td.col-actions { display: table-cell; white-space: nowrap; text-align: right; }
 
@@ -1508,8 +1532,6 @@ button, input, select, textarea { font-family: inherit; }
   .admin-filters::-webkit-scrollbar { display: none; }
   .admin-filters .filter-pill { flex: none; white-space: nowrap; }
 
-  .products-table .table-product-meta { white-space: normal; }
-
   .products-table,
   .products-table tbody { display: block; }
   .products-table thead { display: none; }
@@ -1542,6 +1564,7 @@ button, input, select, textarea { font-family: inherit; }
   }
 
   .products-table td.col-status { grid-column: 1 / -1; min-width: 0; }
+  .products-table td.col-status.is-empty { display: none; }
 
   .products-table td.col-actions { position: absolute; top: 14px; right: 16px; }
 }

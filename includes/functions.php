@@ -300,30 +300,33 @@ function product_net_profit(?float $salePrice, ?float $purchasePrice): ?float
 }
 
 /**
- * Riassunto compatto delle varianti per la tabella prodotti dell'admin: il
- * nome se è una sola, altrimenti il conteggio ("12 varianti" oppure
- * "Colore 5 · Modello 8"). L'elenco completo va nel tooltip.
+ * Anteprima delle varianti per la tabella prodotti dell'admin: le prime
+ * $limit come etichette più il numero di quelle nascoste ("+5"). Per le
+ * varianti raggruppate un'etichetta per gruppo ("Colore: Nero, Bianco +2").
+ * L'elenco completo va nel tooltip.
  *
- * @return array{label: string, title: string}
+ * @return array{chips: string[], more: int, title: string}
  */
-function admin_variants_summary(array $variants): array
+function admin_variants_preview(array $variants, int $limit = 3): array
 {
     if (empty($variants)) {
-        return ['label' => '', 'title' => ''];
+        return ['chips' => [], 'more' => 0, 'title' => ''];
     }
     if (is_variant_groups($variants)) {
-        $parts = [];
+        $chips = [];
         $titles = [];
         foreach ($variants as $groupLabel => $groupOptions) {
-            $parts[] = $groupLabel . ' ' . count($groupOptions);
+            $hidden = count($groupOptions) - 2;
+            $chips[] = $groupLabel . ': ' . implode(', ', array_slice($groupOptions, 0, 2)) . ($hidden > 0 ? ' +' . $hidden : '');
             $titles[] = $groupLabel . ': ' . implode(', ', $groupOptions);
         }
-        return ['label' => implode(' · ', $parts), 'title' => implode("\n", $titles)];
+        return ['chips' => $chips, 'more' => 0, 'title' => implode("\n", $titles)];
     }
-    if (count($variants) === 1) {
-        return ['label' => (string)$variants[0], 'title' => ''];
-    }
-    return ['label' => count($variants) . ' varianti', 'title' => implode(', ', $variants)];
+    return [
+        'chips' => array_map('strval', array_slice($variants, 0, $limit)),
+        'more' => max(0, count($variants) - $limit),
+        'title' => implode(', ', $variants),
+    ];
 }
 
 function decode_variants(?string $json): array

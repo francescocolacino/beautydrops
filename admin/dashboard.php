@@ -88,17 +88,13 @@ require __DIR__ . '/../includes/admin-header.php';
       <?php foreach ($products as $product): ?>
         <?php
           $productVariants = decode_variants($product['variants']);
-          $variantsSummary = admin_variants_summary($productVariants);
+          $variantsPreview = admin_variants_preview($productVariants);
           $editUrl = url('admin/product-form.php?id=' . (int)$product['id']);
           $purchasePrice = $product['purchase_price'] !== null ? (float)$product['purchase_price'] : null;
           $salePrice = $product['price'] !== null ? (float)$product['price'] : null;
           $netProfit = product_net_profit($salePrice, $purchasePrice);
           $variantPrices = array_map('floatval', decode_variant_prices($product['variant_prices'] ?? null));
-          $productMeta = array_filter([
-              $categoryFilter === '' ? category_label($product['category']) : '',
-              $variantsSummary['label'],
-          ]);
-          $searchText = $product['brand'] . ' ' . $product['name'] . ' ' . $variantsSummary['label'] . ' ' . $variantsSummary['title'];
+          $searchText = $product['brand'] . ' ' . $product['name'] . ' ' . $variantsPreview['title'];
         ?>
         <tr data-search="<?= h(mb_strtolower($searchText)) ?>">
           <td class="col-product">
@@ -109,10 +105,20 @@ require __DIR__ . '/../includes/admin-header.php';
                 <span class="table-thumb img-placeholder">BD</span>
               <?php endif; ?>
               <span class="table-product-text">
-                <span class="table-product-brand"><?= h($product['brand']) ?></span>
+                <span class="table-product-brand">
+                  <?= h($product['brand']) ?>
+                  <?php if ($categoryFilter === ''): ?><span class="table-product-category">· <?= h(category_label($product['category'])) ?></span><?php endif; ?>
+                </span>
                 <span class="table-product-name"><?= h($product['name']) ?></span>
-                <?php if (!empty($productMeta)): ?>
-                  <span class="table-product-meta"<?= $variantsSummary['title'] !== '' ? ' title="' . h($variantsSummary['title']) . '"' : '' ?>><?= h(implode(' · ', $productMeta)) ?></span>
+                <?php if (!empty($variantsPreview['chips'])): ?>
+                  <span class="table-variants"<?= $variantsPreview['title'] !== '' ? ' title="' . h($variantsPreview['title']) . '"' : '' ?>>
+                    <?php foreach ($variantsPreview['chips'] as $chip): ?>
+                      <span class="table-variant"><?= h($chip) ?></span>
+                    <?php endforeach; ?>
+                    <?php if ($variantsPreview['more'] > 0): ?>
+                      <span class="table-variant table-variant-more">+<?= $variantsPreview['more'] ?></span>
+                    <?php endif; ?>
+                  </span>
                 <?php endif; ?>
               </span>
             </a>
@@ -146,14 +152,17 @@ require __DIR__ . '/../includes/admin-header.php';
               <?php endif; ?>
             <?php endif; ?>
           </td>
-          <td class="col-status">
-            <div class="badges">
-              <?php if (!empty($product['is_special_edition'])): ?><span class="badge badge-special">Special Edition</span><?php endif; ?>
-              <?php if ((int)$product['stock_quantity'] >= 1): ?><span class="badge badge-available">Disponibile · <?= (int)$product['stock_quantity'] ?></span><?php endif; ?>
-              <?php if ((int)$product['orderable_quantity'] >= 1): ?><span class="badge badge-orderable">Ordinabile · <?= (int)$product['orderable_quantity'] ?></span><?php endif; ?>
-              <?php if (in_array((int)$product['id'], $activeOfferProductIds, true)): ?><span class="badge badge-offer">In offerta</span><?php endif; ?>
-              <?php if ((int)$product['stock_quantity'] < 1 && (int)$product['orderable_quantity'] < 1): ?><span class="badge badge-muted">Esaurito</span><?php endif; ?>
-            </div>
+          <?php
+            $isSpecialEdition = !empty($product['is_special_edition']);
+            $isInOffer = in_array((int)$product['id'], $activeOfferProductIds, true);
+          ?>
+          <td class="col-status<?= !$isSpecialEdition && !$isInOffer ? ' is-empty' : '' ?>">
+            <?php if ($isSpecialEdition || $isInOffer): ?>
+              <div class="badges">
+                <?php if ($isSpecialEdition): ?><span class="badge badge-special">Special Edition</span><?php endif; ?>
+                <?php if ($isInOffer): ?><span class="badge badge-offer">In offerta</span><?php endif; ?>
+              </div>
+            <?php endif; ?>
           </td>
           <td class="col-actions">
             <a href="<?= $editUrl ?>" class="icon-btn" title="Modifica" aria-label="Modifica <?= h($product['name']) ?>">

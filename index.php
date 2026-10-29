@@ -52,7 +52,6 @@ require __DIR__ . '/includes/header.php';
     <span class="hero-sparkle" style="--size: 10px; --dur: 3.2s; --delay: 1.5s; top: 8%; left: 58%;"></span>
   </div>
   <div class="container hero-inner" data-aos="fade-up">
-    <span class="eyebrow">✨ Il catalogo BeautyDrops</span>
     <img
       src="<?= url('assets/images/beautydrops-logo.png') ?>"
       class="hero-logo"
@@ -62,10 +61,15 @@ require __DIR__ . '/includes/header.php';
       fetchpriority="high"
     >
     <h1 class="visually-hidden">BeautyDrops</h1>
-    <p class="tagline">Beauty, cover e accessori selezionati per te — esplora il catalogo organizzato per brand e scopri tutte le varianti.</p>
-    <a href="#categorie" class="scroll-cue" aria-label="Scorri per esplorare">
-      <span></span>
-    </a>
+    <p class="tagline">Beauty, tech e accessori selezionati per te, organizzati per brand.</p>
+    <nav class="hero-categories" aria-label="Categorie del catalogo">
+      <?php foreach (CATEGORIES as $slug => $label): ?>
+        <a href="<?= url('category.php?slug=' . $slug) ?>" class="hero-category cat-<?= h($slug) ?>">
+          <span class="hero-category-icon"><?= $categoryIcons[$slug] ?></span>
+          <span class="hero-category-label"><?= h($label) ?></span>
+        </a>
+      <?php endforeach; ?>
+    </nav>
   </div>
 </section>
 
@@ -86,64 +90,8 @@ require __DIR__ . '/includes/header.php';
 </section>
 <?php endif; ?>
 
-<section class="categories-section" id="categorie">
-  <div class="container">
-    <div class="category-cards">
-      <?php $i = 0; foreach (CATEGORIES as $slug => $label): $i++; ?>
-        <a href="<?= url('category.php?slug=' . $slug) ?>" class="category-card cat-<?= h($slug) ?>" data-aos="fade-up" data-aos-delay="<?= $i * 80 ?>">
-          <span class="category-card-icon"><?= $categoryIcons[$slug] ?></span>
-          <span class="category-card-label"><?= h($label) ?></span>
-          <span class="category-card-cta">Scopri i prodotti <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<?php if (!empty($newArrivals)): ?>
-<section class="new-arrivals-section">
-  <div class="container">
-    <div class="section-heading" data-aos="fade-up">
-      <span class="eyebrow">Novità in catalogo</span>
-      <h2 class="section-title">Nuovi prodotti arrivati</h2>
-    </div>
-    <div class="product-grid new-arrivals-grid">
-      <?php foreach ($newArrivals as $i => $product): ?>
-        <?php require __DIR__ . '/includes/product-card.php'; ?>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-<?php endif; ?>
-
-<section class="quantity-promo">
-  <div class="container">
-    <div class="quantity-promo-card" data-aos="fade-up">
-      <div class="quantity-promo-text">
-        <span class="eyebrow">Sconto quantità automatico</span>
-        <h2 class="section-title">Acquista di più, risparmia di più</h2>
-        <p>Scegli più pezzi della stessa referenza — anche in colori o varianti diversi — e lo sconto si applica da solo nel carrello, senza bisogno di codici.</p>
-      </div>
-      <div class="quantity-promo-tiers">
-        <div class="quantity-promo-tier">
-          <span class="tier-qty">2 pezzi</span>
-          <span class="tier-percent">-5%</span>
-        </div>
-        <div class="quantity-promo-tier">
-          <span class="tier-qty">3-4 pezzi</span>
-          <span class="tier-percent">-10%</span>
-        </div>
-        <div class="quantity-promo-tier">
-          <span class="tier-qty">5+ pezzi</span>
-          <span class="tier-percent">-15%</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <?php if (!empty($offers)): ?>
-<section class="offers-section">
+<section class="offers-section" id="offerte">
   <div class="container">
     <div class="section-heading" data-aos="fade-up">
       <span class="eyebrow">Per un tempo limitato</span>
@@ -184,5 +132,53 @@ require __DIR__ . '/includes/header.php';
   </div>
 </section>
 <?php endif; ?>
+
+<?php if (!empty($newArrivals)): ?>
+<section class="new-arrivals-section">
+  <div class="container">
+    <div class="section-heading" data-aos="fade-up">
+      <span class="eyebrow">Novità in catalogo</span>
+      <h2 class="section-title">Nuovi arrivi</h2>
+    </div>
+    <div class="product-grid new-arrivals-grid">
+      <?php foreach ($newArrivals as $i => $product): ?>
+        <?php require __DIR__ . '/includes/product-card.php'; ?>
+      <?php endforeach; ?>
+    </div>
+    <div class="section-cta" data-aos="fade-up">
+      <a href="<?= url('category.php?slug=cosmetici') ?>" class="btn btn-outline">
+        Esplora tutto il catalogo beauty
+        <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
+<section class="quantity-promo">
+  <div class="container">
+    <div class="quantity-promo-card" data-aos="fade-up">
+      <div class="quantity-promo-text">
+        <span class="eyebrow">Sconto quantità automatico</span>
+        <h2 class="section-title">Acquista di più, risparmia di più</h2>
+        <p>Scegli più pezzi della stessa referenza — anche in colori o varianti diversi — e lo sconto si applica da solo nel carrello, senza bisogno di codici.</p>
+      </div>
+      <div class="quantity-promo-tiers">
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">2 pezzi</span>
+          <span class="tier-percent">-5%</span>
+        </div>
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">3-4 pezzi</span>
+          <span class="tier-percent">-10%</span>
+        </div>
+        <div class="quantity-promo-tier">
+          <span class="tier-qty">5+ pezzi</span>
+          <span class="tier-percent">-15%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

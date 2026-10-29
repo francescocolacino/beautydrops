@@ -20,11 +20,57 @@ $newArrivals = $pdo->query(
 )->fetchAll();
 $activeOfferProductIds = $newArrivals ? get_active_offer_product_ids($pdo) : [];
 
+$categoryIcons = [
+    'cosmetici' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6l1 3H8l1-3Z" stroke-linejoin="round"/><path d="M8 6h8l1 4a6 6 0 0 1-4 8.5V21h-2v-2.5A6 6 0 0 1 7 10l1-4Z" stroke-linejoin="round"/></svg>',
+    'elettronica' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M10 5h4M11 18.5h2" stroke-linecap="round"/></svg>',
+    'abbigliamento' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l1 13H4L5 8Z" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 0 1 6 0v3" stroke-linecap="round"/></svg>',
+];
+
 $pageTitle = 'BeautyDrops · Catalogo prodotti beauty';
 require __DIR__ . '/includes/header.php';
 ?>
 
-<h1 class="visually-hidden">BeautyDrops · Catalogo beauty</h1>
+<section class="hero">
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+  <div class="hero-drops" aria-hidden="true">
+    <span class="hero-drop" style="--size: 22px; --dur: 9s; --delay: -1s; top: 20%; left: 8%;"></span>
+    <span class="hero-drop hero-desktop-only" style="--size: 14px; --dur: 7.5s; --delay: -3s; --drop-color: var(--color-gold-light); top: 62%; left: 14%;"></span>
+    <span class="hero-drop" style="--size: 18px; --dur: 8.5s; --delay: -2s; top: 16%; left: 86%;"></span>
+    <span class="hero-drop hero-desktop-only" style="--size: 26px; --dur: 10s; --delay: -5s; --drop-color: var(--color-gold-light); top: 58%; left: 90%;"></span>
+    <span class="hero-drop" style="--size: 12px; --dur: 7s; --delay: -1.5s; top: 82%; left: 70%;"></span>
+    <span class="hero-drop-fall hero-lane-left" style="--size: 12px; --dur: 7s; --delay: 0.5s;"></span>
+    <span class="hero-ripple hero-lane-left" style="--dur: 7s; --delay: 0.5s;"></span>
+    <span class="hero-sparkle" style="--size: 14px; --dur: 3.4s; --delay: 0s; top: 12%; left: 28%;"></span>
+    <span class="hero-sparkle" style="--size: 10px; --dur: 2.8s; --delay: 1.1s; top: 34%; left: 6%;"></span>
+    <span class="hero-sparkle" style="--size: 16px; --dur: 3.8s; --delay: 0.6s; top: 26%; left: 72%;"></span>
+    <span class="hero-sparkle" style="--size: 12px; --dur: 3s; --delay: 1.8s; top: 70%; left: 82%;"></span>
+    <span class="hero-sparkle" style="--size: 14px; --dur: 3.6s; --delay: 2.4s; top: 76%; left: 24%;"></span>
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-brand" data-aos="fade-up">
+      <img
+        src="<?= url('assets/images/beautydrops-logo.png') ?>"
+        class="hero-logo"
+        width="1942"
+        height="809"
+        alt="Beauty Drops"
+        fetchpriority="high"
+      >
+      <h1 class="visually-hidden">BeautyDrops · Catalogo beauty</h1>
+      <p class="tagline">Beauty, tech e accessori selezionati per te, organizzati per brand.</p>
+    </div>
+    <nav class="hero-categories" aria-label="Categorie del catalogo" data-aos="fade-up" data-aos-delay="80">
+      <?php foreach (CATEGORIES as $slug => $label): ?>
+        <a href="<?= url('category.php?slug=' . $slug) ?>" class="hero-category cat-<?= h($slug) ?>">
+          <span class="hero-category-icon"><?= $categoryIcons[$slug] ?></span>
+          <span class="hero-category-label"><?= h($label) ?></span>
+          <span class="hero-category-cta">Scopri <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      <?php endforeach; ?>
+    </nav>
+  </div>
+</section>
 
 <div class="home-top">
 

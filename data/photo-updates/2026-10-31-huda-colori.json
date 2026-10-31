@@ -1,0 +1,23 @@
+[
+    {
+        "brand": "Huda Beauty",
+        "name": "Baby Bake Mini Setting Powder with Puff 6g",
+        "images": [
+            "/assets/images/gallery/huda-beauty/hu-2-cherry-blossom-cake-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-2-pound-cake-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-2-banana-bread-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-2-sugar-cookie-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-2-peach-pie-label.jpg"
+        ]
+    },
+    {
+        "brand": "Huda Beauty",
+        "name": "BLUSH LIGHTERS PALETTE",
+        "images": [
+            "/assets/images/gallery/huda-beauty/hu-16-shades.jpg",
+            "/assets/images/gallery/huda-beauty/hu-16-rose-berry-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-16-toasty-peach-label.jpg",
+            "/assets/images/gallery/huda-beauty/hu-16-baby-pink-label.jpg"
+        ]
+    }
+]

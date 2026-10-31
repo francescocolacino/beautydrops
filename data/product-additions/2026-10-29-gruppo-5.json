@@ -67,8 +67,11 @@
         "name": "Easy Bake Intense Eau de Parfum 50ml",
         "product_type": "profumo",
         "variants": [],
-        "image_path": "/assets/images/catalog/huda-beauty/easy-bake-intense-eau-de-parfum.jpg",
-        "gallery": [],
+        "image_path": "/assets/images/catalog/huda-beauty/easy-bake-intense-edp-box.webp",
+        "gallery": [
+            "/assets/images/catalog/huda-beauty/easy-bake-intense-edp-bottle.webp",
+            "/assets/images/catalog/huda-beauty/easy-bake-intense-edp-notes.webp"
+        ],
         "price": 29.99,
         "description": "Eau de parfum gourmand ispirata alla celebre cipria Easy Bake, calda e avvolgente con note dolci e vanigliate. Vaporizza su polsi, collo e dietro le orecchie a qualche centimetro dalla pelle."
     },

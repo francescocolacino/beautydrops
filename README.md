@@ -104,6 +104,26 @@ immagine mancante).
 Lo stesso limite vale per i PDF dei preventivi generati dal carrello,
 salvati in `assets/orders/`.
 
+**Soluzione attuale — da fare prima di ogni push su `main`**: lanciare
+
+```sh
+sh scripts/backup-live-uploads.sh
+```
+
+Lo script scarica dal sito live in `assets/images/uploads-backup/` le foto
+caricate dall'admin che non sono ancora nel backup (esce con codice 1 se ne
+ha salvate di nuove). Vanno committate insieme al resto: all'avvio del
+container `scripts/restore-uploads.php` le ricopia in
+`assets/images/products/` con lo stesso nome, così i percorsi salvati nel
+database restano validi. Per non dimenticarlo si può installare l'hook
+locale `.git/hooks/pre-push` che esegue lo script e blocca il push quando
+trova foto nuove:
+
+```sh
+printf '#!/bin/sh\nexec sh "$(git rev-parse --show-toplevel)/scripts/backup-live-uploads.sh"\n' > .git/hooks/pre-push
+chmod +x .git/hooks/pre-push
+```
+
 **Sviluppo successivo consigliato**: spostare gli upload (immagini prodotto
 e PDF ordini) su un object storage esterno persistente — es. **Cloudinary**,
 oppure S3/Backblaze B2/Koyeb volumes se disponibili — così da sopravvivere

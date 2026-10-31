@@ -1,0 +1,26 @@
+[
+    {
+        "brand": "Huda Beauty",
+        "name": "Liquid Matte Minis Set (4 rossetti)",
+        "images": [
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-all.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-nude-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-red-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-pink-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-brown-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-swatches.jpg"
+        ]
+    },
+    {
+        "brand": "Huda Beauty",
+        "name": "Obsessions Eyeshadow Palette",
+        "images": [
+            "/assets/images/catalog/huda-beauty/obsessions-palette-all.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-topaz-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-amethyst-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-emerald-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-ruby-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-sapphire-label.jpg"
+        ]
+    }
+]

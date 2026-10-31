@@ -16,8 +16,14 @@
         "name": "Liquid Matte Minis Set (4 rossetti)",
         "product_type": "set",
         "variants": ["Nude Edition", "Red Edition", "Pink Edition", "Brown Edition"],
-        "image_path": "/assets/images/catalog/huda-beauty/liquid-matte-minis-set-4.jpg",
-        "gallery": [],
+        "image_path": "/assets/images/catalog/huda-beauty/liquid-matte-minis-all.jpg",
+        "gallery": [
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-nude-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-red-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-pink-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-brown-label.jpg",
+            "/assets/images/catalog/huda-beauty/liquid-matte-minis-swatches.jpg"
+        ],
         "price": 9.99,
         "description": "Set di 4 mini rossetti liquidi a finish opaco e lunga tenuta, in quattro edizioni di colore coordinate. Applica dal centro delle labbra verso l'esterno e lascia asciugare qualche secondo."
     },
@@ -27,8 +33,14 @@
         "name": "Obsessions Eyeshadow Palette",
         "product_type": "ombretto",
         "variants": ["Topaz", "Amethyst", "Emerald", "Ruby", "Sapphire"],
-        "image_path": "/assets/images/catalog/huda-beauty/obsessions-eyeshadow-palette.jpg",
-        "gallery": [],
+        "image_path": "/assets/images/catalog/huda-beauty/obsessions-palette-all.jpg",
+        "gallery": [
+            "/assets/images/catalog/huda-beauty/obsessions-palette-topaz-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-amethyst-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-emerald-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-ruby-label.jpg",
+            "/assets/images/catalog/huda-beauty/obsessions-palette-sapphire-label.jpg"
+        ],
         "price": 14.99,
         "description": "Mini palette da 9 ombretti mat e shimmer ad alta pigmentazione, ispirata alle pietre preziose. Applica le tonalità chiare su tutta la palpebra e intensifica la piega e l'angolo esterno con quelle più scure."
     },

@@ -1,0 +1,21 @@
+[
+    {
+        "brand": "Prada",
+        "name": "Monochrome Lipstick",
+        "images": [
+            "/assets/images/catalog/prada/monochrome-all.jpg",
+            "/assets/images/catalog/prada/monochrome-b01-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b03-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b15-label.jpg",
+            "/assets/images/catalog/prada/monochrome-u000-label.jpg",
+            "/assets/images/catalog/prada/monochrome-u001-label.jpg",
+            "/assets/images/catalog/prada/monochrome-u011-label.jpg",
+            "/assets/images/catalog/prada/monochrome-u002-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b101-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b103-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b106-label.jpg",
+            "/assets/images/catalog/prada/monochrome-b107-label.jpg",
+            "/assets/images/catalog/prada/monochrome-lipstick.jpg"
+        ]
+    }
+]

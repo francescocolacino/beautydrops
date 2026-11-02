@@ -1,0 +1,50 @@
+[
+    {
+        "brand": "Huda Beauty",
+        "name": "FAUX FILLER JELLY OIL 3.9ml",
+        "images": [
+            "/assets/images/catalog/updated-2026-09/162-faux-filler-jelly-oil-cover.jpeg",
+            "/assets/images/catalog/huda-beauty/faux-filler-jelly-oil-shades-label.jpg",
+            "/assets/images/catalog/updated-2026-09/162-faux-filler-jelly-oil-gallery1.jpeg"
+        ]
+    },
+    {
+        "brand": "Huda Beauty",
+        "name": "Pressed Powder con Piumino",
+        "images": [
+            "/assets/images/catalog/huda-beauty/pressed-powder-all.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-sugar-cookie-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-peach-pie-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-cherry-blossom-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-banana-bread-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-ube-birthday-cake-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-blondie-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-cupcake-label.jpg",
+            "/assets/images/catalog/huda-beauty/pressed-powder-puff.jpg"
+        ]
+    },
+    {
+        "brand": "Huda Beauty",
+        "name": "2 in 1 Easy Bake Duo Loose Powder 2*6.5g",
+        "images": [
+            "/assets/images/catalog/huda-beauty/easy-bake-duo-cherry-peach-label.jpg",
+            "/assets/images/catalog/huda-beauty/easy-bake-duo-pink-pumpkin-label.jpg"
+        ]
+    },
+    {
+        "brand": "Laneige",
+        "name": "Lip Balm 12g – Glaze Collection",
+        "images": [
+            "/assets/images/catalog/updated-2026-09/47-lip-balm-glaze-cover.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-sugar-glaze-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-peach-glaze-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-maple-glaze-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-raspberry-jam-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-blueberry-jelly-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-strawberry-sprinkles-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-chocolate-frosting-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-cinnamon-sugar-label.jpg",
+            "/assets/images/catalog/laneige/glaze-craze-shade-guide.jpg"
+        ]
+    }
+]

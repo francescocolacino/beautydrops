@@ -27,8 +27,17 @@
         "name": "Pocket Bronze",
         "product_type": "bronzer",
         "variants": ["Pebble", "Sip", "Bake", "Sunbed", "Shade", "Drench", "Anklet", "Plunge"],
-        "image_path": "/assets/images/catalog/rhode/pocket-bronze.jpg",
-        "gallery": [],
+        "image_path": "/assets/images/catalog/rhode/pocket-bronze-collection.jpg",
+        "gallery": [
+            "/assets/images/catalog/rhode/pocket-bronze-pebble-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-sip-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-bake-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-sunbed-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-shade-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-drench-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-anklet-label.jpg",
+            "/assets/images/catalog/rhode/pocket-bronze-plunge-label.jpg"
+        ],
         "price": 9.99,
         "description": "Bronzer in crema in stick, leggero e modulabile, per un colorito caldo e baciato dal sole a lunga tenuta. Passa lo stick su zigomi, tempie e mandibola e sfuma con le dita o un pennello."
     }

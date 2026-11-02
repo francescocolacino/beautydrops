@@ -1,0 +1,15 @@
+[
+    {
+        "brand": "Eucerin",
+        "name": "Serum 30ml",
+        "images": [
+            "/assets/images/catalog/eucerin/serum-all.jpg",
+            "/assets/images/catalog/eucerin/serum-spotless-brightening-booster-label.jpg",
+            "/assets/images/catalog/eucerin/serum-hyaluron-filler-epigenetic-label.jpg",
+            "/assets/images/catalog/eucerin/serum-anti-pigment-serum-duo-label.jpg",
+            "/assets/images/catalog/eucerin/serum-hyaluron-filler-elasticity-3d-label.jpg",
+            "/assets/images/catalog/eucerin/serum-anti-pigment-dual-serum-label.jpg",
+            "/assets/images/catalog/eucerin/serum-collection.jpg"
+        ]
+    }
+]

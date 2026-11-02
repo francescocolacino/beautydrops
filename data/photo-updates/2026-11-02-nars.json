@@ -1,0 +1,54 @@
+[
+    {
+        "brand": "NARS",
+        "name": "Afterglow Liquid Blush",
+        "images": [
+            "/assets/images/catalog/nars/afterglow-all.jpg",
+            "/assets/images/catalog/nars/afterglow-orgasm-label.jpg",
+            "/assets/images/catalog/nars/afterglow-behave-label.jpg",
+            "/assets/images/catalog/nars/afterglow-dolce-vita-label.jpg",
+            "/assets/images/catalog/nars/afterglow-liquid-blush.jpg"
+        ]
+    },
+    {
+        "brand": "NARS",
+        "name": "Blush 4.8g",
+        "images": [
+            "/assets/images/catalog/nars/blush-all.jpg",
+            "/assets/images/catalog/nars/blush-orgasm-label.jpg",
+            "/assets/images/catalog/nars/blush-deep-throat-label.jpg",
+            "/assets/images/catalog/nars/blush-taj-mahal-label.jpg",
+            "/assets/images/catalog/nars/blush.jpg"
+        ]
+    },
+    {
+        "brand": "NARS",
+        "name": "Light Reflecting Loose Setting Powder 10g",
+        "images": [
+            "/assets/images/catalog/nars/light-reflecting-loose-setting-powder.jpg",
+            "/assets/images/catalog/nars/light-reflecting-loose-translucent-label.jpg"
+        ]
+    },
+    {
+        "brand": "NARS",
+        "name": "Radiant Creamy Concealer 6ml",
+        "images": [
+            "/assets/images/catalog/nars/rcc-all.jpg",
+            "/assets/images/catalog/nars/rcc-light-1-chantilly-label.jpg",
+            "/assets/images/catalog/nars/rcc-light-2-vanilla-label.jpg",
+            "/assets/images/catalog/nars/rcc-light-3-honey-label.jpg",
+            "/assets/images/catalog/nars/rcc-medium-1-custard-label.jpg",
+            "/assets/images/catalog/nars/radiant-creamy-concealer.jpg"
+        ]
+    },
+    {
+        "brand": "NARS",
+        "name": "Soft Matte Advanced Perfecting Powder",
+        "images": [
+            "/assets/images/catalog/nars/soft-matte-powder-all.jpg",
+            "/assets/images/catalog/nars/soft-matte-powder-cliff-label.jpg",
+            "/assets/images/catalog/nars/soft-matte-powder-cove-label.jpg",
+            "/assets/images/catalog/nars/soft-matte-advanced-perfecting-powder.jpg"
+        ]
+    }
+]

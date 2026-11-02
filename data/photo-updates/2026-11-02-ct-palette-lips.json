@@ -1,0 +1,33 @@
+[
+    {
+        "brand": "Charlotte Tilbury",
+        "name": "Luxury Palette of Pops / Luxury Palette",
+        "images": [
+            "/assets/images/catalog/charlotte-tilbury/luxury-palette-all.jpg",
+            "/assets/images/catalog/charlotte-tilbury/luxury-palette-pillow-talk-label.jpg",
+            "/assets/images/catalog/charlotte-tilbury/luxury-palette-exagger-eyes-label.jpg",
+            "/assets/images/catalog/charlotte-tilbury/luxury-palette-bella-sofia-label.jpg",
+            "/assets/images/catalog/charlotte-tilbury/luxury-palette-golden-goddess-label.jpg"
+        ]
+    },
+    {
+        "brand": "Charlotte Tilbury",
+        "name": "Mini Pillow Talk Lip Kit",
+        "images": [
+            "/assets/images/products/prod_6aa12b37e307c5.03402961.jpg",
+            "/assets/images/products/prod_6aa12b37db00e0.19833389.jpg",
+            "/assets/images/products/prod_6aa12b37de1e33.24673971.jpg",
+            "/assets/images/products/prod_6aa12b37e0b494.23015812.jpg",
+            "/assets/images/catalog/charlotte-tilbury/mini-pillow-talk-lip-kit-all.jpg"
+        ]
+    },
+    {
+        "brand": "Charlotte Tilbury",
+        "name": "Pillow Talk Collagen Lip Bath 7.6ml",
+        "images": [
+            "/assets/images/products/prod_6aa12badb5ed00.58042450.jpg",
+            "/assets/images/products/prod_6aa12badb2bed3.79170686.jpg",
+            "/assets/images/catalog/charlotte-tilbury/collagen-lip-bath-all.jpg"
+        ]
+    }
+]

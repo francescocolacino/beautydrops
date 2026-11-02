@@ -1,0 +1,20 @@
+[
+    {
+        "brand": "Gisou",
+        "name": "Gisou gloss",
+        "images": [
+            "/assets/images/catalog/updated-2026-09/88-gisou-gloss-cover.jpg",
+            "/assets/images/catalog/updated-2026-09/88-gisou-gloss-gallery1.jpg",
+            "/assets/images/catalog/updated-2026-09/88-gisou-gloss-flavours-label.jpg"
+        ]
+    },
+    {
+        "brand": "Gisou",
+        "name": "Honey Infused Hair Perfume",
+        "images": [
+            "/assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-cover.jpg",
+            "/assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-rose-label.jpg",
+            "/assets/images/catalog/updated-2026-09/92-honey-infused-hair-perfume-lavender-berry-label.jpg"
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "brand": "Chanel",
+        "name": "Bronzer",
+        "images": [
+            "/assets/images/catalog/chanel/bronzer-all.jpg",
+            "/assets/images/catalog/chanel/bronzer-382-label.jpg",
+            "/assets/images/catalog/chanel/bronzer-384-label.jpg",
+            "/assets/images/catalog/chanel/bronzer-386-label.jpg",
+            "/assets/images/products/prod_6aa12dc8f0cc39.74820388.jpg"
+        ]
+    },
+    {
+        "brand": "Chanel",
+        "name": "La Crème Main 50ml",
+        "images": [
+            "/assets/images/catalog/chanel/creme-main-all.jpg",
+            "/assets/images/catalog/chanel/creme-main-bianca-label.jpg",
+            "/assets/images/catalog/chanel/creme-main-nera-label.jpg",
+            "/assets/images/catalog/chanel/chan-001-pic1.jpg"
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "brand": "Sol de Janeiro",
+        "name": "Perfume Mist 90ml Edizione Limitata",
+        "images": [
+            "/assets/images/catalog/sol-de-janeiro/mistica-cover.jpg",
+            "/assets/images/catalog/sol-de-janeiro/mistica-agua-label.jpg",
+            "/assets/images/catalog/sol-de-janeiro/mistica-flor-label.jpg",
+            "/assets/images/catalog/sol-de-janeiro/mistica-danca-label.jpg",
+            "/assets/images/catalog/sol-de-janeiro/agua-mistica-perfume-mist.jpg"
+        ]
+    },
+    {
+        "brand": "Summer Fridays",
+        "name": "Lip Oil",
+        "images": [
+            "/assets/images/products/prod_6aa12a423d63b6.46013315.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-mauve-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-rosewood-nights-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-pink-cloud-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-blush-dreams-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-bare-sand-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-rose-bud-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-midnight-berry-label.jpg",
+            "/assets/images/catalog/summer-fridays/dream-lip-oil-warm-beige-label.jpg",
+            "/assets/images/products/prod_6aa12a424292d3.71635890.jpg"
+        ]
+    }
+]

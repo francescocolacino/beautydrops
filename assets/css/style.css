@@ -1011,9 +1011,11 @@ button, input, select, textarea { font-family: inherit; }
 .breadcrumb-trail span { color: rgba(58, 46, 47, 0.35); }
 .breadcrumb-current { color: var(--color-text); font-weight: 500; }
 
+/* Colonne minmax(0, …): senza, la fila di miniature (che scorre di lato)
+   allarga la galleria fino a spingere le opzioni fuori dalla scheda. */
 .product-detail {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 32px;
   background: var(--color-surface);
   border-radius: var(--radius);
@@ -1199,7 +1201,7 @@ button, input, select, textarea { font-family: inherit; }
 
 @media (min-width: 720px) {
   .product-detail {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     padding: 32px;
   }
 }
